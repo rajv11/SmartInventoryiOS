@@ -9,15 +9,31 @@
 import UIKit
 
 class DashboardTableViewController: UITableViewController {
-
     
-    var images = ["iphone8", "laptop", "iphone8"]
-    var titles = ["Iphone 8", "HP Laptop", "Iphone X"]
-    var descriptions = ["Refurbished Iphone 8, 64 GB", "HP Notebook , i3 Processor, 8 GB RAM, 256 GB", "New Iphone X, 256 GB"]
-    var quantities = ["Quantity : 4", "Qauntity : 1", "Quantity : 2"]
+    static var dashboardTVC:DashboardTableViewController = DashboardTableViewController()
+    
+    var allProducts:[Product] = []
+    
+    // Function to read data from the JSON file
+    func retrieveDataFromJSON(){
+        let mainBundle = Bundle.main
+        let aPath = mainBundle.path(forResource: "productDetails", ofType: "txt")
+        let content = try? Data(contentsOf: URL(fileURLWithPath: aPath!))
+        let decoder = JSONDecoder()
+        self.allProducts = try! decoder.decode([Product].self, from: content!)
+        AllProducts.allProducts.setProductsList(productsList:self.allProducts )
+        //        catch{
+        ////            print(errors)
+        //        }
+    }
+    
+    @objc func dataFetched() {
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        retrieveDataFromJSON()
         //tableView.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -36,7 +52,7 @@ class DashboardTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return images.count
+        return allProducts.count
     }
 
     
@@ -44,15 +60,17 @@ class DashboardTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dashboardCell", for: indexPath)
 
         let title = tableView.viewWithTag(100) as! UILabel!
-        let desc = tableView.viewWithTag(200) as! UILabel!
+        let desc = tableView.viewWithTag(200) as! UITextView!
         let image = tableView.viewWithTag(300) as! UIImageView!
         let quantity = tableView.viewWithTag(400) as! UILabel!
+        let price = tableView.viewWithTag(500) as! UILabel!
 
         
-        image?.image = UIImage(named: images[indexPath.row])
-        title?.text = titles[indexPath.row]
-        desc?.text = descriptions[indexPath.row]
-        quantity?.text = quantities[indexPath.row]
+        image?.image = UIImage(named: allProducts[indexPath.row].imageURL)
+        title?.text = allProducts[indexPath.row].name
+        desc?.text = allProducts[indexPath.row].productDescription
+        quantity?.text = "Quantity:"+String(allProducts[indexPath.row].quantity)
+        price?.text = "$"+String(allProducts[indexPath.row].price)
         
         
         
@@ -64,6 +82,7 @@ class DashboardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
     }
+   
 
     /*
     // Override to support conditional editing of the table view.
