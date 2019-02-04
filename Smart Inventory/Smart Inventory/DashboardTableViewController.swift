@@ -71,10 +71,10 @@ class DashboardTableViewController: UITableViewController {
         let quantity = tableView.viewWithTag(400) as! UILabel!
 
         
-        image?.image = UIImage(named: images[indexPath.row])
-        title?.text = titles[indexPath.row]
-        desc?.text = descriptions[indexPath.row]
-        quantity?.text = quantities[indexPath.row]
+        image?.image = UIImage(named: allProducts[indexPath.row].imageURL)
+        title?.text = allProducts[indexPath.row].name
+        desc?.text = allProducts[indexPath.row].productDescription
+        quantity?.text = String(allProducts[indexPath.row].quantity)
         
         
         
