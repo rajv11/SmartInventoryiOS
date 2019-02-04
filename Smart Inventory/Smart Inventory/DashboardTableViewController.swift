@@ -16,6 +16,27 @@ class DashboardTableViewController: UITableViewController {
     var descriptions = ["Refurbished Iphone 8, 64 GB", "HP Notebook , i3 Processor, 8 GB RAM, 256 GB", "New Iphone X, 256 GB"]
     var quantities = ["Quantity : 4", "Qauntity : 1", "Quantity : 2"]
     
+    static var dashboardTVC:DashboardTableViewController = DashboardTableViewController()
+    
+    var allProducts:[Product] = []
+    
+    // Function to read data from the JSON file
+    func retrieveDataFromJSON(){
+        let mainBundle = Bundle.main
+        let aPath = mainBundle.path(forResource: "productDetails", ofType: "txt")
+        let content = try? Data(contentsOf: URL(fileURLWithPath: aPath!))
+        let decoder = JSONDecoder()
+        self.allProducts = try! decoder.decode([Product].self, from: content!)
+        AllProducts.allProducts.setProductsList(productsList:self.allProducts )
+        //        catch{
+        ////            print(errors)
+        //        }
+    }
+    
+    @objc func dataFetched() {
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //tableView.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
@@ -64,6 +85,7 @@ class DashboardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250
     }
+   
 
     /*
     // Override to support conditional editing of the table view.
