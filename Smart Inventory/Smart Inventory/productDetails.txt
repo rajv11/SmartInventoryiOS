@@ -1,2 +1,5 @@
 [{"name":"iphone8", "productDescription":"Iphone8 new", "imageURL":"iphone8", "quantity":4, "price":200},
-{"name":"Macbook pro", "productDescription":"2018 new macbook pro with touchbar", "imageURL":"laptop", "quantity":4, "price":1200}]
+{"name":"Macbook pro", "productDescription":"2018 new macbook pro with touchbar", "imageURL":"laptop", "quantity":4, "price":1200},
+{"name":"Samsung", "productDescription":"Unlocked Samsung Galaxy S8 64GB", "imageURL":"samsungs8", "quantity":6, "price":248},
+{"name":"HP Laptop", "productDescription":"NEW HP Stream 14 Laptop Celeron N3060 4GB RAM 32GB 32 GB eMMC Windows 10", "imageURL":"hplaptop", "quantity":2, "price":210},
+{"name":"Macbook pro", "productDescription":"2018 new macbook pro with touchbar", "imageURL":"laptop", "quantity":3, "price":1200}]
