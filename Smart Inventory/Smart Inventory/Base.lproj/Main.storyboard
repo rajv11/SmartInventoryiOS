@@ -684,6 +684,18 @@ The application will manages the shipping labels, product details, orders and tr
                     <view key="view" contentMode="scaleToFill" id="Tpk-0M-H0U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-9q-8VH">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="g6D-Mc-MTU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eYn-Rv-dTM"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="jYv-ed-zKo"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.47969285099999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="c8s-GM-Jrg"/>
                     </view>
