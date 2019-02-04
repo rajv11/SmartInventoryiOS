@@ -1,2 +1,2 @@
-[{"name":"iphone8", productDescription:"Iphone8 new", imageURL:"iphone8", quantity:4, price:200},
-{"name":"Macbook pro", productDescription:"2018 new macbook pro with touchbar", imageURL:"laptop", quantity:4, price:1200}]
+[{"name":"iphone8", "productDescription":"Iphone8 new", "imageURL":"iphone8", "quantity":4, "price":200},
+{"name":"Macbook pro", "productDescription":"2018 new macbook pro with touchbar", "imageURL":"laptop", "quantity":4, "price":1200}]
