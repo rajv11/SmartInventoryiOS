@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */; };
 		1678E31321A268AF00436FD9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31221A268AF00436FD9 /* Product.swift */; };
+		169B96772207B82300510611 /* productDetails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169B96762207B82300510611 /* productDetails.txt */; };
 		16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC012197E03900E40897 /* UserProfileViewController.swift */; };
 		16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */; };
 		1B02F38A804E8ED0E8B9CF2B /* Pods_Smart_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		1678E31221A268AF00436FD9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		169B96762207B82300510611 /* productDetails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = productDetails.txt; sourceTree = "<group>"; };
 		16E7DC012197E03900E40897 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		C79D808A216530F400A0AEFB /* Smart Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				169B96762207B82300510611 /* productDetails.txt */,
 				C79D808B216530F400A0AEFB /* AppDelegate.swift */,
 				C79D808D216530F400A0AEFB /* LoginViewController.swift */,
 				16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */,
@@ -172,6 +175,7 @@
 				C79D8096216530F500A0AEFB /* LaunchScreen.storyboard in Resources */,
 				C79D8093216530F500A0AEFB /* Assets.xcassets in Resources */,
 				C79D8091216530F400A0AEFB /* Main.storyboard in Resources */,
+				169B96772207B82300510611 /* productDetails.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
