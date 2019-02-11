@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160085C42211301C005D4124 /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160085C32211301C005D4124 /* AnnouncementsTableViewController.swift */; };
 		1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */; };
 		1678E31321A268AF00436FD9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31221A268AF00436FD9 /* Product.swift */; };
 		169B96772207B82300510611 /* productDetails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169B96762207B82300510611 /* productDetails.txt */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160085C32211301C005D4124 /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
 		1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		1678E31221A268AF00436FD9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		169B96762207B82300510611 /* productDetails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = productDetails.txt; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		3F9F7B1022110FC100E13966 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				160085C32211301C005D4124 /* AnnouncementsTableViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				1678E31321A268AF00436FD9 /* Product.swift in Sources */,
 				3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */,
 				3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */,
+				160085C42211301C005D4124 /* AnnouncementsTableViewController.swift in Sources */,
 				876CF7982167D4240015A6C8 /* RegistrationViewController.swift in Sources */,
 				16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */,
 				16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */,
@@ -419,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX3UP69539;
 				INFOPLIST_FILE = "Smart Inventory/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX3UP69539;
 				INFOPLIST_FILE = "Smart Inventory/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

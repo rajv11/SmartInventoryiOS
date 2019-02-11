@@ -222,10 +222,6 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chatIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-R9-5gG">
-                                            <rect key="frame" x="316" y="136" width="43" height="36"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTi-cX-rAh">
                                             <rect key="frame" x="321" y="174" width="33" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -233,6 +229,10 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chatIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-R9-5gG">
+                                            <rect key="frame" x="299" y="136" width="55" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -247,7 +247,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXp-rP-URF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="1320"/>
+            <point key="canvasLocation" x="221.59999999999999" y="1318.9655172413793"/>
         </scene>
         <!--Account-->
         <scene sceneID="byo-En-I1b">
@@ -452,6 +452,67 @@ The application will manages the shipping labels, product details, orders and tr
                 <exit id="GfD-YI-bO9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1977" y="2931"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="NPg-wF-YgO">
+            <objects>
+                <viewController id="MP3-2d-eZK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qty-w0-64l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="O7b-Z5-wKZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Orders" id="VSn-E0-fQQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53z-Bi-FAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1474" y="673"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="gDv-TK-J1c">
+            <objects>
+                <viewController id="P0E-4m-bCY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qUH-ZI-Cd1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sup-sS-fto">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Anouncements" id="AiB-oI-NGw">
+                                        <barButtonItem key="rightBarButtonItem" title="New" id="GeZ-l3-tNg"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35018915340000001" green="0.64662297290000004" blue="1" alpha="0.62466823630000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="sGb-S9-E1M"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dashboard" id="PEg-uz-4jH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fej-FU-QLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1596" y="18"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wbJ-2h-sKL">
+            <objects>
+                <tabBarController id="0IA-Yf-aNk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Mn-f2-6hl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.35018915340000001" green="0.64662297290000004" blue="1" alpha="0.62466823630000001" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P0E-4m-bCY" kind="relationship" relationship="viewControllers" id="OdX-i7-Z2T"/>
+                        <segue destination="MP3-2d-eZK" kind="relationship" relationship="viewControllers" id="nSs-1K-Xgq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bue-8Z-XVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2724" y="506"/>
         </scene>
         <!--Profile-->
         <scene sceneID="P83-K8-dJG">
