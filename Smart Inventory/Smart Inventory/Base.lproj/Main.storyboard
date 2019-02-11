@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="-36.206896551724142"/>
+            <point key="canvasLocation" x="30" y="-144"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="iu6-eY-eAV">
@@ -247,7 +247,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXp-rP-URF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266.39999999999998" y="1478.5714285714287"/>
+            <point key="canvasLocation" x="223" y="1320"/>
         </scene>
         <!--Account-->
         <scene sceneID="byo-En-I1b">
@@ -300,7 +300,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFf-5O-KCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="1484"/>
+            <point key="canvasLocation" x="935" y="1326"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3rE-1r-45Y">
@@ -338,7 +338,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCP-Z3-6c1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="noU-ba-eZm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2760.8000000000002" y="1197.7832512315272"/>
+            <point key="canvasLocation" x="1977" y="1536"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="phv-46-FLt">
@@ -392,7 +392,7 @@ Unless you ask us not to, we may contact you via email in the future to tell you
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpL-qj-ZWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fzU-iT-6b4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="976.79999999999995" y="2410.344827586207"/>
+            <point key="canvasLocation" x="1977" y="2236"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cBA-SN-fln">
@@ -451,7 +451,7 @@ The application will manages the shipping labels, product details, orders and tr
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQW-T2-hel" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GfD-YI-bO9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2892" y="2014.2857142857144"/>
+            <point key="canvasLocation" x="1977" y="2931"/>
         </scene>
         <!--Profile-->
         <scene sceneID="P83-K8-dJG">
@@ -555,7 +555,7 @@ The application will manages the shipping labels, product details, orders and tr
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbx-86-6da" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8ea-0S-PMU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="642.85714285714289"/>
+            <point key="canvasLocation" x="1977" y="831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yw4-c1-DOX">
@@ -634,7 +634,7 @@ The application will manages the shipping labels, product details, orders and tr
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqc-5M-Twr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Way-9d-4p1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-639.20000000000005" y="2211.576354679803"/>
+            <point key="canvasLocation" x="-775" y="1985"/>
         </scene>
         <!--Annnouncements-->
         <scene sceneID="7zG-Eg-9a0">
@@ -687,7 +687,7 @@ The application will manages the shipping labels, product details, orders and tr
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFO-cG-fGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1615.2" y="1483.7438423645322"/>
+            <point key="canvasLocation" x="-1657" y="1326"/>
         </scene>
         <!--Chats-->
         <scene sceneID="NC2-73-lIe">
@@ -737,7 +737,7 @@ The application will manages the shipping labels, product details, orders and tr
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MO-YD-0kN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-728.79999999999995" y="1475.615763546798"/>
+            <point key="canvasLocation" x="-774" y="1317"/>
         </scene>
         <!--Title-->
         <scene sceneID="tUV-fM-EGh">
@@ -807,7 +807,7 @@ The application will manages the shipping labels, product details, orders and tr
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMA-7J-QxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6SK-k5-f2U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1044" y="401.97044334975374"/>
+            <point key="canvasLocation" x="-831" y="-145"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="m3I-gL-thN">
@@ -829,7 +829,7 @@ The application will manages the shipping labels, product details, orders and tr
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eck-o5-ctu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="729"/>
+            <point key="canvasLocation" x="90" y="580"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="A6P-iN-AwT">
@@ -999,7 +999,7 @@ The application will manages the shipping labels, product details, orders and tr
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9m9-vK-GBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="UDe-hN-cc8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1157.5999999999999" y="-36.206896551724142"/>
+            <point key="canvasLocation" x="825" y="-145"/>
         </scene>
     </scenes>
     <resources>
