@@ -15,6 +15,7 @@
 		1B02F38A804E8ED0E8B9CF2B /* Pods_Smart_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */; };
 		3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */; };
 		3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */; };
+		3F9F7B0E2211063C00E13966 /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */; };
 		876CF7982167D4240015A6C8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876CF7972167D4240015A6C8 /* RegistrationViewController.swift */; };
 		C79D808C216530F400A0AEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D808B216530F400A0AEFB /* AppDelegate.swift */; };
 		C79D808E216530F400A0AEFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D808D216530F400A0AEFB /* LoginViewController.swift */; };
@@ -31,6 +32,7 @@
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
 		82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E7F6C5E2C09410BB61ED25 /* Pods-Smart Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Inventory/Pods-Smart Inventory.debug.xcconfig"; sourceTree = "<group>"; };
 		876CF7972167D4240015A6C8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3F9F7B0F22110FB400E13966 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				169B96762207B82300510611 /* productDetails.txt */,
+				1678E31221A268AF00436FD9 /* Product.swift */,
+				1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */,
+				3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */,
+				3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */,
+				3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */,
+				876CF7972167D4240015A6C8 /* RegistrationViewController.swift */,
+				16E7DC012197E03900E40897 /* UserProfileViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		3F9F7B1022110FC100E13966 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		3F9F7B11221110C300E13966 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C79D808D216530F400A0AEFB /* LoginViewController.swift */,
+				16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C79D807F216530F400A0AEFB = {
 			isa = PBXGroup;
 			children = (
@@ -94,20 +127,14 @@
 		C79D808A216530F400A0AEFB /* Smart Inventory */ = {
 			isa = PBXGroup;
 			children = (
-				169B96762207B82300510611 /* productDetails.txt */,
 				C79D808B216530F400A0AEFB /* AppDelegate.swift */,
-				C79D808D216530F400A0AEFB /* LoginViewController.swift */,
-				16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */,
+				3F9F7B11221110C300E13966 /* Login */,
+				3F9F7B1022110FC100E13966 /* Admin */,
+				3F9F7B0F22110FB400E13966 /* User */,
 				C79D808F216530F400A0AEFB /* Main.storyboard */,
-				3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */,
-				3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */,
 				C79D8092216530F500A0AEFB /* Assets.xcassets */,
 				C79D8094216530F500A0AEFB /* LaunchScreen.storyboard */,
 				C79D8097216530F500A0AEFB /* Info.plist */,
-				876CF7972167D4240015A6C8 /* RegistrationViewController.swift */,
-				16E7DC012197E03900E40897 /* UserProfileViewController.swift */,
-				1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */,
-				1678E31221A268AF00436FD9 /* Product.swift */,
 			);
 			path = "Smart Inventory";
 			sourceTree = "<group>";
@@ -235,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9F7B0E2211063C00E13966 /* AnnouncementsTableViewController.swift in Sources */,
 				1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */,
 				1678E31321A268AF00436FD9 /* Product.swift in Sources */,
 				3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */,

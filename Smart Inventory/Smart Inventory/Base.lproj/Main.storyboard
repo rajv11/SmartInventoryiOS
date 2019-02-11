@@ -639,7 +639,7 @@ The application will manages the shipping labels, product details, orders and tr
         <!--Annnouncements-->
         <scene sceneID="7zG-Eg-9a0">
             <objects>
-                <tableViewController id="6fI-sn-SAO" sceneMemberID="viewController">
+                <tableViewController id="6fI-sn-SAO" customClass="AnnouncementsTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qSA-n4-SJv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -652,7 +652,7 @@ The application will manages the shipping labels, product details, orders and tr
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ocs-am-uG5" detailTextLabel="El0-L8-mH3" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="Mkm-IH-Ocb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="announcecell" textLabel="Ocs-am-uG5" detailTextLabel="El0-L8-mH3" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="Mkm-IH-Ocb">
                                 <rect key="frame" x="0.0" y="69" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mkm-IH-Ocb" id="cZj-L8-WBz">
