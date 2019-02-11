@@ -636,11 +636,11 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="-639.20000000000005" y="2211.576354679803"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Annnouncements-->
         <scene sceneID="7zG-Eg-9a0">
             <objects>
                 <tableViewController id="6fI-sn-SAO" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qSA-n4-SJv">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qSA-n4-SJv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.073874957859516144" green="0.27973797917366028" blue="0.4628482460975647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -652,24 +652,24 @@ The application will manages the shipping labels, product details, orders and tr
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ocs-am-uG5" detailTextLabel="El0-L8-mH3" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="Mkm-IH-Ocb">
-                                <rect key="frame" x="0.0" y="69" width="375" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ocs-am-uG5" detailTextLabel="El0-L8-mH3" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="Mkm-IH-Ocb">
+                                <rect key="frame" x="0.0" y="69" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mkm-IH-Ocb" id="cZj-L8-WBz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ocs-am-uG5">
-                                            <rect key="frame" x="15.999999999999996" y="10.333333333333336" width="37.666666666666664" height="24"/>
+                                            <rect key="frame" x="16.000000000000004" y="12.666666666666668" width="46.333333333333336" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="El0-L8-mH3">
-                                            <rect key="frame" x="15.999999999999996" y="38" width="55.666666666666664" height="19.333333333333332"/>
+                                            <rect key="frame" x="16" y="47" width="67" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -683,38 +683,11 @@ The application will manages the shipping labels, product details, orders and tr
                             <outlet property="delegate" destination="6fI-sn-SAO" id="obd-sl-SjQ"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Annnouncements" image="advertising" id="Cog-nw-SqT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFO-cG-fGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2375" y="1484"/>
-        </scene>
-        <!--Announcements-->
-        <scene sceneID="u2r-Y5-zsE">
-            <objects>
-                <viewController id="Z2d-Gv-LCh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tpk-0M-H0U">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-9q-8VH">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="g6D-Mc-MTU">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eYn-Rv-dTM"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="jYv-ed-zKo"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.47969285099999998" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="c8s-GM-Jrg"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Announcements" image="advertising" id="SmM-HC-jtX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L4v-07-KUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1580" y="1483.7438423645322"/>
+            <point key="canvasLocation" x="-1615.2" y="1483.7438423645322"/>
         </scene>
         <!--Chats-->
         <scene sceneID="NC2-73-lIe">
@@ -724,6 +697,7 @@ The application will manages the shipping labels, product details, orders and tr
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.47969285099999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCell" textLabel="Fs5-qc-W2I" detailTextLabel="fqM-cr-nIO" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="u49-y0-aUT">
                                 <rect key="frame" x="0.0" y="28" width="375" height="73"/>
@@ -848,8 +822,8 @@ The application will manages the shipping labels, product details, orders and tr
                     </tabBar>
                     <connections>
                         <segue destination="1MI-f5-RD4" kind="relationship" relationship="viewControllers" id="ynC-mK-7Yd"/>
+                        <segue destination="6fI-sn-SAO" kind="relationship" relationship="viewControllers" id="GMm-7W-xPu"/>
                         <segue destination="JqZ-X2-9Bs" kind="relationship" relationship="viewControllers" id="UFM-Bs-ufp"/>
-                        <segue destination="Z2d-Gv-LCh" kind="relationship" relationship="viewControllers" id="dcD-OI-yOP"/>
                         <segue destination="L0s-Zg-O88" kind="relationship" relationship="viewControllers" id="RAs-ko-HsA"/>
                     </connections>
                 </tabBarController>
