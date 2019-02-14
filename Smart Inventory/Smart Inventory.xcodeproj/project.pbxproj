@@ -17,6 +17,8 @@
 		1B02F38A804E8ED0E8B9CF2B /* Pods_Smart_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */; };
 		3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */; };
 		3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */; };
+		3F5536042216159800B6B494 /* AdminAnnouncementTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5536032216159800B6B494 /* AdminAnnouncementTVC.swift */; };
+		3F5536062216161900B6B494 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5536052216161900B6B494 /* Announcement.swift */; };
 		3F9F7B0E2211063C00E13966 /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */; };
 		876CF7982167D4240015A6C8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876CF7972167D4240015A6C8 /* RegistrationViewController.swift */; };
 		C79D808C216530F400A0AEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D808B216530F400A0AEFB /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		3F5536032216159800B6B494 /* AdminAnnouncementTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAnnouncementTVC.swift; sourceTree = "<group>"; };
+		3F5536052216161900B6B494 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
 		82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E7F6C5E2C09410BB61ED25 /* Pods-Smart Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Inventory/Pods-Smart Inventory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				160085C32211301C005D4124 /* InventoryTableViewController.swift */,
 				160085C722113D58005D4124 /* OrdersTableViewController.swift */,
+				3F5536032216159800B6B494 /* AdminAnnouncementTVC.swift */,
+				3F5536052216161900B6B494 /* Announcement.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -268,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5536042216159800B6B494 /* AdminAnnouncementTVC.swift in Sources */,
 				3F9F7B0E2211063C00E13966 /* AnnouncementsTableViewController.swift in Sources */,
 				1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */,
 				1678E31321A268AF00436FD9 /* Product.swift in Sources */,
+				3F5536062216161900B6B494 /* Announcement.swift in Sources */,
 				3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */,
 				3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */,
 				160085C42211301C005D4124 /* InventoryTableViewController.swift in Sources */,
