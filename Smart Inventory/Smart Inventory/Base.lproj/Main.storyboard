@@ -477,10 +477,10 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="934" y="-883"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Announcements-->
         <scene sceneID="lPp-XM-3G8">
             <objects>
-                <viewController id="igM-vn-kPI" sceneMemberID="viewController">
+                <viewController id="igM-vn-kPI" userLabel="Post Announcements" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JdP-Pa-VQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

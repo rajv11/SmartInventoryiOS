@@ -35,6 +35,11 @@ class AdminAnnouncementTVC: UITableViewController {
         tableView.reloadData()
         refreshControl1.endRefreshing()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        announcmentData.retrieveAllAnnouncements()
+        announcmentData.announcements = announcmentData.announcements.reversed()
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 
