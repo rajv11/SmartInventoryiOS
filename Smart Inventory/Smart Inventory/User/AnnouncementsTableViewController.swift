@@ -2,7 +2,7 @@
 //  AnnouncementsTableViewController.swift
 //  Smart Inventory
 //
-//  Created by student on 2/10/19.
+//  Created by Vamshi Raj on 2/10/19.
 //  Copyright © 2019 Jennaikode,Vamshi Raj. All rights reserved.
 //
 

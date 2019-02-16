@@ -2,7 +2,7 @@
 //  ProfileTableViewController.swift
 //  Smart Inventory
 //
-//  Created by student on 11/18/18.
+//  Created by Vamshi Raj on 11/18/18.
 //  Copyright © 2018 Jennaikode,Vamshi Raj. All rights reserved.
 //
 

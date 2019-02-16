@@ -2,7 +2,7 @@
 //  ChatTableViewController.swift
 //  Smart Inventory
 //
-//  Created by student on 11/30/18.
+//  Created by Vamshi Raj on 11/30/18.
 //  Copyright © 2018 Jennaikode,Vamshi Raj. All rights reserved.
 //
 
