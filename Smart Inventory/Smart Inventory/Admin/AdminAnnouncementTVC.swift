@@ -12,7 +12,7 @@ class AdminAnnouncementTVC: UITableViewController {
 
     let refreshControl1 = UIRefreshControl()
     var announcmentData:Announcements!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,7 @@ class AdminAnnouncementTVC: UITableViewController {
     }
     @objc func refreshAnnounce() {
         announcmentData.retrieveAllAnnouncements()
+        announcmentData.announcements = announcmentData.announcements.reversed()
         tableView.reloadData()
         refreshControl1.endRefreshing()
     }
