@@ -11,6 +11,7 @@
 		160085C822113D58005D4124 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160085C722113D58005D4124 /* OrdersTableViewController.swift */; };
 		1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */; };
 		1678E31321A268AF00436FD9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31221A268AF00436FD9 /* Product.swift */; };
+		1680C474221A17C600EB6ED5 /* ClaimProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680C473221A17C600EB6ED5 /* ClaimProductsViewController.swift */; };
 		169B96772207B82300510611 /* productDetails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169B96762207B82300510611 /* productDetails.txt */; };
 		16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC012197E03900E40897 /* UserProfileViewController.swift */; };
 		16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */; };
@@ -33,6 +34,7 @@
 		160085C722113D58005D4124 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		1678E31221A268AF00436FD9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1680C473221A17C600EB6ED5 /* ClaimProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimProductsViewController.swift; sourceTree = "<group>"; };
 		169B96762207B82300510611 /* productDetails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = productDetails.txt; sourceTree = "<group>"; };
 		16E7DC012197E03900E40897 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */,
 				876CF7972167D4240015A6C8 /* RegistrationViewController.swift */,
 				16E7DC012197E03900E40897 /* UserProfileViewController.swift */,
+				1680C473221A17C600EB6ED5 /* ClaimProductsViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				160085C822113D58005D4124 /* OrdersTableViewController.swift in Sources */,
 				16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */,
 				C79D808E216530F400A0AEFB /* LoginViewController.swift in Sources */,
+				1680C474221A17C600EB6ED5 /* ClaimProductsViewController.swift in Sources */,
 				C79D808C216530F400A0AEFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
