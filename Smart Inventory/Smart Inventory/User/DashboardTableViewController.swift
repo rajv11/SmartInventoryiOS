@@ -10,8 +10,11 @@ import UIKit
 
 class DashboardTableViewController: UITableViewController {
     
-    static var dashboardTVC:DashboardTableViewController = DashboardTableViewController()
+    @IBAction func onCancel(segue:UIStoryboardSegue){}
+    @IBAction func onClaim(segue:UIStoryboardSegue){}
     
+    static var dashboardTVC:DashboardTableViewController = DashboardTableViewController()
+    var product:Product!
     var allProducts:[Product] = []
     
     // Function to read data from the JSON file
@@ -128,5 +131,17 @@ class DashboardTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "claim_product" {
+            let claimProductVC = segue.destination as! ClaimProductsViewController
+            print(tableView.indexPathForSelectedRow!.row)
+            claimProductVC.product = self.allProducts[tableView.indexPathForSelectedRow!.row]
+            
+        } else {
+            
+        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
 
 }
