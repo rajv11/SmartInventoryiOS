@@ -13,6 +13,8 @@ class AdminAnnouncementTVC: UITableViewController {
     let refreshControl1 = UIRefreshControl()
     var announcmentData:Announcements!
     
+    @IBAction func onCancelAnnouncement(segue:UIStoryboardSegue){}
+    @IBAction func onPostAnnouncement(segue:UIStoryboardSegue){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
