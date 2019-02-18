@@ -15,6 +15,7 @@ class ClaimProductsViewController: UIViewController {
     @IBOutlet weak var quantityLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
     
+    @IBOutlet weak var claimCount: UITextField!
     var product:Product!
     var productIndex:Int!
     override func viewDidLoad() {
@@ -43,7 +44,7 @@ class ClaimProductsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "claim" {
-            AllProducts.allProducts[productIndex].quantity = 1
+            AllProducts.allProducts[productIndex].quantity = AllProducts.allProducts[productIndex].quantity - Int(claimCount.text!)! ?? 0
         } else {
             
         }
