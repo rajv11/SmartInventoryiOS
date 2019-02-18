@@ -54,4 +54,8 @@ struct AllProducts {
         return productsList
     }
     
+    subscript(index:Int) -> Product{
+        return productsList[index]
+    }
+    
 }

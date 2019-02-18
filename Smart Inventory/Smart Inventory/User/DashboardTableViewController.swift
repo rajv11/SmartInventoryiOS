@@ -45,6 +45,10 @@ class DashboardTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 
@@ -136,7 +140,7 @@ class DashboardTableViewController: UITableViewController {
             let claimProductVC = segue.destination as! ClaimProductsViewController
             print(tableView.indexPathForSelectedRow!.row)
             claimProductVC.product = self.allProducts[tableView.indexPathForSelectedRow!.row]
-            
+            claimProductVC.productIndex = tableView.indexPathForSelectedRow!.row
         } else {
             
         }

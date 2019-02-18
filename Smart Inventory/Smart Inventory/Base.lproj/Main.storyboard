@@ -329,7 +329,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Claim" id="9e2-ln-c77">
                                             <connections>
-                                                <segue destination="SJs-aZ-9PH" kind="unwind" unwindAction="onClaimWithSegue:" id="hLs-kP-2DD"/>
+                                                <segue destination="SJs-aZ-9PH" kind="unwind" identifier="claim" unwindAction="onClaimWithSegue:" id="hLs-kP-2DD"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -356,6 +356,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="sn8-n7-65D"/>
                     <connections>
+                        <outlet property="claimCount" destination="RJp-Gw-u6R" id="jum-Tp-K8f"/>
                         <outlet property="descLbl" destination="Gpx-fu-iYY" id="nQS-GN-Glk"/>
                         <outlet property="priceLbl" destination="5So-9a-Qh4" id="p9C-xD-y3m"/>
                         <outlet property="quantityLbl" destination="qdl-uA-Oog" id="6NH-Eh-snf"/>
