@@ -16,6 +16,7 @@ class ClaimProductsViewController: UIViewController {
     @IBOutlet weak var priceLbl: UILabel!
     
     var product:Product!
+    var productIndex:Int!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,5 +40,15 @@ class ClaimProductsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "claim" {
+            AllProducts.allProducts[productIndex].quantity = 1
+        } else {
+            
+        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    
 }

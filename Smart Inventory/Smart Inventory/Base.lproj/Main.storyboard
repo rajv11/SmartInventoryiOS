@@ -329,7 +329,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Claim" id="9e2-ln-c77">
                                             <connections>
-                                                <segue destination="SJs-aZ-9PH" kind="unwind" unwindAction="onClaimWithSegue:" id="hLs-kP-2DD"/>
+                                                <segue destination="SJs-aZ-9PH" kind="unwind" identifier="claim" unwindAction="onClaimWithSegue:" id="hLs-kP-2DD"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
