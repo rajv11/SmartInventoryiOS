@@ -16,7 +16,7 @@ class Product: NSObject, Decodable {
 
     var name:String
     var productDescription:String
-    var imageURL:String
+    //var imageURL:String
     var quantity:Int
     var price:Double
     
@@ -29,7 +29,7 @@ class Product: NSObject, Decodable {
     init(name:String, productDescription:String, imageURL:String, quantity:Int, price:Double){
         self.name  =  name
         self.productDescription = productDescription
-        self.imageURL = imageURL
+        //self.imageURL = imageURL
         self.quantity = quantity
         self.price = price
     }

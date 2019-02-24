@@ -17,18 +17,23 @@ class DashboardTableViewController: UITableViewController {
     var product:Product!
     var allProducts:[Product] = []
     
+    let backendless = Backendless.sharedInstance()!
+    var  productDataStore:IDataStore!
+    
+    var images = ["iphone8"]
+    
     // Function to read data from the JSON file
-    func retrieveDataFromJSON(){
-        let mainBundle = Bundle.main
-        let aPath = mainBundle.path(forResource: "productDetails", ofType: "txt")
-        let content = try? Data(contentsOf: URL(fileURLWithPath: aPath!))
-        let decoder = JSONDecoder()
-        self.allProducts = try! decoder.decode([Product].self, from: content!)
-        AllProducts.allProducts.setProductsList(productsList:self.allProducts )
-        //        catch{
-        ////            print(errors)
-        //        }
-    }
+//    func retrieveDataFromJSON(){
+//        let mainBundle = Bundle.main
+//        let aPath = mainBundle.path(forResource: "productDetails", ofType: "txt")
+//        let content = try? Data(contentsOf: URL(fileURLWithPath: aPath!))
+//        let decoder = JSONDecoder()
+//        self.allProducts = try! decoder.decode([Product].self, from: content!)
+//        AllProducts.allProducts.setProductsList(productsList:self.allProducts )
+//        //        catch{
+//        ////            print(errors)
+//        //        }
+//    }
     
     @objc func dataFetched() {
         tableView.reloadData()
@@ -36,7 +41,11 @@ class DashboardTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        retrieveDataFromJSON()
+        //retrieveDataFromJSON()
+        
+        productDataStore =  backendless.data.of(Product.self)
+        allProducts = self.productDataStore.find() as! [Product]
+        
         //tableView.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -73,7 +82,7 @@ class DashboardTableViewController: UITableViewController {
         let price = tableView.viewWithTag(500) as! UILabel!
 
         
-        image?.image = UIImage(named: allProducts[indexPath.row].imageURL)
+        image?.image = UIImage(named: images[0])
         title?.text = allProducts[indexPath.row].name
         desc?.text = allProducts[indexPath.row].productDescription
         quantity?.text = "Quantity:"+String(allProducts[indexPath.row].quantity)
