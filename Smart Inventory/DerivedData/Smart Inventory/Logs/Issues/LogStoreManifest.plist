@@ -75,7 +75,7 @@
 			<key>uniqueIdentifier</key>
 			<string>A1C20766-5D63-4EBA-B339-2E2969200CE8</string>
 		</dict>
-		<key>B98E5772-CA40-4CD9-83A3-90540677417D</key>
+		<key>DD483DA2-B4CA-4661-9AC8-10D6C78726C4</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -84,19 +84,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>B98E5772-CA40-4CD9-83A3-90540677417D.xcactivitylog</string>
+			<string>DD483DA2-B4CA-4661-9AC8-10D6C78726C4.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>signature</key>
 			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
 			<key>timeStartedRecording</key>
-			<real>572748490.31217301</real>
+			<real>572801001.36300695</real>
 			<key>timeStoppedRecording</key>
-			<real>572748495.13997805</real>
+			<real>572801007.63371599</real>
 			<key>title</key>
 			<string>Build target Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>B98E5772-CA40-4CD9-83A3-90540677417D</string>
+			<string>DD483DA2-B4CA-4661-9AC8-10D6C78726C4</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

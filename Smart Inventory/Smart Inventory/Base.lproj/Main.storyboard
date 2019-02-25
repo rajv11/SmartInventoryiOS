@@ -684,7 +684,7 @@ The application will manages the shipping labels, product details, orders and tr
                         <outlet property="productNameTF" destination="3X3-vU-jY0" id="ccx-CH-DQK"/>
                         <outlet property="requiredTF" destination="495-7c-g34" id="lIU-AX-hjH"/>
                         <outlet property="titleTF" destination="hnI-MR-jml" id="9Hu-jp-fvb"/>
-                        <segue destination="Mhx-9H-1ON" kind="show" identifier="post" id="8QN-6U-eYw"/>
+                        <segue destination="0IA-Yf-aNk" kind="show" identifier="post" id="Gtc-Cb-7gz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVM-O2-dXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1430,6 +1430,7 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P3N-fa-urs"/>
+        <segue reference="5is-R3-IjG"/>
+        <segue reference="Gtc-Cb-7gz"/>
     </inferredMetricsTieBreakers>
 </document>

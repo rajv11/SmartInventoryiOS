@@ -369,7 +369,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Product * _Nonnull pro
 @property (nonatomic) NSInteger quantity;
 @property (nonatomic) double price;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)initWithName:(NSString * _Nonnull)name productDescription:(NSString * _Nonnull)productDescription imageURL:(NSString * _Nonnull)imageURL quantity:(NSInteger)quantity price:(double)price OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name productDescription:(NSString * _Nonnull)productDescription quantity:(NSInteger)quantity price:(double)price OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
 @end
 
