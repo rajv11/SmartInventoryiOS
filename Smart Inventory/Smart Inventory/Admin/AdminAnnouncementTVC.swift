@@ -60,7 +60,7 @@ class AdminAnnouncementTVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "admin_announce", for: indexPath)
 
         let data = announcmentData.announcements[indexPath.row]
-        cell.textLabel?.text = data.title
+        cell.textLabel?.text = data.product.name
 
         return cell
     }

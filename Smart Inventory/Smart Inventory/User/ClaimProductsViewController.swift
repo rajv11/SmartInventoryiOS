@@ -44,7 +44,7 @@ class ClaimProductsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "claim" {
-            AllProducts.allProducts[productIndex].quantity = AllProducts.allProducts[productIndex].quantity - Int(claimCount.text!)! ?? 0
+            //AllProducts.allProducts[productIndex].quantity = AllProducts.allProducts[productIndex].quantity - Int(claimCount.text!)! ?? 0
         } else {
             
         }

@@ -38,22 +38,63 @@ class Product: NSObject, Decodable {
     }
 }
 
-struct AllProducts {
-    // represents the product functions
-    static var allProducts:AllProducts = AllProducts()
-    var productsList:[Product] = []
+@objcMembers
+class AllProducts {
+     static var allProducts:AllProducts = AllProducts()
+//    // represents the product functions
+//    static var allProducts:AllProducts = AllProducts()
+//    var productsList:[Product] = []
+//
+//    //sets the product list
+//    func setProductsList(productsList:[Product]) {
+//        self.productsList = productsList
+//    }
+//    //gets all the product list
+//    func getAllProductsList() -> [Product] {
+//        return productsList
+//    }
+//
+//    subscript(index:Int) -> Product{
+//        return productsList[index]
+//    }
     
-    //sets the product list
-    mutating func setProductsList(productsList:[Product]) {
-        self.productsList = productsList
-    }
-    //gets all the product list
-    func getAllProductsList() -> [Product] {
-        return productsList
+    let backendless = Backendless.sharedInstance()
+    var productDataStore:IDataStore!
+    
+    static var product:Product = Product()
+    
+    var products:[Product] = []
+    init() {
+        productDataStore = backendless?.data.of(Product.self)
     }
     
-    subscript(index:Int) -> Product{
-        return productsList[index]
+    func saveAnouncements(product:Product)
+    {
+        var itemToSave = product
+        
+        productDataStore.save(itemToSave,response:{(result) -> Void in
+            itemToSave = result as! Product
+            self.products.append(itemToSave)
+            self.retrieveAllProducts()},
+                                   
+                                   error:{(exception) -> Void in
+                                    print(exception.debugDescription)
+                                    
+        })
+    }
+    
+    func retrieveAllProducts()
+    {
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setPageSize(100)
+        
+        productDataStore.find(queryBuilder, response: {(results) -> Void in
+            self.products = results as! [Product]
+            print(self.products.count)
+        },
+                                   error:{(exception) -> Void in
+                                    print(exception.debugDescription)
+        })
     }
     
 }

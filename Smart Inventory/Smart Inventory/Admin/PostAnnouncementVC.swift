@@ -14,6 +14,7 @@ class PostAnnouncementVC: UIViewController {
     @IBOutlet weak var productNameTF: UITextField!
     @IBOutlet weak var requiredTF: UITextField!
     @IBOutlet weak var descriptionTF: UITextView!
+    @IBOutlet weak var priceTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,8 +43,9 @@ class PostAnnouncementVC: UIViewController {
             if descriptionTF.text.isEmpty {
                 descriptionTF.text = "N/A"
             }
+            var product = Product(name: title, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!)
             
-            Announcements.announce.saveAnouncements(title: title, productName: productName, required: required, claimed: 0, unclaimed: required, desc: descriptionTF.text)
+            Announcements.announce.saveAnouncements(product: product, claimed: 0, unclaimed: required)
             self.displayAlert(msg: "Posted!!")
         } else {
             self.displayError(msg: "Enter All required fields")

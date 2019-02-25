@@ -11,29 +11,29 @@ import Foundation
 @objcMembers
 
 class Announcemnet: NSObject {
-    var title:String
-    var productName:String
-    var required:Int
+    //var title:String
+    var product:Product
+    //var required:Int
     var claimed:Int
     var unclaimed:Int
-    var desc: String
+    //var desc: String
     
     
     override var description: String {
-        return "Title: \(title), Product name: \(productName) Required amount: \(required), Claimed: \(claimed), Unclaimed: \(unclaimed)\n Description: \(desc)"
+        return "Product: \(product), Claimed: \(claimed), Unclaimed: \(unclaimed)"
     }
     
-    init(title:String,productName:String, required:Int, claimed:Int, unclaimed:Int,desc:String) {
-        self.title = title
-        self.productName = productName
-        self.required = required
+    init(product:Product,claimed:Int, unclaimed:Int) {
+        //self.title = title
+        self.product = product
+        //self.required = required
         self.claimed = claimed
         self.unclaimed = unclaimed
-        self.desc = desc
+        //self.desc = desc
     }
     
-    convenience override init() {
-        self.init(title: "title",productName: "new product", required: 100, claimed: 25, unclaimed: 75, desc:"Need more iphones")
+   convenience override init() {
+        self.init(product: Product(name: "new", productDescription: "test", quantity: 2, price: 23),claimed: 25, unclaimed: 75)
     }
 }
 
@@ -41,6 +41,7 @@ class Announcemnet: NSObject {
 class Announcements {
     let backendless = Backendless.sharedInstance()
     var announcementDataStore:IDataStore!
+    var productDataStore:IDataStore!
     
     static var announce:Announcements = Announcements()
     
@@ -49,9 +50,10 @@ class Announcements {
         announcementDataStore = backendless?.data.of(Announcemnet.self)
     }
     
-    func saveAnouncements(title:String, productName:String, required:Int, claimed:Int, unclaimed:Int,desc:String)
+    func saveAnouncements(product:Product, claimed:Int, unclaimed:Int)
     {
-        var itemToSave = Announcemnet(title:title, productName:productName, required:required, claimed:claimed, unclaimed:unclaimed, desc:desc)
+        AllProducts.allProducts.saveAnouncements(product: product)
+        var itemToSave = Announcemnet(product:product, claimed:claimed, unclaimed:unclaimed)
         
         announcementDataStore.save(itemToSave,response:{(result) -> Void in
             itemToSave = result as! Announcemnet
