@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "bde82efcd9376ade2c89562dc81815d3"
-build_time: [1551055690, 238390000]
+build_time: [1551107496, 816973000]
 inputs:
   "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/Admin/AdminAnnouncementTVC.swift": [1550455411, 0]
   "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/AnnouncementsTableViewController.swift": [1550276830, 0]
-  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/DashboardTableViewController.swift": [1551049369, 0]
-  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/Product.swift": [1551049369, 0]
+  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/DashboardTableViewController.swift": [1551107489, 0]
+  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/Product.swift": [1551107489, 0]
   "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/Admin/Announcement.swift": [1551053838, 0]
   "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/ChatTableViewController.swift": [1550276830, 0]
   "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Smart Inventory/User/ProfileTableViewController.swift": [1550276830, 0]

@@ -17,7 +17,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
 - !private "=="
-- "Array"
 - "AssignmentPrecedence"
 - "Backendless"
 - "Bool"
@@ -32,9 +31,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "Product"
 - !private "String"
-- "StringLiteralType"
-- !private "UIImage"
-- !private "UIImageView"
+- !private "StringLiteralType"
 - !private "UILabel"
 - "UIStoryboardSegue"
 - "UITableView"
@@ -59,8 +56,8 @@ depends-member:
 - !private ["So11BackendlessC", "data"]
 - ["So11BackendlessC", "sharedInstance"]
 - !private ["SK", "count"]
-- ["SK", "init"]
-- ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["SK", "name"]
 - !private ["SK", "price"]
 - !private ["SK", "productDescription"]
@@ -69,7 +66,6 @@ depends-member:
 - !private ["SK", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
-- !private ["So15CALayerDelegateP", "image"]
 - !private ["So15CALayerDelegateP", "indexPathForSelectedRow"]
 - !private ["So15CALayerDelegateP", "reloadData"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -78,7 +74,6 @@ depends-member:
 - ["s7CVarArgP", "DashboardTableViewController"]
 - !private ["s7CVarArgP", "Product"]
 - !private ["s7CVarArgP", "String"]
-- !private ["s7CVarArgP", "UIImage"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allProducts"]
@@ -88,11 +83,9 @@ depends-member:
 - !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "destination"]
 - !private ["s7CVarArgP", "identifier"]
-- !private ["s7CVarArgP", "image"]
-- !private ["s7CVarArgP", "images"]
 - !private ["s7CVarArgP", "indexPathForSelectedRow"]
 - ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "of"]
 - !private ["s7CVarArgP", "price"]
@@ -112,22 +105,21 @@ depends-member:
 - !private ["15Smart_Inventory27ClaimProductsViewControllerC", "product"]
 - !private ["15Smart_Inventory27ClaimProductsViewControllerC", "productIndex"]
 - !private ["Sl", "count"]
-- ["Sl", "init"]
-- ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
 - !private ["Sl", "name"]
 - !private ["Sl", "price"]
 - !private ["Sl", "productDescription"]
 - !private ["Sl", "quantity"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
-- ["SL", "init"]
-- ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["SL", "row"]
 - ["s28CustomDebugStringConvertibleP", "Backendless"]
 - ["s28CustomDebugStringConvertibleP", "DashboardTableViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "Product"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
-- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "allProducts"]
 - !private ["s28CustomDebugStringConvertibleP", "backendless"]
@@ -137,11 +129,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
 - !private ["s28CustomDebugStringConvertibleP", "find"]
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
-- !private ["s28CustomDebugStringConvertibleP", "image"]
-- !private ["s28CustomDebugStringConvertibleP", "images"]
 - !private ["s28CustomDebugStringConvertibleP", "indexPathForSelectedRow"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "of"]
 - !private ["s28CustomDebugStringConvertibleP", "price"]
@@ -160,14 +150,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWithTag"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "find"]
 - !private ["s17CustomReflectableP", "indexPathForSelectedRow"]
-- ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "name"]
 - !private ["s17CustomReflectableP", "of"]
 - !private ["s17CustomReflectableP", "price"]
@@ -180,7 +170,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "DashboardTableViewController"]
 - !private ["s23CustomStringConvertibleP", "Product"]
 - !private ["s23CustomStringConvertibleP", "String"]
-- !private ["s23CustomStringConvertibleP", "UIImage"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "allProducts"]
@@ -190,11 +179,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "destination"]
 - !private ["s23CustomStringConvertibleP", "identifier"]
-- !private ["s23CustomStringConvertibleP", "image"]
-- !private ["s23CustomStringConvertibleP", "images"]
 - !private ["s23CustomStringConvertibleP", "indexPathForSelectedRow"]
 - ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "of"]
 - !private ["s23CustomStringConvertibleP", "price"]
@@ -222,8 +209,6 @@ depends-member:
 - ["15Smart_Inventory28DashboardTableViewControllerC", "Int"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "Product"]
 - !private ["15Smart_Inventory28DashboardTableViewControllerC", "String"]
-- !private ["15Smart_Inventory28DashboardTableViewControllerC", "UIImage"]
-- !private ["15Smart_Inventory28DashboardTableViewControllerC", "UIImageView"]
 - !private ["15Smart_Inventory28DashboardTableViewControllerC", "UILabel"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "UIStoryboardSegue"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "UITableView"]
@@ -234,7 +219,6 @@ depends-member:
 - ["15Smart_Inventory28DashboardTableViewControllerC", "dashboardTVC"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "dataFetched"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "deinit"]
-- ["15Smart_Inventory28DashboardTableViewControllerC", "images"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "init"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "numberOfSections"]
 - ["15Smart_Inventory28DashboardTableViewControllerC", "onCancel"]
@@ -250,8 +234,8 @@ depends-member:
 - !private ["Se", "count"]
 - !private ["Se", "find"]
 - !private ["Se", "indexPathForSelectedRow"]
-- ["Se", "init"]
-- ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
 - !private ["Se", "name"]
 - !private ["Se", "of"]
 - !private ["Se", "price"]
@@ -264,8 +248,8 @@ depends-member:
 - !private ["SE", "count"]
 - !private ["SE", "find"]
 - !private ["SE", "indexPathForSelectedRow"]
-- ["SE", "init"]
-- ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
 - !private ["SE", "of"]
 - !private ["SE", "reloadData"]
 - !private ["SE", "row"]
@@ -274,7 +258,6 @@ depends-member:
 - ["SQ", "DashboardTableViewController"]
 - !private ["SQ", "Product"]
 - !private ["SQ", "String"]
-- !private ["SQ", "UIImage"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "allProducts"]
@@ -285,11 +268,9 @@ depends-member:
 - !private ["SQ", "destination"]
 - !private ["SQ", "find"]
 - !private ["SQ", "identifier"]
-- !private ["SQ", "image"]
-- !private ["SQ", "images"]
 - !private ["SQ", "indexPathForSelectedRow"]
 - ["SQ", "init"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - !private ["SQ", "name"]
 - !private ["SQ", "of"]
 - !private ["SQ", "price"]
@@ -315,21 +296,20 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "find"]
 - !private ["s23ExpressibleByNilLiteralP", "indexPathForSelectedRow"]
 - !private ["s23ExpressibleByNilLiteralP", "of"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["SH", "Backendless"]
 - ["SH", "DashboardTableViewController"]
 - !private ["SH", "Product"]
 - !private ["SH", "String"]
-- !private ["SH", "UIImage"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "allProducts"]
@@ -340,11 +320,9 @@ depends-member:
 - !private ["SH", "destination"]
 - !private ["SH", "find"]
 - !private ["SH", "identifier"]
-- !private ["SH", "image"]
-- !private ["SH", "images"]
 - !private ["SH", "indexPathForSelectedRow"]
 - ["SH", "init"]
-- ["SH", "init"]
+- !private ["SH", "init"]
 - !private ["SH", "name"]
 - !private ["SH", "of"]
 - !private ["SH", "price"]
@@ -365,10 +343,10 @@ depends-member:
 - !private ["So10IDataStoreP", "find"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "count"]
 - !private ["SM", "name"]
 - !private ["SM", "price"]
@@ -380,13 +358,10 @@ depends-member:
 - ["So8NSCodingP", "DashboardTableViewController"]
 - !private ["So8NSCodingP", "Product"]
 - !private ["So8NSCodingP", "String"]
-- !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "allProducts"]
 - !private ["So8NSCodingP", "backendless"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
-- !private ["So8NSCodingP", "image"]
-- !private ["So8NSCodingP", "images"]
 - !private ["So8NSCodingP", "indexPathForSelectedRow"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
@@ -403,11 +378,9 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "DashboardTableViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "Product"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
-- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "allProducts"]
 - !private ["So26NSExtensionRequestHandlingP", "backendless"]
-- !private ["So26NSExtensionRequestHandlingP", "images"]
 - ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
@@ -416,8 +389,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "productIndex"]
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - ["So8NSObjectC", "Backendless"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
@@ -428,8 +399,6 @@ depends-member:
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "Product"]
 - !private ["So8NSObjectC", "String"]
-- !private ["So8NSObjectC", "UIImage"]
-- !private ["So8NSObjectC", "UIImageView"]
 - !private ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
@@ -443,8 +412,6 @@ depends-member:
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "destination"]
 - !private ["So8NSObjectC", "identifier"]
-- !private ["So8NSObjectC", "image"]
-- ["So8NSObjectC", "images"]
 - !private ["So8NSObjectC", "indexPathForSelectedRow"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
@@ -472,7 +439,6 @@ depends-member:
 - ["So8NSObjectP", "DashboardTableViewController"]
 - !private ["So8NSObjectP", "Product"]
 - !private ["So8NSObjectP", "String"]
-- !private ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "allProducts"]
 - !private ["So8NSObjectP", "backendless"]
@@ -481,8 +447,6 @@ depends-member:
 - !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "find"]
 - !private ["So8NSObjectP", "identifier"]
-- !private ["So8NSObjectP", "image"]
-- !private ["So8NSObjectP", "images"]
 - !private ["So8NSObjectP", "indexPathForSelectedRow"]
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
@@ -501,7 +465,6 @@ depends-member:
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "viewWithTag"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["Sq", "find"]
 - !private ["Sq", "indexPathForSelectedRow"]
 - !private ["Sq", "of"]
@@ -519,8 +482,8 @@ depends-member:
 - !private ["Sk", "row"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "count"]
-- ["Sm", "init"]
-- ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
 - !private ["Sm", "name"]
 - !private ["Sm", "price"]
 - !private ["Sm", "productDescription"]
@@ -528,32 +491,28 @@ depends-member:
 - !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", "count"]
-- ["ST", "init"]
-- ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["ST", "name"]
 - !private ["ST", "price"]
 - !private ["ST", "productDescription"]
 - !private ["ST", "quantity"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
-- ["SS", "init"]
-- ["SS", "init"]
-- ["Sy", "init"]
-- ["Sy", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
-- !private ["So29UIAccessibilityIdentificationP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "indexPathForSelectedRow"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "viewWithTag"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
-- !private ["So12UIAppearanceP", "image"]
 - !private ["So12UIAppearanceP", "indexPathForSelectedRow"]
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "text"]
@@ -562,13 +521,10 @@ depends-member:
 - ["So21UIAppearanceContainerP", "DashboardTableViewController"]
 - !private ["So21UIAppearanceContainerP", "Product"]
 - !private ["So21UIAppearanceContainerP", "String"]
-- !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "allProducts"]
 - !private ["So21UIAppearanceContainerP", "backendless"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
-- !private ["So21UIAppearanceContainerP", "image"]
-- !private ["So21UIAppearanceContainerP", "images"]
 - !private ["So21UIAppearanceContainerP", "indexPathForSelectedRow"]
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -585,11 +541,9 @@ depends-member:
 - ["So18UIContentContainerP", "DashboardTableViewController"]
 - !private ["So18UIContentContainerP", "Product"]
 - !private ["So18UIContentContainerP", "String"]
-- !private ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "allProducts"]
 - !private ["So18UIContentContainerP", "backendless"]
-- !private ["So18UIContentContainerP", "images"]
 - ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "print"]
@@ -600,7 +554,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
-- !private ["So17UICoordinateSpaceP", "image"]
 - !private ["So17UICoordinateSpaceP", "indexPathForSelectedRow"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
 - !private ["So17UICoordinateSpaceP", "text"]
@@ -610,7 +563,6 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So23UIDataSourceTranslatingP", "viewWithTag"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
-- !private ["So13UIDynamicItemP", "image"]
 - !private ["So13UIDynamicItemP", "indexPathForSelectedRow"]
 - !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So13UIDynamicItemP", "text"]
@@ -619,13 +571,10 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "DashboardTableViewController"]
 - !private ["So18UIFocusEnvironmentP", "Product"]
 - !private ["So18UIFocusEnvironmentP", "String"]
-- !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "allProducts"]
 - !private ["So18UIFocusEnvironmentP", "backendless"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UIFocusEnvironmentP", "image"]
-- !private ["So18UIFocusEnvironmentP", "images"]
 - !private ["So18UIFocusEnvironmentP", "indexPathForSelectedRow"]
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -639,13 +588,11 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWithTag"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
-- !private ["So11UIFocusItemP", "image"]
 - !private ["So11UIFocusItemP", "indexPathForSelectedRow"]
 - !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "viewWithTag"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
-- !private ["So20UIFocusItemContainerP", "image"]
 - !private ["So20UIFocusItemContainerP", "indexPathForSelectedRow"]
 - !private ["So20UIFocusItemContainerP", "reloadData"]
 - !private ["So20UIFocusItemContainerP", "text"]
@@ -655,22 +602,16 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So30UIFocusItemScrollableContainerP", "text"]
 - !private ["So30UIFocusItemScrollableContainerP", "viewWithTag"]
-- !private ["So7UIImageC", "init"]
-- !private ["So11UIImageViewC", "image"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "text"]
 - ["So30UIPasteConfigurationSupportingP", "Backendless"]
 - ["So30UIPasteConfigurationSupportingP", "DashboardTableViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "Product"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "allProducts"]
 - !private ["So30UIPasteConfigurationSupportingP", "backendless"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
-- !private ["So30UIPasteConfigurationSupportingP", "image"]
-- !private ["So30UIPasteConfigurationSupportingP", "images"]
 - !private ["So30UIPasteConfigurationSupportingP", "indexPathForSelectedRow"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -693,8 +634,6 @@ depends-member:
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "Product"]
 - !private ["So11UIResponderC", "String"]
-- !private ["So11UIResponderC", "UIImage"]
-- !private ["So11UIResponderC", "UIImageView"]
 - !private ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
@@ -705,8 +644,6 @@ depends-member:
 - ["So11UIResponderC", "dashboardTVC"]
 - ["So11UIResponderC", "dataFetched"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
-- !private ["So11UIResponderC", "image"]
-- ["So11UIResponderC", "images"]
 - !private ["So11UIResponderC", "indexPathForSelectedRow"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
@@ -728,13 +665,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "DashboardTableViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "Product"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
-- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "allProducts"]
 - !private ["So30UIResponderStandardEditActionsP", "backendless"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
-- !private ["So30UIResponderStandardEditActionsP", "image"]
-- !private ["So30UIResponderStandardEditActionsP", "images"]
 - !private ["So30UIResponderStandardEditActionsP", "indexPathForSelectedRow"]
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -756,11 +690,9 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "DashboardTableViewController"]
 - !private ["So20UIScrollViewDelegateP", "Product"]
 - !private ["So20UIScrollViewDelegateP", "String"]
-- !private ["So20UIScrollViewDelegateP", "UIImage"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "allProducts"]
 - !private ["So20UIScrollViewDelegateP", "backendless"]
-- !private ["So20UIScrollViewDelegateP", "images"]
 - ["So20UIScrollViewDelegateP", "init"]
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So20UIScrollViewDelegateP", "print"]
@@ -775,11 +707,9 @@ depends-member:
 - ["So16UIStateRestoringP", "DashboardTableViewController"]
 - !private ["So16UIStateRestoringP", "Product"]
 - !private ["So16UIStateRestoringP", "String"]
-- !private ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "allProducts"]
 - !private ["So16UIStateRestoringP", "backendless"]
-- !private ["So16UIStateRestoringP", "images"]
 - ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "print"]
@@ -804,8 +734,6 @@ depends-member:
 - ["So21UITableViewControllerC", "Int"]
 - ["So21UITableViewControllerC", "Product"]
 - !private ["So21UITableViewControllerC", "String"]
-- !private ["So21UITableViewControllerC", "UIImage"]
-- !private ["So21UITableViewControllerC", "UIImageView"]
 - !private ["So21UITableViewControllerC", "UILabel"]
 - ["So21UITableViewControllerC", "UIStoryboardSegue"]
 - ["So21UITableViewControllerC", "UITableView"]
@@ -816,7 +744,6 @@ depends-member:
 - ["So21UITableViewControllerC", "backendless"]
 - ["So21UITableViewControllerC", "dashboardTVC"]
 - ["So21UITableViewControllerC", "dataFetched"]
-- ["So21UITableViewControllerC", "images"]
 - ["So21UITableViewControllerC", "init"]
 - !private ["So21UITableViewControllerC", "init"]
 - ["So21UITableViewControllerC", "numberOfSections"]
@@ -833,11 +760,9 @@ depends-member:
 - ["So21UITableViewDataSourceP", "DashboardTableViewController"]
 - !private ["So21UITableViewDataSourceP", "Product"]
 - !private ["So21UITableViewDataSourceP", "String"]
-- !private ["So21UITableViewDataSourceP", "UIImage"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "allProducts"]
 - !private ["So21UITableViewDataSourceP", "backendless"]
-- !private ["So21UITableViewDataSourceP", "images"]
 - ["So21UITableViewDataSourceP", "init"]
 - !private ["So21UITableViewDataSourceP", "init"]
 - !private ["So21UITableViewDataSourceP", "print"]
@@ -848,11 +773,9 @@ depends-member:
 - ["So19UITableViewDelegateP", "DashboardTableViewController"]
 - !private ["So19UITableViewDelegateP", "Product"]
 - !private ["So19UITableViewDelegateP", "String"]
-- !private ["So19UITableViewDelegateP", "UIImage"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "allProducts"]
 - !private ["So19UITableViewDelegateP", "backendless"]
-- !private ["So19UITableViewDelegateP", "images"]
 - ["So19UITableViewDelegateP", "init"]
 - !private ["So19UITableViewDelegateP", "init"]
 - !private ["So19UITableViewDelegateP", "print"]
@@ -869,13 +792,10 @@ depends-member:
 - ["So18UITraitEnvironmentP", "DashboardTableViewController"]
 - !private ["So18UITraitEnvironmentP", "Product"]
 - !private ["So18UITraitEnvironmentP", "String"]
-- !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "allProducts"]
 - !private ["So18UITraitEnvironmentP", "backendless"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UITraitEnvironmentP", "image"]
-- !private ["So18UITraitEnvironmentP", "images"]
 - !private ["So18UITraitEnvironmentP", "indexPathForSelectedRow"]
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -892,13 +812,10 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "DashboardTableViewController"]
 - !private ["So23UIUserActivityRestoringP", "Product"]
 - !private ["So23UIUserActivityRestoringP", "String"]
-- !private ["So23UIUserActivityRestoringP", "UIImage"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "allProducts"]
 - !private ["So23UIUserActivityRestoringP", "backendless"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
-- !private ["So23UIUserActivityRestoringP", "image"]
-- !private ["So23UIUserActivityRestoringP", "images"]
 - !private ["So23UIUserActivityRestoringP", "indexPathForSelectedRow"]
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -912,7 +829,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "viewWithTag"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
-- !private ["So6UIViewC", "image"]
 - !private ["So6UIViewC", "indexPathForSelectedRow"]
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "text"]
@@ -927,8 +843,6 @@ depends-member:
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "Product"]
 - !private ["So16UIViewControllerC", "String"]
-- !private ["So16UIViewControllerC", "UIImage"]
-- !private ["So16UIViewControllerC", "UIImageView"]
 - !private ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -938,7 +852,6 @@ depends-member:
 - ["So16UIViewControllerC", "backendless"]
 - ["So16UIViewControllerC", "dashboardTVC"]
 - ["So16UIViewControllerC", "dataFetched"]
-- ["So16UIViewControllerC", "images"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "numberOfSections"]
@@ -953,7 +866,6 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewWillAppear"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "indexPathForSelectedRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -965,24 +877,22 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "quantity"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Backendless"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DashboardTableViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Product"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allProducts"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backendless"]
@@ -990,8 +900,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "images"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForSelectedRow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -1014,65 +922,61 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "find"]
 - !private ["s21_ObjectiveCBridgeableP", "indexPathForSelectedRow"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "of"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadData"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
 - !private "s13ArrayProtocolP"
 - !private "s10ArraySliceV"
 - "So11BackendlessC"
-- "SK"
+- !private "SK"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "15Smart_Inventory27ClaimProductsViewControllerC"
-- "Sl"
-- "SL"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "15Smart_Inventory28DashboardTableViewControllerC"
-- "Se"
-- "SE"
+- !private "Se"
+- !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "So10IDataStoreP"
 - !private "10Foundation9IndexPathV"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - !private "SM"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So14NSSecureCodingP"
 - !private "Sq"
 - !private "So18PersistenceServiceC"
 - !private "15Smart_Inventory7ProductC"
 - !private "Sk"
-- "Sm"
+- !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
-- "ST"
-- "SS"
-- "Sy"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
-- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -1085,9 +989,6 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
-- !private "So7UIImageC"
-- !private "So11UIImageViewC"
-- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So10UIKeyInputP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
@@ -1115,16 +1016,15 @@ depends-nominal:
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s26_ExpressibleByImageLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -1230,4 +1130,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0ab8cb1f0d08f8e146c5397e644dd3bf"
+interface-hash: "2f662e38c6789154b2f318e322bf36a6"
