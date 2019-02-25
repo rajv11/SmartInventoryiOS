@@ -813,6 +813,7 @@ The application will manages the shipping labels, product details, orders and tr
                     <connections>
                         <segue destination="MP3-2d-eZK" kind="relationship" relationship="viewControllers" id="nSs-1K-Xgq"/>
                         <segue destination="Mhx-9H-1ON" kind="relationship" relationship="viewControllers" id="P3N-fa-urs"/>
+                        <segue destination="L0s-Zg-O88" kind="relationship" relationship="viewControllers" id="brF-2v-rtP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bue-8Z-XVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1430,6 +1431,8 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="P3N-fa-urs"/>
         <segue reference="Gtc-Cb-7gz"/>
+        <segue reference="brF-2v-rtP"/>
     </inferredMetricsTieBreakers>
 </document>
