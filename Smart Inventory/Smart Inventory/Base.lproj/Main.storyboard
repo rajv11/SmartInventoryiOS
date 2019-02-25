@@ -591,7 +591,7 @@ The application will manages the shipping labels, product details, orders and tr
         <!--Post Announcements-->
         <scene sceneID="lPp-XM-3G8">
             <objects>
-                <viewController id="igM-vn-kPI" userLabel="Post Announcements" sceneMemberID="viewController">
+                <viewController id="igM-vn-kPI" userLabel="Post Announcements" customClass="PostAnnouncementVC" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JdP-Pa-VQj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -609,8 +609,8 @@ The application will manages the shipping labels, product details, orders and tr
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tittle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-fv-bvz">
-                                <rect key="frame" x="16" y="118" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-fv-bvz">
+                                <rect key="frame" x="16" y="118" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -675,18 +675,25 @@ The application will manages the shipping labels, product details, orders and tr
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSr-kB-176"/>
-                                    <segue destination="Dq1-Fa-tX6" kind="unwind" unwindAction="onPostAnnouncementWithSegue:" id="Tdi-uS-VTu"/>
+                                    <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="7s6-Cy-HaM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35018915340000001" green="0.64662297290000004" blue="1" alpha="0.62466823630000001" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ZP8-dO-dUG"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTF" destination="pJ4-UF-ghi" id="NTw-m0-YHf"/>
+                        <outlet property="productNameTF" destination="3X3-vU-jY0" id="ccx-CH-DQK"/>
+                        <outlet property="requiredTF" destination="495-7c-g34" id="lIU-AX-hjH"/>
+                        <outlet property="titleTF" destination="hnI-MR-jml" id="9Hu-jp-fvb"/>
+                        <segue destination="Mhx-9H-1ON" kind="show" identifier="post" id="8QN-6U-eYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVM-O2-dXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Dq1-Fa-tX6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="29.600000000000001" y="-1801.4778325123154"/>
+            <point key="canvasLocation" x="-110" y="-1589"/>
         </scene>
         <!--Announcements-->
         <scene sceneID="zpJ-jx-HTI">
@@ -701,7 +708,6 @@ The application will manages the shipping labels, product details, orders and tr
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Announcements" id="81L-nt-GL3">
-                                    <barButtonItem key="leftBarButtonItem" systemItem="done" id="GoD-2m-SgZ"/>
                                     <barButtonItem key="rightBarButtonItem" systemItem="add" id="T1v-zs-pqb">
                                         <connections>
                                             <segue destination="igM-vn-kPI" kind="presentation" id="5is-R3-IjG"/>
@@ -746,6 +752,7 @@ The application will manages the shipping labels, product details, orders and tr
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Announcements" id="lwI-4b-eIP"/>
+                    <navigationItem key="navigationItem" id="yyF-Q3-Wqp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4A-Xk-zHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1425,4 +1432,8 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="chatbuubles" width="320" height="180"/>
         <image name="settings" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5is-R3-IjG"/>
+        <segue reference="8QN-6U-eYw"/>
+    </inferredMetricsTieBreakers>
 </document>

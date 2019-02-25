@@ -12,17 +12,20 @@ import Foundation
 
 class Announcemnet: NSObject {
     var title:String
+    var productName:String
     var required:Int
     var claimed:Int
     var unclaimed:Int
     var desc: String
     
+    
     override var description: String {
-        return "Title: \(title), Required amount: \(required), Claimed: \(claimed), Unclaimed: \(unclaimed)\n Description: \(desc)"
+        return "Title: \(title), Product name: \(productName) Required amount: \(required), Claimed: \(claimed), Unclaimed: \(unclaimed)\n Description: \(desc)"
     }
     
-    init(title:String, required:Int, claimed:Int, unclaimed:Int,desc:String) {
+    init(title:String,productName:String, required:Int, claimed:Int, unclaimed:Int,desc:String) {
         self.title = title
+        self.productName = productName
         self.required = required
         self.claimed = claimed
         self.unclaimed = unclaimed
@@ -30,7 +33,7 @@ class Announcemnet: NSObject {
     }
     
     convenience override init() {
-        self.init(title: "title", required: 100, claimed: 25, unclaimed: 75, desc:"Need more iphones")
+        self.init(title: "title",productName: "new product", required: 100, claimed: 25, unclaimed: 75, desc:"Need more iphones")
     }
 }
 
@@ -46,9 +49,9 @@ class Announcements {
         announcementDataStore = backendless?.data.of(Announcemnet.self)
     }
     
-    func saveAnouncements(title:String, required:Int, claimed:Int, unclaimed:Int,desc:String)
+    func saveAnouncements(title:String, productName:String, required:Int, claimed:Int, unclaimed:Int,desc:String)
     {
-        var itemToSave = Announcemnet(title:title, required:required, claimed:claimed, unclaimed:unclaimed, desc:desc)
+        var itemToSave = Announcemnet(title:title, productName:productName, required:required, claimed:claimed, unclaimed:unclaimed, desc:desc)
         
         announcementDataStore.save(itemToSave,response:{(result) -> Void in
             itemToSave = result as! Announcemnet
