@@ -579,7 +579,7 @@ The application will manages the shipping labels, product details, orders and tr
                     <view key="view" contentMode="scaleToFill" id="qty-w0-64l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O7b-Z5-wKZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" id="VSn-E0-fQQ"/>
@@ -751,7 +751,7 @@ The application will manages the shipping labels, product details, orders and tr
                             <outlet property="delegate" destination="Mhx-9H-1ON" id="v1F-2J-bjn"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Announcements" id="lwI-4b-eIP"/>
+                    <tabBarItem key="tabBarItem" title="Announcements" image="advertising" id="lwI-4b-eIP"/>
                     <navigationItem key="navigationItem" id="yyF-Q3-Wqp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4A-Xk-zHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -814,8 +814,8 @@ The application will manages the shipping labels, product details, orders and tr
                         <color key="barTintColor" red="0.13172811269760132" green="0.40353697538375854" blue="0.60476213693618774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="MP3-2d-eZK" kind="relationship" relationship="viewControllers" id="nSs-1K-Xgq"/>
                         <segue destination="Mhx-9H-1ON" kind="relationship" relationship="viewControllers" id="P3N-fa-urs"/>
+                        <segue destination="MP3-2d-eZK" kind="relationship" relationship="viewControllers" id="nSs-1K-Xgq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bue-8Z-XVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1433,7 +1433,6 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5is-R3-IjG"/>
-        <segue reference="8QN-6U-eYw"/>
+        <segue reference="P3N-fa-urs"/>
     </inferredMetricsTieBreakers>
 </document>
