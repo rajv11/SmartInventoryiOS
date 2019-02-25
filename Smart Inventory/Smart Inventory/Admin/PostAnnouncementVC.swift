@@ -10,7 +10,6 @@ import UIKit
 
 class PostAnnouncementVC: UIViewController {
 
-    @IBOutlet weak var titleTF: UITextField!
     @IBOutlet weak var productNameTF: UITextField!
     @IBOutlet weak var requiredTF: UITextField!
     @IBOutlet weak var descriptionTF: UITextView!
@@ -38,12 +37,12 @@ class PostAnnouncementVC: UIViewController {
     }
 
     @IBAction func postAnnouncementBtn(_ sender: Any) {
-        if let title = titleTF.text, let productName = productNameTF.text, let required = Int(requiredTF.text!)
+        if let productName = productNameTF.text, let required = Int(requiredTF.text!)
         {
             if descriptionTF.text.isEmpty {
                 descriptionTF.text = "N/A"
             }
-            var product = Product(name: title, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!)
+            var product = Product(name: productName, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!)
             
             Announcements.announce.saveAnouncements(product: product, claimed: 0, unclaimed: required)
             self.displayAlert(msg: "Posted!!")
