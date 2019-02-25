@@ -18,22 +18,8 @@ class DashboardTableViewController: UITableViewController {
     var allProducts:[Product] = []
     
     let backendless = Backendless.sharedInstance()!
-    var  productDataStore:IDataStore!
+    var productDataStore:IDataStore!
     
-    var images = ["iphone8"]
-    
-    // Function to read data from the JSON file
-//    func retrieveDataFromJSON(){
-//        let mainBundle = Bundle.main
-//        let aPath = mainBundle.path(forResource: "productDetails", ofType: "txt")
-//        let content = try? Data(contentsOf: URL(fileURLWithPath: aPath!))
-//        let decoder = JSONDecoder()
-//        self.allProducts = try! decoder.decode([Product].self, from: content!)
-//        AllProducts.allProducts.setProductsList(productsList:self.allProducts )
-//        //        catch{
-//        ////            print(errors)
-//        //        }
-//    }
     
     @objc func dataFetched() {
         tableView.reloadData()
@@ -41,8 +27,6 @@ class DashboardTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //retrieveDataFromJSON()
-        
         productDataStore =  backendless.data.of(Product.self)
         allProducts = self.productDataStore.find() as! [Product]
         
@@ -77,12 +61,9 @@ class DashboardTableViewController: UITableViewController {
 
         let title = tableView.viewWithTag(100) as! UILabel!
         let desc = tableView.viewWithTag(200) as! UITextView!
-        let image = tableView.viewWithTag(300) as! UIImageView!
         let quantity = tableView.viewWithTag(400) as! UILabel!
         let price = tableView.viewWithTag(500) as! UILabel!
 
-        
-        image?.image = UIImage(named: images[0])
         title?.text = allProducts[indexPath.row].name
         desc?.text = allProducts[indexPath.row].productDescription
         quantity?.text = "Quantity:"+String(allProducts[indexPath.row].quantity)

@@ -16,7 +16,6 @@ class Product: NSObject, Decodable {
 
     var name:String
     var productDescription:String
-    //var imageURL:String
     var quantity:Int
     var price:Double
     
@@ -26,16 +25,15 @@ class Product: NSObject, Decodable {
         
     }
     
-    init(name:String, productDescription:String, imageURL:String, quantity:Int, price:Double){
+    init(name:String, productDescription:String, quantity:Int, price:Double){
         self.name  =  name
         self.productDescription = productDescription
-        //self.imageURL = imageURL
         self.quantity = quantity
         self.price = price
     }
     
     convenience override init(){
-        self.init(name:"", productDescription:"", imageURL:"", quantity:0, price:0.0)
+        self.init(name:"", productDescription:"", quantity:0, price:0.0)
         
     }
 }
