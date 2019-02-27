@@ -8,18 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 - "descriptionTF"
 - "postAnnouncementBtn"
+- "priceTF"
 - "productNameTF"
 - "requiredTF"
-- "titleTF"
 - "viewDidLoad"
 depends-top-level:
 - !private "Announcements"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
+- !private "Double"
 - !private "FloatLiteralType"
 - !private "Int"
 - !private "IntegerLiteralType"
 - "PostAnnouncementVC"
+- !private "Product"
 - "String"
 - !private "StringLiteralType"
 - !private "UIAlertAction"
@@ -33,11 +35,14 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "init"]
 - !private ["SK", "isEmpty"]
+- !private ["SB", "init"]
 - !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "Announcements"]
+- !private ["s7CVarArgP", "Double"]
 - !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "Product"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - ["s7CVarArgP", ""]
@@ -51,10 +56,10 @@ depends-member:
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "priceTF"]
 - !private ["s7CVarArgP", "productNameTF"]
 - !private ["s7CVarArgP", "requiredTF"]
 - !private ["s7CVarArgP", "text"]
-- !private ["s7CVarArgP", "titleTF"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
@@ -63,7 +68,9 @@ depends-member:
 - !private ["SL", "init"]
 - !private ["SL", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "Announcements"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "Product"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -76,10 +83,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "priceTF"]
 - !private ["s28CustomDebugStringConvertibleP", "productNameTF"]
 - !private ["s28CustomDebugStringConvertibleP", "requiredTF"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
-- !private ["s28CustomDebugStringConvertibleP", "titleTF"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -91,7 +98,9 @@ depends-member:
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Announcements"]
+- !private ["s23CustomStringConvertibleP", "Double"]
 - !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "Product"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - ["s23CustomStringConvertibleP", ""]
@@ -105,23 +114,26 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "priceTF"]
 - !private ["s23CustomStringConvertibleP", "productNameTF"]
 - !private ["s23CustomStringConvertibleP", "requiredTF"]
 - !private ["s23CustomStringConvertibleP", "text"]
-- !private ["s23CustomStringConvertibleP", "titleTF"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "text"]
+- !private ["Sd", "init"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
 - !private ["SE", "isEmpty"]
 - !private ["SE", "text"]
 - !private ["SQ", "Announcements"]
+- !private ["SQ", "Double"]
 - !private ["SQ", "Int"]
+- !private ["SQ", "Product"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - ["SQ", ""]
@@ -137,15 +149,16 @@ depends-member:
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "performSegue"]
 - !private ["SQ", "present"]
+- !private ["SQ", "priceTF"]
 - !private ["SQ", "productNameTF"]
 - !private ["SQ", "requiredTF"]
 - !private ["SQ", "text"]
-- !private ["SQ", "titleTF"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "isEmpty"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
@@ -156,8 +169,11 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
 - !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "init"]
 - !private ["SH", "Announcements"]
+- !private ["SH", "Double"]
 - !private ["SH", "Int"]
+- !private ["SH", "Product"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - ["SH", ""]
@@ -173,10 +189,10 @@ depends-member:
 - !private ["SH", "isEmpty"]
 - !private ["SH", "performSegue"]
 - !private ["SH", "present"]
+- !private ["SH", "priceTF"]
 - !private ["SH", "productNameTF"]
 - !private ["SH", "requiredTF"]
 - !private ["SH", "text"]
-- !private ["SH", "titleTF"]
 - !private ["SH", "viewDidLoad"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -187,7 +203,9 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "isEmpty"]
 - !private ["So8NSCodingP", "Announcements"]
+- !private ["So8NSCodingP", "Double"]
 - !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "Product"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - ["So8NSCodingP", ""]
@@ -200,15 +218,17 @@ depends-member:
 - !private ["So8NSCodingP", "isEmpty"]
 - !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "priceTF"]
 - !private ["So8NSCodingP", "productNameTF"]
 - !private ["So8NSCodingP", "requiredTF"]
 - !private ["So8NSCodingP", "text"]
-- !private ["So8NSCodingP", "titleTF"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So26NSExtensionRequestHandlingP", "Announcements"]
+- !private ["So26NSExtensionRequestHandlingP", "Double"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
+- !private ["So26NSExtensionRequestHandlingP", "Product"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -220,15 +240,17 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "priceTF"]
 - !private ["So26NSExtensionRequestHandlingP", "productNameTF"]
 - !private ["So26NSExtensionRequestHandlingP", "requiredTF"]
-- !private ["So26NSExtensionRequestHandlingP", "titleTF"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So21NSItemProviderReadingP", "isEmpty"]
 - !private ["So21NSItemProviderWritingP", "isEmpty"]
 - !private ["So16NSMutableCopyingP", "isEmpty"]
 - !private ["So8NSObjectC", "Announcements"]
+- !private ["So8NSObjectC", "Double"]
 - !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "Product"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
@@ -244,13 +266,15 @@ depends-member:
 - !private ["So8NSObjectC", "performSegue"]
 - ["So8NSObjectC", "postAnnouncementBtn"]
 - !private ["So8NSObjectC", "present"]
+- ["So8NSObjectC", "priceTF"]
 - ["So8NSObjectC", "productNameTF"]
 - ["So8NSObjectC", "requiredTF"]
 - !private ["So8NSObjectC", "text"]
-- ["So8NSObjectC", "titleTF"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "Announcements"]
+- !private ["So8NSObjectP", "Double"]
 - !private ["So8NSObjectP", "Int"]
+- !private ["So8NSObjectP", "Product"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - ["So8NSObjectP", ""]
@@ -263,10 +287,10 @@ depends-member:
 - !private ["So8NSObjectP", "isEmpty"]
 - !private ["So8NSObjectP", "performSegue"]
 - !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "priceTF"]
 - !private ["So8NSObjectP", "productNameTF"]
 - !private ["So8NSObjectP", "requiredTF"]
 - !private ["So8NSObjectP", "text"]
-- !private ["So8NSObjectP", "titleTF"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
 - !private ["So8NSStringC", "isEmpty"]
@@ -274,7 +298,9 @@ depends-member:
 - !private ["Sq", "isEmpty"]
 - !private ["Sq", "text"]
 - !private ["15Smart_Inventory18PostAnnouncementVCC", "Announcements"]
+- !private ["15Smart_Inventory18PostAnnouncementVCC", "Double"]
 - !private ["15Smart_Inventory18PostAnnouncementVCC", "Int"]
+- !private ["15Smart_Inventory18PostAnnouncementVCC", "Product"]
 - ["15Smart_Inventory18PostAnnouncementVCC", "String"]
 - !private ["15Smart_Inventory18PostAnnouncementVCC", "UIAlertAction"]
 - !private ["15Smart_Inventory18PostAnnouncementVCC", "UIAlertController"]
@@ -287,10 +313,12 @@ depends-member:
 - !private ["15Smart_Inventory18PostAnnouncementVCC", "performSegue"]
 - ["15Smart_Inventory18PostAnnouncementVCC", "postAnnouncementBtn"]
 - !private ["15Smart_Inventory18PostAnnouncementVCC", "present"]
+- ["15Smart_Inventory18PostAnnouncementVCC", "priceTF"]
 - ["15Smart_Inventory18PostAnnouncementVCC", "productNameTF"]
 - ["15Smart_Inventory18PostAnnouncementVCC", "requiredTF"]
-- ["15Smart_Inventory18PostAnnouncementVCC", "titleTF"]
 - ["15Smart_Inventory18PostAnnouncementVCC", "viewDidLoad"]
+- !private ["15Smart_Inventory7ProductC", "deinit"]
+- !private ["15Smart_Inventory7ProductC", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "isEmpty"]
@@ -322,7 +350,9 @@ depends-member:
 - !private ["So17UIAlertControllerC", "init"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Announcements"]
+- !private ["So21UIAppearanceContainerP", "Double"]
 - !private ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "Product"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - ["So21UIAppearanceContainerP", ""]
@@ -334,13 +364,15 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "priceTF"]
 - !private ["So21UIAppearanceContainerP", "productNameTF"]
 - !private ["So21UIAppearanceContainerP", "requiredTF"]
 - !private ["So21UIAppearanceContainerP", "text"]
-- !private ["So21UIAppearanceContainerP", "titleTF"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "Announcements"]
+- !private ["So18UIContentContainerP", "Double"]
 - !private ["So18UIContentContainerP", "Int"]
+- !private ["So18UIContentContainerP", "Product"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - ["So18UIContentContainerP", ""]
@@ -352,16 +384,18 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "performSegue"]
 - !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "priceTF"]
 - !private ["So18UIContentContainerP", "productNameTF"]
 - !private ["So18UIContentContainerP", "requiredTF"]
-- !private ["So18UIContentContainerP", "titleTF"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "text"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Announcements"]
+- !private ["So18UIFocusEnvironmentP", "Double"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "Product"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -373,17 +407,19 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "priceTF"]
 - !private ["So18UIFocusEnvironmentP", "productNameTF"]
 - !private ["So18UIFocusEnvironmentP", "requiredTF"]
 - !private ["So18UIFocusEnvironmentP", "text"]
-- !private ["So18UIFocusEnvironmentP", "titleTF"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So30UIFocusItemScrollableContainerP", "text"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "Announcements"]
+- !private ["So30UIPasteConfigurationSupportingP", "Double"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "Product"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -395,13 +431,15 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "priceTF"]
 - !private ["So30UIPasteConfigurationSupportingP", "productNameTF"]
 - !private ["So30UIPasteConfigurationSupportingP", "requiredTF"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
-- !private ["So30UIPasteConfigurationSupportingP", "titleTF"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So11UIResponderC", "Announcements"]
+- !private ["So11UIResponderC", "Double"]
 - !private ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "Product"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
@@ -416,13 +454,15 @@ depends-member:
 - !private ["So11UIResponderC", "performSegue"]
 - ["So11UIResponderC", "postAnnouncementBtn"]
 - !private ["So11UIResponderC", "present"]
+- ["So11UIResponderC", "priceTF"]
 - ["So11UIResponderC", "productNameTF"]
 - ["So11UIResponderC", "requiredTF"]
 - !private ["So11UIResponderC", "text"]
-- ["So11UIResponderC", "titleTF"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Announcements"]
+- !private ["So30UIResponderStandardEditActionsP", "Double"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "Product"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -434,16 +474,18 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "priceTF"]
 - !private ["So30UIResponderStandardEditActionsP", "productNameTF"]
 - !private ["So30UIResponderStandardEditActionsP", "requiredTF"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
-- !private ["So30UIResponderStandardEditActionsP", "titleTF"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So12UIScrollViewC", "text"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So16UIStateRestoringP", "Announcements"]
+- !private ["So16UIStateRestoringP", "Double"]
 - !private ["So16UIStateRestoringP", "Int"]
+- !private ["So16UIStateRestoringP", "Product"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - ["So16UIStateRestoringP", ""]
@@ -455,9 +497,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "performSegue"]
 - !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "priceTF"]
 - !private ["So16UIStateRestoringP", "productNameTF"]
 - !private ["So16UIStateRestoringP", "requiredTF"]
-- !private ["So16UIStateRestoringP", "titleTF"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So15UITextDraggableP", "text"]
 - !private ["So15UITextDroppableP", "text"]
@@ -467,7 +509,9 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So10UITextViewC", "text"]
 - !private ["So18UITraitEnvironmentP", "Announcements"]
+- !private ["So18UITraitEnvironmentP", "Double"]
 - !private ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "Product"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - ["So18UITraitEnvironmentP", ""]
@@ -479,13 +523,15 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "priceTF"]
 - !private ["So18UITraitEnvironmentP", "productNameTF"]
 - !private ["So18UITraitEnvironmentP", "requiredTF"]
 - !private ["So18UITraitEnvironmentP", "text"]
-- !private ["So18UITraitEnvironmentP", "titleTF"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "Announcements"]
+- !private ["So23UIUserActivityRestoringP", "Double"]
 - !private ["So23UIUserActivityRestoringP", "Int"]
+- !private ["So23UIUserActivityRestoringP", "Product"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -497,14 +543,16 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "performSegue"]
 - !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "priceTF"]
 - !private ["So23UIUserActivityRestoringP", "productNameTF"]
 - !private ["So23UIUserActivityRestoringP", "requiredTF"]
 - !private ["So23UIUserActivityRestoringP", "text"]
-- !private ["So23UIUserActivityRestoringP", "titleTF"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "Announcements"]
+- !private ["So16UIViewControllerC", "Double"]
 - !private ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "Product"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
@@ -520,16 +568,19 @@ depends-member:
 - !private ["So16UIViewControllerC", "performSegue"]
 - ["So16UIViewControllerC", "postAnnouncementBtn"]
 - !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "priceTF"]
 - ["So16UIViewControllerC", "productNameTF"]
 - ["So16UIViewControllerC", "requiredTF"]
-- ["So16UIViewControllerC", "titleTF"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -546,7 +597,9 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Announcements"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Product"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -559,10 +612,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "priceTF"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "productNameTF"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requiredTF"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTF"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -575,6 +628,7 @@ depends-member:
 depends-nominal:
 - !private "15Smart_Inventory13AnnouncementsC"
 - !private "SK"
+- !private "SB"
 - !private "Sz"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
@@ -586,15 +640,18 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "Sd"
 - !private "SE"
 - "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
+- !private "SF"
 - "SH"
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
@@ -612,6 +669,7 @@ depends-nominal:
 - !private "Sj"
 - !private "Sq"
 - "15Smart_Inventory18PostAnnouncementVCC"
+- !private "15Smart_Inventory7ProductC"
 - !private "Sm"
 - !private "SY"
 - !private "ST"
@@ -657,9 +715,12 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -774,4 +835,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f077f96e91307c20b3f938b88a74e671"
+interface-hash: "75d8e5328e74521d3967b4cfa723570c"

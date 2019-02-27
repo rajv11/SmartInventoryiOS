@@ -17,7 +17,7 @@ class Announcemnet: NSObject {
     var claimed:Int
     var unclaimed:Int
     //var desc: String
-    
+    var objectId:String?
     
     override var description: String {
         return "Product: \(product), Claimed: \(claimed), Unclaimed: \(unclaimed)"
@@ -39,6 +39,8 @@ class Announcemnet: NSObject {
 
 @objcMembers
 class Announcements {
+    
+    var objectId:String?
     let backendless = Backendless.sharedInstance()
     var announcementDataStore:IDataStore!
     var productDataStore:IDataStore!
@@ -58,7 +60,14 @@ class Announcements {
         announcementDataStore.save(itemToSave,response:{(result) -> Void in
             itemToSave = result as! Announcemnet
             self.announcements.append(itemToSave)
-            self.retrieveAllAnnouncements() },
+            self.retrieveAllAnnouncements()
+            AllProducts.allProducts.retrieveAllProducts()
+            
+            let dataStore = Backendless.sharedInstance().data.of(Product().ofClass())
+            let prod = dataStore?.findLast() as! Product
+            self.setRelationship(parentID: itemToSave.objectId!, childID: prod.objectId!)
+
+        },
                                    
                                    error:{(exception) -> Void in
                                     print(exception.debugDescription)
@@ -79,4 +88,20 @@ class Announcements {
         })
     }
     
+    
+    func setRelationship(parentID:String, childID:String) {
+        let dataStore = Backendless.sharedInstance().data.of(Announcemnet().ofClass())
+        dataStore?.setRelation("product",
+                               parentObjectId: parentID,
+                               childObjects: [childID],
+                               response: {
+                                (result : NSNumber?) -> () in
+                                print ("Relation has been saved: \(String(describing: result))")
+        },
+                               error: {
+                                (fault : Fault?) -> () in
+                                print("Server reported an error: \(String(describing: fault))")
+        })
+    }
+
 }

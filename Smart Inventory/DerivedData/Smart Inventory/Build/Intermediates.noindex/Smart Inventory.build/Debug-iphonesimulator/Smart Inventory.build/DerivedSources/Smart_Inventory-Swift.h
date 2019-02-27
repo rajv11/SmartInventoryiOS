@@ -217,17 +217,16 @@ SWIFT_CLASS("_TtC15Smart_Inventory32AnnouncementsTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Product;
 
 SWIFT_CLASS("_TtC15Smart_Inventory12Announcemnet")
 @interface Announcemnet : NSObject
-@property (nonatomic, copy) NSString * _Nonnull title;
-@property (nonatomic, copy) NSString * _Nonnull productName;
-@property (nonatomic) NSInteger required;
+@property (nonatomic, strong) Product * _Nonnull product;
 @property (nonatomic) NSInteger claimed;
 @property (nonatomic) NSInteger unclaimed;
-@property (nonatomic, copy) NSString * _Nonnull desc;
+@property (nonatomic, copy) NSString * _Nullable objectId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title productName:(NSString * _Nonnull)productName required:(NSInteger)required claimed:(NSInteger)claimed unclaimed:(NSInteger)unclaimed desc:(NSString * _Nonnull)desc OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithProduct:(Product * _Nonnull)product claimed:(NSInteger)claimed unclaimed:(NSInteger)unclaimed OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
 @end
 
@@ -348,10 +347,10 @@ SWIFT_CLASS("_TtC15Smart_Inventory25OrdersTableViewController")
 
 SWIFT_CLASS("_TtC15Smart_Inventory18PostAnnouncementVC")
 @interface PostAnnouncementVC : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTF;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified productNameTF;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified requiredTF;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTF;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified priceTF;
 - (void)viewDidLoad;
 - (IBAction)postAnnouncementBtn:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -368,6 +367,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Product * _Nonnull pro
 @property (nonatomic, copy) NSString * _Nonnull productDescription;
 @property (nonatomic) NSInteger quantity;
 @property (nonatomic) double price;
+@property (nonatomic, copy) NSString * _Nullable objectId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name productDescription:(NSString * _Nonnull)productDescription quantity:(NSInteger)quantity price:(double)price OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;

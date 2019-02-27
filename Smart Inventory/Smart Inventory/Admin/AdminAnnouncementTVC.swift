@@ -58,9 +58,10 @@ class AdminAnnouncementTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "admin_announce", for: indexPath)
-
         let data = announcmentData.announcements[indexPath.row]
+        //print(data.objectId!)
         cell.textLabel?.text = data.product.name
+        
 
         return cell
     }

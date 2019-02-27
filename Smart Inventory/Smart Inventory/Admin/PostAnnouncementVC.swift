@@ -42,9 +42,10 @@ class PostAnnouncementVC: UIViewController {
             if descriptionTF.text.isEmpty {
                 descriptionTF.text = "N/A"
             }
-            var product = Product(name: productName, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!)
+            let product = Product(name: productName, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!)
             
             Announcements.announce.saveAnouncements(product: product, claimed: 0, unclaimed: required)
+            
             self.displayAlert(msg: "Posted!!")
         } else {
             self.displayError(msg: "Enter All required fields")
@@ -52,8 +53,7 @@ class PostAnnouncementVC: UIViewController {
         
         
     }
-    
-    /*
+        /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -18,7 +18,7 @@ class Product: NSObject, Decodable {
     var productDescription:String
     var quantity:Int
     var price:Double
-    
+    var objectId:String?
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
         return "Name:  \(name  ??  ""),  Description:  \(productDescription)"
