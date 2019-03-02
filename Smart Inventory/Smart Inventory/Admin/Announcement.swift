@@ -54,7 +54,7 @@ class Announcements {
     
     func saveAnouncements(product:Product, claimed:Int, unclaimed:Int)
     {
-        AllProducts.allProducts.saveAnouncements(product: product)
+        AllProducts.allProducts.saveProducts(product: product)
         var itemToSave = Announcemnet(product:product, claimed:claimed, unclaimed:unclaimed)
         
         announcementDataStore.save(itemToSave,response:{(result) -> Void in

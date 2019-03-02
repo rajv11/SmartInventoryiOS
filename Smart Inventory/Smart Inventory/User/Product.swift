@@ -68,7 +68,7 @@ class AllProducts {
         productDataStore = backendless?.data.of(Product.self)
     }
     
-    func saveAnouncements(product:Product)
+    func saveProducts(product:Product)
     {
         var itemToSave = product
         
