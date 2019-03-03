@@ -11,7 +11,6 @@ import UIKit
 class DashboardTableViewController: UITableViewController {
     
     @IBAction func onCancel(segue:UIStoryboardSegue){}
-    @IBAction func onClaim(segue:UIStoryboardSegue){}
     
     static var dashboardTVC:DashboardTableViewController = DashboardTableViewController()
     var product:Product!

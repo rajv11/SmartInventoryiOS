@@ -314,13 +314,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Quantity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJp-Gw-u6R">
-                                <rect key="frame" x="82" y="436" width="173" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPB-PR-pha">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -329,11 +322,6 @@
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="P5w-5E-aj3">
                                             <connections>
                                                 <segue destination="SJs-aZ-9PH" kind="unwind" unwindAction="onCancelWithSegue:" id="s1Z-u8-yHP"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Claim" id="9e2-ln-c77">
-                                            <connections>
-                                                <segue destination="SJs-aZ-9PH" kind="unwind" identifier="claim" unwindAction="onClaimWithSegue:" id="hLs-kP-2DD"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -354,6 +342,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIu-eM-hTp">
+                                <rect key="frame" x="16" y="565" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Claim">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUd-kf-viN"/>
+                                    <action selector="onClaim:" destination="5l6-vk-3FI" eventType="touchUpInside" id="3sz-7M-Aqx"/>
+                                    <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="1FH-xC-JWH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Quantity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJp-Gw-u6R">
+                                <rect key="frame" x="101" y="436" width="173" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.35018915340000001" green="0.64662297290000004" blue="1" alpha="0.62466823630000001" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="FQT-a8-AcM"/>
@@ -365,6 +374,7 @@
                         <outlet property="priceLbl" destination="5So-9a-Qh4" id="p9C-xD-y3m"/>
                         <outlet property="requiredLbl" destination="qdl-uA-Oog" id="5yc-r8-F4R"/>
                         <outlet property="titleLbl" destination="Mgy-Mo-z4g" id="9EE-of-4ma"/>
+                        <segue destination="1MI-f5-RD4" kind="show" identifier="claim" id="XiW-vL-sk8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZo-6J-Bg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1440,5 +1450,6 @@ The application will manages the shipping labels, product details, orders and tr
     <inferredMetricsTieBreakers>
         <segue reference="Gtc-Cb-7gz"/>
         <segue reference="brF-2v-rtP"/>
+        <segue reference="XiW-vL-sk8"/>
     </inferredMetricsTieBreakers>
 </document>

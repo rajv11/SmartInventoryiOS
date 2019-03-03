@@ -30,6 +30,20 @@ class ClaimProductsViewController: UIViewController {
         priceLbl.text = String(announcement.product.price)
     }
     
+    func displayAlert(msg: String){
+        let  alert  =  UIAlertController(title:  "Claim",  message: msg,  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
+            self.performSegue(withIdentifier: "claim", sender: nil)
+        }))
+        self.present(alert,  animated:  true,  completion:  nil)    }
+
+    
+    func displayError(msg: String){
+        let alert = UIAlertController(title: "Failed", message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -41,18 +55,19 @@ class ClaimProductsViewController: UIViewController {
     }
     */
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "claim" {
-            var claimQty = Int(self.claimCount.text!)
-            announcement.claimed = claimQty!
-            announcement.unclaimed = announcement.unclaimed - claimQty!
-            Announcements.announce.updateAnnouncement(announcement: announcement)
-            //AllProducts.allProducts[productIndex].quantity = AllProducts.allProducts[productIndex].quantity - Int(claimCount.text!)! ?? 0
-        } else {
-            
+    @IBAction func onClaim(_ sender: Any) {
+            let claimQty = Int(self.claimCount.text!)
+            if (claimQty! > announcement.unclaimed){
+                self.displayError(msg: "Can not claim more than \(announcement.unclaimed) products")
+            }
+            else{
+                announcement.claimed = announcement.claimed + claimQty!
+                announcement.unclaimed = announcement.product.quantity - announcement.claimed
+                Announcements.announce.updateAnnouncement(announcement: announcement)
+                self.displayAlert(msg: "You have claimed \(claimQty!) products")
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+       
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
