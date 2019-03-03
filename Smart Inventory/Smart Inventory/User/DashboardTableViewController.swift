@@ -15,10 +15,10 @@ class DashboardTableViewController: UITableViewController {
     
     static var dashboardTVC:DashboardTableViewController = DashboardTableViewController()
     var product:Product!
-    var allProducts:[Product] = []
+    var allAnnouncements:[Announcemnet] = []
     
     let backendless = Backendless.sharedInstance()!
-    var productDataStore:IDataStore!
+    var announcementDataStore:IDataStore!
     
     
     @objc func dataFetched() {
@@ -27,8 +27,8 @@ class DashboardTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        productDataStore =  backendless.data.of(Product.self)
-        allProducts = self.productDataStore.find() as! [Product]
+        announcementDataStore =  backendless.data.of(Announcemnet.self)
+        allAnnouncements = self.announcementDataStore.find() as! [Announcemnet]
         
         //tableView.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
@@ -52,7 +52,7 @@ class DashboardTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return allProducts.count
+        return allAnnouncements.count
     }
 
     
@@ -61,14 +61,16 @@ class DashboardTableViewController: UITableViewController {
 
         let title = tableView.viewWithTag(100) as! UILabel!
         let desc = tableView.viewWithTag(200) as! UITextView!
-        let quantity = tableView.viewWithTag(400) as! UILabel!
+        let required = tableView.viewWithTag(400) as! UILabel!
         let price = tableView.viewWithTag(500) as! UILabel!
-
-        title?.text = allProducts[indexPath.row].name
-        desc?.text = allProducts[indexPath.row].productDescription
-        quantity?.text = "Quantity:"+String(allProducts[indexPath.row].quantity)
-        price?.text = "$"+String(allProducts[indexPath.row].price)
+        let claimed = tableView.viewWithTag(600) as! UILabel!
         
+        var currentAnnouncement = allAnnouncements[indexPath.row]
+        title?.text = currentAnnouncement.product.name
+        desc?.text = currentAnnouncement.product.productDescription
+        required?.text = "Required:"+String(currentAnnouncement.unclaimed)
+        price?.text = "$"+String(currentAnnouncement.product.price)
+        claimed?.text = "Claimed:"+String(currentAnnouncement.claimed)
         
         
         // Configure the cell...
@@ -129,8 +131,7 @@ class DashboardTableViewController: UITableViewController {
         if segue.identifier == "claim_product" {
             let claimProductVC = segue.destination as! ClaimProductsViewController
             print(tableView.indexPathForSelectedRow!.row)
-            claimProductVC.product = self.allProducts[tableView.indexPathForSelectedRow!.row]
-            claimProductVC.productIndex = tableView.indexPathForSelectedRow!.row
+            claimProductVC.announcement = self.allAnnouncements[tableView.indexPathForSelectedRow!.row]
         } else {
             
         }

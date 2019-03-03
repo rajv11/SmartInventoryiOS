@@ -12,12 +12,11 @@ class ClaimProductsViewController: UIViewController {
 
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descLbl: UITextView!
-    @IBOutlet weak var quantityLbl: UILabel!
+    @IBOutlet weak var requiredLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
     
     @IBOutlet weak var claimCount: UITextField!
-    var product:Product!
-    var productIndex:Int!
+    var announcement:Announcemnet!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,10 +24,10 @@ class ClaimProductsViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         
-        titleLbl.text = String(product.name)
-        descLbl.text = String(product.productDescription)
-        quantityLbl.text = String(product.quantity)
-        priceLbl.text = String(product.price)
+        titleLbl.text = String(announcement.product.name)
+        descLbl.text = String(announcement.product.productDescription)
+        requiredLbl.text = String(announcement.unclaimed)
+        priceLbl.text = String(announcement.product.price)
     }
     
 
@@ -44,6 +43,10 @@ class ClaimProductsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "claim" {
+            var claimQty = Int(self.claimCount.text!)
+            announcement.claimed = claimQty!
+            announcement.unclaimed = announcement.unclaimed - claimQty!
+            Announcements.announce.updateAnnouncement(announcement: announcement)
             //AllProducts.allProducts[productIndex].quantity = AllProducts.allProducts[productIndex].quantity - Int(claimCount.text!)! ?? 0
         } else {
             
