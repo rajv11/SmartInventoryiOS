@@ -20,7 +20,7 @@ provides-dynamic-lookup:
 - "products"
 - "quantity"
 - "retrieveAllProducts"
-- "saveAnouncements"
+- "saveProducts"
 depends-top-level:
 - "=="
 - !private "??"
@@ -57,7 +57,7 @@ depends-member:
 - ["15Smart_Inventory11AllProductsC", "productDataStore"]
 - ["15Smart_Inventory11AllProductsC", "products"]
 - ["15Smart_Inventory11AllProductsC", "retrieveAllProducts"]
-- ["15Smart_Inventory11AllProductsC", "saveAnouncements"]
+- ["15Smart_Inventory11AllProductsC", "saveProducts"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["s13ArrayProtocolP", "append"]
@@ -530,4 +530,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d38f71c56b2869e87b96c92ab349375c"
+interface-hash: "bdaaa9492ccca0cd8b025fc740a44bf2"

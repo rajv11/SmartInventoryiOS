@@ -21,6 +21,7 @@ provides-dynamic-lookup:
 - "saveAnouncements"
 - "setRelationship"
 - "unclaimed"
+- "updateAnnouncement"
 depends-top-level:
 - !private "AllProducts"
 - "Announcements"
@@ -45,7 +46,7 @@ depends-top-level:
 depends-member:
 - !private ["15Smart_Inventory11AllProductsC", "allProducts"]
 - !private ["15Smart_Inventory11AllProductsC", "retrieveAllProducts"]
-- !private ["15Smart_Inventory11AllProductsC", "saveAnouncements"]
+- !private ["15Smart_Inventory11AllProductsC", "saveProducts"]
 - !private ["15Smart_Inventory13AnnouncementsC", "AllProducts"]
 - ["15Smart_Inventory13AnnouncementsC", "Announcements"]
 - ["15Smart_Inventory13AnnouncementsC", "Announcemnet"]
@@ -69,6 +70,7 @@ depends-member:
 - ["15Smart_Inventory13AnnouncementsC", "retrieveAllAnnouncements"]
 - ["15Smart_Inventory13AnnouncementsC", "saveAnouncements"]
 - ["15Smart_Inventory13AnnouncementsC", "setRelationship"]
+- ["15Smart_Inventory13AnnouncementsC", "updateAnnouncement"]
 - ["15Smart_Inventory12AnnouncemnetC", "Int"]
 - ["15Smart_Inventory12AnnouncemnetC", "Product"]
 - ["15Smart_Inventory12AnnouncemnetC", "String"]
@@ -467,4 +469,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f23bf3329304b1a808fca36d861519cf"
+interface-hash: "d9c4ed928eaec6768b8e7deaa2e3d612"

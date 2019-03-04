@@ -194,12 +194,13 @@ SWIFT_CLASS("_TtC15Smart_Inventory20AdminAnnouncementTVC")
 @interface AdminAnnouncementTVC : UITableViewController
 - (IBAction)onCancelAnnouncementWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (IBAction)onPostAnnouncementWithSegue:(UIStoryboardSegue * _Nonnull)segue;
+- (void)dataFetched;
 - (void)viewDidLoad;
-- (void)refreshAnnounce;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -261,17 +262,20 @@ SWIFT_CLASS("_TtC15Smart_Inventory23ChatTableViewController")
 @class UILabel;
 @class UITextView;
 @class UITextField;
+@class UITouch;
+@class UIEvent;
 
 SWIFT_CLASS("_TtC15Smart_Inventory27ClaimProductsViewController")
 @interface ClaimProductsViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLbl;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descLbl;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified quantityLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified requiredLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLbl;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified claimCount;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)onClaim:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -280,9 +284,9 @@ SWIFT_CLASS("_TtC15Smart_Inventory27ClaimProductsViewController")
 SWIFT_CLASS("_TtC15Smart_Inventory28DashboardTableViewController")
 @interface DashboardTableViewController : UITableViewController
 - (IBAction)onCancelWithSegue:(UIStoryboardSegue * _Nonnull)segue;
-- (IBAction)onClaimWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (void)dataFetched;
 - (void)viewDidLoad;
+- (void)refreshAnnounce;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -353,6 +357,7 @@ SWIFT_CLASS("_TtC15Smart_Inventory18PostAnnouncementVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified priceTF;
 - (void)viewDidLoad;
 - (IBAction)postAnnouncementBtn:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

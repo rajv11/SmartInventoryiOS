@@ -58,18 +58,18 @@ class DashboardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dashboardCell", for: indexPath)
 
-        let title = tableView.viewWithTag(100) as! UILabel!
-        let desc = tableView.viewWithTag(200) as! UITextView!
-        let required = tableView.viewWithTag(400) as! UILabel!
-        let price = tableView.viewWithTag(500) as! UILabel!
-        let claimed = tableView.viewWithTag(600) as! UILabel!
+        let title = tableView.viewWithTag(100) as! UILabel
+        let desc = tableView.viewWithTag(200) as! UITextView
+        let required = tableView.viewWithTag(400) as! UILabel
+        let price = tableView.viewWithTag(500) as! UILabel
+        let claimed = tableView.viewWithTag(600) as! UILabel
         
         var currentAnnouncement = allAnnouncements[indexPath.row]
-        title?.text = currentAnnouncement.product.name
-        desc?.text = currentAnnouncement.product.productDescription
-        required?.text = "Required:"+String(currentAnnouncement.unclaimed)
-        price?.text = "$"+String(currentAnnouncement.product.price)
-        claimed?.text = "Claimed:"+String(currentAnnouncement.claimed)
+        title.text = currentAnnouncement.product.name
+        desc.text = currentAnnouncement.product.productDescription
+        required.text = "Required:"+String(currentAnnouncement.unclaimed)
+        price.text = "$"+String(currentAnnouncement.product.price)
+        claimed.text = "Claimed:"+String(currentAnnouncement.claimed)
         
         
         // Configure the cell...
