@@ -110,4 +110,8 @@ class Announcements {
         })
     }
 
+    func deleteAnnouncement(objectID:String) {
+        announcementDataStore.remove(byId: objectID)
+        
+    }
 }

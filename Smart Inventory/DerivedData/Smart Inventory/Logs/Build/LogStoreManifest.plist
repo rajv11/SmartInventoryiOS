@@ -180,6 +180,35 @@
 			<key>uniqueIdentifier</key>
 			<string>88153FA6-142B-4DDB-8BE6-2BEF22FA7EE3</string>
 		</dict>
+		<key>89E76D2C-0646-4B66-9231-75B6E77E8321</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>89E76D2C-0646-4B66-9231-75B6E77E8321.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Smart Inventory project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Smart Inventory</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Smart Inventory</string>
+			<key>timeStartedRecording</key>
+			<real>573356585.63024402</real>
+			<key>timeStoppedRecording</key>
+			<real>573356590.23601401</real>
+			<key>title</key>
+			<string>Build Smart Inventory</string>
+			<key>uniqueIdentifier</key>
+			<string>89E76D2C-0646-4B66-9231-75B6E77E8321</string>
+		</dict>
 		<key>AC9AEC2B-1E1A-4BD2-8392-448198A7EB43</key>
 		<dict>
 			<key>className</key>

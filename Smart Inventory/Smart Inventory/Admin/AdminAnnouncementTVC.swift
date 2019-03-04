@@ -81,7 +81,15 @@ class AdminAnnouncementTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 155
     }
-    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            Announcements.announce.deleteAnnouncement(objectID: allAnnouncements[indexPath.row].objectId!)
+            self.allAnnouncements.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        }
+    }
 
 //    override func viewDidLoad() {
 //        super.viewDidLoad()

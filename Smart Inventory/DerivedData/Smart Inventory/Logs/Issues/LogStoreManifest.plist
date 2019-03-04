@@ -6,6 +6,29 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>20D4F73A-95AF-42B2-B7D5-5B127B2D7F08</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>20D4F73A-95AF-42B2-B7D5-5B127B2D7F08.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
+			<key>timeStartedRecording</key>
+			<real>573356585.74099696</real>
+			<key>timeStoppedRecording</key>
+			<real>573356590.09972799</real>
+			<key>title</key>
+			<string>Build target Smart Inventory</string>
+			<key>uniqueIdentifier</key>
+			<string>20D4F73A-95AF-42B2-B7D5-5B127B2D7F08</string>
+		</dict>
 		<key>26247F3B-E537-43D1-8F9E-127253AFAA77</key>
 		<dict>
 			<key>className</key>
@@ -74,29 +97,6 @@
 			<string>Build target Socket.IO-Client-Swift</string>
 			<key>uniqueIdentifier</key>
 			<string>7D0964B8-1FF1-449B-97DE-2C22A6C68983</string>
-		</dict>
-		<key>BD08D512-401B-4841-9A09-490FFEA5C973</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>BD08D512-401B-4841-9A09-490FFEA5C973.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>signature</key>
-			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
-			<key>timeStartedRecording</key>
-			<real>573355145.46039903</real>
-			<key>timeStoppedRecording</key>
-			<real>573355150.59866905</real>
-			<key>title</key>
-			<string>Build target Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>BD08D512-401B-4841-9A09-490FFEA5C973</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
