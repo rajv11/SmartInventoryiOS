@@ -21,7 +21,7 @@ class Product: NSObject, Decodable {
     var objectId:String?
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
-        return "Name:  \(name  ??  ""),  Description:  \(productDescription)"
+        return "Name:  \(name  ),  Description:  \(productDescription)"
         
     }
     
@@ -96,5 +96,15 @@ class AllProducts {
                                     print(exception.debugDescription)
         })
     }
-    
+    func deleteProduct(_ objectId:String) {
+        productDataStore = backendless?.data.of(Product.self)
+        
+        productDataStore.remove(byId: objectId, response: {(result) -> Void in
+            print("deleted")
+        },
+                                error: {(exception) -> Void in
+                                    print(exception.debugDescription) })
+        self.retrieveAllProducts()
+        
+    }
 }

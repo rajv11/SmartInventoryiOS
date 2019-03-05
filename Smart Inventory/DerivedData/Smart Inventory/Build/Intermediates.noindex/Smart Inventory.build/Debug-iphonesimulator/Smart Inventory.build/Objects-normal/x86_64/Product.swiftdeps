@@ -10,6 +10,7 @@ provides-member:
 - ["15Smart_Inventory11AllProductsC", ""]
 provides-dynamic-lookup:
 - "backendless"
+- "deleteProduct"
 - "description"
 - "name"
 - "objectId"
@@ -23,7 +24,6 @@ provides-dynamic-lookup:
 - "saveProducts"
 depends-top-level:
 - "=="
-- !private "??"
 - "AllProducts"
 - "AssignmentPrecedence"
 - "Backendless"
@@ -48,9 +48,11 @@ depends-member:
 - !private ["15Smart_Inventory11AllProductsC", "DataQueryBuilder"]
 - ["15Smart_Inventory11AllProductsC", "IDataStore"]
 - ["15Smart_Inventory11AllProductsC", "Product"]
+- ["15Smart_Inventory11AllProductsC", "String"]
 - !private ["15Smart_Inventory11AllProductsC", "Void"]
 - ["15Smart_Inventory11AllProductsC", "allProducts"]
 - ["15Smart_Inventory11AllProductsC", "backendless"]
+- ["15Smart_Inventory11AllProductsC", "deleteProduct"]
 - ["15Smart_Inventory11AllProductsC", "init"]
 - !private ["15Smart_Inventory11AllProductsC", "print"]
 - ["15Smart_Inventory11AllProductsC", "product"]
@@ -118,6 +120,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "price"]
 - !private ["s28CustomDebugStringConvertibleP", "productDescription"]
 - !private ["s28CustomDebugStringConvertibleP", "quantity"]
+- !private ["s28CustomDebugStringConvertibleP", "remove"]
 - !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "setPageSize"]
 - ["s28CustomDebugStringConvertibleP", "sharedInstance"]
@@ -133,6 +136,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "of"]
+- !private ["s17CustomReflectableP", "remove"]
 - !private ["s17CustomReflectableP", "save"]
 - ["s23CustomStringConvertibleP", "Product"]
 - ["s23CustomStringConvertibleP", ""]
@@ -173,6 +177,7 @@ depends-member:
 - !private ["Se", "price"]
 - !private ["Se", "productDescription"]
 - !private ["Se", "quantity"]
+- !private ["Se", "remove"]
 - !private ["Se", "save"]
 - !private ["s7DecoderP", "container"]
 - !private ["SE", "_getBuiltinLogicValue"]
@@ -183,6 +188,7 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "init"]
 - !private ["SE", "of"]
+- !private ["SE", "remove"]
 - !private ["SE", "save"]
 - ["SQ", "Product"]
 - ["SQ", ""]
@@ -204,6 +210,7 @@ depends-member:
 - !private ["SQ", "price"]
 - !private ["SQ", "productDescription"]
 - !private ["SQ", "quantity"]
+- !private ["SQ", "remove"]
 - !private ["SQ", "save"]
 - !private ["SQ", "setPageSize"]
 - ["SQ", "sharedInstance"]
@@ -216,6 +223,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "debugDescription"]
 - !private ["s23ExpressibleByNilLiteralP", "find"]
 - !private ["s23ExpressibleByNilLiteralP", "of"]
+- !private ["s23ExpressibleByNilLiteralP", "remove"]
 - !private ["s23ExpressibleByNilLiteralP", "save"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -241,12 +249,14 @@ depends-member:
 - !private ["SH", "price"]
 - !private ["SH", "productDescription"]
 - !private ["SH", "quantity"]
+- !private ["SH", "remove"]
 - !private ["SH", "save"]
 - !private ["SH", "setPageSize"]
 - ["SH", "sharedInstance"]
 - ["SH", "stringValue"]
 - !private ["s6HasherV", "combine"]
 - !private ["So10IDataStoreP", "find"]
+- !private ["So10IDataStoreP", "remove"]
 - !private ["So10IDataStoreP", "save"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
@@ -289,12 +299,14 @@ depends-member:
 - !private ["So8NSObjectP", "price"]
 - !private ["So8NSObjectP", "productDescription"]
 - !private ["So8NSObjectP", "quantity"]
+- !private ["So8NSObjectP", "remove"]
 - !private ["So8NSObjectP", "save"]
 - !private ["So8NSObjectP", "setPageSize"]
 - ["So8NSObjectP", "sharedInstance"]
 - !private ["Sq", "debugDescription"]
 - !private ["Sq", "find"]
 - !private ["Sq", "of"]
+- !private ["Sq", "remove"]
 - !private ["Sq", "save"]
 - !private ["So18PersistenceServiceC", "of"]
 - !private ["15Smart_Inventory7ProductC", "CodingKeys"]
@@ -365,6 +377,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "of"]
+- !private ["s21_ObjectiveCBridgeableP", "remove"]
 - !private ["s21_ObjectiveCBridgeableP", "save"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
@@ -530,4 +543,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bdaaa9492ccca0cd8b025fc740a44bf2"
+interface-hash: "66d2ff1e4557905a6cb281eb0c524de9"

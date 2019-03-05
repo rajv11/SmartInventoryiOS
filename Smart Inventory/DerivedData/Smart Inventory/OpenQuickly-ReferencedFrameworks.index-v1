@@ -4,14 +4,14 @@
 <array>
 	<string>Foundation</string>
 	<string>Dispatch</string>
-	<string>CoreLocation</string>
-	<string>UserNotifications</string>
-	<string>zlib</string>
-	<string>CoreFoundation</string>
-	<string>CommonCrypto</string>
-	<string>Security</string>
-	<string>UIKit</string>
 	<string>Starscream</string>
+	<string>UserNotifications</string>
+	<string>CommonCrypto</string>
+	<string>CoreFoundation</string>
+	<string>zlib</string>
+	<string>Security</string>
 	<string>options</string>
+	<string>CoreLocation</string>
+	<string>UIKit</string>
 </array>
 </plist>

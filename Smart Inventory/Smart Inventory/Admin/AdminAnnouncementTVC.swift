@@ -85,7 +85,9 @@ class AdminAnnouncementTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
+            
             Announcements.announce.deleteAnnouncement(objectID: allAnnouncements[indexPath.row].objectId!)
+            AllProducts.allProducts.deleteProduct(allAnnouncements[indexPath.row].product.objectId!)
             self.allAnnouncements.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
