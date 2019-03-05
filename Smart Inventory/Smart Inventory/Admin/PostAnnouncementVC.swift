@@ -23,6 +23,7 @@ class PostAnnouncementVC: UIViewController {
     func displayAlert(msg: String){
         let  alert  =  UIAlertController(title:  "Announcement",  message: msg,  preferredStyle:  .alert)
         alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
+            
             self.performSegue(withIdentifier: "post", sender: nil)
         }))
         self.present(alert,  animated:  true,  completion:  nil)    }

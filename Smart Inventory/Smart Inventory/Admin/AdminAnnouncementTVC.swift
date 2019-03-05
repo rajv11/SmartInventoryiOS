@@ -40,6 +40,7 @@ class AdminAnnouncementTVC: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         tableView.reloadData()
     }
     
@@ -91,6 +92,12 @@ class AdminAnnouncementTVC: UITableViewController {
         }
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "update" {
+            let updateVC = segue.destination as! UpdateViewController
+            updateVC.announcement = self.allAnnouncements[tableView.indexPathForSelectedRow!.row]
+        }
+    }
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        announcmentData = Announcements.announce
