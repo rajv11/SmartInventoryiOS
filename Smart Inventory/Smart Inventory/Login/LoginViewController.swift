@@ -47,7 +47,13 @@ class LoginViewController: UIViewController {
                                         } else {
                                     Backendless.sharedInstance()?.userService.setStayLoggedIn(false)
                                         }
-                        self.performSegue(withIdentifier: "login", sender: user)
+                        if(self.userNameTF.text == "inventory.adm@yandex.ru")
+                        {
+                            self.performSegue(withIdentifier: "adminlogin", sender: user)
+                        } else {
+                            self.performSegue(withIdentifier: "login", sender: user)
+                        }
+                        
                                     }
                                                             
             },error: { fault in

@@ -6,29 +6,6 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>20D4F73A-95AF-42B2-B7D5-5B127B2D7F08</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>20D4F73A-95AF-42B2-B7D5-5B127B2D7F08.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>signature</key>
-			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
-			<key>timeStartedRecording</key>
-			<real>573356585.74099696</real>
-			<key>timeStoppedRecording</key>
-			<real>573356590.09972799</real>
-			<key>title</key>
-			<string>Build target Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>20D4F73A-95AF-42B2-B7D5-5B127B2D7F08</string>
-		</dict>
 		<key>26247F3B-E537-43D1-8F9E-127253AFAA77</key>
 		<dict>
 			<key>className</key>
@@ -51,6 +28,29 @@
 			<string>Build target Starscream</string>
 			<key>uniqueIdentifier</key>
 			<string>26247F3B-E537-43D1-8F9E-127253AFAA77</string>
+		</dict>
+		<key>402C1224-290D-4E2A-9B10-95DEF920A66B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>402C1224-290D-4E2A-9B10-95DEF920A66B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
+			<key>timeStartedRecording</key>
+			<real>573468842.34293795</real>
+			<key>timeStoppedRecording</key>
+			<real>573468852.59113002</real>
+			<key>title</key>
+			<string>Build target Smart Inventory</string>
+			<key>uniqueIdentifier</key>
+			<string>402C1224-290D-4E2A-9B10-95DEF920A66B</string>
 		</dict>
 		<key>53B823B4-588C-487D-8B4C-1E76F2FA3C84</key>
 		<dict>

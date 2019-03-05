@@ -17,6 +17,7 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
+- !private "=="
 - "AssignmentPrecedence"
 - !private "Backendless"
 - !private "BooleanLiteralType"

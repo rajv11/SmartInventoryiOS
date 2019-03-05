@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>1A1BF176-F335-4BFE-BD52-D6A7EAAEAABB</key>
+		<key>679F4FB4-ABEE-486F-A508-D41E06350B27</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1A1BF176-F335-4BFE-BD52-D6A7EAAEAABB.xcactivitylog</string>
+			<string>679F4FB4-ABEE-486F-A508-D41E06350B27.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Build Smart Inventory</string>
 			<key>timeStartedRecording</key>
-			<real>573353720.62007904</real>
+			<real>573359683.86247504</real>
 			<key>timeStoppedRecording</key>
-			<real>573353724.40725994</real>
+			<real>573359686.699386</real>
 			<key>title</key>
 			<string>Build Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>1A1BF176-F335-4BFE-BD52-D6A7EAAEAABB</string>
+			<string>679F4FB4-ABEE-486F-A508-D41E06350B27</string>
 		</dict>
-		<key>2C7DFB72-14CE-413F-98BD-687CCAA1E503</key>
+		<key>7428BF4B-E3C5-4859-A540-1C01A3A26C34</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>2C7DFB72-14CE-413F-98BD-687CCAA1E503.xcactivitylog</string>
+			<string>7428BF4B-E3C5-4859-A540-1C01A3A26C34.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,274 +56,13 @@
 			<key>signature</key>
 			<string>Build Smart Inventory</string>
 			<key>timeStartedRecording</key>
-			<real>573353770.74472594</real>
+			<real>573468842.05614996</real>
 			<key>timeStoppedRecording</key>
-			<real>573353773.72112894</real>
+			<real>573468852.72825801</real>
 			<key>title</key>
 			<string>Build Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>2C7DFB72-14CE-413F-98BD-687CCAA1E503</string>
-		</dict>
-		<key>46D8793E-81CD-4CB7-A5A6-479A92EA0AB9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>46D8793E-81CD-4CB7-A5A6-479A92EA0AB9.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573354616.09003401</real>
-			<key>timeStoppedRecording</key>
-			<real>573354620.21208596</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>46D8793E-81CD-4CB7-A5A6-479A92EA0AB9</string>
-		</dict>
-		<key>72504EE9-B06B-458C-A2BB-1C5316453B4B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>72504EE9-B06B-458C-A2BB-1C5316453B4B.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573355145.40426195</real>
-			<key>timeStoppedRecording</key>
-			<real>573355150.701419</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>72504EE9-B06B-458C-A2BB-1C5316453B4B</string>
-		</dict>
-		<key>741C8069-5F00-48A7-BE94-F8BDB8D43324</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>741C8069-5F00-48A7-BE94-F8BDB8D43324.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573354134.14533997</real>
-			<key>timeStoppedRecording</key>
-			<real>573354138.46100605</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>741C8069-5F00-48A7-BE94-F8BDB8D43324</string>
-		</dict>
-		<key>88153FA6-142B-4DDB-8BE6-2BEF22FA7EE3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>88153FA6-142B-4DDB-8BE6-2BEF22FA7EE3.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573353606.84529102</real>
-			<key>timeStoppedRecording</key>
-			<real>573353613.04411805</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>88153FA6-142B-4DDB-8BE6-2BEF22FA7EE3</string>
-		</dict>
-		<key>89E76D2C-0646-4B66-9231-75B6E77E8321</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>89E76D2C-0646-4B66-9231-75B6E77E8321.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573356585.63024402</real>
-			<key>timeStoppedRecording</key>
-			<real>573356590.23601401</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>89E76D2C-0646-4B66-9231-75B6E77E8321</string>
-		</dict>
-		<key>AC9AEC2B-1E1A-4BD2-8392-448198A7EB43</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>AC9AEC2B-1E1A-4BD2-8392-448198A7EB43.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573355125.57176805</real>
-			<key>timeStoppedRecording</key>
-			<real>573355129.52375102</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>AC9AEC2B-1E1A-4BD2-8392-448198A7EB43</string>
-		</dict>
-		<key>CAEC8617-97D1-4C19-8481-E1EDE39EAA7C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>CAEC8617-97D1-4C19-8481-E1EDE39EAA7C.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573354540.98390496</real>
-			<key>timeStoppedRecording</key>
-			<real>573354549.96444798</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>CAEC8617-97D1-4C19-8481-E1EDE39EAA7C</string>
-		</dict>
-		<key>D02E8CB5-5CF2-447B-B515-7B8C6655C964</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D02E8CB5-5CF2-447B-B515-7B8C6655C964.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573350943.42323196</real>
-			<key>timeStoppedRecording</key>
-			<real>573350943.78229702</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>D02E8CB5-5CF2-447B-B515-7B8C6655C964</string>
-		</dict>
-		<key>ED3B0E3E-E40E-4778-8E49-C6681C9C3069</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>ED3B0E3E-E40E-4778-8E49-C6681C9C3069.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573353463.07802105</real>
-			<key>timeStoppedRecording</key>
-			<real>573353467.51978195</real>
-			<key>title</key>
-			<string>Build Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>ED3B0E3E-E40E-4778-8E49-C6681C9C3069</string>
+			<string>7428BF4B-E3C5-4859-A540-1C01A3A26C34</string>
 		</dict>
 	</dict>
 </dict>
