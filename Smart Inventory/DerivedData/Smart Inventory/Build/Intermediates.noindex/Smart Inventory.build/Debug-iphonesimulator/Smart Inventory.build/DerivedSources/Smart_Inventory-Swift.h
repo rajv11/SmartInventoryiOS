@@ -287,6 +287,7 @@ SWIFT_CLASS("_TtC15Smart_Inventory28DashboardTableViewController")
 - (IBAction)onCancelWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (void)dataFetched;
 - (void)viewDidLoad;
+- (void)refreshAnnounce;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

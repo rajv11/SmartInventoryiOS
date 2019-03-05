@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>26247F3B-E537-43D1-8F9E-127253AFAA77</key>
+		<key>0C1634F0-2ECA-4B07-8C97-E6E8357B975E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,21 +15,44 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>26247F3B-E537-43D1-8F9E-127253AFAA77.xcactivitylog</string>
+			<string>0C1634F0-2ECA-4B07-8C97-E6E8357B975E.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Starscream-emqgvyubdwvbpacsfueuizsmxvay</string>
 			<key>timeStartedRecording</key>
-			<real>573355145.48319805</real>
+			<real>573471844.13365602</real>
 			<key>timeStoppedRecording</key>
-			<real>573355145.48986602</real>
+			<real>573471844.14700997</real>
 			<key>title</key>
 			<string>Build target Starscream</string>
 			<key>uniqueIdentifier</key>
-			<string>26247F3B-E537-43D1-8F9E-127253AFAA77</string>
+			<string>0C1634F0-2ECA-4B07-8C97-E6E8357B975E</string>
 		</dict>
-		<key>402C1224-290D-4E2A-9B10-95DEF920A66B</key>
+		<key>6E7DBC63-FBFE-44BE-8E6E-FB057CE741BD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>6E7DBC63-FBFE-44BE-8E6E-FB057CE741BD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>signature</key>
+			<string>Pods-Smart_Inventory-emqgvyubdwvbpacsfueuizsmxvay</string>
+			<key>timeStartedRecording</key>
+			<real>573471844.17461598</real>
+			<key>timeStoppedRecording</key>
+			<real>573471844.17882502</real>
+			<key>title</key>
+			<string>Build target Pods-Smart Inventory</string>
+			<key>uniqueIdentifier</key>
+			<string>6E7DBC63-FBFE-44BE-8E6E-FB057CE741BD</string>
+		</dict>
+		<key>E6D4864D-EDB1-40F0-BFE0-10B84AAD33BB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -38,21 +61,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>402C1224-290D-4E2A-9B10-95DEF920A66B.xcactivitylog</string>
+			<string>E6D4864D-EDB1-40F0-BFE0-10B84AAD33BB.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>signature</key>
 			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
 			<key>timeStartedRecording</key>
-			<real>573468842.34293795</real>
+			<real>573472971.56405497</real>
 			<key>timeStoppedRecording</key>
-			<real>573468852.59113002</real>
+			<real>573472974.030182</real>
 			<key>title</key>
 			<string>Build target Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>402C1224-290D-4E2A-9B10-95DEF920A66B</string>
+			<string>E6D4864D-EDB1-40F0-BFE0-10B84AAD33BB</string>
 		</dict>
-		<key>53B823B4-588C-487D-8B4C-1E76F2FA3C84</key>
+		<key>F7D6B4F6-D787-442C-B14A-3E8747A395ED</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -61,42 +84,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>53B823B4-588C-487D-8B4C-1E76F2FA3C84.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>Pods-Smart_Inventory-emqgvyubdwvbpacsfueuizsmxvay</string>
-			<key>timeStartedRecording</key>
-			<real>573355145.51189995</real>
-			<key>timeStoppedRecording</key>
-			<real>573355145.51814497</real>
-			<key>title</key>
-			<string>Build target Pods-Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>53B823B4-588C-487D-8B4C-1E76F2FA3C84</string>
-		</dict>
-		<key>7D0964B8-1FF1-449B-97DE-2C22A6C68983</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>7D0964B8-1FF1-449B-97DE-2C22A6C68983.xcactivitylog</string>
+			<string>F7D6B4F6-D787-442C-B14A-3E8747A395ED.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Socket.IO-Client-Swift-emqgvyubdwvbpacsfueuizsmxvay</string>
 			<key>timeStartedRecording</key>
-			<real>573355145.50090098</real>
+			<real>573471844.11074603</real>
 			<key>timeStoppedRecording</key>
-			<real>573355145.50567496</real>
+			<real>573471844.17030895</real>
 			<key>title</key>
 			<string>Build target Socket.IO-Client-Swift</string>
 			<key>uniqueIdentifier</key>
-			<string>7D0964B8-1FF1-449B-97DE-2C22A6C68983</string>
+			<string>F7D6B4F6-D787-442C-B14A-3E8747A395ED</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

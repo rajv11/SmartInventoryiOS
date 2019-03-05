@@ -18,7 +18,7 @@ class DashboardTableViewController: UITableViewController {
     
     let backendless = Backendless.sharedInstance()!
     var announcementDataStore:IDataStore!
-    
+    let refreshControl1 = UIRefreshControl()
     
     @objc func dataFetched() {
         tableView.reloadData()
@@ -29,6 +29,9 @@ class DashboardTableViewController: UITableViewController {
         announcementDataStore =  backendless.data.of(Announcemnet.self)
         allAnnouncements = self.announcementDataStore.find() as! [Announcemnet]
         
+        
+        refreshControl1.addTarget(self, action: #selector(refreshAnnounce), for: UIControl.Event.valueChanged)
+                tableView.addSubview(refreshControl1)
         //tableView.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -37,7 +40,12 @@ class DashboardTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    @objc func refreshAnnounce() {
+                allAnnouncements = self.announcementDataStore.find() as! [Announcemnet]
+                tableView.reloadData()
+
+                refreshControl1.endRefreshing()
+            }
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
@@ -64,7 +72,7 @@ class DashboardTableViewController: UITableViewController {
         let price = tableView.viewWithTag(500) as! UILabel
         let claimed = tableView.viewWithTag(600) as! UILabel
         
-        var currentAnnouncement = allAnnouncements[indexPath.row]
+        let currentAnnouncement = allAnnouncements[indexPath.row]
         title.text = currentAnnouncement.product.name
         desc.text = currentAnnouncement.product.productDescription
         required.text = "Required:"+String(currentAnnouncement.unclaimed)
