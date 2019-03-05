@@ -29,29 +29,6 @@
 			<key>uniqueIdentifier</key>
 			<string>0C1634F0-2ECA-4B07-8C97-E6E8357B975E</string>
 		</dict>
-		<key>1241B66D-2275-4242-AEDC-CE732101AE6C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>1241B66D-2275-4242-AEDC-CE732101AE6C.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>signature</key>
-			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
-			<key>timeStartedRecording</key>
-			<real>573478082.17693198</real>
-			<key>timeStoppedRecording</key>
-			<real>573478085.21452701</real>
-			<key>title</key>
-			<string>Build target Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>1241B66D-2275-4242-AEDC-CE732101AE6C</string>
-		</dict>
 		<key>6E7DBC63-FBFE-44BE-8E6E-FB057CE741BD</key>
 		<dict>
 			<key>className</key>
@@ -74,6 +51,29 @@
 			<string>Build target Pods-Smart Inventory</string>
 			<key>uniqueIdentifier</key>
 			<string>6E7DBC63-FBFE-44BE-8E6E-FB057CE741BD</string>
+		</dict>
+		<key>BB856573-D1F3-464B-917E-65B377798D29</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>BB856573-D1F3-464B-917E-65B377798D29.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
+			<key>timeStartedRecording</key>
+			<real>573478948.05278301</real>
+			<key>timeStoppedRecording</key>
+			<real>573478950.65990198</real>
+			<key>title</key>
+			<string>Build target Smart Inventory</string>
+			<key>uniqueIdentifier</key>
+			<string>BB856573-D1F3-464B-917E-65B377798D29</string>
 		</dict>
 		<key>F7D6B4F6-D787-442C-B14A-3E8747A395ED</key>
 		<dict>

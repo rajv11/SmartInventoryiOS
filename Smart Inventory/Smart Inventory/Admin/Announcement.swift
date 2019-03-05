@@ -93,6 +93,7 @@ class Announcements {
         //let dataStore = Backendless.sharedInstance().data.of(Announcemnet.ofClass())
         //var error: Fault?
         announcementDataStore.save(announcement)
+        AllProducts.allProducts.saveProducts(product: announcement.product)
     }
     
     func setRelationship(parentID:String, childID:String) {

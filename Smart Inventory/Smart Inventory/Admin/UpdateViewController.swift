@@ -55,6 +55,7 @@ class UpdateViewController: UIViewController {
             }
 //            let product = Product(name: productName, productDescription: descriptionTF.text!, quantity: quantity, price: Double(priceTF.text!)!)
 //            let updateAnnoucement = Announcemnet(product: product, claimed: announcement.claimed, unclaimed: product.quantity - announcement.claimed)
+            print(productName + "\(quantity), \(price)")
             announcement.product.name = productName
             announcement.product.productDescription = descriptionTF.text
             announcement.product.quantity = quantity
