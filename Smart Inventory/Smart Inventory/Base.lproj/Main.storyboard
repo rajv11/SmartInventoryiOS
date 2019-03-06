@@ -1364,9 +1364,6 @@ The application will manages the shipping labels, product details, orders and tr
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Orders" image="list" id="9Vi-3J-m4Q"/>
-                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="6nI-Y0-s68">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWu-0z-Jnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
