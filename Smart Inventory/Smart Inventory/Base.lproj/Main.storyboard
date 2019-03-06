@@ -589,7 +589,7 @@ The application will manages the shipping labels, product details, orders and tr
                         <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O7b-Z5-wKZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Orders" id="VSn-E0-fQQ"/>
+                    <tabBarItem key="tabBarItem" title="Orders" image="list" id="VSn-E0-fQQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53z-Bi-FAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1520,6 +1520,6 @@ The application will manages the shipping labels, product details, orders and tr
     <inferredMetricsTieBreakers>
         <segue reference="Gtc-Cb-7gz"/>
         <segue reference="RAs-ko-HsA"/>
-        <segue reference="XiW-vL-sk8"/>
+        <segue reference="ynC-mK-7Yd"/>
     </inferredMetricsTieBreakers>
 </document>
