@@ -14,6 +14,7 @@ class Order: NSObject, Decodable {
     
     static var order:Order = Order()
     
+    var title:String
     var product:Product
     var quantity:Int
     var status:String
@@ -25,14 +26,15 @@ class Order: NSObject, Decodable {
         
     }
     
-    init(product:Product, quantity:Int, status:String){
+    init(title:String, product:Product, quantity:Int, status:String){
+        self.title = title
         self.product  =  product
         self.quantity = quantity
         self.status = status
     }
     
     convenience override init(){
-        self.init(product: Product(), quantity: 0, status: "")
+        self.init(title:"", product: Product(), quantity: 0, status: "")
         
     }
 }

@@ -49,11 +49,10 @@ class UserOrdersTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell", for: indexPath)
         
         let name = tableView.viewWithTag(100) as! UILabel!
-        let createdDate = tableView.viewWithTag(200) as! UILabel!
+        //let createdDate = tableView.viewWithTag(200) as! UILabel!
         let status = tableView.viewWithTag(300) as! UILabel!
         
-        print("name:"+allOrders[indexPath.row].product.name)
-        name?.text = allOrders[indexPath.row].product.name
+        name?.text = allOrders[indexPath.row].title
         //createdDate?.text = "Order requested on:"+String(allOrders[indexPath.row].created!)
         status?.text = allOrders[indexPath.row].status
         
@@ -61,7 +60,7 @@ class UserOrdersTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 155
+        return 150
     }
     
     /*

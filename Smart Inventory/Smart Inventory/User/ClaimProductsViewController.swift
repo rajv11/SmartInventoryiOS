@@ -64,6 +64,8 @@ class ClaimProductsViewController: UIViewController {
                 announcement.claimed = announcement.claimed + claimQty!
                 announcement.unclaimed = announcement.product.quantity - announcement.claimed
                 Announcements.announce.updateAnnouncement(announcement: announcement)
+                var order:Order = Order(title:announcement.product.name , product: announcement.product, quantity: claimQty!, status: "Requested")
+                AllOrders.allOrders.saveOrder(order: order)
                 self.displayAlert(msg: "You have claimed \(claimQty!) products")
         }
         
