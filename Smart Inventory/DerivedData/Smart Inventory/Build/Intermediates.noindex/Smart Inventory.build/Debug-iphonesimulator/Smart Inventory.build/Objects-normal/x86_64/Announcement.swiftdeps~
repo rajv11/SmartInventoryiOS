@@ -46,7 +46,6 @@ depends-top-level:
 - !private "print"
 depends-member:
 - !private ["15Smart_Inventory11AllProductsC", "allProducts"]
-- !private ["15Smart_Inventory11AllProductsC", "deleteProduct"]
 - !private ["15Smart_Inventory11AllProductsC", "retrieveAllProducts"]
 - !private ["15Smart_Inventory11AllProductsC", "saveProducts"]
 - !private ["15Smart_Inventory13AnnouncementsC", "AllProducts"]
@@ -483,4 +482,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a1435aa7cdcc977ce10caf6a2f56d55d"
+interface-hash: "15c179bd0526267ca71c858787213358"
