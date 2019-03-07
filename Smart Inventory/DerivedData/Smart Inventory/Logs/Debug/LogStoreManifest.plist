@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>244009A3-DAB6-4905-9856-B41F054E7E60</key>
+		<key>6383C201-E2CC-4ACB-A945-0DF449076A84</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>244009A3-DAB6-4905-9856-B41F054E7E60.xcactivitylog</string>
+			<string>6383C201-E2CC-4ACB-A945-0DF449076A84.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,158 +27,13 @@
 			<key>signature</key>
 			<string>Debug Smart Inventory</string>
 			<key>timeStartedRecording</key>
-			<real>573554297.78289294</real>
+			<real>573578078.62334001</real>
 			<key>timeStoppedRecording</key>
-			<real>573554640.36522496</real>
+			<real>573579451.45192599</real>
 			<key>title</key>
 			<string>Debug Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>244009A3-DAB6-4905-9856-B41F054E7E60</string>
-		</dict>
-		<key>433B6169-7789-44A3-9378-135749FDCD78</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>433B6169-7789-44A3-9378-135749FDCD78.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573554643.660061</real>
-			<key>timeStoppedRecording</key>
-			<real>573554680.27495301</real>
-			<key>title</key>
-			<string>Debug Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>433B6169-7789-44A3-9378-135749FDCD78</string>
-		</dict>
-		<key>5AE4E74B-19B7-475A-9106-9866DCB74E2B</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>5AE4E74B-19B7-475A-9106-9866DCB74E2B.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573554686.45495796</real>
-			<key>timeStoppedRecording</key>
-			<real>573554748.64905596</real>
-			<key>title</key>
-			<string>Debug Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>5AE4E74B-19B7-475A-9106-9866DCB74E2B</string>
-		</dict>
-		<key>935F5F21-C28B-4A76-9BA6-AB0F49C6A21F</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>935F5F21-C28B-4A76-9BA6-AB0F49C6A21F.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573554114.771034</real>
-			<key>timeStoppedRecording</key>
-			<real>573554269.723019</real>
-			<key>title</key>
-			<string>Debug Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>935F5F21-C28B-4A76-9BA6-AB0F49C6A21F</string>
-		</dict>
-		<key>ABA3DDEE-B8F8-4642-8EAE-BAEBB0614ED5</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>ABA3DDEE-B8F8-4642-8EAE-BAEBB0614ED5.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573553978.09524</real>
-			<key>timeStoppedRecording</key>
-			<real>573554109.34227097</real>
-			<key>title</key>
-			<string>Debug Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>ABA3DDEE-B8F8-4642-8EAE-BAEBB0614ED5</string>
-		</dict>
-		<key>EB33BDEC-3125-48C0-809F-978070E0006F</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EB33BDEC-3125-48C0-809F-978070E0006F.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Smart Inventory project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Smart Inventory</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug Smart Inventory</string>
-			<key>timeStartedRecording</key>
-			<real>573554276.07826996</real>
-			<key>timeStoppedRecording</key>
-			<real>573554293.95856202</real>
-			<key>title</key>
-			<string>Debug Smart Inventory</string>
-			<key>uniqueIdentifier</key>
-			<string>EB33BDEC-3125-48C0-809F-978070E0006F</string>
+			<string>6383C201-E2CC-4ACB-A945-0DF449076A84</string>
 		</dict>
 	</dict>
 </dict>
