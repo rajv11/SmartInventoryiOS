@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pshruthi98@gmail.com" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-ie-5j3">
-                                <rect key="frame" x="32" y="262" width="327" height="30"/>
+                                <rect key="frame" x="16" y="262" width="343" height="30"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
@@ -26,8 +26,8 @@
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="aGo-fZ-uOM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testuser" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-JT-2jB">
-                                <rect key="frame" x="32" y="340" width="327" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testuser" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-JT-2jB">
+                                <rect key="frame" x="16" y="340" width="343" height="30"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
@@ -47,8 +47,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-gT-g23">
-                                <rect key="frame" x="32" y="447" width="327" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-gT-g23">
+                                <rect key="frame" x="16" y="447" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244863013699" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" title="Login">
@@ -131,19 +131,19 @@
                             <constraint firstItem="zqj-Uy-36d" firstAttribute="top" secondItem="aWN-SI-O0M" secondAttribute="bottom" constant="17" id="RJi-Y9-hiJ"/>
                             <constraint firstItem="vcb-F4-R5e" firstAttribute="top" secondItem="bvs-SW-xFS" secondAttribute="bottom" constant="8" symbolic="YES" id="Rpw-6x-4JO"/>
                             <constraint firstItem="9bk-QN-ySE" firstAttribute="leading" secondItem="SWY-JT-2jB" secondAttribute="leading" id="T6l-zw-GDg"/>
-                            <constraint firstItem="NYS-gT-g23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="TFq-B2-KSh"/>
+                            <constraint firstItem="NYS-gT-g23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TFq-B2-KSh"/>
                             <constraint firstItem="SWY-JT-2jB" firstAttribute="top" secondItem="9bk-QN-ySE" secondAttribute="bottom" constant="8" symbolic="YES" id="TL9-7t-VFr"/>
-                            <constraint firstItem="YF4-xg-1dl" firstAttribute="centerX" secondItem="NYS-gT-g23" secondAttribute="centerX" constant="2.5" id="TwV-ae-MpR"/>
+                            <constraint firstItem="YF4-xg-1dl" firstAttribute="centerX" secondItem="NYS-gT-g23" secondAttribute="centerX" id="TwV-ae-MpR"/>
                             <constraint firstItem="zqj-Uy-36d" firstAttribute="centerY" secondItem="vcb-F4-R5e" secondAttribute="centerY" id="VIO-Te-Cp6"/>
                             <constraint firstItem="vcb-F4-R5e" firstAttribute="top" secondItem="aWN-SI-O0M" secondAttribute="bottom" constant="13" id="Zf4-ca-DR0"/>
                             <constraint firstItem="v7t-ie-5j3" firstAttribute="top" secondItem="vyM-TQ-g8a" secondAttribute="bottom" constant="11" id="bZo-KW-8ow"/>
-                            <constraint firstItem="v7t-ie-5j3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="btH-im-Lrw"/>
+                            <constraint firstItem="v7t-ie-5j3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="btH-im-Lrw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvs-SW-xFS" secondAttribute="trailing" constant="62" id="cKs-du-3X2"/>
                             <constraint firstItem="v7t-ie-5j3" firstAttribute="trailing" secondItem="SWY-JT-2jB" secondAttribute="trailing" id="fUf-uG-n6m"/>
                             <constraint firstItem="vyM-TQ-g8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="gvy-Sb-HAF"/>
                             <constraint firstItem="YF4-xg-1dl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="hQZ-Bd-QEH"/>
-                            <constraint firstItem="vyM-TQ-g8a" firstAttribute="leading" secondItem="v7t-ie-5j3" secondAttribute="leading" id="hqf-Kv-Ec6"/>
-                            <constraint firstItem="v7t-ie-5j3" firstAttribute="leading" secondItem="9bk-QN-ySE" secondAttribute="leading" id="oT4-1z-3J7"/>
+                            <constraint firstItem="vyM-TQ-g8a" firstAttribute="leading" secondItem="v7t-ie-5j3" secondAttribute="leading" constant="16" id="hqf-Kv-Ec6"/>
+                            <constraint firstItem="v7t-ie-5j3" firstAttribute="leading" secondItem="9bk-QN-ySE" secondAttribute="leading" constant="-16" id="oT4-1z-3J7"/>
                             <constraint firstItem="v7t-ie-5j3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oy0-gD-FTe"/>
                             <constraint firstItem="vcb-F4-R5e" firstAttribute="leading" secondItem="zqj-Uy-36d" secondAttribute="trailing" constant="8" id="p8O-Ng-WDK"/>
                             <constraint firstItem="YF4-xg-1dl" firstAttribute="trailing" secondItem="v7t-ie-5j3" secondAttribute="trailing" id="r6p-yV-MOu"/>
@@ -1313,7 +1313,7 @@ The application will manages the shipping labels, product details, orders and tr
         <scene sceneID="cbB-Ih-fqS">
             <objects>
                 <tableViewController id="fK5-av-Q1X" customClass="UserOrdersTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="owB-cn-Xba">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="owB-cn-Xba">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.073874957860000007" green="0.27973797919999999" blue="0.46284824610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1325,29 +1325,29 @@ The application will manages the shipping labels, product details, orders and tr
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" rowHeight="169" id="Qje-TE-i3L">
-                                <rect key="frame" x="0.0" y="69" width="375" height="169"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" rowHeight="120" id="Qje-TE-i3L">
+                                <rect key="frame" x="0.0" y="69" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qje-TE-i3L" id="qjU-zo-bBS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.66666666666667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yC-xo-rG9">
-                                            <rect key="frame" x="42" y="42" width="96" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yC-xo-rG9">
+                                            <rect key="frame" x="139" y="29" width="96" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-4M-YuX">
+                                            <rect key="frame" x="87" y="60" width="96" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-4M-YuX">
-                                            <rect key="frame" x="42" y="96" width="96" height="27"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHf-BI-gJy">
-                                            <rect key="frame" x="125" y="96" width="96" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHf-BI-gJy">
+                                            <rect key="frame" x="191" y="60" width="96" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1367,7 +1367,7 @@ The application will manages the shipping labels, product details, orders and tr
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWu-0z-Jnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1857" y="1317"/>
+            <point key="canvasLocation" x="-1858.4000000000001" y="1316.7487684729065"/>
         </scene>
         <!--Post Announcements-->
         <scene sceneID="xkI-ZV-lKt">
@@ -1486,9 +1486,8 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EK0-qF-iKN"/>
-        <segue reference="y4h-4z-If8"/>
-        <segue reference="Gtc-Cb-7gz"/>
+        <segue reference="Bi5-oh-3tp"/>
+        <segue reference="DHv-3H-hNE"/>
         <segue reference="RAs-ko-HsA"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -339,6 +339,23 @@ SWIFT_CLASS("_TtC15Smart_Inventory19LoginViewController")
 @end
 
 
+SWIFT_CLASS("_TtC15Smart_Inventory5Order")
+@interface Order : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Order * _Nonnull order;)
++ (Order * _Nonnull)order SWIFT_WARN_UNUSED_RESULT;
++ (void)setOrder:(Order * _Nonnull)value;
+@property (nonatomic, copy) NSString * _Nonnull title;
+@property (nonatomic, strong) Product * _Nonnull product;
+@property (nonatomic) NSInteger quantity;
+@property (nonatomic, copy) NSString * _Nonnull status;
+@property (nonatomic, copy) NSString * _Nullable objectId;
+@property (nonatomic, copy) NSString * _Nullable created;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title product:(Product * _Nonnull)product quantity:(NSInteger)quantity status:(NSString * _Nonnull)status OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init;
+@end
+
+
 SWIFT_CLASS("_TtC15Smart_Inventory25OrdersTableViewController")
 @interface OrdersTableViewController : UITableViewController
 - (void)viewDidLoad;
@@ -424,6 +441,21 @@ SWIFT_CLASS("_TtC15Smart_Inventory20UpdateViewController")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (IBAction)updateBtn:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15Smart_Inventory29UserOrdersTableViewController")
+@interface UserOrdersTableViewController : UITableViewController
+- (void)dataFetched;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

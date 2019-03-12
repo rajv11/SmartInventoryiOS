@@ -1,0 +1,868 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UserOrdersTableViewController"
+provides-nominal:
+- "15Smart_Inventory29UserOrdersTableViewControllerC"
+provides-member:
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", ""]
+provides-dynamic-lookup:
+- "dataFetched"
+- "numberOfSections"
+- "tableView"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Backendless"
+- "Bool"
+- "CGFloat"
+- "CastingPrecedence"
+- !private "FloatLiteralType"
+- "IDataStore"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- "Order"
+- !private "StringLiteralType"
+- !private "UILabel"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewController"
+- "UserOrdersTableViewController"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "status"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s13ArrayProtocolP", "title"]
+- !private ["s10ArraySliceV", "status"]
+- !private ["s10ArraySliceV", "title"]
+- !private ["So11BackendlessC", "data"]
+- ["So11BackendlessC", "sharedInstance"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "row"]
+- !private ["SK", "status"]
+- !private ["SK", "subscript"]
+- !private ["SK", "title"]
+- !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "reloadData"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "viewWithTag"]
+- ["s7CVarArgP", "Backendless"]
+- !private ["s7CVarArgP", "Order"]
+- ["s7CVarArgP", "UserOrdersTableViewController"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "allOrders"]
+- !private ["s7CVarArgP", "backendless"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "dequeueReusableCell"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "of"]
+- !private ["s7CVarArgP", "orderDataStore"]
+- !private ["s7CVarArgP", "reloadData"]
+- ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "status"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tableView"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewWithTag"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "row"]
+- !private ["Sl", "status"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "title"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "row"]
+- ["s28CustomDebugStringConvertibleP", "Backendless"]
+- !private ["s28CustomDebugStringConvertibleP", "Order"]
+- ["s28CustomDebugStringConvertibleP", "UserOrdersTableViewController"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "allOrders"]
+- !private ["s28CustomDebugStringConvertibleP", "backendless"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "find"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "of"]
+- !private ["s28CustomDebugStringConvertibleP", "orderDataStore"]
+- !private ["s28CustomDebugStringConvertibleP", "reloadData"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "status"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tableView"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWithTag"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "find"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "of"]
+- !private ["s17CustomReflectableP", "reloadData"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "status"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "title"]
+- ["s23CustomStringConvertibleP", "Backendless"]
+- !private ["s23CustomStringConvertibleP", "Order"]
+- ["s23CustomStringConvertibleP", "UserOrdersTableViewController"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "allOrders"]
+- !private ["s23CustomStringConvertibleP", "backendless"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "of"]
+- !private ["s23CustomStringConvertibleP", "orderDataStore"]
+- !private ["s23CustomStringConvertibleP", "reloadData"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "status"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tableView"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewWithTag"]
+- !private ["Se", "count"]
+- !private ["Se", "find"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "of"]
+- !private ["Se", "reloadData"]
+- !private ["Se", "row"]
+- !private ["Se", "status"]
+- !private ["Se", "subscript"]
+- !private ["Se", "title"]
+- !private ["SE", "count"]
+- !private ["SE", "find"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "of"]
+- !private ["SE", "reloadData"]
+- !private ["SE", "row"]
+- !private ["SE", "subscript"]
+- ["SQ", "Backendless"]
+- !private ["SQ", "Order"]
+- ["SQ", "UserOrdersTableViewController"]
+- ["SQ", ""]
+- !private ["SQ", "allOrders"]
+- !private ["SQ", "backendless"]
+- !private ["SQ", "count"]
+- !private ["SQ", "data"]
+- !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "find"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "of"]
+- !private ["SQ", "orderDataStore"]
+- !private ["SQ", "reloadData"]
+- !private ["SQ", "row"]
+- ["SQ", "sharedInstance"]
+- !private ["SQ", "status"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "tableView"]
+- !private ["SQ", "text"]
+- !private ["SQ", "title"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "viewWithTag"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "status"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "title"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "find"]
+- !private ["s23ExpressibleByNilLiteralP", "of"]
+- !private ["s23ExpressibleByNilLiteralP", "reloadData"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "Backendless"]
+- !private ["SH", "Order"]
+- ["SH", "UserOrdersTableViewController"]
+- ["SH", ""]
+- !private ["SH", "allOrders"]
+- !private ["SH", "backendless"]
+- !private ["SH", "count"]
+- !private ["SH", "data"]
+- !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "find"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "of"]
+- !private ["SH", "orderDataStore"]
+- !private ["SH", "reloadData"]
+- !private ["SH", "row"]
+- ["SH", "sharedInstance"]
+- !private ["SH", "status"]
+- !private ["SH", "subscript"]
+- !private ["SH", "tableView"]
+- !private ["SH", "text"]
+- !private ["SH", "title"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "viewWithTag"]
+- !private ["So10IDataStoreP", "find"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "row"]
+- !private ["SM", "status"]
+- !private ["SM", "subscript"]
+- !private ["SM", "title"]
+- ["So8NSCodingP", "Backendless"]
+- !private ["So8NSCodingP", "Order"]
+- ["So8NSCodingP", "UserOrdersTableViewController"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "allOrders"]
+- !private ["So8NSCodingP", "backendless"]
+- !private ["So8NSCodingP", "dequeueReusableCell"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "orderDataStore"]
+- !private ["So8NSCodingP", "reloadData"]
+- !private ["So8NSCodingP", "tableView"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewWithTag"]
+- ["So26NSExtensionRequestHandlingP", "Backendless"]
+- !private ["So26NSExtensionRequestHandlingP", "Order"]
+- ["So26NSExtensionRequestHandlingP", "UserOrdersTableViewController"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "allOrders"]
+- !private ["So26NSExtensionRequestHandlingP", "backendless"]
+- ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "orderDataStore"]
+- !private ["So26NSExtensionRequestHandlingP", "tableView"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "Backendless"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "IDataStore"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "Order"]
+- !private ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITableView"]
+- ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "UserOrdersTableViewController"]
+- ["So8NSObjectC", "allOrders"]
+- ["So8NSObjectC", "backendless"]
+- !private ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "dataFetched"]
+- !private ["So8NSObjectC", "dequeueReusableCell"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "numberOfSections"]
+- !private ["So8NSObjectC", "of"]
+- ["So8NSObjectC", "orderDataStore"]
+- ["So8NSObjectC", "ordersTVC"]
+- !private ["So8NSObjectC", "reloadData"]
+- ["So8NSObjectC", "sharedInstance"]
+- !private ["So8NSObjectC", "status"]
+- ["So8NSObjectC", "tableView"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillAppear"]
+- !private ["So8NSObjectC", "viewWithTag"]
+- ["So8NSObjectP", "Backendless"]
+- !private ["So8NSObjectP", "Order"]
+- ["So8NSObjectP", "UserOrdersTableViewController"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "allOrders"]
+- !private ["So8NSObjectP", "backendless"]
+- !private ["So8NSObjectP", "data"]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
+- !private ["So8NSObjectP", "find"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "of"]
+- !private ["So8NSObjectP", "orderDataStore"]
+- !private ["So8NSObjectP", "reloadData"]
+- ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "status"]
+- !private ["So8NSObjectP", "tableView"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "viewWithTag"]
+- !private ["Sq", "find"]
+- !private ["Sq", "of"]
+- !private ["Sq", "reloadData"]
+- !private ["15Smart_Inventory5OrderC", "status"]
+- !private ["15Smart_Inventory5OrderC", "title"]
+- !private ["So18PersistenceServiceC", "of"]
+- !private ["Sk", "count"]
+- !private ["Sk", "row"]
+- !private ["Sk", "status"]
+- !private ["Sk", "subscript"]
+- !private ["Sk", "title"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "status"]
+- !private ["Sm", "subscript"]
+- !private ["Sm", "title"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "row"]
+- !private ["ST", "status"]
+- !private ["ST", "subscript"]
+- !private ["ST", "title"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "reloadData"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "viewWithTag"]
+- !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "reloadData"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "viewWithTag"]
+- ["So21UIAppearanceContainerP", "Backendless"]
+- !private ["So21UIAppearanceContainerP", "Order"]
+- ["So21UIAppearanceContainerP", "UserOrdersTableViewController"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "allOrders"]
+- !private ["So21UIAppearanceContainerP", "backendless"]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "orderDataStore"]
+- !private ["So21UIAppearanceContainerP", "reloadData"]
+- !private ["So21UIAppearanceContainerP", "tableView"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewWithTag"]
+- ["So18UIContentContainerP", "Backendless"]
+- !private ["So18UIContentContainerP", "Order"]
+- ["So18UIContentContainerP", "UserOrdersTableViewController"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "allOrders"]
+- !private ["So18UIContentContainerP", "backendless"]
+- ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "orderDataStore"]
+- !private ["So18UIContentContainerP", "tableView"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "reloadData"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "viewWithTag"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "reloadData"]
+- !private ["So23UIDataSourceTranslatingP", "viewWithTag"]
+- !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "reloadData"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "viewWithTag"]
+- ["So18UIFocusEnvironmentP", "Backendless"]
+- !private ["So18UIFocusEnvironmentP", "Order"]
+- ["So18UIFocusEnvironmentP", "UserOrdersTableViewController"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "allOrders"]
+- !private ["So18UIFocusEnvironmentP", "backendless"]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "orderDataStore"]
+- !private ["So18UIFocusEnvironmentP", "reloadData"]
+- !private ["So18UIFocusEnvironmentP", "tableView"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewWithTag"]
+- !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "reloadData"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "viewWithTag"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
+- !private ["So20UIFocusItemContainerP", "reloadData"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "viewWithTag"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
+- !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
+- !private ["So30UIFocusItemScrollableContainerP", "viewWithTag"]
+- !private ["So7UILabelC", "text"]
+- ["So30UIPasteConfigurationSupportingP", "Backendless"]
+- !private ["So30UIPasteConfigurationSupportingP", "Order"]
+- ["So30UIPasteConfigurationSupportingP", "UserOrdersTableViewController"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "allOrders"]
+- !private ["So30UIPasteConfigurationSupportingP", "backendless"]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "orderDataStore"]
+- !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
+- !private ["So30UIPasteConfigurationSupportingP", "tableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWithTag"]
+- ["So11UIResponderC", "Backendless"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "CGFloat"]
+- ["So11UIResponderC", "IDataStore"]
+- ["So11UIResponderC", "IndexPath"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "Order"]
+- !private ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITableView"]
+- ["So11UIResponderC", "UITableViewCell"]
+- ["So11UIResponderC", "UserOrdersTableViewController"]
+- ["So11UIResponderC", "allOrders"]
+- ["So11UIResponderC", "backendless"]
+- ["So11UIResponderC", "dataFetched"]
+- !private ["So11UIResponderC", "dequeueReusableCell"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "numberOfSections"]
+- ["So11UIResponderC", "orderDataStore"]
+- ["So11UIResponderC", "ordersTVC"]
+- !private ["So11UIResponderC", "reloadData"]
+- ["So11UIResponderC", "tableView"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillAppear"]
+- !private ["So11UIResponderC", "viewWithTag"]
+- ["So30UIResponderStandardEditActionsP", "Backendless"]
+- !private ["So30UIResponderStandardEditActionsP", "Order"]
+- ["So30UIResponderStandardEditActionsP", "UserOrdersTableViewController"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "allOrders"]
+- !private ["So30UIResponderStandardEditActionsP", "backendless"]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "orderDataStore"]
+- !private ["So30UIResponderStandardEditActionsP", "reloadData"]
+- !private ["So30UIResponderStandardEditActionsP", "tableView"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWithTag"]
+- !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "reloadData"]
+- !private ["So12UIScrollViewC", "viewWithTag"]
+- ["So20UIScrollViewDelegateP", "Backendless"]
+- !private ["So20UIScrollViewDelegateP", "Order"]
+- ["So20UIScrollViewDelegateP", "UserOrdersTableViewController"]
+- ["So20UIScrollViewDelegateP", ""]
+- !private ["So20UIScrollViewDelegateP", "allOrders"]
+- !private ["So20UIScrollViewDelegateP", "backendless"]
+- ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "orderDataStore"]
+- !private ["So20UIScrollViewDelegateP", "tableView"]
+- !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "viewWithTag"]
+- ["So16UIStateRestoringP", "Backendless"]
+- !private ["So16UIStateRestoringP", "Order"]
+- ["So16UIStateRestoringP", "UserOrdersTableViewController"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "allOrders"]
+- !private ["So16UIStateRestoringP", "backendless"]
+- ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "orderDataStore"]
+- !private ["So16UIStateRestoringP", "tableView"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So11UITableViewC", "dequeueReusableCell"]
+- !private ["So11UITableViewC", "reloadData"]
+- !private ["So11UITableViewC", "viewWithTag"]
+- ["So21UITableViewControllerC", "Backendless"]
+- ["So21UITableViewControllerC", "Bool"]
+- ["So21UITableViewControllerC", "CGFloat"]
+- ["So21UITableViewControllerC", "IDataStore"]
+- ["So21UITableViewControllerC", "IndexPath"]
+- ["So21UITableViewControllerC", "Int"]
+- ["So21UITableViewControllerC", "Order"]
+- !private ["So21UITableViewControllerC", "UILabel"]
+- ["So21UITableViewControllerC", "UITableView"]
+- ["So21UITableViewControllerC", "UITableViewCell"]
+- ["So21UITableViewControllerC", "UserOrdersTableViewController"]
+- ["So21UITableViewControllerC", ""]
+- ["So21UITableViewControllerC", "allOrders"]
+- ["So21UITableViewControllerC", "backendless"]
+- ["So21UITableViewControllerC", "dataFetched"]
+- ["So21UITableViewControllerC", "init"]
+- !private ["So21UITableViewControllerC", "init"]
+- ["So21UITableViewControllerC", "numberOfSections"]
+- ["So21UITableViewControllerC", "orderDataStore"]
+- ["So21UITableViewControllerC", "ordersTVC"]
+- ["So21UITableViewControllerC", "tableView"]
+- ["So21UITableViewControllerC", "viewDidLoad"]
+- ["So21UITableViewControllerC", "viewWillAppear"]
+- ["So21UITableViewDataSourceP", "Backendless"]
+- !private ["So21UITableViewDataSourceP", "Order"]
+- ["So21UITableViewDataSourceP", "UserOrdersTableViewController"]
+- ["So21UITableViewDataSourceP", ""]
+- !private ["So21UITableViewDataSourceP", "allOrders"]
+- !private ["So21UITableViewDataSourceP", "backendless"]
+- ["So21UITableViewDataSourceP", "init"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So21UITableViewDataSourceP", "orderDataStore"]
+- !private ["So21UITableViewDataSourceP", "tableView"]
+- !private ["So21UITableViewDataSourceP", "viewDidLoad"]
+- ["So19UITableViewDelegateP", "Backendless"]
+- !private ["So19UITableViewDelegateP", "Order"]
+- ["So19UITableViewDelegateP", "UserOrdersTableViewController"]
+- ["So19UITableViewDelegateP", ""]
+- !private ["So19UITableViewDelegateP", "allOrders"]
+- !private ["So19UITableViewDelegateP", "backendless"]
+- ["So19UITableViewDelegateP", "init"]
+- !private ["So19UITableViewDelegateP", "init"]
+- !private ["So19UITableViewDelegateP", "orderDataStore"]
+- !private ["So19UITableViewDelegateP", "tableView"]
+- !private ["So19UITableViewDelegateP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", "Backendless"]
+- !private ["So18UITraitEnvironmentP", "Order"]
+- ["So18UITraitEnvironmentP", "UserOrdersTableViewController"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "allOrders"]
+- !private ["So18UITraitEnvironmentP", "backendless"]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "orderDataStore"]
+- !private ["So18UITraitEnvironmentP", "reloadData"]
+- !private ["So18UITraitEnvironmentP", "tableView"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewWithTag"]
+- ["So23UIUserActivityRestoringP", "Backendless"]
+- !private ["So23UIUserActivityRestoringP", "Order"]
+- ["So23UIUserActivityRestoringP", "UserOrdersTableViewController"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "allOrders"]
+- !private ["So23UIUserActivityRestoringP", "backendless"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "orderDataStore"]
+- !private ["So23UIUserActivityRestoringP", "reloadData"]
+- !private ["So23UIUserActivityRestoringP", "tableView"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "viewWithTag"]
+- !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "reloadData"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "viewWithTag"]
+- ["So16UIViewControllerC", "Backendless"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "CGFloat"]
+- ["So16UIViewControllerC", "IDataStore"]
+- ["So16UIViewControllerC", "IndexPath"]
+- ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "Order"]
+- !private ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UITableView"]
+- ["So16UIViewControllerC", "UITableViewCell"]
+- ["So16UIViewControllerC", "UserOrdersTableViewController"]
+- ["So16UIViewControllerC", "allOrders"]
+- ["So16UIViewControllerC", "backendless"]
+- ["So16UIViewControllerC", "dataFetched"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "numberOfSections"]
+- ["So16UIViewControllerC", "orderDataStore"]
+- ["So16UIViewControllerC", "ordersTVC"]
+- ["So16UIViewControllerC", "tableView"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillAppear"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "Backendless"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "Bool"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "CGFloat"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "IDataStore"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "IndexPath"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "Int"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "Order"]
+- !private ["15Smart_Inventory29UserOrdersTableViewControllerC", "UILabel"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "UITableView"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "UITableViewCell"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "UserOrdersTableViewController"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "allOrders"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "backendless"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "dataFetched"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "deinit"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "init"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "numberOfSections"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "orderDataStore"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "ordersTVC"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "tableView"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "viewDidLoad"]
+- ["15Smart_Inventory29UserOrdersTableViewControllerC", "viewWillAppear"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "viewWithTag"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "status"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "title"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Backendless"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Order"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UserOrdersTableViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "allOrders"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backendless"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "of"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "orderDataStore"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "status"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWithTag"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "find"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "of"]
+- !private ["s21_ObjectiveCBridgeableP", "reloadData"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- "So11BackendlessC"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "So10IDataStoreP"
+- !private "10Foundation9IndexPathV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "15Smart_Inventory5OrderC"
+- !private "So18PersistenceServiceC"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So11UITableViewC"
+- "So21UITableViewControllerC"
+- "So21UITableViewDataSourceP"
+- "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "15Smart_Inventory29UserOrdersTableViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DEBUG.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BinaryCodec.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/RTService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PersistenceService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/CacheService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ICacheService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/FileService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/MessagingService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/CustomService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoFence.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Presence.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessFile.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IDataStore.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/MapDrivenDataStore.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/RTMessaging.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Logging.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ICallback.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Channel.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessCacheProtocol.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BinaryStream.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessBeacon.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DataPermission.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/FilePermission.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DeviceRegistration.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PublishMessageInfo.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BEFileInfo.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserInfo.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/HashMap.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/QueryOptionsBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DataQueryBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PagedQueryBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/LoadRelationsQueryBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Responder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Logger.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/LocationTracker.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/EventHandler.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/RTListener.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IPresenceListener.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessPushHelper.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessUser.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IResponseAdapter.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoCluster.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AMFSerializer.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/SharedObjectChanges.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Types.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PublishOptions.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/QueryOptions.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DeliveryOptions.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AtomicCounters.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IAtomicCounters.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Backendless.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Events.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BodyParts.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/MessageStatus.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/SharedObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/CommandObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/InvokeObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserStatusObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ReconnectAttemptObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BulkEvent.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoPoint.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessCachePolicy.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessDataQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessSimpleQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessGeoQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ProtectedBackendlessGeoQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoCategory.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DataStoreFactory.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessEntity.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserProperty.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractProperty.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ObjectProperty.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "922da0c3a5eb1bb5b483cce64432589a"

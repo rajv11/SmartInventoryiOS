@@ -52,6 +52,7 @@ depends-member:
 - !private ["15Smart_Inventory11AllProductsC", "Void"]
 - ["15Smart_Inventory11AllProductsC", "allProducts"]
 - ["15Smart_Inventory11AllProductsC", "backendless"]
+- ["15Smart_Inventory11AllProductsC", "deinit"]
 - ["15Smart_Inventory11AllProductsC", "deleteProduct"]
 - ["15Smart_Inventory11AllProductsC", "init"]
 - !private ["15Smart_Inventory11AllProductsC", "print"]
