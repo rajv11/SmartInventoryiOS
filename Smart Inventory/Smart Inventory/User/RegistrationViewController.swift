@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController{
+class RegistrationViewController: UIViewController, UITextFieldDelegate{
     
     var  backendless  =  Backendless.sharedInstance()
     
@@ -27,10 +27,17 @@ class RegistrationViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
-        
+        mobileNumberTF.delegate = self
+        zipTF.delegate = self
         // Do any additional setup after loading the view.
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
     /*
      // MARK: - Navigation
      
