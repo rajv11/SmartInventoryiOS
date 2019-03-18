@@ -16,6 +16,8 @@ class UserOrdersTableViewController: UITableViewController {
     var orderDataStore:IDataStore!
     var allOrders:[Order] = []
     
+    @IBAction func onDone(segue:UIStoryboardSegue){}
+    
     @objc func dataFetched() {
         tableView.reloadData()
     }
@@ -102,10 +104,18 @@ class UserOrdersTableViewController: UITableViewController {
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
      */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "order_details" {
+            let orderDetailsVC = segue.destination as! OrderDetialsViewController
+            print(tableView.indexPathForSelectedRow!.row)
+            orderDetailsVC.order = self.allOrders[tableView.indexPathForSelectedRow!.row]
+        } else {
+            
+        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
 
 }
