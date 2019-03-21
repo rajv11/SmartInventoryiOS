@@ -25,8 +25,10 @@ class UserOrdersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         orderDataStore =  backendless.data.of(Order.self)
-        allOrders = self.orderDataStore.find() as! [Order]
-        
+        let queryBuilder = DataQueryBuilder ()
+        queryBuilder!.setRelationsDepth(1)
+        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
+
         
         // Do any additional setup after loading the view.
     }
