@@ -26,7 +26,7 @@
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="aGo-fZ-uOM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testuser" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-JT-2jB">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testuser" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-JT-2jB">
                                 <rect key="frame" x="16" y="340" width="343" height="30"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -125,12 +125,12 @@
                             <constraint firstItem="aWN-SI-O0M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Cfm-fO-t3J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vcb-F4-R5e" secondAttribute="bottom" constant="175" id="EDI-cb-1O2"/>
                             <constraint firstItem="bvs-SW-xFS" firstAttribute="leading" secondItem="aWN-SI-O0M" secondAttribute="trailing" constant="8" symbolic="YES" id="Eb4-Ye-xSB"/>
-                            <constraint firstItem="SWY-JT-2jB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Nzf-tu-jsJ"/>
+                            <constraint firstItem="SWY-JT-2jB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Nzf-tu-jsJ"/>
                             <constraint firstItem="zqj-Uy-36d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="QBg-MQ-uJn"/>
                             <constraint firstItem="NYS-gT-g23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="63" id="Qu8-TH-Zul"/>
                             <constraint firstItem="zqj-Uy-36d" firstAttribute="top" secondItem="aWN-SI-O0M" secondAttribute="bottom" constant="17" id="RJi-Y9-hiJ"/>
                             <constraint firstItem="vcb-F4-R5e" firstAttribute="top" secondItem="bvs-SW-xFS" secondAttribute="bottom" constant="8" symbolic="YES" id="Rpw-6x-4JO"/>
-                            <constraint firstItem="9bk-QN-ySE" firstAttribute="leading" secondItem="SWY-JT-2jB" secondAttribute="leading" id="T6l-zw-GDg"/>
+                            <constraint firstItem="9bk-QN-ySE" firstAttribute="leading" secondItem="SWY-JT-2jB" secondAttribute="leading" constant="16" id="T6l-zw-GDg"/>
                             <constraint firstItem="NYS-gT-g23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TFq-B2-KSh"/>
                             <constraint firstItem="SWY-JT-2jB" firstAttribute="top" secondItem="9bk-QN-ySE" secondAttribute="bottom" constant="8" symbolic="YES" id="TL9-7t-VFr"/>
                             <constraint firstItem="YF4-xg-1dl" firstAttribute="centerX" secondItem="NYS-gT-g23" secondAttribute="centerX" id="TwV-ae-MpR"/>
@@ -1309,6 +1309,62 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="825" y="-145"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6gD-Kx-hj1">
+            <objects>
+                <viewController id="ESW-By-eMy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IlY-qz-wlj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Receipt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLp-St-noB">
+                                <rect key="frame" x="0.0" y="44" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Receipt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyJ-ZC-pue">
+                                <rect key="frame" x="83" y="178" width="209" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Only pdf file format is allowed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shI-Cz-rJ5">
+                                <rect key="frame" x="67" y="702" width="240" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9G-pk-zEv">
+                                <rect key="frame" x="16" y="347" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4441565890657968" green="0.59875980311679078" blue="0.7826551974128565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Select File">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcJ-K0-50v">
+                                <rect key="frame" x="16" y="419" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4441565891" green="0.59875980309999999" blue="0.7826551974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="67o-zs-dhH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KH8-JU-xFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2722.4000000000001" y="1316.7487684729065"/>
+        </scene>
         <!--Orders-->
         <scene sceneID="cbB-Ih-fqS">
             <objects>
@@ -1597,7 +1653,7 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="y4h-4z-If8"/>
+        <segue reference="Bi5-oh-3tp"/>
         <segue reference="DHv-3H-hNE"/>
         <segue reference="RAs-ko-HsA"/>
     </inferredMetricsTieBreakers>

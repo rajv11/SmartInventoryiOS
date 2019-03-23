@@ -356,6 +356,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Order * _Nonnull order
 @end
 
 
+SWIFT_CLASS("_TtC15Smart_Inventory26OrderDetialsViewController")
+@interface OrderDetialsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified claimedLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLbl;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC15Smart_Inventory25OrdersTableViewController")
 @interface OrdersTableViewController : UITableViewController
 - (void)viewDidLoad;
@@ -414,7 +427,7 @@ SWIFT_CLASS("_TtC15Smart_Inventory26ProfileTableViewController")
 
 
 SWIFT_CLASS("_TtC15Smart_Inventory26RegistrationViewController")
-@interface RegistrationViewController : UIViewController
+@interface RegistrationViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fullNameTF;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailIdTF;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified addressTF;
@@ -425,6 +438,7 @@ SWIFT_CLASS("_TtC15Smart_Inventory26RegistrationViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTF;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmPasswordTF;
 - (void)viewDidLoad;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString * _Nonnull)identifier sender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -448,6 +462,7 @@ SWIFT_CLASS("_TtC15Smart_Inventory20UpdateViewController")
 
 SWIFT_CLASS("_TtC15Smart_Inventory29UserOrdersTableViewController")
 @interface UserOrdersTableViewController : UITableViewController
+- (IBAction)onDoneWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (void)dataFetched;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -455,6 +470,7 @@ SWIFT_CLASS("_TtC15Smart_Inventory29UserOrdersTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

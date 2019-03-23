@@ -2,15 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Foundation</string>
 	<string>Dispatch</string>
-	<string>options</string>
+	<string>UIKit</string>
+	<string>Foundation</string>
 	<string>UserNotifications</string>
 	<string>zlib</string>
 	<string>CoreFoundation</string>
 	<string>CommonCrypto</string>
 	<string>Security</string>
-	<string>UIKit</string>
+	<string>options</string>
 	<string>Starscream</string>
 	<string>CoreLocation</string>
 </array>
