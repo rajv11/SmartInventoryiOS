@@ -1646,7 +1646,7 @@ The application will manages the shipping labels, product details, orders and tr
         <!--Title-->
         <scene sceneID="6Vl-gs-0w9">
             <objects>
-                <viewController id="582-5a-i7E" sceneMemberID="viewController">
+                <viewController id="582-5a-i7E" customClass="ModifyOrderViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2j-Hj-nDy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1723,6 +1723,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="cancelOrder:" destination="582-5a-i7E" eventType="touchUpInside" id="n1Q-Rc-OTw"/>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i75-rN-4tV"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="N1Y-LK-QS7"/>
                                 </connections>
@@ -1744,6 +1745,7 @@ The application will manages the shipping labels, product details, orders and tr
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zyY-SM-moD"/>
+                                    <action selector="modifyOrder:" destination="582-5a-i7E" eventType="touchUpInside" id="17u-U0-c1c"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="Urm-fm-ecH"/>
                                 </connections>
                             </button>
@@ -1752,6 +1754,12 @@ The application will manages the shipping labels, product details, orders and tr
                         <viewLayoutGuide key="safeArea" id="tQR-H1-EJq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="vEO-XW-ZwK"/>
+                    <connections>
+                        <outlet property="descLbl" destination="TKp-7q-neQ" id="DUl-Df-uqZ"/>
+                        <outlet property="nameLbl" destination="kUf-dN-nNh" id="O7Y-GP-Qb1"/>
+                        <outlet property="price" destination="EPr-bG-Yd0" id="OYE-yp-EYe"/>
+                        <outlet property="quantityLbl" destination="T6N-9y-bM9" id="9XQ-NP-RBS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pu-dF-pDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FPL-Pq-4Av" userLabel="Exit" sceneMemberID="exit"/>

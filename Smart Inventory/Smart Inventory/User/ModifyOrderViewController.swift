@@ -1,22 +1,19 @@
 //
-//  OrderDetialsViewController.swift
+//  ModifyOrderViewController.swift
 //  Smart Inventory
 //
-//  Created by Shruthi  Patlolla on 3/17/19.
+//  Created by Shruthi  Patlolla on 3/24/19.
 //  Copyright © 2019 Jennaikode,Vamshi Raj. All rights reserved.
 //
 
 import UIKit
 
-class OrderDetialsViewController: UIViewController {
+class ModifyOrderViewController: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UITextView!
-    @IBOutlet weak var claimedLbl: UILabel!
-    @IBOutlet weak var priceLbl: UILabel!
-    
-    static var order:Order!
-    
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var quantityLbl: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,10 +24,16 @@ class OrderDetialsViewController: UIViewController {
         
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
-        claimedLbl.text = String(OrderDetialsViewController.order.quantity)
-        priceLbl.text = String(OrderDetialsViewController.order.product.price)
+        quantityLbl.text = String(OrderDetialsViewController.order.quantity)
+        price.text = String(OrderDetialsViewController.order.product.price)
     }
 
+  
+    @IBAction func modifyOrder(_ sender: Any) {
+    }
+    
+    @IBAction func cancelOrder(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

@@ -112,7 +112,7 @@ class UserOrdersTableViewController: UITableViewController {
         if segue.identifier == "order_details" {
             let orderDetailsVC = segue.destination as! OrderDetialsViewController
             print(tableView.indexPathForSelectedRow!.row)
-            orderDetailsVC.order = self.allOrders[tableView.indexPathForSelectedRow!.row]
+            OrderDetialsViewController.order = self.allOrders[tableView.indexPathForSelectedRow!.row]
         } else {
             
         }
