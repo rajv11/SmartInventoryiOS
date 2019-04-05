@@ -20,17 +20,14 @@ depends-top-level:
 - "=="
 - "Array"
 - !private "Bool"
-- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - "CharacterSet"
 - "Data"
 - "Dictionary"
 - !private "DispatchQueue"
 - "Error"
-- !private "FloatLiteralType"
 - !private "HTTPCookie"
 - !private "Int"
-- !private "IntegerLiteralType"
 - "JSONError"
 - !private "JSONSerialization"
 - !private "SSLSecurity"
@@ -38,7 +35,6 @@ depends-top-level:
 - "SocketIOClientOption"
 - !private "SocketLogger"
 - "String"
-- !private "StringLiteralType"
 - "TernaryPrecedence"
 - !private "URLSessionDelegate"
 - !private "~="
@@ -46,24 +42,16 @@ depends-member:
 - ["Sa", "Data"]
 - !private ["Sa", "JSONSerialization"]
 - ["Sa", "toJSON"]
-- !private ["s13ArrayProtocolP", "JSONSerialization"]
 - !private ["SK", "JSONError"]
 - !private ["SK", "JSONSerialization"]
 - !private ["SK", "addingPercentEncoding"]
 - !private ["SK", "data"]
-- !private ["SK", "init"]
-- !private ["SK", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "Dictionary"]
 - !private ["s7CVarArgP", "JSONError"]
 - !private ["s7CVarArgP", "JSONSerialization"]
-- ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "WritingOptions"]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addingPercentEncoding"]
 - !private ["s7CVarArgP", "data"]
-- !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "jsonObject"]
 - !private ["s7CVarArgP", "keyValueToSocketIOClientOption"]
 - ["10Foundation12CharacterSetV", "CharacterSet"]
@@ -91,24 +79,19 @@ depends-member:
 - !private ["Sl", "Dictionary"]
 - !private ["Sl", "JSONError"]
 - !private ["Sl", "JSONSerialization"]
-- ["Sl", "String"]
 - !private ["Sl", "addingPercentEncoding"]
 - !private ["Sl", "data"]
-- !private ["Sl", "init"]
-- !private ["Sl", "init"]
 - !private ["Sl", "insert"]
 - !private ["Sl", "keyValueToSocketIOClientOption"]
 - !private ["SL", "JSONError"]
 - !private ["SL", "JSONSerialization"]
 - !private ["SL", "addingPercentEncoding"]
 - !private ["SL", "data"]
-- !private ["SL", "init"]
-- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "JSONSerialization"]
 - !private ["s28CustomDebugStringConvertibleP", "CharacterSet"]
 - !private ["s28CustomDebugStringConvertibleP", "Dictionary"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONError"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONSerialization"]
-- ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "WritingOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "addingPercentEncoding"]
 - !private ["s28CustomDebugStringConvertibleP", "allowedURLCharacterSet"]
@@ -121,7 +104,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "forcePolling"]
 - !private ["s28CustomDebugStringConvertibleP", "forceWebsockets"]
 - !private ["s28CustomDebugStringConvertibleP", "handleQueue"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "inverted"]
 - !private ["s28CustomDebugStringConvertibleP", "jsonObject"]
@@ -136,18 +118,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "security"]
 - !private ["s28CustomDebugStringConvertibleP", "selfSigned"]
 - !private ["s28CustomDebugStringConvertibleP", "sessionDelegate"]
-- !private ["s29CustomPlaygroundQuickLookableP", "JSONError"]
-- !private ["s29CustomPlaygroundQuickLookableP", "JSONSerialization"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "addingPercentEncoding"]
-- !private ["s29CustomPlaygroundQuickLookableP", "data"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "Dictionary"]
 - !private ["s17CustomReflectableP", "JSONError"]
 - !private ["s17CustomReflectableP", "JSONSerialization"]
-- ["s17CustomReflectableP", "String"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "addingPercentEncoding"]
 - !private ["s17CustomReflectableP", "compress"]
 - !private ["s17CustomReflectableP", "connectParams"]
@@ -158,8 +131,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "forcePolling"]
 - !private ["s17CustomReflectableP", "forceWebsockets"]
 - !private ["s17CustomReflectableP", "handleQueue"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "keyValueToSocketIOClientOption"]
 - !private ["s17CustomReflectableP", "log"]
 - !private ["s17CustomReflectableP", "logger"]
@@ -175,9 +146,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Dictionary"]
 - !private ["s23CustomStringConvertibleP", "JSONError"]
 - !private ["s23CustomStringConvertibleP", "JSONSerialization"]
-- ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "WritingOptions"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addingPercentEncoding"]
 - !private ["s23CustomStringConvertibleP", "allowedURLCharacterSet"]
 - !private ["s23CustomStringConvertibleP", "compress"]
@@ -189,7 +158,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "forcePolling"]
 - !private ["s23CustomStringConvertibleP", "forceWebsockets"]
 - !private ["s23CustomStringConvertibleP", "handleQueue"]
-- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "inverted"]
 - !private ["s23CustomStringConvertibleP", "jsonObject"]
@@ -205,12 +173,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "selfSigned"]
 - !private ["s23CustomStringConvertibleP", "sessionDelegate"]
 - !private ["s23CustomStringConvertibleP", "utf16"]
+- !private ["10Foundation12DataProtocolP", "JSONSerialization"]
 - !private ["Se", "CharacterSet"]
 - !private ["Se", "Dictionary"]
 - !private ["Se", "JSONError"]
 - !private ["Se", "JSONSerialization"]
-- ["Se", "String"]
-- !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "addingPercentEncoding"]
 - !private ["Se", "allowedURLCharacterSet"]
 - !private ["Se", "compress"]
@@ -222,7 +189,6 @@ depends-member:
 - !private ["Se", "forcePolling"]
 - !private ["Se", "forceWebsockets"]
 - !private ["Se", "handleQueue"]
-- !private ["Se", "init"]
 - !private ["Se", "init"]
 - !private ["Se", "inverted"]
 - !private ["Se", "keyValueToSocketIOClientOption"]
@@ -253,8 +219,6 @@ depends-member:
 - !private ["SE", "Dictionary"]
 - !private ["SE", "JSONError"]
 - !private ["SE", "JSONSerialization"]
-- ["SE", "String"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "addingPercentEncoding"]
 - !private ["SE", "allowedURLCharacterSet"]
 - !private ["SE", "compress"]
@@ -266,7 +230,6 @@ depends-member:
 - !private ["SE", "forcePolling"]
 - !private ["SE", "forceWebsockets"]
 - !private ["SE", "handleQueue"]
-- !private ["SE", "init"]
 - !private ["SE", "init"]
 - !private ["SE", "inverted"]
 - !private ["SE", "keyValueToSocketIOClientOption"]
@@ -281,17 +244,17 @@ depends-member:
 - !private ["SE", "selfSigned"]
 - !private ["SE", "sessionDelegate"]
 - !private ["SS10FoundationE8EncodingV", "utf16"]
+- ["SQ", "=="]
 - !private ["SQ", "CharacterSet"]
 - !private ["SQ", "Dictionary"]
 - !private ["SQ", "JSONError"]
 - !private ["SQ", "JSONSerialization"]
-- ["SQ", "String"]
 - !private ["SQ", "WritingOptions"]
 - ["SQ", ""]
 - ["SQ", "_code"]
 - ["SQ", "_domain"]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - ["SQ", "_getEmbeddedNSError"]
+- ["SQ", "_rawHashValue"]
 - ["SQ", "_userInfo"]
 - !private ["SQ", "addingPercentEncoding"]
 - !private ["SQ", "allowFragments"]
@@ -307,7 +270,6 @@ depends-member:
 - !private ["SQ", "handleQueue"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
-- !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "inverted"]
 - !private ["SQ", "jsonObject"]
@@ -326,10 +288,12 @@ depends-member:
 - !private ["SQ", "selfSigned"]
 - !private ["SQ", "sessionDelegate"]
 - !private ["SQ", "utf16"]
+- ["s5ErrorP", "=="]
 - ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_rawHashValue"]
 - ["s5ErrorP", "_userInfo"]
 - ["s5ErrorP", "hash"]
 - ["s5ErrorP", "hashValue"]
@@ -343,16 +307,12 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "insert"]
 - !private ["s25ExpressibleByArrayLiteralP", "inverted"]
 - !private ["s25ExpressibleByArrayLiteralP", "mutableContainers"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Dictionary"]
-- ["s30ExpressibleByDictionaryLiteralP", "String"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "keyValueToSocketIOClientOption"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "JSONError"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "JSONSerialization"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "compress"]
 - !private ["s23ExpressibleByNilLiteralP", "connectParams"]
 - !private ["s23ExpressibleByNilLiteralP", "cookies"]
@@ -371,29 +331,29 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "security"]
 - !private ["s23ExpressibleByNilLiteralP", "selfSigned"]
 - !private ["s23ExpressibleByNilLiteralP", "sessionDelegate"]
+- !private ["s32ExpressibleByStringInterpolationP", "JSONError"]
+- !private ["s32ExpressibleByStringInterpolationP", "JSONSerialization"]
+- !private ["s32ExpressibleByStringInterpolationP", "addingPercentEncoding"]
+- !private ["s32ExpressibleByStringInterpolationP", "data"]
 - !private ["s26ExpressibleByStringLiteralP", "JSONError"]
 - !private ["s26ExpressibleByStringLiteralP", "JSONSerialization"]
 - !private ["s26ExpressibleByStringLiteralP", "addingPercentEncoding"]
 - !private ["s26ExpressibleByStringLiteralP", "data"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "JSONError"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "JSONSerialization"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "addingPercentEncoding"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "=="]
 - !private ["SH", "CharacterSet"]
 - !private ["SH", "Dictionary"]
 - !private ["SH", "JSONError"]
 - !private ["SH", "JSONSerialization"]
-- ["SH", "String"]
 - !private ["SH", "WritingOptions"]
 - ["SH", ""]
 - ["SH", "_code"]
 - ["SH", "_domain"]
-- !private ["SH", "_getBuiltinLogicValue"]
 - ["SH", "_getEmbeddedNSError"]
+- ["SH", "_rawHashValue"]
 - ["SH", "_userInfo"]
 - !private ["SH", "addingPercentEncoding"]
 - !private ["SH", "allowedURLCharacterSet"]
@@ -408,7 +368,6 @@ depends-member:
 - !private ["SH", "handleQueue"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
-- !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "inverted"]
 - !private ["SH", "jsonObject"]
@@ -427,10 +386,12 @@ depends-member:
 - !private ["SH", "sessionDelegate"]
 - !private ["SH", "utf16"]
 - !private ["s6HasherV", "combine"]
+- ["8SocketIO9JSONErrorO", "=="]
 - ["8SocketIO9JSONErrorO", "__derived_enum_equals"]
 - ["8SocketIO9JSONErrorO", "_code"]
 - ["8SocketIO9JSONErrorO", "_domain"]
 - ["8SocketIO9JSONErrorO", "_getEmbeddedNSError"]
+- ["8SocketIO9JSONErrorO", "_rawHashValue"]
 - ["8SocketIO9JSONErrorO", "_userInfo"]
 - ["8SocketIO9JSONErrorO", "deinit"]
 - ["8SocketIO9JSONErrorO", "hash"]
@@ -442,19 +403,15 @@ depends-member:
 - !private ["So19NSJSONSerializationC", "jsonObject"]
 - !private ["s25LosslessStringConvertibleP", "JSONError"]
 - !private ["s25LosslessStringConvertibleP", "JSONSerialization"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "addingPercentEncoding"]
 - !private ["s25LosslessStringConvertibleP", "data"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "JSONError"]
 - !private ["s10MirrorPathP", "JSONSerialization"]
 - !private ["s10MirrorPathP", "addingPercentEncoding"]
 - !private ["s10MirrorPathP", "data"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "JSONSerialization"]
 - !private ["SM", "insert"]
+- !private ["10Foundation19MutableDataProtocolP", "JSONSerialization"]
 - !private ["So8NSCodingP", "addingPercentEncoding"]
 - !private ["So8NSCodingP", "data"]
 - !private ["So9NSCopyingP", "addingPercentEncoding"]
@@ -503,8 +460,6 @@ depends-member:
 - !private ["Sm", "JSONSerialization"]
 - !private ["Sm", "addingPercentEncoding"]
 - !private ["Sm", "data"]
-- !private ["Sm", "init"]
-- !private ["Sm", "init"]
 - !private ["SY", "allowFragments"]
 - !private ["SY", "init"]
 - !private ["SY", "mutableContainers"]
@@ -518,11 +473,8 @@ depends-member:
 - !private ["ST", "Dictionary"]
 - !private ["ST", "JSONError"]
 - !private ["ST", "JSONSerialization"]
-- ["ST", "String"]
 - !private ["ST", "addingPercentEncoding"]
 - !private ["ST", "data"]
-- !private ["ST", "init"]
-- !private ["ST", "init"]
 - !private ["ST", "insert"]
 - !private ["ST", "keyValueToSocketIOClientOption"]
 - !private ["s10SetAlgebraP", "CharacterSet"]
@@ -534,12 +486,8 @@ depends-member:
 - !private ["8SocketIO0A4DataP", "Dictionary"]
 - !private ["8SocketIO0A4DataP", "JSONError"]
 - !private ["8SocketIO0A4DataP", "JSONSerialization"]
-- ["8SocketIO0A4DataP", "String"]
-- !private ["8SocketIO0A4DataP", "_getBuiltinLogicValue"]
 - !private ["8SocketIO0A4DataP", "addingPercentEncoding"]
 - !private ["8SocketIO0A4DataP", "data"]
-- !private ["8SocketIO0A4DataP", "init"]
-- !private ["8SocketIO0A4DataP", "init"]
 - !private ["8SocketIO0A4DataP", "keyValueToSocketIOClientOption"]
 - !private ["8SocketIO0A21IOClientConfigurationV", "deinit"]
 - !private ["8SocketIO0A21IOClientConfigurationV", "insert"]
@@ -566,8 +514,6 @@ depends-member:
 - ["SS", "String"]
 - !private ["SS", "addingPercentEncoding"]
 - !private ["SS", "data"]
-- !private ["SS", "init"]
-- !private ["SS", "init"]
 - ["SS", "toArray"]
 - ["SS", "toDictionary"]
 - ["SS", "urlEncode"]
@@ -575,56 +521,39 @@ depends-member:
 - !private ["Sy", "JSONSerialization"]
 - !private ["Sy", "addingPercentEncoding"]
 - !private ["Sy", "data"]
-- !private ["Sy", "init"]
-- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "JSONError"]
 - !private ["s16TextOutputStreamP", "JSONSerialization"]
 - !private ["s16TextOutputStreamP", "addingPercentEncoding"]
 - !private ["s16TextOutputStreamP", "data"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "JSONError"]
 - !private ["s20TextOutputStreamableP", "JSONSerialization"]
 - !private ["s20TextOutputStreamableP", "addingPercentEncoding"]
 - !private ["s20TextOutputStreamableP", "data"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So20NSJSONWritingOptionsV", "init"]
+- !private ["s14_ArrayProtocolP", "JSONSerialization"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "JSONError"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "JSONSerialization"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "addingPercentEncoding"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "data"]
 - !private ["s24_DestructorSafeContainerP", "JSONSerialization"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "JSONError"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "JSONSerialization"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "JSONError"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "JSONSerialization"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "addingPercentEncoding"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "JSONError"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "JSONSerialization"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "addingPercentEncoding"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "data"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "JSONError"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "JSONSerialization"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "addingPercentEncoding"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "JSONError"]
-- !private ["s33_ExpressibleByStringInterpolationP", "JSONSerialization"]
-- !private ["s33_ExpressibleByStringInterpolationP", "addingPercentEncoding"]
-- !private ["s33_ExpressibleByStringInterpolationP", "data"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "JSONError"]
+- !private ["s19_HasContiguousBytesP", "JSONSerialization"]
+- !private ["s19_HasContiguousBytesP", "addingPercentEncoding"]
+- !private ["s19_HasContiguousBytesP", "data"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "Dictionary"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "JSONSerialization"]
-- ["s35_HasCustomAnyHashableRepresentationP", "String"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "addingPercentEncoding"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "keyValueToSocketIOClientOption"]
@@ -636,8 +565,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "Dictionary"]
 - !private ["s21_ObjectiveCBridgeableP", "JSONError"]
 - !private ["s21_ObjectiveCBridgeableP", "JSONSerialization"]
-- ["s21_ObjectiveCBridgeableP", "String"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "addingPercentEncoding"]
 - !private ["s21_ObjectiveCBridgeableP", "allowedURLCharacterSet"]
 - !private ["s21_ObjectiveCBridgeableP", "compress"]
@@ -649,7 +576,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "forcePolling"]
 - !private ["s21_ObjectiveCBridgeableP", "forceWebsockets"]
 - !private ["s21_ObjectiveCBridgeableP", "handleQueue"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "inverted"]
 - !private ["s21_ObjectiveCBridgeableP", "keyValueToSocketIOClientOption"]
@@ -663,37 +589,30 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "security"]
 - !private ["s21_ObjectiveCBridgeableP", "selfSigned"]
 - !private ["s21_ObjectiveCBridgeableP", "sessionDelegate"]
-- !private ["s16_SwiftStringViewP", "JSONError"]
-- !private ["s16_SwiftStringViewP", "JSONSerialization"]
-- !private ["s16_SwiftStringViewP", "addingPercentEncoding"]
-- !private ["s16_SwiftStringViewP", "data"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
-- !private "s13ArrayProtocolP"
 - !private "SK"
-- !private "Sb"
-- "s7CVarArgP"
+- !private "s7CVarArgP"
 - "10Foundation12CharacterSetV"
 - !private "8SocketIO12ClientOptionP"
-- "Sl"
+- !private "Sl"
 - !private "SL"
-- "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
-- "s23CustomStringConvertibleP"
-- "Se"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
 - "SD"
-- "SE"
+- !private "SE"
 - !private "SS10FoundationE8EncodingV"
 - "SQ"
 - "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
-- "s30ExpressibleByDictionaryLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
@@ -703,6 +622,7 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -719,9 +639,9 @@ depends-nominal:
 - !private "SY"
 - !private "So20NSJSONReadingOptionsV"
 - !private "10Foundation20ReferenceConvertibleP"
-- "ST"
+- !private "ST"
 - !private "s10SetAlgebraP"
-- "8SocketIO0A4DataP"
+- !private "8SocketIO0A4DataP"
 - !private "8SocketIO0A21IOClientConfigurationV"
 - !private "8SocketIO0A14IOClientOptionO"
 - "SS"
@@ -729,20 +649,18 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So20NSJSONWritingOptionsV"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -761,15 +679,16 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Socket.IO-Client-Swift.build/unextended-module.modulemap"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Starscream.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2f3fdc9abc7e04d52626dcafa6052810"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2bea13d65462d8356c206b10664cb71f"

@@ -1,8 +1,8 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "3fdd5b8475ec21ee6fb38906c55b6b3c"
-build_time: [1551861143, 803284000]
+version: "Apple Swift version 5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+options: "48e298187ad3271e4d53fc61f5e8518d"
+build_time: [1554127559, 717174000]
 inputs:
-  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/Compression.swift": [1551860246, 0]
-  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/SSLClientCertificate.swift": [1551860246, 0]
-  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/SSLSecurity.swift": [1551860246, 0]
-  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/WebSocket.swift": [1551860246, 0]
+  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/Compression.swift": [1554127544, 473855643]
+  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/SSLClientCertificate.swift": [1554127544, 474149705]
+  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/SSLSecurity.swift": [1554127544, 474463113]
+  "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Starscream/Sources/Starscream/WebSocket.swift": [1554127544, 474989201]

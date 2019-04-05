@@ -41,9 +41,7 @@ depends-top-level:
 - !private "=="
 - !private ">"
 - !private "??"
-- "Array"
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "CastingPrecedence"
 - "ConfigSettable"
 - "Data"
@@ -51,8 +49,6 @@ depends-top-level:
 - "DispatchQueue"
 - !private "DispatchTime"
 - !private "Double"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "NSObject"
 - "SocketClientEvent"
 - "SocketData"
@@ -67,29 +63,22 @@ depends-top-level:
 - "SocketPacket"
 - "SocketParsable"
 - "String"
-- "StringLiteralType"
 - "URL"
-- !private "UnicodeScalarType"
 - !private "abs"
 - !private "assert"
 - !private "||"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
 - ["Sa", "init"]
 - !private ["Sa", "map"]
 - !private ["Sa", "removeAll"]
-- !private ["s13ArrayProtocolP", "append"]
-- ["s13ArrayProtocolP", "init"]
-- !private ["s13ArrayProtocolP", "map"]
-- !private ["s13ArrayProtocolP", "removeAll"]
 - !private ["SK", "append"]
 - !private ["SK", "hasPrefix"]
-- ["SK", "init"]
 - ["SK", "init"]
 - !private ["SK", "map"]
 - !private ["SK", "removeAll"]
 - !private ["SB", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "DefaultSocketLogger"]
 - ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "DispatchTime"]
@@ -106,7 +95,6 @@ depends-member:
 - !private ["s7CVarArgP", "_engineDidOpen"]
 - !private ["s7CVarArgP", "_engineDidReceivePong"]
 - !private ["s7CVarArgP", "_engineDidSendPing"]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_parseEngineBinaryData"]
 - !private ["s7CVarArgP", "_parseEngineMessage"]
 - !private ["s7CVarArgP", "_tryReconnect"]
@@ -139,7 +127,6 @@ depends-member:
 - !private ["s7CVarArgP", "handlePacket"]
 - ["s7CVarArgP", "handleQueue"]
 - !private ["s7CVarArgP", "hasPrefix"]
-- ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "logType"]
 - ["s7CVarArgP", "main"]
@@ -180,7 +167,6 @@ depends-member:
 - !private ["Sl", "append"]
 - !private ["Sl", "hasPrefix"]
 - ["Sl", "init"]
-- ["Sl", "init"]
 - !private ["Sl", "insert"]
 - !private ["Sl", "map"]
 - !private ["Sl", "removeAll"]
@@ -188,8 +174,7 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["Sl", "toSocketConfiguration"]
 - !private ["SL", "hasPrefix"]
-- ["SL", "init"]
-- ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["SL", "now"]
 - !private ["8SocketIO14ConfigSettableP", "DefaultSocketLogger"]
 - ["8SocketIO14ConfigSettableP", "DispatchQueue"]
@@ -251,6 +236,10 @@ depends-member:
 - ["8SocketIO14ConfigSettableP", "status"]
 - !private ["8SocketIO14ConfigSettableP", "tryReconnect"]
 - ["8SocketIO14ConfigSettableP", "waitingPackets"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["10Foundation15ContiguousBytesP", "removeAll"]
 - !private ["s28CustomDebugStringConvertibleP", "DefaultSocketLogger"]
 - ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchTime"]
@@ -301,7 +290,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "handleQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "hasPrefix"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "logType"]
 - ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
@@ -329,15 +317,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "toSocketConfiguration"]
 - !private ["s28CustomDebugStringConvertibleP", "tryReconnect"]
 - ["s28CustomDebugStringConvertibleP", "waitingPackets"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "absoluteString"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hasPrefix"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "hasPrefix"]
-- ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "removeAll"]
@@ -360,7 +341,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_engineDidOpen"]
 - !private ["s23CustomStringConvertibleP", "_engineDidReceivePong"]
 - !private ["s23CustomStringConvertibleP", "_engineDidSendPing"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "_parseEngineBinaryData"]
 - !private ["s23CustomStringConvertibleP", "_parseEngineMessage"]
 - !private ["s23CustomStringConvertibleP", "_tryReconnect"]
@@ -369,6 +349,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "active"]
 - !private ["s23CustomStringConvertibleP", "addEngine"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "assert"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "asyncAfter"]
@@ -398,7 +380,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "handlePacket"]
 - ["s23CustomStringConvertibleP", "handleQueue"]
 - !private ["s23CustomStringConvertibleP", "hasPrefix"]
-- ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "log"]
 - !private ["s23CustomStringConvertibleP", "logType"]
@@ -433,11 +414,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "tryReconnect"]
 - !private ["s23CustomStringConvertibleP", "type"]
 - ["s23CustomStringConvertibleP", "waitingPackets"]
-- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["10Foundation12DataProtocolP", "removeAll"]
 - !private ["Se", "absoluteString"]
 - !private ["Se", "append"]
 - !private ["Se", "hasPrefix"]
-- ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "map"]
 - !private ["Se", "removeAll"]
@@ -445,6 +428,8 @@ depends-member:
 - !private ["Se", "subscript"]
 - !private ["Se", "toSocketConfiguration"]
 - !private ["8SocketIO07DefaultA6LoggerC", "Logger"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["SD", "init"]
 - !private ["SD", "removeValue"]
 - !private ["SD", "subscript"]
@@ -459,11 +444,9 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "sync"]
 - !private ["8Dispatch0A4TimeV", "now"]
 - !private ["Sd", "init"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "absoluteString"]
 - !private ["SE", "append"]
 - !private ["SE", "hasPrefix"]
-- ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "map"]
 - !private ["SE", "removeAll"]
@@ -486,7 +469,6 @@ depends-member:
 - !private ["SQ", "_engineDidOpen"]
 - !private ["SQ", "_engineDidReceivePong"]
 - !private ["SQ", "_engineDidSendPing"]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "_parseEngineBinaryData"]
 - !private ["SQ", "_parseEngineMessage"]
 - !private ["SQ", "_tryReconnect"]
@@ -525,7 +507,6 @@ depends-member:
 - !private ["SQ", "handlePacket"]
 - ["SQ", "handleQueue"]
 - !private ["SQ", "hasPrefix"]
-- ["SQ", "init"]
 - ["SQ", "init"]
 - !private ["SQ", "isBinary"]
 - ["SQ", "log"]
@@ -569,22 +550,16 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "insert"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
 - !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s30ExpressibleByDictionaryLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "removeValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "toSocketConfiguration"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hasPrefix"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "hasPrefix"]
 - !private ["s26ExpressibleByStringLiteralP", "hasPrefix"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "hasPrefix"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SF", "init"]
 - !private ["SH", "DefaultSocketLogger"]
 - ["SH", "DispatchQueue"]
@@ -602,7 +577,6 @@ depends-member:
 - !private ["SH", "_engineDidOpen"]
 - !private ["SH", "_engineDidReceivePong"]
 - !private ["SH", "_engineDidSendPing"]
-- !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "_parseEngineBinaryData"]
 - !private ["SH", "_parseEngineMessage"]
 - !private ["SH", "_tryReconnect"]
@@ -642,7 +616,6 @@ depends-member:
 - ["SH", "handleQueue"]
 - !private ["SH", "hasPrefix"]
 - ["SH", "init"]
-- ["SH", "init"]
 - !private ["SH", "isBinary"]
 - !private ["SH", "logType"]
 - ["SH", "main"]
@@ -675,18 +648,18 @@ depends-member:
 - !private ["SH", "toSocketConfiguration"]
 - !private ["SH", "tryReconnect"]
 - ["SH", "waitingPackets"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "hasPrefix"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "hasPrefix"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - ["SM", "init"]
 - !private ["SM", "insert"]
 - !private ["SM", "map"]
 - !private ["SM", "removeAll"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "removeAll"]
 - !private ["So8NSCodingP", "hasPrefix"]
 - !private ["So9NSCopyingP", "hasPrefix"]
 - !private ["So21NSItemProviderReadingP", "hasPrefix"]
@@ -856,7 +829,6 @@ depends-member:
 - !private ["Sm", "append"]
 - !private ["Sm", "hasPrefix"]
 - ["Sm", "init"]
-- ["Sm", "init"]
 - !private ["Sm", "map"]
 - !private ["Sm", "removeAll"]
 - !private ["SY", "active"]
@@ -870,9 +842,9 @@ depends-member:
 - !private ["SY", "pong"]
 - !private ["SY", "reconnectAttempt"]
 - !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
+- !private ["s10SIMDScalarP", "init"]
 - !private ["ST", "append"]
 - !private ["ST", "hasPrefix"]
-- ["ST", "init"]
 - ["ST", "init"]
 - !private ["ST", "insert"]
 - !private ["ST", "map"]
@@ -885,10 +857,8 @@ depends-member:
 - !private ["8SocketIO0A11ClientEventO", "ping"]
 - !private ["8SocketIO0A11ClientEventO", "pong"]
 - !private ["8SocketIO0A11ClientEventO", "reconnectAttempt"]
-- !private ["8SocketIO0A4DataP", "_getBuiltinLogicValue"]
 - !private ["8SocketIO0A4DataP", "append"]
 - !private ["8SocketIO0A4DataP", "hasPrefix"]
-- ["8SocketIO0A4DataP", "init"]
 - ["8SocketIO0A4DataP", "init"]
 - !private ["8SocketIO0A4DataP", "map"]
 - !private ["8SocketIO0A4DataP", "removeAll"]
@@ -1252,48 +1222,42 @@ depends-member:
 - ["8SocketIO0A8ParsableP", "status"]
 - !private ["8SocketIO0A8ParsableP", "tryReconnect"]
 - ["8SocketIO0A8ParsableP", "waitingPackets"]
-- !private ["s12StaticStringV", "init"]
-- !private ["s12StaticStringV", "init"]
 - !private ["Sx", "init"]
 - !private ["SS", "hasPrefix"]
-- ["SS", "init"]
-- ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "hasPrefix"]
-- ["Sy", "init"]
-- ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "hasPrefix"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "hasPrefix"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["10Foundation3URLV", "absoluteString"]
 - !private ["So20NSURLSessionDelegateP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "absoluteString"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "hasPrefix"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hasPrefix"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "hasPrefix"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "hasPrefix"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hasPrefix"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "absoluteString"]
-- !private ["s33_ExpressibleByStringInterpolationP", "hasPrefix"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "hasPrefix"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s19_HasContiguousBytesP", "removeAll"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -1372,37 +1336,33 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sync"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tryReconnect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "waitingPackets"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "absoluteString"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "hasPrefix"]
-- ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "removeValue"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "toSocketConfiguration"]
-- !private ["s16_SwiftStringViewP", "hasPrefix"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - "Sa"
-- "s13ArrayProtocolP"
 - "SK"
 - !private "SB"
-- !private "Sb"
 - "s7CVarArgP"
 - "8SocketIO12ClientOptionP"
 - "Sl"
-- "SL"
+- !private "SL"
 - "8SocketIO14ConfigSettableP"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
 - "Se"
 - !private "8SocketIO07DefaultA6LoggerC"
+- !private "s26DefaultStringInterpolationV"
 - "SD"
 - "So18OS_dispatch_objectC"
 - "So17OS_dispatch_queueC"
@@ -1411,18 +1371,19 @@ depends-nominal:
 - "SE"
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - "s30ExpressibleByDictionaryLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SF"
 - "SH"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "SM"
+- "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -1439,6 +1400,7 @@ depends-nominal:
 - "Sm"
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
+- !private "s10SIMDScalarP"
 - "ST"
 - !private "s13SignedNumericP"
 - !private "8SocketIO0A11ClientEventO"
@@ -1459,33 +1421,31 @@ depends-nominal:
 - "8SocketIO0A11ManagerSpecP"
 - !private "8SocketIO0A6PacketV"
 - "8SocketIO0A8ParsableP"
-- !private "s12StaticStringV"
 - !private "Sx"
-- "SS"
-- "Sy"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "10Foundation3URLV"
 - !private "So20NSURLSessionDelegateP"
+- "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -1504,15 +1464,16 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Socket.IO-Client-Swift.build/unextended-module.modulemap"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Starscream.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f806146e2eb6051d5ff42090935a08ab"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2e5d0343ae999dae4b53cf9695b1ca3b"

@@ -3,15 +3,15 @@
 <plist version="1.0">
 <array>
 	<string>Dispatch</string>
-	<string>UIKit</string>
-	<string>Foundation</string>
+	<string>options</string>
+	<string>CoreLocation</string>
 	<string>UserNotifications</string>
+	<string>CommonCrypto</string>
 	<string>zlib</string>
 	<string>CoreFoundation</string>
-	<string>CommonCrypto</string>
 	<string>Security</string>
-	<string>options</string>
+	<string>UIKit</string>
 	<string>Starscream</string>
-	<string>CoreLocation</string>
+	<string>Foundation</string>
 </array>
 </plist>

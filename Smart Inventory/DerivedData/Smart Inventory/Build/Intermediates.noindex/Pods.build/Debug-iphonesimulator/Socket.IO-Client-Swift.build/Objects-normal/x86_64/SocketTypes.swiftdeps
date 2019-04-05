@@ -62,9 +62,9 @@ depends-top-level:
 - "SocketEnginePacketType"
 - "String"
 depends-member:
+- ["s18AdditiveArithmeticP", "socketRepresentation"]
 - ["Sa", "deinit"]
 - ["Sa", "socketRepresentation"]
-- ["s13ArrayProtocolP", "socketRepresentation"]
 - ["SK", "socketRepresentation"]
 - ["SB", "socketRepresentation"]
 - ["Sz", "socketRepresentation"]
@@ -74,19 +74,18 @@ depends-member:
 - ["s7CVarArgP", "socketRepresentation"]
 - ["Sl", "socketRepresentation"]
 - ["SL", "socketRepresentation"]
+- ["10Foundation15ContiguousBytesP", "socketRepresentation"]
 - ["s28CustomDebugStringConvertibleP", "socketRepresentation"]
-- ["s29CustomPlaygroundQuickLookableP", "socketRepresentation"]
 - ["s17CustomReflectableP", "socketRepresentation"]
 - ["s23CustomStringConvertibleP", "socketRepresentation"]
 - ["10Foundation4DataV", "deinit"]
 - ["10Foundation4DataV", "socketRepresentation"]
+- ["10Foundation12DataProtocolP", "socketRepresentation"]
 - ["Se", "socketRepresentation"]
 - ["SD", "deinit"]
 - ["SD", "socketRepresentation"]
 - ["Sd", "deinit"]
 - ["Sd", "socketRepresentation"]
-- ["8SocketIO6EitherO", "E"]
-- ["8SocketIO6EitherO", "V"]
 - ["8SocketIO6EitherO", "left"]
 - ["8SocketIO6EitherO", "right"]
 - ["SE", "socketRepresentation"]
@@ -97,6 +96,7 @@ depends-member:
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "socketRepresentation"]
 - ["s25ExpressibleByFloatLiteralP", "socketRepresentation"]
 - ["s27ExpressibleByIntegerLiteralP", "socketRepresentation"]
+- ["s32ExpressibleByStringInterpolationP", "socketRepresentation"]
 - ["s26ExpressibleByStringLiteralP", "socketRepresentation"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "socketRepresentation"]
 - ["s17FixedWidthIntegerP", "socketRepresentation"]
@@ -107,6 +107,7 @@ depends-member:
 - ["s25LosslessStringConvertibleP", "socketRepresentation"]
 - ["s10MirrorPathP", "socketRepresentation"]
 - ["SM", "socketRepresentation"]
+- ["10Foundation19MutableDataProtocolP", "socketRepresentation"]
 - ["So7NSArrayC", "deinit"]
 - ["So7NSArrayC", "socketRepresentation"]
 - ["So8NSCodingP", "socketRepresentation"]
@@ -130,6 +131,7 @@ depends-member:
 - ["Sk", "socketRepresentation"]
 - ["Sm", "socketRepresentation"]
 - ["10Foundation20ReferenceConvertibleP", "socketRepresentation"]
+- ["s10SIMDScalarP", "socketRepresentation"]
 - ["ST", "socketRepresentation"]
 - ["SZ", "socketRepresentation"]
 - ["s13SignedNumericP", "socketRepresentation"]
@@ -142,25 +144,24 @@ depends-member:
 - ["Sy", "socketRepresentation"]
 - ["s16TextOutputStreamP", "socketRepresentation"]
 - ["s20TextOutputStreamableP", "socketRepresentation"]
-- ["s18_BitwiseOperationsP", "socketRepresentation"]
+- ["s14_ArrayProtocolP", "socketRepresentation"]
 - ["s15_CVarArgAlignedP", "socketRepresentation"]
 - ["s22_CVarArgPassedAsDoubleP", "socketRepresentation"]
+- ["s30_CustomPlaygroundQuickLookableP", "socketRepresentation"]
 - ["s24_DestructorSafeContainerP", "socketRepresentation"]
 - ["s35_ExpressibleByBuiltinBooleanLiteralP", "socketRepresentation"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "socketRepresentation"]
 - ["s33_ExpressibleByBuiltinFloatLiteralP", "socketRepresentation"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "socketRepresentation"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "socketRepresentation"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "socketRepresentation"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "socketRepresentation"]
-- ["s33_ExpressibleByStringInterpolationP", "socketRepresentation"]
+- ["s19_HasContiguousBytesP", "socketRepresentation"]
 - ["s35_HasCustomAnyHashableRepresentationP", "socketRepresentation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "socketRepresentation"]
 - ["s21_ObjectiveCBridgeableP", "socketRepresentation"]
-- ["s16_SwiftStringViewP", "socketRepresentation"]
 depends-nominal:
+- "s18AdditiveArithmeticP"
 - "Sa"
-- "s13ArrayProtocolP"
 - "SK"
 - "SB"
 - "Sz"
@@ -169,11 +170,12 @@ depends-nominal:
 - "s7CVarArgP"
 - "Sl"
 - "SL"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "10Foundation4DataV"
+- "10Foundation12DataProtocolP"
 - "Se"
 - "SD"
 - "Sd"
@@ -186,6 +188,7 @@ depends-nominal:
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
 - "s27ExpressibleByIntegerLiteralP"
+- "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "s17FixedWidthIntegerP"
@@ -195,6 +198,7 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So7NSArrayC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
@@ -213,6 +217,7 @@ depends-nominal:
 - "Sk"
 - "Sm"
 - "10Foundation20ReferenceConvertibleP"
+- "s10SIMDScalarP"
 - "ST"
 - "SZ"
 - "s13SignedNumericP"
@@ -222,25 +227,23 @@ depends-nominal:
 - "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s18_BitwiseOperationsP"
+- "s14_ArrayProtocolP"
 - "s15_CVarArgAlignedP"
 - "s22_CVarArgPassedAsDoubleP"
+- "s30_CustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s33_ExpressibleByBuiltinFloatLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -259,15 +262,16 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Socket.IO-Client-Swift.build/unextended-module.modulemap"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Starscream.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "998a5c4b7c7dbda1bfc26b21bbfe0f7a"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "74b8a5f95d53e5803dc544bea39ffc90"

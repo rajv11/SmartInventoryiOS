@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>476A3F47-4732-428D-B67F-AE135A964693</key>
+		<key>61EC8CB9-428C-4E94-9A7A-5E2ED1F52F6D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,9 +15,12 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>476A3F47-4732-428D-B67F-AE135A964693.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>61EC8CB9-428C-4E94-9A7A-5E2ED1F52F6D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Smart Inventory project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -27,13 +30,13 @@
 			<key>signature</key>
 			<string>Build Smart Inventory</string>
 			<key>timeStartedRecording</key>
-			<real>574827166.94019997</real>
+			<real>576040834.85843301</real>
 			<key>timeStoppedRecording</key>
-			<real>574827181.54647601</real>
+			<real>576040835.02613103</real>
 			<key>title</key>
 			<string>Build Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>476A3F47-4732-428D-B67F-AE135A964693</string>
+			<string>61EC8CB9-428C-4E94-9A7A-5E2ED1F52F6D</string>
 		</dict>
 	</dict>
 </dict>

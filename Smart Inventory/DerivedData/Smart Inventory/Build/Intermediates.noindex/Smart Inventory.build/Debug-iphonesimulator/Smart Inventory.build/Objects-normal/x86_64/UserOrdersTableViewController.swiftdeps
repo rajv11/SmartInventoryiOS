@@ -21,14 +21,11 @@ depends-top-level:
 - "CGFloat"
 - "CastingPrecedence"
 - !private "DataQueryBuilder"
-- !private "FloatLiteralType"
 - "IDataStore"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "Order"
 - !private "OrderDetialsViewController"
-- !private "StringLiteralType"
 - !private "UILabel"
 - "UIStoryboardSegue"
 - "UITableView"
@@ -39,22 +36,15 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
-- !private ["s13ArrayProtocolP", "count"]
-- !private ["s13ArrayProtocolP", "status"]
-- !private ["s13ArrayProtocolP", "subscript"]
-- !private ["s13ArrayProtocolP", "title"]
 - !private ["s10ArraySliceV", "status"]
 - !private ["s10ArraySliceV", "title"]
 - !private ["So11BackendlessC", "data"]
 - ["So11BackendlessC", "sharedInstance"]
 - !private ["SK", "count"]
-- !private ["SK", "init"]
-- !private ["SK", "init"]
 - !private ["SK", "row"]
 - !private ["SK", "status"]
 - !private ["SK", "subscript"]
 - !private ["SK", "title"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "indexPathForSelectedRow"]
 - !private ["So15CALayerDelegateP", "reloadData"]
@@ -63,9 +53,9 @@ depends-member:
 - ["s7CVarArgP", "Backendless"]
 - !private ["s7CVarArgP", "DataQueryBuilder"]
 - !private ["s7CVarArgP", "Order"]
+- !private ["s7CVarArgP", "OrderDetialsViewController"]
 - ["s7CVarArgP", "UserOrdersTableViewController"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allOrders"]
 - !private ["s7CVarArgP", "backendless"]
 - !private ["s7CVarArgP", "count"]
@@ -91,18 +81,19 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWithTag"]
 - !private ["Sl", "count"]
-- !private ["Sl", "init"]
-- !private ["Sl", "init"]
 - !private ["Sl", "row"]
 - !private ["Sl", "status"]
 - !private ["Sl", "subscript"]
 - !private ["Sl", "title"]
-- !private ["SL", "init"]
-- !private ["SL", "init"]
 - !private ["SL", "row"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "status"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "title"]
 - ["s28CustomDebugStringConvertibleP", "Backendless"]
 - !private ["s28CustomDebugStringConvertibleP", "DataQueryBuilder"]
 - !private ["s28CustomDebugStringConvertibleP", "Order"]
+- !private ["s28CustomDebugStringConvertibleP", "OrderDetialsViewController"]
 - ["s28CustomDebugStringConvertibleP", "UserOrdersTableViewController"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "allOrders"]
@@ -131,15 +122,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWithTag"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "find"]
 - !private ["s17CustomReflectableP", "indexPathForSelectedRow"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "of"]
 - !private ["s17CustomReflectableP", "reloadData"]
 - !private ["s17CustomReflectableP", "row"]
@@ -149,9 +134,9 @@ depends-member:
 - ["s23CustomStringConvertibleP", "Backendless"]
 - !private ["s23CustomStringConvertibleP", "DataQueryBuilder"]
 - !private ["s23CustomStringConvertibleP", "Order"]
+- !private ["s23CustomStringConvertibleP", "OrderDetialsViewController"]
 - ["s23CustomStringConvertibleP", "UserOrdersTableViewController"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "allOrders"]
 - !private ["s23CustomStringConvertibleP", "backendless"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -177,26 +162,24 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWithTag"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "status"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "title"]
 - !private ["So16DataQueryBuilderC", "init"]
 - !private ["So16DataQueryBuilderC", "setRelationsDepth"]
-- !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "count"]
 - !private ["Se", "find"]
 - !private ["Se", "indexPathForSelectedRow"]
-- !private ["Se", "init"]
-- !private ["Se", "init"]
 - !private ["Se", "of"]
 - !private ["Se", "reloadData"]
 - !private ["Se", "row"]
 - !private ["Se", "status"]
 - !private ["Se", "subscript"]
 - !private ["Se", "title"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "count"]
 - !private ["SE", "find"]
 - !private ["SE", "indexPathForSelectedRow"]
-- !private ["SE", "init"]
-- !private ["SE", "init"]
 - !private ["SE", "of"]
 - !private ["SE", "reloadData"]
 - !private ["SE", "row"]
@@ -204,9 +187,9 @@ depends-member:
 - ["SQ", "Backendless"]
 - !private ["SQ", "DataQueryBuilder"]
 - !private ["SQ", "Order"]
+- !private ["SQ", "OrderDetialsViewController"]
 - ["SQ", "UserOrdersTableViewController"]
 - ["SQ", ""]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "allOrders"]
 - !private ["SQ", "backendless"]
 - !private ["SQ", "count"]
@@ -238,23 +221,16 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "status"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "title"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "find"]
 - !private ["s23ExpressibleByNilLiteralP", "indexPathForSelectedRow"]
 - !private ["s23ExpressibleByNilLiteralP", "of"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["SH", "Backendless"]
 - !private ["SH", "DataQueryBuilder"]
 - !private ["SH", "Order"]
+- !private ["SH", "OrderDetialsViewController"]
 - ["SH", "UserOrdersTableViewController"]
 - ["SH", ""]
-- !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "allOrders"]
 - !private ["SH", "backendless"]
 - !private ["SH", "count"]
@@ -283,19 +259,17 @@ depends-member:
 - !private ["SH", "viewWithTag"]
 - !private ["So10IDataStoreP", "find"]
 - !private ["10Foundation9IndexPathV", "row"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "count"]
 - !private ["SM", "row"]
 - !private ["SM", "status"]
 - !private ["SM", "subscript"]
 - !private ["SM", "title"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - ["So8NSCodingP", "Backendless"]
 - !private ["So8NSCodingP", "DataQueryBuilder"]
 - !private ["So8NSCodingP", "Order"]
+- !private ["So8NSCodingP", "OrderDetialsViewController"]
 - ["So8NSCodingP", "UserOrdersTableViewController"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "allOrders"]
@@ -315,6 +289,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "Backendless"]
 - !private ["So26NSExtensionRequestHandlingP", "DataQueryBuilder"]
 - !private ["So26NSExtensionRequestHandlingP", "Order"]
+- !private ["So26NSExtensionRequestHandlingP", "OrderDetialsViewController"]
 - ["So26NSExtensionRequestHandlingP", "UserOrdersTableViewController"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "allOrders"]
@@ -371,6 +346,7 @@ depends-member:
 - ["So8NSObjectP", "Backendless"]
 - !private ["So8NSObjectP", "DataQueryBuilder"]
 - !private ["So8NSObjectP", "Order"]
+- !private ["So8NSObjectP", "OrderDetialsViewController"]
 - ["So8NSObjectP", "UserOrdersTableViewController"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "allOrders"]
@@ -410,27 +386,15 @@ depends-member:
 - !private ["Sk", "subscript"]
 - !private ["Sk", "title"]
 - !private ["Sm", "count"]
-- !private ["Sm", "init"]
-- !private ["Sm", "init"]
 - !private ["Sm", "status"]
 - !private ["Sm", "subscript"]
 - !private ["Sm", "title"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", "count"]
-- !private ["ST", "init"]
-- !private ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "status"]
 - !private ["ST", "subscript"]
 - !private ["ST", "title"]
-- !private ["SS", "init"]
-- !private ["SS", "init"]
-- !private ["Sy", "init"]
-- !private ["Sy", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "indexPathForSelectedRow"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
@@ -444,6 +408,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "Backendless"]
 - !private ["So21UIAppearanceContainerP", "DataQueryBuilder"]
 - !private ["So21UIAppearanceContainerP", "Order"]
+- !private ["So21UIAppearanceContainerP", "OrderDetialsViewController"]
 - ["So21UIAppearanceContainerP", "UserOrdersTableViewController"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "allOrders"]
@@ -463,6 +428,7 @@ depends-member:
 - ["So18UIContentContainerP", "Backendless"]
 - !private ["So18UIContentContainerP", "DataQueryBuilder"]
 - !private ["So18UIContentContainerP", "Order"]
+- !private ["So18UIContentContainerP", "OrderDetialsViewController"]
 - ["So18UIContentContainerP", "UserOrdersTableViewController"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "allOrders"]
@@ -492,6 +458,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "Backendless"]
 - !private ["So18UIFocusEnvironmentP", "DataQueryBuilder"]
 - !private ["So18UIFocusEnvironmentP", "Order"]
+- !private ["So18UIFocusEnvironmentP", "OrderDetialsViewController"]
 - ["So18UIFocusEnvironmentP", "UserOrdersTableViewController"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "allOrders"]
@@ -526,6 +493,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "Backendless"]
 - !private ["So30UIPasteConfigurationSupportingP", "DataQueryBuilder"]
 - !private ["So30UIPasteConfigurationSupportingP", "Order"]
+- !private ["So30UIPasteConfigurationSupportingP", "OrderDetialsViewController"]
 - ["So30UIPasteConfigurationSupportingP", "UserOrdersTableViewController"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "allOrders"]
@@ -579,6 +547,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "Backendless"]
 - !private ["So30UIResponderStandardEditActionsP", "DataQueryBuilder"]
 - !private ["So30UIResponderStandardEditActionsP", "Order"]
+- !private ["So30UIResponderStandardEditActionsP", "OrderDetialsViewController"]
 - ["So30UIResponderStandardEditActionsP", "UserOrdersTableViewController"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "allOrders"]
@@ -602,6 +571,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "Backendless"]
 - !private ["So20UIScrollViewDelegateP", "DataQueryBuilder"]
 - !private ["So20UIScrollViewDelegateP", "Order"]
+- !private ["So20UIScrollViewDelegateP", "OrderDetialsViewController"]
 - ["So20UIScrollViewDelegateP", "UserOrdersTableViewController"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "allOrders"]
@@ -619,6 +589,7 @@ depends-member:
 - ["So16UIStateRestoringP", "Backendless"]
 - !private ["So16UIStateRestoringP", "DataQueryBuilder"]
 - !private ["So16UIStateRestoringP", "Order"]
+- !private ["So16UIStateRestoringP", "OrderDetialsViewController"]
 - ["So16UIStateRestoringP", "UserOrdersTableViewController"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "allOrders"]
@@ -668,6 +639,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "Backendless"]
 - !private ["So21UITableViewDataSourceP", "DataQueryBuilder"]
 - !private ["So21UITableViewDataSourceP", "Order"]
+- !private ["So21UITableViewDataSourceP", "OrderDetialsViewController"]
 - ["So21UITableViewDataSourceP", "UserOrdersTableViewController"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "allOrders"]
@@ -681,6 +653,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "Backendless"]
 - !private ["So19UITableViewDelegateP", "DataQueryBuilder"]
 - !private ["So19UITableViewDelegateP", "Order"]
+- !private ["So19UITableViewDelegateP", "OrderDetialsViewController"]
 - ["So19UITableViewDelegateP", "UserOrdersTableViewController"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "allOrders"]
@@ -694,6 +667,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "Backendless"]
 - !private ["So18UITraitEnvironmentP", "DataQueryBuilder"]
 - !private ["So18UITraitEnvironmentP", "Order"]
+- !private ["So18UITraitEnvironmentP", "OrderDetialsViewController"]
 - ["So18UITraitEnvironmentP", "UserOrdersTableViewController"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "allOrders"]
@@ -713,6 +687,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "Backendless"]
 - !private ["So23UIUserActivityRestoringP", "DataQueryBuilder"]
 - !private ["So23UIUserActivityRestoringP", "Order"]
+- !private ["So23UIUserActivityRestoringP", "OrderDetialsViewController"]
 - ["So23UIUserActivityRestoringP", "UserOrdersTableViewController"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "allOrders"]
@@ -791,31 +766,22 @@ depends-member:
 - ["15Smart_Inventory29UserOrdersTableViewControllerC", "tableView"]
 - ["15Smart_Inventory29UserOrdersTableViewControllerC", "viewDidLoad"]
 - ["15Smart_Inventory29UserOrdersTableViewControllerC", "viewWillAppear"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "indexPathForSelectedRow"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "viewWithTag"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "status"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "title"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "status"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "title"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Backendless"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DataQueryBuilder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Order"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OrderDetialsViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UserOrdersTableViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allOrders"]
@@ -840,49 +806,43 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWithTag"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "find"]
 - !private ["s21_ObjectiveCBridgeableP", "indexPathForSelectedRow"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "of"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadData"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "indexPathForSelectedRow"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadData"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "viewWithTag"]
 depends-nominal:
 - !private "Sa"
-- !private "s13ArrayProtocolP"
 - !private "s10ArraySliceV"
 - "So11BackendlessC"
 - !private "SK"
-- !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "So16DataQueryBuilderC"
 - !private "Se"
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "So10IDataStoreP"
 - !private "10Foundation9IndexPathV"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
 - !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -895,10 +855,6 @@ depends-nominal:
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
-- !private "SS"
-- !private "Sy"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -929,21 +885,15 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - "15Smart_Inventory29UserOrdersTableViewControllerC"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -1033,17 +983,18 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserProperty.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractProperty.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ObjectProperty.h"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "11a8d034407aae4478abc85aef291fc0"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "947fe0c8e1e7af14a4cf842874ca157a"

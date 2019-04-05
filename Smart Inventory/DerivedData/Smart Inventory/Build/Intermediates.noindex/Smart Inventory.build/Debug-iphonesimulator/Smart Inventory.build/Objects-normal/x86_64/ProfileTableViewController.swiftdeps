@@ -12,16 +12,12 @@ provides-dynamic-lookup:
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
-- "Array"
 - "AssignmentPrecedence"
 - !private "Backendless"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "ProfileTableViewController"
 - "String"
-- "StringLiteralType"
 - "UIStoryboardSegue"
 - "UITableView"
 - "UITableViewCell"
@@ -29,13 +25,9 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
-- !private ["s13ArrayProtocolP", "count"]
-- !private ["s13ArrayProtocolP", "subscript"]
 - !private ["So11BackendlessC", "sharedInstance"]
 - !private ["So11BackendlessC", "userService"]
 - !private ["SK", "count"]
-- ["SK", "init"]
-- ["SK", "init"]
 - !private ["SK", "row"]
 - !private ["SK", "subscript"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
@@ -45,8 +37,8 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
-- ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "items"]
 - !private ["s7CVarArgP", "logout"]
 - !private ["s7CVarArgP", "performSegue"]
@@ -58,19 +50,17 @@ depends-member:
 - !private ["s7CVarArgP", "userService"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["Sl", "count"]
-- ["Sl", "init"]
-- ["Sl", "init"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
-- ["SL", "init"]
-- ["SL", "init"]
 - !private ["SL", "row"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "Backendless"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
-- ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "items"]
 - !private ["s28CustomDebugStringConvertibleP", "logout"]
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
@@ -82,11 +72,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "userService"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "count"]
-- ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "logout"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -94,8 +80,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
-- ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "items"]
 - !private ["s23CustomStringConvertibleP", "logout"]
 - !private ["s23CustomStringConvertibleP", "performSegue"]
@@ -107,15 +93,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textLabel"]
 - !private ["s23CustomStringConvertibleP", "userService"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "count"]
-- ["Se", "init"]
-- ["Se", "init"]
 - !private ["Se", "logout"]
 - !private ["Se", "row"]
 - !private ["Se", "subscript"]
 - !private ["SE", "count"]
-- ["SE", "init"]
-- ["SE", "init"]
 - !private ["SE", "logout"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
@@ -123,8 +107,8 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "count"]
 - !private ["SQ", "dequeueReusableCell"]
-- ["SQ", "init"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
 - !private ["SQ", "items"]
 - !private ["SQ", "logout"]
 - !private ["SQ", "performSegue"]
@@ -139,19 +123,13 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "logout"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "Backendless"]
 - ["SH", ""]
 - !private ["SH", "count"]
 - !private ["SH", "dequeueReusableCell"]
-- ["SH", "init"]
-- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
 - !private ["SH", "items"]
 - !private ["SH", "logout"]
 - !private ["SH", "performSegue"]
@@ -164,13 +142,11 @@ depends-member:
 - !private ["SH", "userService"]
 - !private ["SH", "viewDidLoad"]
 - !private ["10Foundation9IndexPathV", "row"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
 - !private ["SM", "count"]
 - !private ["SM", "row"]
 - !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "Backendless"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
@@ -237,6 +213,7 @@ depends-member:
 - ["15Smart_Inventory26ProfileTableViewControllerC", "UITableView"]
 - ["15Smart_Inventory26ProfileTableViewControllerC", "UITableViewCell"]
 - ["15Smart_Inventory26ProfileTableViewControllerC", "backToProfile"]
+- ["15Smart_Inventory26ProfileTableViewControllerC", "deinit"]
 - ["15Smart_Inventory26ProfileTableViewControllerC", "init"]
 - ["15Smart_Inventory26ProfileTableViewControllerC", "items"]
 - ["15Smart_Inventory26ProfileTableViewControllerC", "numberOfSections"]
@@ -248,23 +225,11 @@ depends-member:
 - !private ["Sk", "row"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "count"]
-- ["Sm", "init"]
-- ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", "count"]
-- ["ST", "init"]
-- ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
-- ["SS", "init"]
-- ["SS", "init"]
-- ["Sy", "init"]
-- ["Sy", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textLabel"]
@@ -457,21 +422,12 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["So11UserServiceC", "logout"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textLabel"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Backendless"]
@@ -489,39 +445,34 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userService"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "logout"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textLabel"]
 depends-nominal:
 - !private "Sa"
-- !private "s13ArrayProtocolP"
 - !private "So11BackendlessC"
-- "SK"
+- !private "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- "Sl"
-- "SL"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "Se"
-- "SE"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "10Foundation9IndexPathV"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
 - !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -529,13 +480,9 @@ depends-nominal:
 - !private "Sq"
 - "15Smart_Inventory26ProfileTableViewControllerC"
 - !private "Sk"
-- "Sm"
+- !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
-- "ST"
-- "SS"
-- "Sy"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
+- !private "ST"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -567,20 +514,15 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So11UserServiceC"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -670,17 +612,18 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserProperty.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractProperty.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ObjectProperty.h"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "88a8f73e4877d5cd4d16cce0aa06be56"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8e6d6ddc91536416899125555723ff8a"

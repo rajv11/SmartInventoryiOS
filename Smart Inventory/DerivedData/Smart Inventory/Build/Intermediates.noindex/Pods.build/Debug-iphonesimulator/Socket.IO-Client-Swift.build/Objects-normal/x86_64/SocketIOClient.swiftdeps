@@ -34,16 +34,12 @@ depends-top-level:
 - !private "=="
 - !private ">="
 - !private "??"
-- !private "Array"
 - "AssignmentPrecedence"
 - "Bool"
-- "BooleanLiteralType"
 - !private "DefaultSocketLogger"
 - !private "DispatchTime"
 - "Double"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "NSObject"
 - "NormalCallback"
 - "OnAckCallback"
@@ -59,7 +55,6 @@ depends-top-level:
 - "SocketPacket"
 - "SocketRawView"
 - "String"
-- "StringLiteralType"
 - "TernaryPrecedence"
 - "UUID"
 - "UnicodeScalarType"
@@ -71,18 +66,11 @@ depends-member:
 - ["Sa", "init"]
 - !private ["Sa", "map"]
 - !private ["Sa", "removeAll"]
-- !private ["s13ArrayProtocolP", "append"]
-- !private ["s13ArrayProtocolP", "filter"]
-- ["s13ArrayProtocolP", "init"]
-- !private ["s13ArrayProtocolP", "map"]
-- !private ["s13ArrayProtocolP", "removeAll"]
 - !private ["SK", "append"]
 - !private ["SK", "filter"]
 - ["SK", "init"]
-- !private ["SK", "init"]
 - !private ["SK", "map"]
 - !private ["SK", "removeAll"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "DefaultSocketLogger"]
 - !private ["s7CVarArgP", "DispatchTime"]
 - !private ["s7CVarArgP", "OnAckCallback"]
@@ -94,7 +82,6 @@ depends-member:
 - ["s7CVarArgP", "SocketRawView"]
 - !private ["s7CVarArgP", "UUID"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "ackHandlers"]
 - ["s7CVarArgP", "anyHandler"]
 - !private ["s7CVarArgP", "append"]
@@ -117,7 +104,6 @@ depends-member:
 - ["s7CVarArgP", "handlePacket"]
 - ["s7CVarArgP", "handlers"]
 - ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "joinNamespace"]
 - ["s7CVarArgP", "leaveNamespace"]
 - !private ["s7CVarArgP", "logType"]
@@ -136,12 +122,14 @@ depends-member:
 - !private ["Sl", "append"]
 - !private ["Sl", "filter"]
 - ["Sl", "init"]
-- !private ["Sl", "init"]
 - !private ["Sl", "map"]
 - !private ["Sl", "removeAll"]
-- !private ["SL", "init"]
-- !private ["SL", "init"]
 - !private ["SL", "now"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "filter"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["10Foundation15ContiguousBytesP", "removeAll"]
 - !private ["s28CustomDebugStringConvertibleP", "DefaultSocketLogger"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchTime"]
 - !private ["s28CustomDebugStringConvertibleP", "OnAckCallback"]
@@ -175,7 +163,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "handlePacket"]
 - ["s28CustomDebugStringConvertibleP", "handlers"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "joinNamespace"]
 - ["s28CustomDebugStringConvertibleP", "leaveNamespace"]
 - !private ["s28CustomDebugStringConvertibleP", "logType"]
@@ -191,14 +178,9 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "removeAllHandlers"]
 - ["s28CustomDebugStringConvertibleP", "setReconnecting"]
 - ["s28CustomDebugStringConvertibleP", "status"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "filter"]
 - ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "removeAll"]
 - !private ["s23CustomStringConvertibleP", "DefaultSocketLogger"]
@@ -212,10 +194,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "SocketRawView"]
 - !private ["s23CustomStringConvertibleP", "UUID"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "ackHandlers"]
 - ["s23CustomStringConvertibleP", "anyHandler"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- ["s23CustomStringConvertibleP", "appendInterpolation"]
+- ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "args"]
 - !private ["s23CustomStringConvertibleP", "assert"]
 - !private ["s23CustomStringConvertibleP", "asyncAfter"]
@@ -243,7 +226,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "handlers"]
 - !private ["s23CustomStringConvertibleP", "id"]
 - ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "joinNamespace"]
 - ["s23CustomStringConvertibleP", "leaveNamespace"]
 - !private ["s23CustomStringConvertibleP", "logType"]
@@ -263,22 +245,25 @@ depends-member:
 - ["s23CustomStringConvertibleP", "setReconnecting"]
 - ["s23CustomStringConvertibleP", "status"]
 - !private ["s23CustomStringConvertibleP", "type"]
-- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "filter"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["10Foundation12DataProtocolP", "removeAll"]
 - !private ["Se", "append"]
 - !private ["Se", "filter"]
 - ["Se", "init"]
-- !private ["Se", "init"]
 - !private ["Se", "map"]
 - !private ["Se", "removeAll"]
 - !private ["8SocketIO07DefaultA6LoggerC", "Logger"]
+- ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["So18OS_dispatch_objectC", "asyncAfter"]
 - !private ["So17OS_dispatch_queueC", "asyncAfter"]
 - !private ["8Dispatch0A4TimeV", "now"]
-- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
 - !private ["SE", "filter"]
 - ["SE", "init"]
-- !private ["SE", "init"]
 - !private ["SE", "map"]
 - !private ["SE", "removeAll"]
 - !private ["SQ", "DefaultSocketLogger"]
@@ -292,7 +277,6 @@ depends-member:
 - ["SQ", "SocketRawView"]
 - !private ["SQ", "UUID"]
 - ["SQ", ""]
-- !private ["SQ", "_getBuiltinLogicValue"]
 - ["SQ", "ack"]
 - !private ["SQ", "ackHandlers"]
 - ["SQ", "anyHandler"]
@@ -323,7 +307,6 @@ depends-member:
 - ["SQ", "handlePacket"]
 - ["SQ", "handlers"]
 - ["SQ", "init"]
-- !private ["SQ", "init"]
 - ["SQ", "joinNamespace"]
 - ["SQ", "leaveNamespace"]
 - !private ["SQ", "logType"]
@@ -349,13 +332,6 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
 - !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "DefaultSocketLogger"]
 - !private ["SH", "DispatchTime"]
 - !private ["SH", "OnAckCallback"]
@@ -367,7 +343,6 @@ depends-member:
 - ["SH", "SocketRawView"]
 - !private ["SH", "UUID"]
 - ["SH", ""]
-- !private ["SH", "_getBuiltinLogicValue"]
 - ["SH", "ack"]
 - !private ["SH", "ackHandlers"]
 - ["SH", "anyHandler"]
@@ -398,7 +373,6 @@ depends-member:
 - ["SH", "handlePacket"]
 - ["SH", "handlers"]
 - ["SH", "init"]
-- !private ["SH", "init"]
 - ["SH", "joinNamespace"]
 - ["SH", "leaveNamespace"]
 - !private ["SH", "logType"]
@@ -418,16 +392,16 @@ depends-member:
 - ["SH", "setReconnecting"]
 - ["SH", "status"]
 - !private ["SH", "statusChange"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - !private ["SM", "filter"]
 - ["SM", "init"]
 - !private ["SM", "map"]
 - !private ["SM", "removeAll"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "filter"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "removeAll"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "DefaultSocketLogger"]
 - !private ["So8NSObjectC", "DispatchTime"]
@@ -549,7 +523,6 @@ depends-member:
 - !private ["Sm", "append"]
 - !private ["Sm", "filter"]
 - ["Sm", "init"]
-- !private ["Sm", "init"]
 - !private ["Sm", "map"]
 - !private ["Sm", "removeAll"]
 - ["SY", "ack"]
@@ -570,7 +543,6 @@ depends-member:
 - !private ["ST", "append"]
 - !private ["ST", "filter"]
 - ["ST", "init"]
-- !private ["ST", "init"]
 - !private ["ST", "map"]
 - !private ["ST", "removeAll"]
 - !private ["8SocketIO0A10AckManagerC", "executeAck"]
@@ -583,11 +555,9 @@ depends-member:
 - !private ["8SocketIO0A11ClientEventO", "rawValue"]
 - !private ["8SocketIO0A11ClientEventO", "reconnect"]
 - !private ["8SocketIO0A11ClientEventO", "statusChange"]
-- !private ["8SocketIO0A4DataP", "_getBuiltinLogicValue"]
 - !private ["8SocketIO0A4DataP", "append"]
 - !private ["8SocketIO0A4DataP", "filter"]
 - ["8SocketIO0A4DataP", "init"]
-- !private ["8SocketIO0A4DataP", "init"]
 - !private ["8SocketIO0A4DataP", "map"]
 - !private ["8SocketIO0A4DataP", "removeAll"]
 - !private ["8SocketIO0A4DataP", "socketRepresentation"]
@@ -726,33 +696,26 @@ depends-member:
 - !private ["8SocketIO0A6PacketV", "packetString"]
 - !private ["8SocketIO0A6PacketV", "type"]
 - ["8SocketIO0A7RawViewC", "init"]
-- !private ["s12StaticStringV", "init"]
-- !private ["s12StaticStringV", "init"]
-- !private ["SS", "init"]
-- !private ["SS", "init"]
-- !private ["Sy", "init"]
-- !private ["Sy", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["s16TextOutputStreamP", "appendInterpolation"]
+- ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["10Foundation4UUIDV", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "filter"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "filter"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s19_HasContiguousBytesP", "removeAll"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -802,43 +765,34 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "removeAllHandlers"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "setReconnecting"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "status"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "filter"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
-- "s13ArrayProtocolP"
 - "SK"
-- !private "Sb"
 - "s7CVarArgP"
 - "Sl"
 - !private "SL"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
 - "Se"
 - !private "8SocketIO07DefaultA6LoggerC"
+- "s26DefaultStringInterpolationV"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
 - !private "8Dispatch0A4TimeV"
 - "SE"
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
 - "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So9OS_objectC"
@@ -863,26 +817,17 @@ depends-nominal:
 - !private "8SocketIO0A11ManagerSpecP"
 - !private "8SocketIO0A6PacketV"
 - "8SocketIO0A7RawViewC"
-- !private "s12StaticStringV"
-- !private "SS"
-- !private "Sy"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s27StringInterpolationProtocolP"
+- "s16TextOutputStreamP"
 - !private "10Foundation4UUIDV"
+- "s14_ArrayProtocolP"
 - "s24_DestructorSafeContainerP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -901,15 +846,16 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Socket.IO-Client-Swift.build/unextended-module.modulemap"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Starscream.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6473d838fe20eab25956e3c8e8f8e7cd"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "283da06f4b66ef54111b327423e7acee"

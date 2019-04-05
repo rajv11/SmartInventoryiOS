@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>69A171D5-0D30-451C-9AF4-E03B6552EACF</key>
+		<key>EDCF1158-CA80-46A5-A768-48EB86FD47F7</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,9 +15,12 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>69A171D5-0D30-451C-9AF4-E03B6552EACF.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
+			<string>EDCF1158-CA80-46A5-A768-48EB86FD47F7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Smart Inventory project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -27,13 +30,13 @@
 			<key>signature</key>
 			<string>Debug Smart Inventory</string>
 			<key>timeStartedRecording</key>
-			<real>574827181.51678395</real>
+			<real>576040834.98301005</real>
 			<key>timeStoppedRecording</key>
-			<real>574827321.38389003</real>
+			<real>576040975.83552802</real>
 			<key>title</key>
 			<string>Debug Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>69A171D5-0D30-451C-9AF4-E03B6552EACF</string>
+			<string>EDCF1158-CA80-46A5-A768-48EB86FD47F7</string>
 		</dict>
 	</dict>
 </dict>

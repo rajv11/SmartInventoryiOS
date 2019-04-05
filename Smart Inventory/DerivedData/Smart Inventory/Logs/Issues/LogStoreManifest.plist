@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>648548C2-A68F-4223-8DE6-461CAA748183</key>
+		<key>10ECE5DE-8244-437C-BF8A-FF5744A6C8F1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,21 +15,50 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>648548C2-A68F-4223-8DE6-461CAA748183.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
+			<string>10ECE5DE-8244-437C-BF8A-FF5744A6C8F1.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
 			<key>signature</key>
-			<string>Pods-Smart_Inventory-emqgvyubdwvbpacsfueuizsmxvay</string>
+			<string>Starscream-emqgvyubdwvbpacsfueuizsmxvay</string>
 			<key>timeStartedRecording</key>
-			<real>574827171.43140304</real>
+			<real>575961374.80862498</real>
 			<key>timeStoppedRecording</key>
-			<real>574827171.73072803</real>
+			<real>575961374.81400001</real>
 			<key>title</key>
-			<string>Build target Pods-Smart Inventory</string>
+			<string>Build target Starscream</string>
 			<key>uniqueIdentifier</key>
-			<string>648548C2-A68F-4223-8DE6-461CAA748183</string>
+			<string>10ECE5DE-8244-437C-BF8A-FF5744A6C8F1</string>
 		</dict>
-		<key>6E5DEB6E-4E64-41BC-ADE1-48DF8EDB3D3D</key>
+		<key>20E09A57-294D-444B-B114-ECCA8BC17627</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>20E09A57-294D-444B-B114-ECCA8BC17627.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>Socket.IO-Client-Swift-emqgvyubdwvbpacsfueuizsmxvay</string>
+			<key>timeStartedRecording</key>
+			<real>575961374.79450798</real>
+			<key>timeStoppedRecording</key>
+			<real>575961374.82957196</real>
+			<key>title</key>
+			<string>Build target Socket.IO-Client-Swift</string>
+			<key>uniqueIdentifier</key>
+			<string>20E09A57-294D-444B-B114-ECCA8BC17627</string>
+		</dict>
+		<key>5BD4DF41-51B7-4C7B-B575-9A2698734EB9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -38,21 +67,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>6E5DEB6E-4E64-41BC-ADE1-48DF8EDB3D3D.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>5BD4DF41-51B7-4C7B-B575-9A2698734EB9.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
 			<key>signature</key>
 			<string>Smart_Inventory-bkabgyribgmregerikynrzlcvkia</string>
 			<key>timeStartedRecording</key>
-			<real>574827171.70978296</real>
+			<real>575961374.83940196</real>
 			<key>timeStoppedRecording</key>
-			<real>574827181.50619102</real>
+			<real>575961380.59084296</real>
 			<key>title</key>
 			<string>Build target Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>6E5DEB6E-4E64-41BC-ADE1-48DF8EDB3D3D</string>
+			<string>5BD4DF41-51B7-4C7B-B575-9A2698734EB9</string>
 		</dict>
-		<key>D0C26ACE-0031-463D-8F28-0E36CD7E2991</key>
+		<key>AE329890-FB5A-4633-AE59-15F431EB2F83</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -61,42 +93,22 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>D0C26ACE-0031-463D-8F28-0E36CD7E2991.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
+			<string>AE329890-FB5A-4633-AE59-15F431EB2F83.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
 			<key>signature</key>
-			<string>Starscream-emqgvyubdwvbpacsfueuizsmxvay</string>
+			<string>Pods-Smart_Inventory-emqgvyubdwvbpacsfueuizsmxvay</string>
 			<key>timeStartedRecording</key>
-			<real>574827167.33430195</real>
+			<real>575961374.83350098</real>
 			<key>timeStoppedRecording</key>
-			<real>574827169.65914297</real>
+			<real>575961374.83843303</real>
 			<key>title</key>
-			<string>Build target Starscream</string>
+			<string>Build target Pods-Smart Inventory</string>
 			<key>uniqueIdentifier</key>
-			<string>D0C26ACE-0031-463D-8F28-0E36CD7E2991</string>
-		</dict>
-		<key>DA61F09E-6941-4E43-9890-F17327AA565B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>DA61F09E-6941-4E43-9890-F17327AA565B.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>signature</key>
-			<string>Socket.IO-Client-Swift-emqgvyubdwvbpacsfueuizsmxvay</string>
-			<key>timeStartedRecording</key>
-			<real>574827167.31563199</real>
-			<key>timeStoppedRecording</key>
-			<real>574827171.56695294</real>
-			<key>title</key>
-			<string>Build target Socket.IO-Client-Swift</string>
-			<key>uniqueIdentifier</key>
-			<string>DA61F09E-6941-4E43-9890-F17327AA565B</string>
+			<string>AE329890-FB5A-4633-AE59-15F431EB2F83</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

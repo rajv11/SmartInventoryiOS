@@ -11,18 +11,13 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
 - "OrdersTableViewController"
-- !private "StringLiteralType"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
 depends-member:
-- !private ["SK", "init"]
-- !private ["SK", "init"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "detailTextLabel"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -35,10 +30,6 @@ depends-member:
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textLabel"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- !private ["Sl", "init"]
-- !private ["Sl", "init"]
-- !private ["SL", "init"]
-- !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "detailTextLabel"]
@@ -47,10 +38,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "detailTextLabel"]
@@ -59,10 +46,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "textLabel"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- !private ["Se", "init"]
-- !private ["Se", "init"]
-- !private ["SE", "init"]
-- !private ["SE", "init"]
 - ["SQ", ""]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "detailTextLabel"]
@@ -71,12 +54,6 @@ depends-member:
 - !private ["SQ", "text"]
 - !private ["SQ", "textLabel"]
 - !private ["SQ", "viewDidLoad"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["SH", ""]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "detailTextLabel"]
@@ -85,10 +62,6 @@ depends-member:
 - !private ["SH", "text"]
 - !private ["SH", "textLabel"]
 - !private ["SH", "viewDidLoad"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "detailTextLabel"]
@@ -126,22 +99,11 @@ depends-member:
 - ["15Smart_Inventory25OrdersTableViewControllerC", "Int"]
 - ["15Smart_Inventory25OrdersTableViewControllerC", "UITableView"]
 - ["15Smart_Inventory25OrdersTableViewControllerC", "UITableViewCell"]
+- ["15Smart_Inventory25OrdersTableViewControllerC", "deinit"]
 - ["15Smart_Inventory25OrdersTableViewControllerC", "init"]
 - ["15Smart_Inventory25OrdersTableViewControllerC", "numberOfSections"]
 - ["15Smart_Inventory25OrdersTableViewControllerC", "tableView"]
 - ["15Smart_Inventory25OrdersTableViewControllerC", "viewDidLoad"]
-- !private ["Sm", "init"]
-- !private ["Sm", "init"]
-- !private ["ST", "init"]
-- !private ["ST", "init"]
-- !private ["SS", "init"]
-- !private ["SS", "init"]
-- !private ["Sy", "init"]
-- !private ["Sy", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "detailTextLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
@@ -281,20 +243,6 @@ depends-member:
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "detailTextLabel"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textLabel"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "detailTextLabel"]
@@ -303,40 +251,22 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "detailTextLabel"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "textLabel"]
 depends-nominal:
-- !private "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "Sl"
-- !private "SL"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "Se"
-- !private "SE"
 - "SQ"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "15Smart_Inventory25OrdersTableViewControllerC"
-- !private "Sm"
-- !private "ST"
-- !private "SS"
-- !private "Sy"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -367,18 +297,10 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -468,17 +390,18 @@ depends-external:
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserProperty.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractProperty.h"
 - "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ObjectProperty.h"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "eb04945030586547364f38112a036a5d"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8c56e273ee2b39a30ef58963de98c5c5"
