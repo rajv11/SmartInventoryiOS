@@ -1,0 +1,136 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SocketEngineWebsocket"
+provides-nominal:
+- "8SocketIO0A15EngineWebsocketP"
+provides-member:
+- ["8SocketIO0A15EngineWebsocketP", ""]
+- ["8SocketIO0A15EngineWebsocketP", "probeWebSocket"]
+- ["8SocketIO0A15EngineWebsocketP", "sendWebSocketMessage"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "??"
+- "Data"
+- !private "DefaultSocketLogger"
+- "SocketEnginePacketType"
+- "SocketEngineSpec"
+- "SocketEngineWebsocket"
+- "String"
+depends-member:
+- !private ["s7CVarArgP", "isConnected"]
+- !private ["s7CVarArgP", "write"]
+- !private ["s28CustomDebugStringConvertibleP", "isConnected"]
+- !private ["s28CustomDebugStringConvertibleP", "write"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "isConnected"]
+- !private ["s23CustomStringConvertibleP", "write"]
+- !private ["8SocketIO07DefaultA6LoggerC", "Logger"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["8SocketIO6EitherO", "left"]
+- !private ["SQ", "isConnected"]
+- !private ["SQ", "ping"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "write"]
+- !private ["SH", "isConnected"]
+- !private ["SH", "ping"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "write"]
+- !private ["So8NSObjectC", "isConnected"]
+- !private ["So8NSObjectC", "write"]
+- !private ["So8NSObjectP", "isConnected"]
+- !private ["So8NSObjectP", "write"]
+- !private ["SY", "ping"]
+- !private ["SY", "rawValue"]
+- !private ["8SocketIO0A16EnginePacketTypeO", "deinit"]
+- !private ["8SocketIO0A16EnginePacketTypeO", "ping"]
+- !private ["8SocketIO0A16EnginePacketTypeO", "rawValue"]
+- ["8SocketIO0A10EngineSpecP", "Data"]
+- !private ["8SocketIO0A10EngineSpecP", "DefaultSocketLogger"]
+- ["8SocketIO0A10EngineSpecP", "SocketEnginePacketType"]
+- ["8SocketIO0A10EngineSpecP", "String"]
+- ["8SocketIO0A10EngineSpecP", ""]
+- !private ["8SocketIO0A10EngineSpecP", "createBinaryDataForSend"]
+- ["8SocketIO0A10EngineSpecP", "sendWebSocketMessage"]
+- !private ["8SocketIO0A10EngineSpecP", "ws"]
+- ["8SocketIO0A15EngineWebsocketP", "Data"]
+- !private ["8SocketIO0A15EngineWebsocketP", "DefaultSocketLogger"]
+- ["8SocketIO0A15EngineWebsocketP", "SocketEnginePacketType"]
+- ["8SocketIO0A15EngineWebsocketP", "String"]
+- !private ["8SocketIO0A15EngineWebsocketP", "createBinaryDataForSend"]
+- ["8SocketIO0A15EngineWebsocketP", "probeWebSocket"]
+- ["8SocketIO0A15EngineWebsocketP", "sendWebSocketMessage"]
+- !private ["8SocketIO0A15EngineWebsocketP", "ws"]
+- !private ["8SocketIO0A6LoggerP", "Logger"]
+- !private ["8SocketIO0A6LoggerP", "log"]
+- !private ["So16NSStreamDelegateP", "isConnected"]
+- !private ["So16NSStreamDelegateP", "write"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["10Starscream16WSStreamDelegateP", "isConnected"]
+- !private ["10Starscream16WSStreamDelegateP", "write"]
+- !private ["10Starscream9WebSocketC", "isConnected"]
+- !private ["10Starscream9WebSocketC", "write"]
+- !private ["10Starscream15WebSocketClientP", "isConnected"]
+- !private ["10Starscream15WebSocketClientP", "write"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isConnected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "write"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "8SocketIO07DefaultA6LoggerC"
+- !private "s26DefaultStringInterpolationV"
+- "8SocketIO6EitherO"
+- !private "SQ"
+- !private "SH"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "SY"
+- !private "8SocketIO0A16EnginePacketTypeO"
+- "8SocketIO0A10EngineSpecP"
+- "8SocketIO0A15EngineWebsocketP"
+- !private "8SocketIO0A6LoggerP"
+- !private "So16NSStreamDelegateP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "10Starscream16WSStreamDelegateP"
+- !private "10Starscream9WebSocketC"
+- !private "10Starscream15WebSocketClientP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Modules/Starscream.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Target Support Files/Starscream/Starscream-umbrella.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-umbrella.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Products/Debug-iphonesimulator/Starscream/Starscream.framework/Headers/Starscream-Swift.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Socket.IO-Client-Swift.build/unextended-module.modulemap"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/DerivedData/Smart Inventory/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Starscream.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2fe2c5fdbe0009adba71f0edcd1d1c12"

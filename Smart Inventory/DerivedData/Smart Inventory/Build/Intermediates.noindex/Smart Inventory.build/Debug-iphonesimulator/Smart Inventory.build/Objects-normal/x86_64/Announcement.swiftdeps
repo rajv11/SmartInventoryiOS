@@ -1,0 +1,468 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Announcemnet"
+- "Announcements"
+provides-nominal:
+- "15Smart_Inventory12AnnouncemnetC"
+- "15Smart_Inventory13AnnouncementsC"
+provides-member:
+- ["15Smart_Inventory12AnnouncemnetC", ""]
+- ["15Smart_Inventory13AnnouncementsC", ""]
+provides-dynamic-lookup:
+- "announcementDataStore"
+- "announcements"
+- "backendless"
+- "claimed"
+- "deleteAnnouncement"
+- "description"
+- "objectId"
+- "product"
+- "productDataStore"
+- "retrieveAllAnnouncements"
+- "saveAnouncements"
+- "setRelationship"
+- "unclaimed"
+- "updateAnnouncement"
+depends-top-level:
+- !private "AllProducts"
+- "Announcements"
+- "Announcemnet"
+- "AssignmentPrecedence"
+- "Backendless"
+- !private "CastingPrecedence"
+- !private "DataQueryBuilder"
+- !private "Fault"
+- "IDataStore"
+- "Int"
+- !private "NSNumber"
+- "NSObject"
+- "Product"
+- "String"
+- !private "Void"
+- !private "print"
+depends-member:
+- !private ["15Smart_Inventory11AllProductsC", "allProducts"]
+- !private ["15Smart_Inventory11AllProductsC", "retrieveAllProducts"]
+- !private ["15Smart_Inventory11AllProductsC", "saveProducts"]
+- !private ["15Smart_Inventory13AnnouncementsC", "AllProducts"]
+- ["15Smart_Inventory13AnnouncementsC", "Announcements"]
+- ["15Smart_Inventory13AnnouncementsC", "Announcemnet"]
+- ["15Smart_Inventory13AnnouncementsC", "Backendless"]
+- !private ["15Smart_Inventory13AnnouncementsC", "DataQueryBuilder"]
+- !private ["15Smart_Inventory13AnnouncementsC", "Fault"]
+- ["15Smart_Inventory13AnnouncementsC", "IDataStore"]
+- ["15Smart_Inventory13AnnouncementsC", "Int"]
+- !private ["15Smart_Inventory13AnnouncementsC", "NSNumber"]
+- ["15Smart_Inventory13AnnouncementsC", "Product"]
+- ["15Smart_Inventory13AnnouncementsC", "String"]
+- !private ["15Smart_Inventory13AnnouncementsC", "Void"]
+- ["15Smart_Inventory13AnnouncementsC", "announce"]
+- ["15Smart_Inventory13AnnouncementsC", "announcementDataStore"]
+- ["15Smart_Inventory13AnnouncementsC", "announcements"]
+- ["15Smart_Inventory13AnnouncementsC", "backendless"]
+- ["15Smart_Inventory13AnnouncementsC", "deinit"]
+- ["15Smart_Inventory13AnnouncementsC", "deleteAnnouncement"]
+- ["15Smart_Inventory13AnnouncementsC", "init"]
+- ["15Smart_Inventory13AnnouncementsC", "objectId"]
+- !private ["15Smart_Inventory13AnnouncementsC", "print"]
+- ["15Smart_Inventory13AnnouncementsC", "productDataStore"]
+- ["15Smart_Inventory13AnnouncementsC", "retrieveAllAnnouncements"]
+- ["15Smart_Inventory13AnnouncementsC", "saveAnouncements"]
+- ["15Smart_Inventory13AnnouncementsC", "setRelationship"]
+- ["15Smart_Inventory13AnnouncementsC", "updateAnnouncement"]
+- ["15Smart_Inventory12AnnouncemnetC", "Int"]
+- ["15Smart_Inventory12AnnouncemnetC", "Product"]
+- ["15Smart_Inventory12AnnouncemnetC", "String"]
+- ["15Smart_Inventory12AnnouncemnetC", "claimed"]
+- ["15Smart_Inventory12AnnouncemnetC", "deinit"]
+- ["15Smart_Inventory12AnnouncemnetC", "description"]
+- ["15Smart_Inventory12AnnouncemnetC", "init"]
+- ["15Smart_Inventory12AnnouncemnetC", "objectId"]
+- !private ["15Smart_Inventory12AnnouncemnetC", "ofClass"]
+- ["15Smart_Inventory12AnnouncemnetC", "product"]
+- ["15Smart_Inventory12AnnouncemnetC", "unclaimed"]
+- !private ["Sa", "append"]
+- !private ["So11BackendlessC", "data"]
+- ["So11BackendlessC", "sharedInstance"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "Product"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "claimed"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "objectId"]
+- !private ["s7CVarArgP", "of"]
+- !private ["s7CVarArgP", "ofClass"]
+- !private ["s7CVarArgP", "product"]
+- !private ["s7CVarArgP", "setPageSize"]
+- ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "unclaimed"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "Product"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "claimed"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "find"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "objectId"]
+- !private ["s28CustomDebugStringConvertibleP", "of"]
+- !private ["s28CustomDebugStringConvertibleP", "ofClass"]
+- !private ["s28CustomDebugStringConvertibleP", "product"]
+- !private ["s28CustomDebugStringConvertibleP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "setPageSize"]
+- ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "unclaimed"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "data"]
+- !private ["s17CustomReflectableP", "debugDescription"]
+- !private ["s17CustomReflectableP", "find"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "of"]
+- !private ["s17CustomReflectableP", "remove"]
+- !private ["s17CustomReflectableP", "save"]
+- !private ["s23CustomStringConvertibleP", "Product"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "claimed"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "objectId"]
+- !private ["s23CustomStringConvertibleP", "of"]
+- !private ["s23CustomStringConvertibleP", "ofClass"]
+- !private ["s23CustomStringConvertibleP", "product"]
+- !private ["s23CustomStringConvertibleP", "setPageSize"]
+- ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "unclaimed"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["So16DataQueryBuilderC", "init"]
+- !private ["So16DataQueryBuilderC", "setPageSize"]
+- !private ["Se", "append"]
+- !private ["Se", "data"]
+- !private ["Se", "debugDescription"]
+- !private ["Se", "find"]
+- !private ["Se", "init"]
+- !private ["Se", "objectId"]
+- !private ["Se", "of"]
+- !private ["Se", "ofClass"]
+- !private ["Se", "remove"]
+- !private ["Se", "save"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "append"]
+- !private ["SE", "data"]
+- !private ["SE", "debugDescription"]
+- !private ["SE", "find"]
+- !private ["SE", "init"]
+- !private ["SE", "of"]
+- !private ["SE", "remove"]
+- !private ["SE", "save"]
+- !private ["SQ", "Product"]
+- ["SQ", ""]
+- !private ["SQ", "append"]
+- !private ["SQ", "claimed"]
+- !private ["SQ", "data"]
+- !private ["SQ", "debugDescription"]
+- !private ["SQ", "find"]
+- !private ["SQ", "init"]
+- !private ["SQ", "objectId"]
+- !private ["SQ", "of"]
+- !private ["SQ", "ofClass"]
+- !private ["SQ", "product"]
+- !private ["SQ", "remove"]
+- !private ["SQ", "save"]
+- !private ["SQ", "setPageSize"]
+- ["SQ", "sharedInstance"]
+- !private ["SQ", "unclaimed"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "data"]
+- !private ["s23ExpressibleByNilLiteralP", "debugDescription"]
+- !private ["s23ExpressibleByNilLiteralP", "find"]
+- !private ["s23ExpressibleByNilLiteralP", "of"]
+- !private ["s23ExpressibleByNilLiteralP", "remove"]
+- !private ["s23ExpressibleByNilLiteralP", "save"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "Product"]
+- ["SH", ""]
+- !private ["SH", "append"]
+- !private ["SH", "claimed"]
+- !private ["SH", "data"]
+- !private ["SH", "debugDescription"]
+- !private ["SH", "find"]
+- !private ["SH", "init"]
+- !private ["SH", "objectId"]
+- !private ["SH", "of"]
+- !private ["SH", "ofClass"]
+- !private ["SH", "product"]
+- !private ["SH", "remove"]
+- !private ["SH", "save"]
+- !private ["SH", "setPageSize"]
+- ["SH", "sharedInstance"]
+- !private ["SH", "unclaimed"]
+- !private ["So10IDataStoreP", "find"]
+- !private ["So10IDataStoreP", "findLast"]
+- !private ["So10IDataStoreP", "remove"]
+- !private ["So10IDataStoreP", "save"]
+- !private ["So10IDataStoreP", "setRelation"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "Product"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "claimed"]
+- !private ["So8NSObjectC", "data"]
+- ["So8NSObjectC", "description"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "objectId"]
+- !private ["So8NSObjectC", "of"]
+- !private ["So8NSObjectC", "ofClass"]
+- ["So8NSObjectC", "product"]
+- !private ["So8NSObjectC", "setPageSize"]
+- ["So8NSObjectC", "sharedInstance"]
+- ["So8NSObjectC", "unclaimed"]
+- !private ["So8NSObjectP", "Product"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "claimed"]
+- !private ["So8NSObjectP", "data"]
+- !private ["So8NSObjectP", "find"]
+- !private ["So8NSObjectP", "findLast"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "objectId"]
+- !private ["So8NSObjectP", "of"]
+- !private ["So8NSObjectP", "ofClass"]
+- !private ["So8NSObjectP", "product"]
+- !private ["So8NSObjectP", "remove"]
+- !private ["So8NSObjectP", "save"]
+- !private ["So8NSObjectP", "setPageSize"]
+- !private ["So8NSObjectP", "setRelation"]
+- ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "unclaimed"]
+- !private ["Sq", "data"]
+- !private ["Sq", "debugDescription"]
+- !private ["Sq", "find"]
+- !private ["Sq", "of"]
+- !private ["Sq", "remove"]
+- !private ["Sq", "save"]
+- !private ["So18PersistenceServiceC", "of"]
+- !private ["15Smart_Inventory7ProductC", "deinit"]
+- !private ["15Smart_Inventory7ProductC", "init"]
+- !private ["15Smart_Inventory7ProductC", "objectId"]
+- !private ["15Smart_Inventory7ProductC", "ofClass"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Product"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "claimed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objectId"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "of"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ofClass"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setPageSize"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unclaimed"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "data"]
+- !private ["s21_ObjectiveCBridgeableP", "debugDescription"]
+- !private ["s21_ObjectiveCBridgeableP", "find"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "of"]
+- !private ["s21_ObjectiveCBridgeableP", "remove"]
+- !private ["s21_ObjectiveCBridgeableP", "save"]
+depends-nominal:
+- !private "15Smart_Inventory11AllProductsC"
+- "15Smart_Inventory13AnnouncementsC"
+- "15Smart_Inventory12AnnouncemnetC"
+- !private "Sa"
+- "So11BackendlessC"
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "So16DataQueryBuilderC"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "So10IDataStoreP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "So18PersistenceServiceC"
+- !private "15Smart_Inventory7ProductC"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DEBUG.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BinaryCodec.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/RTService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PersistenceService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/CacheService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ICacheService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/FileService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/MessagingService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/CustomService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserService.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoFence.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Presence.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessFile.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IDataStore.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/MapDrivenDataStore.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/RTMessaging.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Logging.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ICallback.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Channel.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessCacheProtocol.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BinaryStream.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessBeacon.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DataPermission.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/FilePermission.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DeviceRegistration.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PublishMessageInfo.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BEFileInfo.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserInfo.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/HashMap.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/QueryOptionsBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DataQueryBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PagedQueryBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/LoadRelationsQueryBuilder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Responder.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Logger.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/LocationTracker.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/EventHandler.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/RTListener.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IPresenceListener.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessPushHelper.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessUser.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IResponseAdapter.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoCluster.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AMFSerializer.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/SharedObjectChanges.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Types.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/PublishOptions.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/QueryOptions.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DeliveryOptions.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AtomicCounters.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/IAtomicCounters.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Backendless.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/Events.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BodyParts.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/MessageStatus.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/SharedObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/CommandObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/InvokeObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserStatusObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ReconnectAttemptObject.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BulkEvent.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoPoint.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessCachePolicy.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessDataQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessSimpleQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessGeoQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ProtectedBackendlessGeoQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractQuery.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/GeoCategory.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/DataStoreFactory.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/BackendlessEntity.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/UserProperty.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/AbstractProperty.h"
+- "/Users/vamshi/Documents/SmartInventoryiOS/Smart Inventory/Pods/Backendless/SDK/ios/backendless/include/ObjectProperty.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "aac4ab1c516e62dff1394390d8b81b43"
