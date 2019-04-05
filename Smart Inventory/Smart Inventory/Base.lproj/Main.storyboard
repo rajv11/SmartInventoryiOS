@@ -1766,10 +1766,10 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="-1858.4000000000001" y="2736.9458128078818"/>
         </scene>
-        <!--View Controller-->
+        <!--ShippingLabelView Controller-->
         <scene sceneID="KZG-06-CIU">
             <objects>
-                <viewController id="2U3-5q-pbU" sceneMemberID="viewController">
+                <viewController id="2U3-5q-pbU" userLabel="ShippingLabelView Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nab-Kz-ZgO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
