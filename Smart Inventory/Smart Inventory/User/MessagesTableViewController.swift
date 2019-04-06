@@ -19,8 +19,8 @@ class MessagesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        messageDataStore = backendless.data.of(Message.self)
-        messages = messageDataStore.find() as! [Message]
+        Messages.messages.retriveUserMessages()
+        messages = Messages.messages.messagesArray
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -30,7 +30,8 @@ class MessagesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewWillAppear(_ animated: Bool) {
-        messages = messageDataStore.find() as! [Message]
+        Messages.messages.retriveUserMessages()
+        messages = Messages.messages.messagesArray
         tableView.reloadData()
     }
     // MARK: - Table view data source

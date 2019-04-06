@@ -16,7 +16,7 @@ class Message: NSObject {
     var subject:String
     var message:String
     
-    var objectId:String?
+    //var ownerId:String?
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
         return "subject:  \(subject),  message:  \(message)"
@@ -58,7 +58,12 @@ class Messages {
     }
     
     
-//    func retriveAllMessages() {
-//        <#function body#>
-//    }
+    func retriveUserMessages() {
+        let whereClause = "ownerId='\( backendless?.userService.currentUser.getProperty("ownerId") ?? "")'"
+        
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setWhereClause(whereClause)
+        messageDataStore = backendless?.data.of(Message.self)
+        self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
+    }
 }
