@@ -19,7 +19,35 @@ class NewMessageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func displayAlert(msg: String, sent: Bool){
+        let  alert  =  UIAlertController(title:  "Announcement",  message: msg,  preferredStyle:  .alert)
+        
+        if sent {
+            alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
+                
+                self.dismiss(animated: true, completion: nil)
+            }))
+        } else {
+            alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler: nil))
+        }
+        
+        self.present(alert,  animated:  true,  completion:  nil)
+        
+    }
+    
+    
+    
     @IBAction func sendBtn(_ sender: Any) {
+        if let subject = subjectTF.text, let message = messageTF.text, !subject.isEmpty, !message.isEmpty
+        {
+            let message = Message(subject: subject, message: message)
+            Messages.messages.saveMessage(message: message)
+            
+            
+            self.displayAlert(msg: "Message Sent", sent: true)
+        } else {
+            self.displayAlert(msg: "Enter All required fields", sent: false)
+        }
     }
     
     /*

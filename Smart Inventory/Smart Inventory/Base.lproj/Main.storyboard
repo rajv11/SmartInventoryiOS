@@ -918,7 +918,7 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="1977" y="831"/>
         </scene>
-        <!--Chats-->
+        <!--Messages-->
         <scene sceneID="NC2-73-lIe">
             <objects>
                 <tableViewController id="JqZ-X2-9Bs" customClass="ChatTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
@@ -972,7 +972,7 @@ The application will manages the shipping labels, product details, orders and tr
                             <outlet property="delegate" destination="JqZ-X2-9Bs" id="L20-NO-koZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Chats" image="chat" id="IpL-Hw-Txz"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="chat" id="IpL-Hw-Txz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MO-YD-0kN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1788,22 +1788,22 @@ The application will manages the shipping labels, product details, orders and tr
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oJk-jq-J53" userLabel="MessageTF">
-                                <rect key="frame" x="16" y="234" width="343" height="158"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mNc-uT-5Zh">
+                                <rect key="frame" x="16" y="234" width="343" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFb-M6-tdR" userLabel="SubjectTF">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17s-Qb-D6Z">
                                 <rect key="frame" x="16" y="147" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gz-cQ-kVU" userLabel="Send">
-                                <rect key="frame" x="16" y="571" width="343" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-p5-ky6">
+                                <rect key="frame" x="16" y="572" width="343" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
@@ -1811,9 +1811,9 @@ The application will manages the shipping labels, product details, orders and tr
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ys2-8n-NXx"/>
-                                    <action selector="postAnnouncementBtn:" destination="jdX-PX-eEV" eventType="touchUpInside" id="fE8-0x-tqR"/>
-                                    <action selector="sendBtn:" destination="jdX-PX-eEV" eventType="touchUpInside" id="j8R-8J-aE4"/>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOE-mD-SEc"/>
+                                    <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="i6E-qM-Ges"/>
+                                    <action selector="sendBtn:" destination="jdX-PX-eEV" eventType="touchUpInside" id="gYj-wJ-wms"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1821,16 +1821,14 @@ The application will manages the shipping labels, product details, orders and tr
                         <viewLayoutGuide key="safeArea" id="jFA-2e-gdb"/>
                     </view>
                     <connections>
-                        <outlet property="descriptionTF" destination="oJk-jq-J53" id="qc8-ff-nd4"/>
-                        <outlet property="messageTF" destination="oJk-jq-J53" id="tFb-0U-7do"/>
-                        <outlet property="productNameTF" destination="LFb-M6-tdR" id="tlc-M6-OjG"/>
-                        <outlet property="subjectTF" destination="LFb-M6-tdR" id="BrS-Ye-5Kt"/>
+                        <outlet property="messageTF" destination="mNc-uT-5Zh" id="y0x-x6-43R"/>
+                        <outlet property="subjectTF" destination="17s-Qb-D6Z" id="WCi-f6-qoo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tN-eb-5Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bin-bM-e2C" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1126" y="2028"/>
+            <point key="canvasLocation" x="-1127.2" y="2027.5862068965519"/>
         </scene>
     </scenes>
     <resources>

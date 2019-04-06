@@ -27,6 +27,7 @@
 		3F9F7B0E2211063C00E13966 /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */; };
 		4C081DA22223639800ED3A72 /* PostAnnouncementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C081DA12223639800ED3A72 /* PostAnnouncementVC.swift */; };
 		4C840A47225866F400E15E5B /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C840A46225866F400E15E5B /* NewMessageViewController.swift */; };
+		4C840A492258688900E15E5B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C840A482258688900E15E5B /* Message.swift */; };
 		4CF962DC222E840200393139 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF962DB222E840200393139 /* UpdateViewController.swift */; };
 		876CF7982167D4240015A6C8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876CF7972167D4240015A6C8 /* RegistrationViewController.swift */; };
 		C79D808C216530F400A0AEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79D808B216530F400A0AEFB /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
 		4C081DA12223639800ED3A72 /* PostAnnouncementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAnnouncementVC.swift; sourceTree = "<group>"; };
 		4C840A46225866F400E15E5B /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		4C840A482258688900E15E5B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4CF962DB222E840200393139 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E7F6C5E2C09410BB61ED25 /* Pods-Smart Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Inventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Inventory/Pods-Smart Inventory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				16746CD5223F5675005197C5 /* OrderDetialsViewController.swift */,
 				16746CD72247EB4C005197C5 /* ModifyOrderViewController.swift */,
 				4C840A46225866F400E15E5B /* NewMessageViewController.swift */,
+				4C840A482258688900E15E5B /* Message.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				16746CD6223F5675005197C5 /* OrderDetialsViewController.swift in Sources */,
 				160085C822113D58005D4124 /* OrdersTableViewController.swift in Sources */,
 				160E92AE222FAB63001856EB /* Order.swift in Sources */,
+				4C840A492258688900E15E5B /* Message.swift in Sources */,
 				16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */,
 				C79D808E216530F400A0AEFB /* LoginViewController.swift in Sources */,
 				4C081DA22223639800ED3A72 /* PostAnnouncementVC.swift in Sources */,
