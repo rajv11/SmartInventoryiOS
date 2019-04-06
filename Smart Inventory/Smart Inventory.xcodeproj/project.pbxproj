@@ -20,7 +20,7 @@
 		16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC012197E03900E40897 /* UserProfileViewController.swift */; };
 		16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */; };
 		1B02F38A804E8ED0E8B9CF2B /* Pods_Smart_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */; };
-		3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */; };
+		3F3E41CF21B183A7006BB70D /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E41CE21B183A7006BB70D /* MessagesTableViewController.swift */; };
 		3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */; };
 		3F5536042216159800B6B494 /* AdminAnnouncementTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5536032216159800B6B494 /* AdminAnnouncementTVC.swift */; };
 		3F5536062216161900B6B494 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5536052216161900B6B494 /* Announcement.swift */; };
@@ -50,7 +50,7 @@
 		169B96762207B82300510611 /* productDetails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = productDetails.txt; sourceTree = "<group>"; };
 		16E7DC012197E03900E40897 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		3F3E41CE21B183A7006BB70D /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		3F5536032216159800B6B494 /* AdminAnnouncementTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAnnouncementTVC.swift; sourceTree = "<group>"; };
 		3F5536052216161900B6B494 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				1678E31221A268AF00436FD9 /* Product.swift */,
 				1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */,
 				3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */,
-				3F3E41CE21B183A7006BB70D /* ChatTableViewController.swift */,
+				3F3E41CE21B183A7006BB70D /* MessagesTableViewController.swift */,
 				3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */,
 				876CF7972167D4240015A6C8 /* RegistrationViewController.swift */,
 				16E7DC012197E03900E40897 /* UserProfileViewController.swift */,
@@ -308,7 +308,7 @@
 				3F5536062216161900B6B494 /* Announcement.swift in Sources */,
 				4C840A47225866F400E15E5B /* NewMessageViewController.swift in Sources */,
 				4CF962DC222E840200393139 /* UpdateViewController.swift in Sources */,
-				3F3E41CF21B183A7006BB70D /* ChatTableViewController.swift in Sources */,
+				3F3E41CF21B183A7006BB70D /* MessagesTableViewController.swift in Sources */,
 				16746CD82247EB4C005197C5 /* ModifyOrderViewController.swift in Sources */,
 				3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */,
 				160085C42211301C005D4124 /* InventoryTableViewController.swift in Sources */,

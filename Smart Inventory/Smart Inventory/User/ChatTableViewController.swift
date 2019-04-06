@@ -8,10 +8,19 @@
 
 import UIKit
 
-class ChatTableViewController: UITableViewController {
-
+class MessagesTableViewController: UITableViewController {
+    var messages:[Message] = []
+    let backendless = Backendless.sharedInstance()!
+    var messageDataStore:IDataStore!
+    
+    @objc func dataFetched() {
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        messageDataStore = backendless.data.of(Message.self)
+        messages = messageDataStore.find() as! [Message]
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -20,7 +29,10 @@ class ChatTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        messages = messageDataStore.find() as! [Message]
+        tableView.reloadData()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,15 +42,15 @@ class ChatTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return messages.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatCell", for: indexPath)
-        
-        cell.textLabel?.text = "Bob"
-        cell.detailTextLabel?.text = "Hi......"
+        let currentMessage = messages[indexPath.row]
+        cell.textLabel?.text = currentMessage.subject
+        cell.detailTextLabel?.text = currentMessage.description
 
         return cell
     }

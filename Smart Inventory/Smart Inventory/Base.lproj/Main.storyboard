@@ -921,7 +921,7 @@ The application will manages the shipping labels, product details, orders and tr
         <!--Messages-->
         <scene sceneID="NC2-73-lIe">
             <objects>
-                <tableViewController id="JqZ-X2-9Bs" customClass="ChatTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="JqZ-X2-9Bs" customClass="MessagesTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kfg-ef-Lop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
