@@ -918,85 +918,6 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="1977" y="831"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="yw4-c1-DOX">
-            <objects>
-                <viewController id="4Ls-Oy-23h" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vi0-Sp-UNG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatbuubles" translatesAutoresizingMaskIntoConstraints="NO" id="b7F-ps-afp">
-                                <rect key="frame" x="16" y="126" width="343" height="191"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="SfZ-04-lrS"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatbuubles" translatesAutoresizingMaskIntoConstraints="NO" id="1h0-Ja-4V7">
-                                <rect key="frame" x="16" y="325" width="343" height="191"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="1SX-0C-WHe"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatbuubles" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-mF-Dbb">
-                                <rect key="frame" x="16" y="524" width="343" height="191"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Sl-mW-Fyb">
-                                <rect key="frame" x="16" y="703" width="347" height="30"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-NT-1T6">
-                                <rect key="frame" x="16" y="44" width="347" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="o0E-Hq-6JS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc2-1c-CpE">
-                                <rect key="frame" x="303" y="50" width="56" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <segue destination="Way-9d-4p1" kind="unwind" unwindAction="chatDone:" id="5cj-u3-1ta"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="uwi-e6-xyh" firstAttribute="bottom" secondItem="3Sl-mW-Fyb" secondAttribute="bottom" constant="45" id="0sv-8q-MEI"/>
-                            <constraint firstItem="1h0-Ja-4V7" firstAttribute="trailing" secondItem="Lse-mF-Dbb" secondAttribute="trailing" id="4sU-2W-A4C"/>
-                            <constraint firstItem="uwi-e6-xyh" firstAttribute="trailing" secondItem="Xha-NT-1T6" secondAttribute="trailing" constant="12" id="58v-TC-BPa"/>
-                            <constraint firstItem="xc2-1c-CpE" firstAttribute="leading" secondItem="uwi-e6-xyh" secondAttribute="leading" constant="303" id="5Ug-B7-AWB"/>
-                            <constraint firstItem="Xha-NT-1T6" firstAttribute="trailing" secondItem="3Sl-mW-Fyb" secondAttribute="trailing" id="5hW-Dz-fuw"/>
-                            <constraint firstItem="xc2-1c-CpE" firstAttribute="top" secondItem="uwi-e6-xyh" secondAttribute="top" constant="6" id="61Z-wr-nPL"/>
-                            <constraint firstItem="b7F-ps-afp" firstAttribute="trailing" secondItem="vi0-Sp-UNG" secondAttribute="trailingMargin" id="CM4-wz-OhN"/>
-                            <constraint firstItem="Lse-mF-Dbb" firstAttribute="leading" secondItem="3Sl-mW-Fyb" secondAttribute="leading" id="HTg-Cx-PVt"/>
-                            <constraint firstItem="uwi-e6-xyh" firstAttribute="bottom" secondItem="Lse-mF-Dbb" secondAttribute="bottom" constant="63" id="OFP-Ek-Y8A"/>
-                            <constraint firstItem="xc2-1c-CpE" firstAttribute="centerY" secondItem="Xha-NT-1T6" secondAttribute="centerY" id="RF2-M5-2Jj"/>
-                            <constraint firstItem="Xha-NT-1T6" firstAttribute="leading" secondItem="vi0-Sp-UNG" secondAttribute="leadingMargin" id="Rsi-9Y-6gw"/>
-                            <constraint firstItem="Lse-mF-Dbb" firstAttribute="top" secondItem="1h0-Ja-4V7" secondAttribute="bottom" constant="8" symbolic="YES" id="ScA-Q9-JK2"/>
-                            <constraint firstItem="1h0-Ja-4V7" firstAttribute="leading" secondItem="Lse-mF-Dbb" secondAttribute="leading" id="XqP-uY-fz1"/>
-                            <constraint firstItem="1h0-Ja-4V7" firstAttribute="top" secondItem="b7F-ps-afp" secondAttribute="bottom" constant="8" symbolic="YES" id="ahX-Ie-S33"/>
-                            <constraint firstItem="Xha-NT-1T6" firstAttribute="leading" secondItem="b7F-ps-afp" secondAttribute="leading" id="bSh-Ae-Jsf"/>
-                            <constraint firstItem="xc2-1c-CpE" firstAttribute="trailing" secondItem="b7F-ps-afp" secondAttribute="trailing" id="bV3-vR-Q34"/>
-                            <constraint firstItem="b7F-ps-afp" firstAttribute="trailing" secondItem="1h0-Ja-4V7" secondAttribute="trailing" id="jJq-Y7-nSt"/>
-                            <constraint firstItem="b7F-ps-afp" firstAttribute="leading" secondItem="1h0-Ja-4V7" secondAttribute="leading" id="l1B-tR-Xam"/>
-                            <constraint firstItem="xc2-1c-CpE" firstAttribute="baseline" secondItem="Xha-NT-1T6" secondAttribute="firstBaseline" id="uwK-cd-ysb"/>
-                            <constraint firstItem="Xha-NT-1T6" firstAttribute="top" secondItem="uwi-e6-xyh" secondAttribute="top" id="vkA-TA-3bP"/>
-                            <constraint firstItem="b7F-ps-afp" firstAttribute="top" secondItem="Xha-NT-1T6" secondAttribute="bottom" constant="41" id="xkZ-hk-6op"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="uwi-e6-xyh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pqc-5M-Twr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Way-9d-4p1" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-775" y="1985"/>
-        </scene>
         <!--Chats-->
         <scene sceneID="NC2-73-lIe">
             <objects>
@@ -1006,9 +927,22 @@ The application will manages the shipping labels, product details, orders and tr
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.47969285099999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="l6N-8s-SXB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Messages" id="Jiv-aa-8cO">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="4aB-GO-w2h">
+                                        <connections>
+                                            <segue destination="jdX-PX-eEV" kind="presentation" id="YnK-zI-lRH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCell" textLabel="Fs5-qc-W2I" detailTextLabel="fqM-cr-nIO" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="u49-y0-aUT">
-                                <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u49-y0-aUT" id="nAL-Za-OBi">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
@@ -1031,9 +965,6 @@ The application will manages the shipping labels, product details, orders and tr
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="4Ls-Oy-23h" kind="show" id="uea-NQ-9sU"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1822,19 +1753,97 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="-1084" y="-1589"/>
         </scene>
+        <!--New Messages-->
+        <scene sceneID="sxq-Ch-lqk">
+            <objects>
+                <viewController id="jdX-PX-eEV" userLabel="New Messages" customClass="NewMessageViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NaV-3V-Lug">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86N-jx-uN2">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="New Messege" id="vMD-JY-phB">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="aej-Zo-lm6">
+                                            <connections>
+                                                <segue destination="bin-bM-e2C" kind="unwind" unwindAction="onCancelAnnouncementWithSegue:" id="CFF-NB-xtn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrP-Fq-L55">
+                                <rect key="frame" x="16" y="118" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bim-8t-8de">
+                                <rect key="frame" x="16" y="205" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oJk-jq-J53" userLabel="MessageTF">
+                                <rect key="frame" x="16" y="234" width="343" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFb-M6-tdR" userLabel="SubjectTF">
+                                <rect key="frame" x="16" y="147" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gz-cQ-kVU" userLabel="Send">
+                                <rect key="frame" x="16" y="571" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ys2-8n-NXx"/>
+                                    <action selector="postAnnouncementBtn:" destination="jdX-PX-eEV" eventType="touchUpInside" id="fE8-0x-tqR"/>
+                                    <action selector="sendBtn:" destination="jdX-PX-eEV" eventType="touchUpInside" id="j8R-8J-aE4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35018915340000001" green="0.64662297290000004" blue="1" alpha="0.62466823630000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="jFA-2e-gdb"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTF" destination="oJk-jq-J53" id="qc8-ff-nd4"/>
+                        <outlet property="messageTF" destination="oJk-jq-J53" id="tFb-0U-7do"/>
+                        <outlet property="productNameTF" destination="LFb-M6-tdR" id="tlc-M6-OjG"/>
+                        <outlet property="subjectTF" destination="LFb-M6-tdR" id="BrS-Ye-5Kt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tN-eb-5Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bin-bM-e2C" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1126" y="2028"/>
+        </scene>
     </scenes>
     <resources>
         <image name="advertising" width="30" height="30"/>
         <image name="businessman" width="30" height="30"/>
         <image name="chat" width="30" height="30"/>
         <image name="chatIcon" width="1024" height="1024"/>
-        <image name="chatbuubles" width="320" height="180"/>
         <image name="list" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Bi5-oh-3tp"/>
-        <segue reference="DHv-3H-hNE"/>
+        <segue reference="Gtc-Cb-7gz"/>
         <segue reference="RAs-ko-HsA"/>
     </inferredMetricsTieBreakers>
 </document>
