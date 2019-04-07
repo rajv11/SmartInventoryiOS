@@ -99,4 +99,16 @@ class AllOrders {
         })
     }
     
+    func deleteOrder(_ objectId:String) {
+        let orderDataStore = backendless?.data.of(Order.self)
+        
+        orderDataStore!.remove(byId: objectId, response: {(result) -> Void in
+            print("Order deleted")
+        },
+                                error: {(exception) -> Void in
+                                    print(exception.debugDescription) })
+        self.retrieveAllOrders()
+    }
+        
+    
 }

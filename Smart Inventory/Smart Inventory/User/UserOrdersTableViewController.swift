@@ -35,7 +35,8 @@ class UserOrdersTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
-    }
+        
+            }
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
