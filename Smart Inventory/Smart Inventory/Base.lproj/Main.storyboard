@@ -1840,6 +1840,7 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="5is-R3-IjG"/>
         <segue reference="Bi5-oh-3tp"/>
         <segue reference="Gtc-Cb-7gz"/>
         <segue reference="RAs-ko-HsA"/>

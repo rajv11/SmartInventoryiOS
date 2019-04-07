@@ -68,6 +68,17 @@ class UserOrdersTableViewController: UITableViewController {
         return 115
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            
+            AllOrders.allOrders.deleteOrder(allOrders[indexPath.row].objectId!)
+            AllProducts.allProducts.deleteProduct(allOrders[indexPath.row].objectId!)
+            self.allOrders.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        }
+    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
