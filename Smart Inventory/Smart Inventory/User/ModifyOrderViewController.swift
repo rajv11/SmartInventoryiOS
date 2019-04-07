@@ -48,6 +48,10 @@ class ModifyOrderViewController: UIViewController {
 
   
     @IBAction func modifyOrder(_ sender: Any) {
+        let modifiedOrder = OrderDetialsViewController.order
+        modifiedOrder?.quantity = Int(self.quantityLbl.text!)!
+        AllOrders.allOrders.saveOrder(order: modifiedOrder!)
+        displayAlert(msg: "Order has been modified successfully")
     }
     
     @IBAction func cancelOrder(_ sender: Any) {
