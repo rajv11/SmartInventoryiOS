@@ -39,6 +39,19 @@ class UserOrdersTableViewController: UITableViewController {
             }
     // MARK: - Table view data source
     
+    func displayAlert(msg: String){
+        let  alert  =  UIAlertController(title:  "Order",  message: msg,  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:nil))
+        self.present(alert,  animated:  true,  completion:  nil)    }
+    
+    
+    func displayError(msg: String){
+        let alert = UIAlertController(title: "Failed", message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -70,13 +83,17 @@ class UserOrdersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            
-            
+            if allOrders[indexPath.row].status == "approved"{
+                displayAlert(msg: "The Order has already approved by the admin")
+            }
+            else{
             AllOrders.allOrders.deleteOrder(allOrders[indexPath.row].objectId!)
             AllProducts.allProducts.deleteProduct(allOrders[indexPath.row].objectId!)
             self.allOrders.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
+            displayAlert(msg: "Deleted successfully")
+            }
         }
     }
     /*
