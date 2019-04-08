@@ -44,14 +44,10 @@ class AdminMessagesTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "adminMessage", for: indexPath)
 
-        let user = tableView.viewWithTag(111) as! UILabel
-        let subject = tableView.viewWithTag(222) as! UILabel
-        let message = tableView.viewWithTag(333) as! UILabel
-        
         let newMessage = messages[indexPath.row]
-        user.text = newMessage.name
-        subject.text = newMessage.subject
-        message.text = newMessage.message
+        cell.textLabel?.text = newMessage.name
+        cell.detailTextLabel?.text = newMessage.subject
+        
         return cell
     }
  
