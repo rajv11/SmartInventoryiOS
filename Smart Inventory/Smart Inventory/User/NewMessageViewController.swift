@@ -40,7 +40,7 @@ class NewMessageViewController: UIViewController {
     @IBAction func sendBtn(_ sender: Any) {
         if let subject = subjectTF.text, let message = messageTF.text, !subject.isEmpty, !message.isEmpty
         {
-            let message = Message(subject: subject, message: message)
+            let message = Message(subject: subject, message: message, name: Backendless.sharedInstance()?.userService.currentUser.name as! String)
             Messages.messages.saveMessage(message: message)
             
             

@@ -22,7 +22,7 @@ class Order: NSObject, Decodable {
     var created:String?
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
-        return "Name:  \(product.name  ??  ""),  status:  \(status)"
+        return "Name:  \(product.name),  status:  \(status)"
         
     }
     
