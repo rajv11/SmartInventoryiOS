@@ -257,6 +257,55 @@
             </objects>
             <point key="canvasLocation" x="221.59999999999999" y="1318.9655172413793"/>
         </scene>
+        <!--Message Detail View Controller-->
+        <scene sceneID="CmA-OV-uBg">
+            <objects>
+                <viewController id="2vm-9I-quw" customClass="MessageDetailViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oWE-U5-CmO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTl-ID-PUa">
+                                <rect key="frame" x="16" y="148" width="343" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-OR-FAn">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Message" id="5Rq-EL-rhu">
+                                        <barButtonItem key="rightBarButtonItem" title="Back" id="yqC-Qj-MDb">
+                                            <connections>
+                                                <action selector="backbtn:" destination="2vm-9I-quw" id="t46-IG-fAa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-nS-S1S">
+                                <rect key="frame" x="16" y="109" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kqe-57-RRq"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageTV" destination="OTl-ID-PUa" id="h0f-h4-3uD"/>
+                        <outlet property="subjectLBL" destination="c1d-nS-S1S" id="XQf-4Q-YE3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMV-wd-hib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386.39999999999998" y="2027.5862068965519"/>
+        </scene>
         <!--Title-->
         <scene sceneID="YyQ-Hk-Rty">
             <objects>
@@ -373,7 +422,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZo-6J-Bg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="SJs-aZ-9PH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="89" y="2413"/>
+            <point key="canvasLocation" x="258" y="2421"/>
         </scene>
         <!--Account-->
         <scene sceneID="byo-En-I1b">
@@ -791,8 +840,8 @@ The application will manages the shipping labels, product details, orders and tr
                     <connections>
                         <segue destination="Mhx-9H-1ON" kind="relationship" relationship="viewControllers" id="P3N-fa-urs"/>
                         <segue destination="msu-99-t8h" kind="relationship" relationship="viewControllers" id="eyn-cf-Vjl"/>
-                        <segue destination="L0s-Zg-O88" kind="relationship" relationship="viewControllers" id="brF-2v-rtP"/>
                         <segue destination="AOL-Rx-fsX" kind="relationship" relationship="viewControllers" id="Qbu-6O-pt1"/>
+                        <segue destination="L0s-Zg-O88" kind="relationship" relationship="viewControllers" id="brF-2v-rtP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bue-8Z-XVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -950,6 +999,9 @@ The application will manages the shipping labels, product details, orders and tr
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="2vm-9I-quw" kind="showDetail" identifier="messageDetail" id="4r3-zH-bZE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1780,6 +1832,56 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="1025" y="-883"/>
         </scene>
+        <!--AdminMessageDetailVC-->
+        <scene sceneID="Rfo-Rs-VZ3">
+            <objects>
+                <viewController id="2C7-cj-rBr" userLabel="AdminMessageDetailVC" customClass="AdminMessageDetailVC" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="reW-JU-bhB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tu-PX-T37">
+                                <rect key="frame" x="16" y="99" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bid-qe-QbI">
+                                <rect key="frame" x="16" y="162" width="343" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQj-DZ-Jdl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="jDD-Vd-hHG">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="w1w-wl-4QK">
+                                            <connections>
+                                                <action selector="backBtn:" destination="2C7-cj-rBr" id="kaC-ZQ-fL2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uk3-II-kcI"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageTV" destination="bid-qe-QbI" id="b5S-gf-wdn"/>
+                        <outlet property="navBar" destination="EQj-DZ-Jdl" id="wuP-3p-UA2"/>
+                        <outlet property="subjectLBL" destination="7tu-PX-T37" id="Tgf-p3-cK1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhu-WX-XQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1559.2" y="-883.00492610837443"/>
+        </scene>
         <!--AdminMessages-->
         <scene sceneID="0tA-fQ-VGy">
             <objects>
@@ -1788,9 +1890,16 @@ The application will manages the shipping labels, product details, orders and tr
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="gbl-RP-SJd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Messages" id="fiF-65-xUB"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="adminMessage" textLabel="gLU-h7-Unl" detailTextLabel="oJ9-2U-s6f" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="P8j-TT-jBp">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P8j-TT-jBp" id="wK6-zX-FX2">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
@@ -1813,6 +1922,9 @@ The application will manages the shipping labels, product details, orders and tr
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="2C7-cj-rBr" kind="showDetail" identifier="adminDetail" id="uXe-Gu-5vC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1836,7 +1948,7 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bi5-oh-3tp"/>
+        <segue reference="y4h-4z-If8"/>
         <segue reference="DHv-3H-hNE"/>
         <segue reference="brF-2v-rtP"/>
     </inferredMetricsTieBreakers>

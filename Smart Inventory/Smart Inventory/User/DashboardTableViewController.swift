@@ -137,12 +137,8 @@ class DashboardTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "claim_product" {
             let claimProductVC = segue.destination as! ClaimProductsViewController
-            print(tableView.indexPathForSelectedRow!.row)
             claimProductVC.announcement = self.allAnnouncements[tableView.indexPathForSelectedRow!.row]
-        } else {
-            
-        }
-        // Get the new view controller using segue.destination.
+        }        // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
 

@@ -51,7 +51,7 @@ class MessagesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatCell", for: indexPath)
         let currentMessage = messages[indexPath.row]
         cell.textLabel?.text = currentMessage.subject
-        cell.detailTextLabel?.text = currentMessage.description
+        cell.detailTextLabel?.text = currentMessage.message
 
         return cell
     }
@@ -95,14 +95,20 @@ class MessagesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "messageDetail" {
+            let messageVC = segue.destination as! MessageDetailViewController
+            messageVC.message = self.messages[tableView.indexPathForSelectedRow!.row]
+            
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }
