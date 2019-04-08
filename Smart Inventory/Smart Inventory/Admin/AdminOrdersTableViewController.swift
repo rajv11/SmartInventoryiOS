@@ -63,7 +63,7 @@ class AdminOrdersTableViewController: UITableViewController {
         let quantity = tableView.viewWithTag(400) as! UILabel
         
         name.text = allOrders[indexPath.row].title
-        //userName.text = allOrders[indexPath.row].status
+        userName.text = allOrders[indexPath.row].userName
         quantity.text = String(allOrders[indexPath.row].quantity)
         
         return cell

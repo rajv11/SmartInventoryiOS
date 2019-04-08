@@ -20,21 +20,23 @@ class Order: NSObject, Decodable {
     var status:String
     var objectId:String?
     var created:String?
+    var userName:String
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
         return "Name:  \(product.name),  status:  \(status)"
         
     }
     
-    init(title:String, product:Product, quantity:Int, status:String){
+    init(title:String, product:Product, quantity:Int, status:String, userName:String){
         self.title = title
         self.product  =  product
         self.quantity = quantity
         self.status = status
+        self.userName = userName
     }
     
     convenience override init(){
-        self.init(title:"", product: Product(), quantity: 0, status: "")
+        self.init(title:"", product: Product(), quantity: 0, status: "", userName: "")
         
     }
 }

@@ -15,6 +15,7 @@ class DetailedOrderViewController: UIViewController {
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var claimedLbl: UILabel!
     @IBOutlet weak var statusLbl: UILabel!
+    @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var uploadShippingLabelBtn: UIButton!
     
     static var order:Order!
@@ -34,12 +35,13 @@ class DetailedOrderViewController: UIViewController {
         claimedLbl.text = String(DetailedOrderViewController.order.quantity)
         priceLbl.text = String(DetailedOrderViewController.order.product.price)
         statusLbl.text = String(DetailedOrderViewController.order.status)
+        userNameLbl.text = String(DetailedOrderViewController.order.userName)
     }
     
     func displayAlert(msg: String){
         let  alert  =  UIAlertController(title:  "Order",  message: msg,  preferredStyle:  .alert)
         alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
-            self.performSegue(withIdentifier: "modifiedOrder", sender: nil)
+            self.performSegue(withIdentifier: "orderDone", sender: nil)
         }))
         self.present(alert,  animated:  true,  completion:  nil)    }
     
