@@ -73,6 +73,40 @@ class AdminOrdersTableViewController: UITableViewController {
         return 115
     }
     
+    override func tableView(_ tableView: UITableView,
+                   trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    {
+      
+        let selectedOrder = self.allOrders[indexPath.row] as Order!
+        var actions:[UIContextualAction] = []
+        if (selectedOrder!.status == "requested") {
+            let approveOrder = UIContextualAction(style: .normal, title:  "Approve", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                selectedOrder?.status = "approved"
+                AllOrders.allOrders.saveOrder(order: selectedOrder!)
+                self.displayAlert(msg: "Order has been approved")
+                print("Approve order ...")
+                success(true)
+            })
+            approveOrder.backgroundColor = .green
+            
+            // Write action code for the Flag
+            let rejectOrder = UIContextualAction(style: .normal, title:  "Reject", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                selectedOrder?.status = "rejected"
+                AllOrders.allOrders.saveOrder(order: selectedOrder!)
+                self.displayAlert(msg: "Order has been rejected")
+                print("Reject order ...")
+                success(true)
+            })
+            rejectOrder.backgroundColor = .red
+            
+            actions = [approveOrder, rejectOrder]
+        }
+        else {
+            actions = []
+        }
+        return UISwipeActionsConfiguration(actions: actions)
+    }
+    
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
