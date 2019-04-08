@@ -34,10 +34,12 @@ class OrdersTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "order", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ordersCell", for: indexPath)
 
-        cell.textLabel?.text = "Order 1234"
-        cell.detailTextLabel?.text = "Iphone 8"
+        let name = tableView.viewWithTag(100) as! UILabel
+        
+        
+        name.text = "Hello"
 
         return cell
     }

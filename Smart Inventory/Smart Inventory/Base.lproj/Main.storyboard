@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pshruthi98@gmail.com" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-ie-5j3">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="inventory.adm@yandex.ru" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-ie-5j3">
                                 <rect key="frame" x="16" y="262" width="343" height="30"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -26,7 +26,7 @@
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="aGo-fZ-uOM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testuser" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-JT-2jB">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bearcat123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-JT-2jB">
                                 <rect key="frame" x="16" y="340" width="343" height="30"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -540,22 +540,6 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="1977" y="2931"/>
         </scene>
-        <!--Orders-->
-        <scene sceneID="NPg-wF-YgO">
-            <objects>
-                <viewController id="MP3-2d-eZK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qty-w0-64l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="O7b-Z5-wKZ"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Orders" image="list" id="VSn-E0-fQQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="53z-Bi-FAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="934" y="-883"/>
-        </scene>
         <!--Post Announcements-->
         <scene sceneID="lPp-XM-3G8">
             <objects>
@@ -806,7 +790,7 @@ The application will manages the shipping labels, product details, orders and tr
                     </tabBar>
                     <connections>
                         <segue destination="Mhx-9H-1ON" kind="relationship" relationship="viewControllers" id="P3N-fa-urs"/>
-                        <segue destination="MP3-2d-eZK" kind="relationship" relationship="viewControllers" id="nSs-1K-Xgq"/>
+                        <segue destination="msu-99-t8h" kind="relationship" relationship="viewControllers" id="eyn-cf-Vjl"/>
                         <segue destination="L0s-Zg-O88" kind="relationship" relationship="viewControllers" id="brF-2v-rtP"/>
                     </connections>
                 </tabBarController>
@@ -1721,6 +1705,80 @@ The application will manages the shipping labels, product details, orders and tr
             </objects>
             <point key="canvasLocation" x="-1127.2" y="2027.5862068965519"/>
         </scene>
+        <!--Orders-->
+        <scene sceneID="jai-B7-TZX">
+            <objects>
+                <tableViewController id="msu-99-t8h" customClass="AdminOrdersTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UYH-eR-fLU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.073874957860000007" green="0.27973797919999999" blue="0.46284824610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e9j-Kw-jsA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" rowHeight="120" id="bek-gT-UdV">
+                                <rect key="frame" x="0.0" y="69" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bek-gT-UdV" id="6RW-rF-Hs4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.66666666666667"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN2-YU-4M4">
+                                            <rect key="frame" x="139" y="29" width="96" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ6-pq-x7F">
+                                            <rect key="frame" x="87" y="60" width="96" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk8-GG-96O">
+                                            <rect key="frame" x="87" y="82" width="96" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6p-8P-mkk">
+                                            <rect key="frame" x="191" y="60" width="96" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="400" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDW-2P-jaF">
+                                            <rect key="frame" x="191" y="82" width="96" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="msu-99-t8h" id="CJ1-w4-WUJ"/>
+                            <outlet property="delegate" destination="msu-99-t8h" id="xpg-Eg-sRg"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Orders" image="list" id="BDx-i8-lji"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghF-Ot-wg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="-883"/>
+        </scene>
     </scenes>
     <resources>
         <image name="advertising" width="30" height="30"/>
@@ -1732,7 +1790,7 @@ The application will manages the shipping labels, product details, orders and tr
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Bi5-oh-3tp"/>
-        <segue reference="Gtc-Cb-7gz"/>
-        <segue reference="RAs-ko-HsA"/>
+        <segue reference="DHv-3H-hNE"/>
+        <segue reference="brF-2v-rtP"/>
     </inferredMetricsTieBreakers>
 </document>
