@@ -11,6 +11,7 @@
 		160E92AE222FAB63001856EB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E92AD222FAB63001856EB /* Order.swift */; };
 		160E92B0222FAC2F001856EB /* UserOrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E92AF222FAC2F001856EB /* UserOrdersTableViewController.swift */; };
 		16200FE8225ADEA4007C045B /* AdminOrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16200FE7225ADEA4007C045B /* AdminOrdersTableViewController.swift */; };
+		16200FEC225B220E007C045B /* DetailedOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16200FEB225B220E007C045B /* DetailedOrderViewController.swift */; };
 		16746CD6223F5675005197C5 /* OrderDetialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16746CD5223F5675005197C5 /* OrderDetialsViewController.swift */; };
 		1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */; };
 		1678E31321A268AF00436FD9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31221A268AF00436FD9 /* Product.swift */; };
@@ -44,6 +45,7 @@
 		160E92AD222FAB63001856EB /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		160E92AF222FAC2F001856EB /* UserOrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOrdersTableViewController.swift; sourceTree = "<group>"; };
 		16200FE7225ADEA4007C045B /* AdminOrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersTableViewController.swift; sourceTree = "<group>"; };
+		16200FEB225B220E007C045B /* DetailedOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedOrderViewController.swift; sourceTree = "<group>"; };
 		16746CD5223F5675005197C5 /* OrderDetialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetialsViewController.swift; sourceTree = "<group>"; };
 		1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		1678E31221A268AF00436FD9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				4C13BD11225AF13000814EBA /* AdminMessagesTVC.swift */,
 				16200FE7225ADEA4007C045B /* AdminOrdersTableViewController.swift */,
 				4C13BD15225B096F00814EBA /* AdminMessageDetailVC.swift */,
+				16200FEB225B220E007C045B /* DetailedOrderViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */,
 				C79D808E216530F400A0AEFB /* LoginViewController.swift in Sources */,
 				4C081DA22223639800ED3A72 /* PostAnnouncementVC.swift in Sources */,
+				16200FEC225B220E007C045B /* DetailedOrderViewController.swift in Sources */,
 				1680C474221A17C600EB6ED5 /* ClaimProductsViewController.swift in Sources */,
 				C79D808C216530F400A0AEFB /* AppDelegate.swift in Sources */,
 			);
