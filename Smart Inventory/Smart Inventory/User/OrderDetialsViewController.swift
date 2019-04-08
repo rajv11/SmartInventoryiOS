@@ -14,21 +14,30 @@ class OrderDetialsViewController: UIViewController {
     @IBOutlet weak var descLbl: UITextView!
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var claimedTF: UITextField!
-    
+    @IBOutlet weak var statusLbl: UILabel!
+    @IBOutlet weak var updateOrderBtn: UIButton!
+   
     static var order:Order!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateOrderBtn.isHidden =  true
+        claimedTF.isEnabled = false
+        claimedTF.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        if (String(OrderDetialsViewController.order.status) == "requested"){
+            updateOrderBtn.isHidden = false
+            claimedTF.isEnabled = true
+            claimedTF.backgroundColor = UIColor.white
+            }
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
         claimedTF.text = String(OrderDetialsViewController.order.quantity)
         priceLbl.text = String(OrderDetialsViewController.order.product.price)
+        statusLbl.text = String(OrderDetialsViewController.order.status)
     }
     
     func displayAlert(msg: String){
