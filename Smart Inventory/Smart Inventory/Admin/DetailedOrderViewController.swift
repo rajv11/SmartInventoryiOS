@@ -21,11 +21,14 @@ class DetailedOrderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         uploadShippingLabelBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if(DetailedOrderViewController.order.status == "approved"){
+            uploadShippingLabelBtn.isHidden = false
+        }
         nameLbl.text = String(DetailedOrderViewController.order.product.name)
         descLbl.text = String(DetailedOrderViewController.order.product.productDescription)
         claimedLbl.text = String(DetailedOrderViewController.order.quantity)
