@@ -69,10 +69,12 @@ class UserOrdersTableViewController: UITableViewController {
         let name = tableView.viewWithTag(100) as! UILabel
         //let createdDate = tableView.viewWithTag(200) as! UILabel!
         let status = tableView.viewWithTag(300) as! UILabel
+        let quantity = tableView.viewWithTag(400) as! UILabel
         
         name.text = allOrders[indexPath.row].title
         //createdDate?.text = "Order requested on:"+String(allOrders[indexPath.row].created!)
         status.text = allOrders[indexPath.row].status
+        quantity.text = String(allOrders[indexPath.row].quantity)
         
         return cell
     }
@@ -95,6 +97,7 @@ class UserOrdersTableViewController: UITableViewController {
             displayAlert(msg: "Deleted successfully")
             }
         }
+        
     }
     /*
      // Override to support conditional editing of the table view.

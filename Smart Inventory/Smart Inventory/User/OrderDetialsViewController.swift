@@ -12,8 +12,8 @@ class OrderDetialsViewController: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UITextView!
-    @IBOutlet weak var claimedLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var claimedTF: UITextField!
     
     static var order:Order!
     
@@ -27,10 +27,32 @@ class OrderDetialsViewController: UIViewController {
         
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
-        claimedLbl.text = String(OrderDetialsViewController.order.quantity)
+        claimedTF.text = String(OrderDetialsViewController.order.quantity)
         priceLbl.text = String(OrderDetialsViewController.order.product.price)
     }
+    
+    func displayAlert(msg: String){
+        let  alert  =  UIAlertController(title:  "Order",  message: msg,  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
+            self.performSegue(withIdentifier: "modifiedOrder", sender: nil)
+        }))
+        self.present(alert,  animated:  true,  completion:  nil)    }
+    
+    
+    func displayError(msg: String){
+        let alert = UIAlertController(title: "Failed", message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 
+
+    @IBAction func updateOrder(_ sender: Any) {
+        let modifiedOrder = OrderDetialsViewController.order
+        modifiedOrder?.quantity = Int(self.claimedTF.text!)!
+        AllOrders.allOrders.saveOrder(order: modifiedOrder!)
+        displayAlert(msg: "Order has been modified successfully")
+    }
     /*
     // MARK: - Navigation
 
