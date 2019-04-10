@@ -71,6 +71,14 @@ class Messages {
         queryBuilder!.setWhereClause(whereClause)
         self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
     }
+    func retriveOnlyUserMessages() {
+        let whereClause = "email!='inventory.adm@yandex.ru'"
+        
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setWhereClause(whereClause)
+        self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
+
+    }
     func retriveUserMessages() {
         let whereClause = "email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
         

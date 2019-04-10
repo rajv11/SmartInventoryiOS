@@ -121,7 +121,7 @@ class MessagesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "messageDetail" {
             let messageVC = segue.destination as! MessageDetailViewController
-            messageVC.message = self.messages[tableView.indexPathForSelectedRow!.row]
+            messageVC.message = self.arr[tableView.indexPathForSelectedRow!.section][tableView.indexPathForSelectedRow!.row]
             
         }
         // Get the new view controller using segue.destination.

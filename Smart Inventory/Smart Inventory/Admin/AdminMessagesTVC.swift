@@ -12,45 +12,67 @@ class AdminMessagesTVC: UITableViewController {
     var messages:[Message] = []
     let backendless = Backendless.sharedInstance()!
     var messageDataStore:IDataStore!
-    
+    var arr:[[Message]] = []
+    let headerTitles = ["Users", "Me"]
     @objc func dataFetched() {
         tableView.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         messageDataStore = backendless.data.of(Message.self)
-        Messages.messages.retriveAllMessages()
-        messages = Messages.messages.messagesArray
+        Messages.messages.retriveOnlyUserMessages()
+        arr.append(Messages.messages.messagesArray)
+        Messages.messages.retriveAdminMessages()
+        arr.append(Messages.messages.messagesArray)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        arr.removeAll()
+        Messages.messages.retriveOnlyUserMessages()
+        arr.append(Messages.messages.messagesArray)
+        Messages.messages.retriveAdminMessages()
+        arr.append(Messages.messages.messagesArray)
+        tableView.reloadData()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return arr.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return messages.count
+        return arr[section].count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "adminMessage", for: indexPath)
-
-        let newMessage = messages[indexPath.row]
-        cell.textLabel?.text = newMessage.name
-        cell.detailTextLabel?.text = newMessage.subject
+        
+        let newMessage = arr[indexPath.section][indexPath.row]
+        if indexPath.section == 0 {
+            cell.textLabel?.text = newMessage.name
+            cell.detailTextLabel?.text = newMessage.subject
+        } else {
+            cell.textLabel?.text = newMessage.subject
+            cell.detailTextLabel?.text = newMessage.message
+        }
+        
         
         return cell
     }
- 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section < headerTitles.count {
+            return headerTitles[section]
+        }
+        
+        return nil
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -94,7 +116,7 @@ class AdminMessagesTVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "adminDetail" {
             let messageVC = segue.destination as! AdminMessageDetailVC
-            messageVC.message = self.messages[tableView.indexPathForSelectedRow!.row]
+            messageVC.message = self.arr[tableView.indexPathForSelectedRow!.section][tableView.indexPathForSelectedRow!.row]
             
         }
         // Get the new view controller using segue.destination.
