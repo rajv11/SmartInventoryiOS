@@ -77,7 +77,7 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
    
     func uploadFile(data:Data) {
        
-        let path:String = "/shippingLable/\(DetailedOrderViewController.order.product.objectId!) .jpeg"
+        let path:String = "/shippingLable/\(DetailedOrderViewController.order.objectId!) .jpeg"
         backendless.file.uploadFile(path, content: data,
                                     overwriteIfExist: true)
         let  alert  =  UIAlertController(title:  "Done",  message: "Shipping Lable Uploaded",  preferredStyle:  .alert)
