@@ -19,7 +19,7 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var uploadShippingLabelBtn: UIButton!
     
     static var order:Order!
-    
+    let backendless = Backendless.sharedInstance()!
     override func viewDidLoad() {
         super.viewDidLoad()
          uploadShippingLabelBtn.isHidden = true
@@ -60,8 +60,35 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         self.present(myPickerController, animated: true, completion: nil)
         
     }
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let fileManager = FileManager.default
+        let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
+        let imageURL = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
+        let imageName = URL(fileURLWithPath: imageURL.absoluteString!).lastPathComponent
+        //print(imageName)
+        let imagePath = documentsPath?.appendingPathComponent(imageName)
+        //print(imagePath?.absoluteString)
+        picker.dismiss(animated: true, completion: nil)
+        
+         //extract image from the picker and save it
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            
+            let imageData = pickedImage.jpegData(compressionQuality: 0.75)
+            try! imageData?.write(to: imagePath!)
+            self.uploadFile(data: imageData!)
+        }
+        
+    }
    
+    func uploadFile(data:Data) {
+       
+        let path:String = "/shippingLable/\(DetailedOrderViewController.order.product.objectId!) .jpeg"
+        backendless.file.uploadFile(path, content: data,
+                                    overwriteIfExist: true)
+        let  alert  =  UIAlertController(title:  "Done",  message: "Shipping Lable Uploaded",  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
+        self.present(alert,  animated:  true,  completion:  nil)
+    }
     /*
      // MARK: - Navigation
      
