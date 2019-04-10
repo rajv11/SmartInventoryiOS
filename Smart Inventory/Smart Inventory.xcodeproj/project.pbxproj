@@ -29,6 +29,7 @@
 		4C13BD12225AF13000814EBA /* AdminMessagesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C13BD11225AF13000814EBA /* AdminMessagesTVC.swift */; };
 		4C13BD14225B026400814EBA /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C13BD13225B026400814EBA /* MessageDetailViewController.swift */; };
 		4C13BD16225B096F00814EBA /* AdminMessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C13BD15225B096F00814EBA /* AdminMessageDetailVC.swift */; };
+		4C5A8BD1225DBF3F0049C1CD /* AdminReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A8BD0225DBF3F0049C1CD /* AdminReplyViewController.swift */; };
 		4C840A47225866F400E15E5B /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C840A46225866F400E15E5B /* NewMessageViewController.swift */; };
 		4C840A492258688900E15E5B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C840A482258688900E15E5B /* Message.swift */; };
 		4CF962DC222E840200393139 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF962DB222E840200393139 /* UpdateViewController.swift */; };
@@ -62,6 +63,7 @@
 		4C13BD11225AF13000814EBA /* AdminMessagesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessagesTVC.swift; sourceTree = "<group>"; };
 		4C13BD13225B026400814EBA /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 		4C13BD15225B096F00814EBA /* AdminMessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageDetailVC.swift; sourceTree = "<group>"; };
+		4C5A8BD0225DBF3F0049C1CD /* AdminReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminReplyViewController.swift; sourceTree = "<group>"; };
 		4C840A46225866F400E15E5B /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		4C840A482258688900E15E5B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4CF962DB222E840200393139 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				16200FE7225ADEA4007C045B /* AdminOrdersTableViewController.swift */,
 				4C13BD15225B096F00814EBA /* AdminMessageDetailVC.swift */,
 				16200FEB225B220E007C045B /* DetailedOrderViewController.swift */,
+				4C5A8BD0225DBF3F0049C1CD /* AdminReplyViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				4C13BD14225B026400814EBA /* MessageDetailViewController.swift in Sources */,
 				4C840A492258688900E15E5B /* Message.swift in Sources */,
 				16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */,
+				4C5A8BD1225DBF3F0049C1CD /* AdminReplyViewController.swift in Sources */,
 				C79D808E216530F400A0AEFB /* LoginViewController.swift in Sources */,
 				4C081DA22223639800ED3A72 /* PostAnnouncementVC.swift in Sources */,
 				16200FEC225B220E007C045B /* DetailedOrderViewController.swift in Sources */,

@@ -12,7 +12,8 @@ class MessagesTableViewController: UITableViewController {
     var messages:[Message] = []
     let backendless = Backendless.sharedInstance()!
     var messageDataStore:IDataStore!
-    
+    var arr:[[Message]] = []
+    let headerTitles = ["Me", "Admin"]
     @objc func dataFetched() {
         tableView.reloadData()
     }
@@ -21,6 +22,9 @@ class MessagesTableViewController: UITableViewController {
         super.viewDidLoad()
         Messages.messages.retriveUserMessages()
         messages = Messages.messages.messagesArray
+        arr = [messages]
+        Messages.messages.retriveAdminMessages()
+        arr.append(Messages.messages.messagesArray)
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -32,28 +36,42 @@ class MessagesTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         Messages.messages.retriveUserMessages()
         messages = Messages.messages.messagesArray
+        arr = [messages]
+        Messages.messages.retriveAdminMessages()
+        arr.append(Messages.messages.messagesArray)
         tableView.reloadData()
     }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return arr.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arr[section].count
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return messages.count
-    }
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return messages.count
+//    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatCell", for: indexPath)
-        let currentMessage = messages[indexPath.row]
+        let currentMessage = arr[indexPath.section][indexPath.row]
         cell.textLabel?.text = currentMessage.subject
         cell.detailTextLabel?.text = currentMessage.message
 
         return cell
+    }
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section < headerTitles.count {
+            return headerTitles[section]
+        }
+        
+        return nil
     }
     @IBAction func chatDone(_ unwindSegue: UIStoryboardSegue) {
         //let sourceViewController = unwindSegue.source

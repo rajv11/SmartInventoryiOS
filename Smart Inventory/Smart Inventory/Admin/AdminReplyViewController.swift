@@ -1,18 +1,17 @@
 //
-//  NewMessageViewController.swift
+//  AdminReplyViewController.swift
 //  Smart Inventory
 //
-//  Created by vamshi raj on 4/5/19.
+//  Created by vamshi raj on 4/10/19.
 //  Copyright © 2019 Jennaikode,Vamshi Raj. All rights reserved.
 //
 
 import UIKit
 
-class NewMessageViewController: UIViewController {
+class AdminReplyViewController: UIViewController {
 
     @IBOutlet weak var subjectTF: UITextField!
-    @IBOutlet weak var messageTF: UITextView!
-    
+    @IBOutlet weak var messageTV: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,14 +33,14 @@ class NewMessageViewController: UIViewController {
         self.present(alert,  animated:  true,  completion:  nil)
         
     }
+
     
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func sendBtn(_ sender: Any) {
-        if let subject = subjectTF.text, let message = messageTF.text, !subject.isEmpty, !message.isEmpty
+        if let subject = subjectTF.text, let message = messageTV.text, !subject.isEmpty, !message.isEmpty
         {
             let backendless = Backendless.sharedInstance()
             let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String )
@@ -53,7 +52,6 @@ class NewMessageViewController: UIViewController {
             self.displayAlert(msg: "Enter All required fields", sent: false)
         }
     }
-    
     /*
     // MARK: - Navigation
 
