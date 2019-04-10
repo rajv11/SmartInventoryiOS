@@ -16,7 +16,8 @@ class OrderDetialsViewController: UIViewController {
     @IBOutlet weak var claimedTF: UITextField!
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var updateOrderBtn: UIButton!
-   
+    @IBOutlet weak var requestSLabelBtn: UIButton!
+    
     static var order:Order!
     
     override func viewDidLoad() {
@@ -24,15 +25,19 @@ class OrderDetialsViewController: UIViewController {
         updateOrderBtn.isHidden =  true
         claimedTF.isEnabled = false
         claimedTF.backgroundColor = UIColor.clear
+        requestSLabelBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if (String(OrderDetialsViewController.order.status) == "requested"){
-            updateOrderBtn.isHidden = false
+        if (String(OrderDetialsViewController.order.status) == "pending"){
+            updateOrderBtn.isHidden = true
             claimedTF.isEnabled = true
             claimedTF.backgroundColor = UIColor.white
             }
+        if (String(OrderDetialsViewController.order.status) == "approved"){
+            requestSLabelBtn.isHidden = false
+        }
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
         claimedTF.text = String(OrderDetialsViewController.order.quantity)
@@ -61,6 +66,13 @@ class OrderDetialsViewController: UIViewController {
         modifiedOrder?.quantity = Int(self.claimedTF.text!)!
         AllOrders.allOrders.saveOrder(order: modifiedOrder!)
         displayAlert(msg: "Order has been modified successfully")
+    }
+    
+    @IBAction func requestSLabel(_ sender: Any) {
+        let order = OrderDetialsViewController.order
+        order?.status = "requested"
+        AllOrders.allOrders.saveOrder(order: order!)
+        displayAlert(msg: "pending shipping label successfully")
     }
     /*
     // MARK: - Navigation

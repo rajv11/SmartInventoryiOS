@@ -79,7 +79,7 @@ class AdminOrdersTableViewController: UITableViewController {
       
         let selectedOrder = self.allOrders[indexPath.row] as Order!
         var actions:[UIContextualAction] = []
-        if (selectedOrder!.status == "requested") {
+        if (selectedOrder!.status == "pending") {
             let approveOrder = UIContextualAction(style: .normal, title:  "Approve", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
                 selectedOrder?.status = "approved"
                 AllOrders.allOrders.saveOrder(order: selectedOrder!)
