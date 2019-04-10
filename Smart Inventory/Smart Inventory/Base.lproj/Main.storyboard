@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1712,6 +1712,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <navigationItem title="New Messege" id="vMD-JY-phB">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="aej-Zo-lm6">
                                             <connections>
+                                                <action selector="backBtn:" destination="jdX-PX-eEV" id="R4G-SG-8k7"/>
                                                 <segue destination="bin-bM-e2C" kind="unwind" unwindAction="onCancelAnnouncementWithSegue:" id="CFF-NB-xtn"/>
                                             </connections>
                                         </barButtonItem>
@@ -2101,7 +2102,7 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="advertising" width="30" height="30"/>
         <image name="businessman" width="30" height="30"/>
         <image name="chat" width="30" height="30"/>
-        <image name="chatIcon" width="512" height="512"/>
+        <image name="chatIcon" width="1024" height="1024"/>
         <image name="list" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
     </resources>

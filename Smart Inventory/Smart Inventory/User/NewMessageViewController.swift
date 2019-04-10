@@ -35,12 +35,16 @@ class NewMessageViewController: UIViewController {
         
     }
     
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     @IBAction func sendBtn(_ sender: Any) {
         if let subject = subjectTF.text, let message = messageTF.text, !subject.isEmpty, !message.isEmpty
         {
-            let message = Message(subject: subject, message: message, name: Backendless.sharedInstance()?.userService.currentUser.name as! String)
+            let backendless = Backendless.sharedInstance()
+            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String )
             Messages.messages.saveMessage(message: message)
             
             
