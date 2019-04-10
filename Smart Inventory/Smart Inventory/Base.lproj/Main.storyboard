@@ -970,7 +970,7 @@ The application will manages the shipping labels, product details, orders and tr
         <scene sceneID="NC2-73-lIe">
             <objects>
                 <tableViewController id="JqZ-X2-9Bs" customClass="MessagesTableViewController" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kfg-ef-Lop">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" id="Kfg-ef-Lop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.47969285099999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -990,7 +990,7 @@ The application will manages the shipping labels, product details, orders and tr
                         </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCell" textLabel="Fs5-qc-W2I" detailTextLabel="fqM-cr-nIO" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="u49-y0-aUT">
-                                <rect key="frame" x="0.0" y="72" width="375" height="73"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u49-y0-aUT" id="nAL-Za-OBi">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
@@ -2020,7 +2020,7 @@ The application will manages the shipping labels, product details, orders and tr
         <scene sceneID="0tA-fQ-VGy">
             <objects>
                 <tableViewController id="AOL-Rx-fsX" userLabel="AdminMessages" customClass="AdminMessagesTVC" customModule="Smart_Inventory" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w8b-gw-1GW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" id="w8b-gw-1GW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.13172811270000001" green="0.4035369754" blue="0.60476213690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2033,7 +2033,7 @@ The application will manages the shipping labels, product details, orders and tr
                         </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="adminMessage" textLabel="gLU-h7-Unl" detailTextLabel="oJ9-2U-s6f" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="P8j-TT-jBp">
-                                <rect key="frame" x="0.0" y="72" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P8j-TT-jBp" id="wK6-zX-FX2">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
@@ -2221,7 +2221,6 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EK0-qF-iKN"/>
         <segue reference="y4h-4z-If8"/>
         <segue reference="DHv-3H-hNE"/>
         <segue reference="brF-2v-rtP"/>
