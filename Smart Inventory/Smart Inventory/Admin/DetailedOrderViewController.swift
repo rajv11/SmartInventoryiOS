@@ -61,20 +61,15 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let fileManager = FileManager.default
-        let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
         let imageURL = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
-        let imageName = URL(fileURLWithPath: imageURL.absoluteString!).lastPathComponent
-        //print(imageName)
-        let imagePath = documentsPath?.appendingPathComponent(imageName)
-        //print(imagePath?.absoluteString)
+        
         picker.dismiss(animated: true, completion: nil)
         
          //extract image from the picker and save it
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             
             let imageData = pickedImage.jpegData(compressionQuality: 0.75)
-            try! imageData?.write(to: imagePath!)
+            try! imageData?.write(to: imageURL as URL)
             self.uploadFile(data: imageData!)
         }
         
