@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailedOrderViewController: UIViewController {
+class DetailedOrderViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UITextView!
@@ -27,7 +27,7 @@ class DetailedOrderViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if(DetailedOrderViewController.order.status == "approved"){
+        if(DetailedOrderViewController.order.status == "requested"){
             uploadShippingLabelBtn.isHidden = false
         }
         nameLbl.text = String(DetailedOrderViewController.order.product.name)
@@ -53,6 +53,13 @@ class DetailedOrderViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func uploadSLabel(_ sender: Any) {
+        let myPickerController = UIImagePickerController()
+        myPickerController.delegate = self
+        myPickerController.sourceType =  UIImagePickerController.SourceType.photoLibrary
+        self.present(myPickerController, animated: true, completion: nil)
+        
+    }
     
    
     /*

@@ -2191,6 +2191,7 @@ The application will manages the shipping labels, product details, orders and tr
                                 <connections>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JML-mW-Upb"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="gt0-DT-xo7"/>
+                                    <action selector="uploadSLabel:" destination="hGX-ZG-sz8" eventType="touchUpInside" id="pYb-nP-805"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djU-4k-Tbl">
