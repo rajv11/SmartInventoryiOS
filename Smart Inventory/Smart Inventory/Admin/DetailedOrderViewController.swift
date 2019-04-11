@@ -58,6 +58,8 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         myPickerController.delegate = self
         myPickerController.sourceType =  UIImagePickerController.SourceType.photoLibrary
         self.present(myPickerController, animated: true, completion: nil)
+        DetailedOrderViewController.order.status = Order.Status.ShippingLbl_Sent.rawValue
+        AllOrders.allOrders.saveOrder(order: DetailedOrderViewController.order)
         
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
