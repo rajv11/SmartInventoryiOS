@@ -30,19 +30,19 @@ class OrderDetialsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if (String(OrderDetialsViewController.order.status) == "pending"){
+        if (OrderDetialsViewController.order.status == Order.Status.Placed.rawValue ){
             updateOrderBtn.isHidden = true
             claimedTF.isEnabled = true
             claimedTF.backgroundColor = UIColor.white
             }
-        if (String(OrderDetialsViewController.order.status) == "approved"){
+        if (OrderDetialsViewController.order.status == Order.Status.Approved.rawValue ){
             requestSLabelBtn.isHidden = false
         }
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
         claimedTF.text = String(OrderDetialsViewController.order.quantity)
         priceLbl.text = String(OrderDetialsViewController.order.product.price)
-        statusLbl.text = String(OrderDetialsViewController.order.status)
+        statusLbl.text = OrderDetialsViewController.order.status
     }
     
     func displayAlert(msg: String){
@@ -70,9 +70,9 @@ class OrderDetialsViewController: UIViewController {
     
     @IBAction func requestSLabel(_ sender: Any) {
         let order = OrderDetialsViewController.order
-        order?.status = "requested"
+        order?.status = Order.Status.ShippingLbl_Requested.rawValue
         AllOrders.allOrders.saveOrder(order: order!)
-        displayAlert(msg: "pending shipping label successfully")
+        displayAlert(msg: "Requested shipping label successfully")
     }
     /*
     // MARK: - Navigation

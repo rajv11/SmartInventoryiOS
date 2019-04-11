@@ -22,23 +22,38 @@ class Order: NSObject, Decodable {
     var created:String?
     var userName:String
     var email:String
-    override var  description:  String  {
-        //  NSObject  adheres  to  CustomStringConvertible
-        return "Name:  \(product.name),  status:  \(status)"
+    
+    enum Status:String, Decodable {
+        case Placed = "Placed"
+        case Approved = "Approved"
+        case Rejected = "Rejected"
+        case ShippingLbl_Requested = "Requested Label"
+        case ShippingLbl_Sent = "Sent Label"
+        case Shipped_Order = "Shipped"
+        case Received_Order = "Received"
+        case Payment_Sent = "Paid"
+        case Close_Order = "Closed"
+        case other = ""
         
     }
     
-    init(title:String, product:Product, quantity:Int, status:String, userName:String, email:String){
+    override var  description:  String  {
+        //  NSObject  adheres  to  CustomStringConvertible
+        return "Name:  \(product.name)"
+        
+    }
+    
+    init(title:String, product:Product, quantity:Int, status:Status, userName:String, email:String){
         self.title = title
         self.product  =  product
         self.quantity = quantity
-        self.status = status
+        self.status = status.rawValue
         self.userName = userName
         self.email = email
     }
     
     convenience override init(){
-        self.init(title:"", product: Product(), quantity: 0, status: "", userName: "", email: "")
+        self.init(title:"", product: Product(), quantity: 0, status: Status.other, userName: "", email: "")
         
     }
 }

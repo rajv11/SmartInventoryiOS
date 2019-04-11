@@ -27,14 +27,14 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if(DetailedOrderViewController.order.status == "requested"){
+        if(DetailedOrderViewController.order.status == Order.Status.ShippingLbl_Requested.rawValue){
             uploadShippingLabelBtn.isHidden = false
         }
         nameLbl.text = String(DetailedOrderViewController.order.product.name)
         descLbl.text = String(DetailedOrderViewController.order.product.productDescription)
         claimedLbl.text = String(DetailedOrderViewController.order.quantity)
         priceLbl.text = String(DetailedOrderViewController.order.product.price)
-        statusLbl.text = String(DetailedOrderViewController.order.status)
+        statusLbl.text = DetailedOrderViewController.order.status
         userNameLbl.text = String(DetailedOrderViewController.order.userName)
     }
     

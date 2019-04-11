@@ -89,7 +89,7 @@ class UserOrdersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if allOrders[indexPath.row].status == "approved"{
+            if allOrders[indexPath.row].status == Order.Status.Approved.rawValue {
                 displayAlert(msg: "The Order has already approved by the admin")
             }
             else{

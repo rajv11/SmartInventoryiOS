@@ -79,9 +79,9 @@ class AdminOrdersTableViewController: UITableViewController {
       
         let selectedOrder = self.allOrders[indexPath.row] as Order!
         var actions:[UIContextualAction] = []
-        if (selectedOrder!.status == "pending") {
+        if (selectedOrder!.status == Order.Status.Placed.rawValue) {
             let approveOrder = UIContextualAction(style: .normal, title:  "Approve", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-                selectedOrder?.status = "approved"
+                selectedOrder?.status = Order.Status.Approved.rawValue
                 AllOrders.allOrders.saveOrder(order: selectedOrder!)
                 self.displayAlert(msg: "Order has been approved")
                 print("Approve order ...")
@@ -91,7 +91,7 @@ class AdminOrdersTableViewController: UITableViewController {
             
             // Write action code for the Flag
             let rejectOrder = UIContextualAction(style: .normal, title:  "Reject", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-                selectedOrder?.status = "rejected"
+                selectedOrder?.status = Order.Status.Rejected.rawValue
                 AllOrders.allOrders.saveOrder(order: selectedOrder!)
                 self.displayAlert(msg: "Order has been rejected")
                 print("Reject order ...")
