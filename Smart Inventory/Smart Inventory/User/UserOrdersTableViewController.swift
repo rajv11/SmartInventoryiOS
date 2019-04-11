@@ -23,17 +23,21 @@ class UserOrdersTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        orderDataStore =  backendless.data.of(Order.self)
-        let queryBuilder = DataQueryBuilder ()
-        queryBuilder!.setRelationsDepth(1)
-        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
+//        super.viewDidLoad()
+//        orderDataStore =  backendless.data.of(Order.self)
+//        let queryBuilder = DataQueryBuilder ()
+//        queryBuilder!.setRelationsDepth(1)
+        AllOrders.allOrders.retrieveUserOrders()
+        allOrders = AllOrders.allOrders.orders
+//        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
 
         
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        AllOrders.allOrders.retrieveUserOrders()
+        allOrders = AllOrders.allOrders.orders
         tableView.reloadData()
         
             }

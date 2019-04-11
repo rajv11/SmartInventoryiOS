@@ -17,6 +17,7 @@ class ClaimProductsViewController: UIViewController {
     
     @IBOutlet weak var claimCount: UITextField!
     var announcement:Announcemnet!
+    let backendless = Backendless.sharedInstance()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,7 +65,7 @@ class ClaimProductsViewController: UIViewController {
                 announcement.claimed = announcement.claimed + claimQty!
                 announcement.unclaimed = announcement.product.quantity - announcement.claimed
                 Announcements.announce.updateAnnouncement(announcement: announcement)
-                var order:Order = Order(title:announcement.product.name , product: announcement.product, quantity: claimQty!, status: "pending", userName:Backendless.sharedInstance()?.userService.currentUser.name as! String )
+                let order:Order = Order(title:announcement.product.name , product: announcement.product, quantity: claimQty!, status: "pending", userName: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String )
                 AllOrders.allOrders.saveOrder(order: order)
                 self.displayAlert(msg: "You have claimed \(claimQty!) products")
         }

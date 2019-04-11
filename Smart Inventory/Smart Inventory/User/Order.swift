@@ -21,22 +21,24 @@ class Order: NSObject, Decodable {
     var objectId:String?
     var created:String?
     var userName:String
+    var email:String
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
         return "Name:  \(product.name),  status:  \(status)"
         
     }
     
-    init(title:String, product:Product, quantity:Int, status:String, userName:String){
+    init(title:String, product:Product, quantity:Int, status:String, userName:String, email:String){
         self.title = title
         self.product  =  product
         self.quantity = quantity
         self.status = status
         self.userName = userName
+        self.email = email
     }
     
     convenience override init(){
-        self.init(title:"", product: Product(), quantity: 0, status: "", userName: "")
+        self.init(title:"", product: Product(), quantity: 0, status: "", userName: "", email: "")
         
     }
 }
@@ -76,16 +78,16 @@ class AllOrders {
     {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setPageSize(100)
-        
-        orderDataStore.find(queryBuilder, response: {(results) -> Void in
-            self.orders = results as! [Order]
-            print(self.orders.count)
-        },
-                            error:{(exception) -> Void in
-                                print(exception.debugDescription)
-        })
+        queryBuilder!.setRelationsDepth(1)
+        self.orders = orderDataStore.find(queryBuilder) as! [Order]
     }
-    
+    func retrieveUserOrders() {
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setWhereClause("email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
+        queryBuilder!.setRelationsDepth(1)
+        
+        self.orders = orderDataStore.find(queryBuilder) as! [Order]
+    }
     func setRelationship(parentID:String, childID:String) {
         let dataStore = Backendless.sharedInstance().data.of(Order().ofClass())
         dataStore?.setRelation("product",
