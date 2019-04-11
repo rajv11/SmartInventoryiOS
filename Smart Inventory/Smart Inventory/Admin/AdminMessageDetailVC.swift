@@ -11,16 +11,20 @@ import UIKit
 class AdminMessageDetailVC: UIViewController {
     @IBOutlet weak var subjectLBL: UILabel!
     @IBOutlet weak var messageTV: UITextView!
+    @IBOutlet weak var replyBtn: UIButton!
     
+    @IBOutlet weak var fromLBL: UILabel!
     @IBOutlet weak var navBar: UINavigationBar!
     var message:Message!
-    
+    var isAdmin:Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.replyBtn.isHidden = isAdmin
         self.navBar.topItem?.title = message.name
         
         subjectLBL.text = message.subject
         messageTV.text = message.message
+        fromLBL.text = message.email
         // Do any additional setup after loading the view.
     }
     @IBAction func backBtn(_ sender: Any) {

@@ -115,9 +115,14 @@ class AdminMessagesTVC: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "adminDetail" {
+            
             let messageVC = segue.destination as! AdminMessageDetailVC
             messageVC.message = self.arr[tableView.indexPathForSelectedRow!.section][tableView.indexPathForSelectedRow!.row]
-            
+            if tableView.indexPathForSelectedRow!.section == 1 {
+                messageVC.isAdmin = true
+            } else {
+                messageVC.isAdmin = false
+            }
         }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
