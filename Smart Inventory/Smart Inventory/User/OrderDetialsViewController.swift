@@ -17,6 +17,7 @@ class OrderDetialsViewController: UIViewController {
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var updateOrderBtn: UIButton!
     @IBOutlet weak var requestSLabelBtn: UIButton!
+    @IBOutlet weak var downloadSLabelBtn: UIButton!
     
     static var order:Order!
     
@@ -26,6 +27,7 @@ class OrderDetialsViewController: UIViewController {
         claimedTF.isEnabled = false
         claimedTF.backgroundColor = UIColor.clear
         requestSLabelBtn.isHidden = true
+        downloadSLabelBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +39,9 @@ class OrderDetialsViewController: UIViewController {
             }
         if (OrderDetialsViewController.order.status == Order.Status.Approved.rawValue ){
             requestSLabelBtn.isHidden = false
+        }
+        if (OrderDetialsViewController.order.status == Order.Status.ShippingLbl_Sent.rawValue){
+            downloadSLabelBtn.isHidden = false
         }
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
@@ -74,6 +79,11 @@ class OrderDetialsViewController: UIViewController {
         AllOrders.allOrders.saveOrder(order: order!)
         displayAlert(msg: "Requested shipping label successfully")
     }
+    
+    @IBAction func downloadSLabel(_ sender: Any) {
+        displayAlert(msg: "Downloaded shipping label successfully")
+    }
+    
     /*
     // MARK: - Navigation
 
