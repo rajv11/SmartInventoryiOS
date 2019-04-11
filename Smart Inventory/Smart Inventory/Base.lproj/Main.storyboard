@@ -2015,7 +2015,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zsi-f7-maK" kind="show" id="6Je-fw-dqt"/>
+                                    <segue destination="zsi-f7-maK" kind="show" identifier="adminReply" id="6Je-fw-dqt"/>
                                 </connections>
                             </button>
                         </subviews>

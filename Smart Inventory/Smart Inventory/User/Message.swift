@@ -17,22 +17,24 @@ class Message: NSObject {
     var message:String
     var name:String
     var email:String
+    var toEmail:String
     //var ownerId:String?
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
-        return "subject:  \(subject),  message:  \(message), user: \(name), email: \(email)"
+        return "subject:  \(subject),  message:  \(message), user: \(name), email: \(email), toEmail: \(toEmail)"
         
     }
     
-    init(subject:String, message:String, name:String, email:String){
+    init(subject:String, message:String, name:String, email:String, toEmail:String){
         self.subject = subject
         self.message  =  message
         self.name = name
         self.email = email
+        self.toEmail = toEmail
     }
     
     convenience override init(){
-        self.init(subject:"",message: "",name:"", email: "")
+        self.init(subject:"",message: "",name:"", email: "", toEmail: "")
     }
 }
 
@@ -71,7 +73,14 @@ class Messages {
         queryBuilder!.setWhereClause(whereClause)
         self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
     }
-    func retriveOnlyUserMessages() {
+    func retrievByAdminMessages() {
+        let whereClause = "toEmail='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+        
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setWhereClause(whereClause)
+        self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
+    }
+    func retriveOnlyAllUserMessages() {
         let whereClause = "email!='inventory.adm@yandex.ru'"
         
         let queryBuilder = DataQueryBuilder()

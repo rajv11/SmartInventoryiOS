@@ -20,7 +20,7 @@ class AdminMessagesTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         messageDataStore = backendless.data.of(Message.self)
-        Messages.messages.retriveOnlyUserMessages()
+        Messages.messages.retriveOnlyAllUserMessages()
         arr.append(Messages.messages.messagesArray)
         Messages.messages.retriveAdminMessages()
         arr.append(Messages.messages.messagesArray)
@@ -32,7 +32,7 @@ class AdminMessagesTVC: UITableViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         arr.removeAll()
-        Messages.messages.retriveOnlyUserMessages()
+        Messages.messages.retriveOnlyAllUserMessages()
         arr.append(Messages.messages.messagesArray)
         Messages.messages.retriveAdminMessages()
         arr.append(Messages.messages.messagesArray)

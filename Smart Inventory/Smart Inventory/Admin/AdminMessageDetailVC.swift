@@ -27,7 +27,13 @@ class AdminMessageDetailVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "adminReply" {
+            let messageVC = segue.destination as! AdminReplyViewController
+            messageVC.message = self.message.email
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

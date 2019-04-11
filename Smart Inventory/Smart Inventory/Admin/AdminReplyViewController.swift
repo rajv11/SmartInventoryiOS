@@ -12,6 +12,7 @@ class AdminReplyViewController: UIViewController {
 
     @IBOutlet weak var subjectTF: UITextField!
     @IBOutlet weak var messageTV: UITextView!
+    var message:String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +44,7 @@ class AdminReplyViewController: UIViewController {
         if let subject = subjectTF.text, let message = messageTV.text, !subject.isEmpty, !message.isEmpty
         {
             let backendless = Backendless.sharedInstance()
-            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String )
+            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: "inventory.adm@yandex.ru", toEmail: message )
             Messages.messages.saveMessage(message: message)
             
             

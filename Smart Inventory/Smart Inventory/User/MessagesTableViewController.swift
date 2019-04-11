@@ -22,8 +22,8 @@ class MessagesTableViewController: UITableViewController {
         super.viewDidLoad()
         Messages.messages.retriveUserMessages()
         messages = Messages.messages.messagesArray
-        arr = [messages]
-        Messages.messages.retriveAdminMessages()
+        arr.append(messages)
+        Messages.messages.retrievByAdminMessages()
         arr.append(Messages.messages.messagesArray)
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
@@ -34,10 +34,11 @@ class MessagesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewWillAppear(_ animated: Bool) {
+        arr.removeAll()
         Messages.messages.retriveUserMessages()
         messages = Messages.messages.messagesArray
-        arr = [messages]
-        Messages.messages.retriveAdminMessages()
+        arr.append(messages)
+        Messages.messages.retrievByAdminMessages()
         arr.append(Messages.messages.messagesArray)
         tableView.reloadData()
     }
