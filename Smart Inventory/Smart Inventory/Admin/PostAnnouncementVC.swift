@@ -43,7 +43,7 @@ class PostAnnouncementVC: UIViewController {
             if descriptionTF.text.isEmpty {
                 descriptionTF.text = "N/A"
             }
-            let product = Product(name: productName, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!)
+            let product = Product(name: productName, productDescription: descriptionTF.text!, quantity: required, price: Double(priceTF.text!)!, parentId: "")
             
             Announcements.announce.saveAnouncements(product: product, claimed: 0, unclaimed: required)
             

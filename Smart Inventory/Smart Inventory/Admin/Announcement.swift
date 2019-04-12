@@ -33,7 +33,7 @@ class Announcemnet: NSObject {
     }
     
    convenience override init() {
-        self.init(product: Product(name: "new", productDescription: "test", quantity: 2, price: 23),claimed: 25, unclaimed: 75)
+        self.init(product: Product(name: "new", productDescription: "test", quantity: 2, price: 23,parentId: ""),claimed: 25, unclaimed: 75)
     }
 }
 
@@ -66,7 +66,8 @@ class Announcements {
             let dataStore = Backendless.sharedInstance().data.of(Product().ofClass())
             let prod = dataStore?.findLast() as! Product
             self.setRelationship(parentID: itemToSave.objectId!, childID: prod.objectId!)
-
+            prod.parentId = itemToSave.objectId!
+            AllProducts.allProducts.saveProducts(product: prod)
         },
                                    
                                    error:{(exception) -> Void in

@@ -19,21 +19,23 @@ class Product: NSObject, Decodable {
     var quantity:Int
     var price:Double
     var objectId:String?
+    var parentId:String
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
         return "Name:  \(name  ),  Description:  \(productDescription)"
         
     }
     
-    init(name:String, productDescription:String, quantity:Int, price:Double){
+    init(name:String, productDescription:String, quantity:Int, price:Double, parentId:String){
         self.name  =  name
         self.productDescription = productDescription
         self.quantity = quantity
         self.price = price
+        self.parentId = parentId
     }
     
     convenience override init(){
-        self.init(name:"", productDescription:"", quantity:0, price:0.0)
+        self.init(name:"", productDescription:"", quantity:0, price:0.0, parentId: "")
         
     }
 }
