@@ -14,6 +14,8 @@ class MessagesTableViewController: UITableViewController {
     var messageDataStore:IDataStore!
     var arr:[[Message]] = []
     let headerTitles = ["Me", "Admin"]
+    let refreshControl1 = UIRefreshControl()
+    
     @objc func dataFetched() {
         tableView.reloadData()
     }
@@ -25,6 +27,9 @@ class MessagesTableViewController: UITableViewController {
         arr.append(messages)
         Messages.messages.retrievByAdminMessages()
         arr.append(Messages.messages.messagesArray)
+        
+        refreshControl1.addTarget(self, action: #selector(refreshMesaages), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl1)
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
@@ -32,6 +37,16 @@ class MessagesTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    @objc func refreshMesaages() {
+        arr.removeAll()
+        Messages.messages.retriveUserMessages()
+        messages = Messages.messages.messagesArray
+        arr.append(messages)
+        Messages.messages.retrievByAdminMessages()
+        arr.append(Messages.messages.messagesArray)
+        tableView.reloadData()
+        refreshControl1.endRefreshing()
     }
     override func viewWillAppear(_ animated: Bool) {
         arr.removeAll()

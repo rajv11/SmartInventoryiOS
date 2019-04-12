@@ -14,6 +14,7 @@ class AdminMessagesTVC: UITableViewController {
     var messageDataStore:IDataStore!
     var arr:[[Message]] = []
     let headerTitles = ["Users", "Me"]
+    let refreshControl1 = UIRefreshControl()
     @objc func dataFetched() {
         tableView.reloadData()
     }
@@ -24,12 +25,26 @@ class AdminMessagesTVC: UITableViewController {
         arr.append(Messages.messages.messagesArray)
         Messages.messages.retriveAdminMessages()
         arr.append(Messages.messages.messagesArray)
+        
+        refreshControl1.addTarget(self, action: #selector(refreshMessages), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl1)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    @objc func refreshMessages() {
+        arr.removeAll()
+        Messages.messages.retriveOnlyAllUserMessages()
+        arr.append(Messages.messages.messagesArray)
+        Messages.messages.retriveAdminMessages()
+        arr.append(Messages.messages.messagesArray)
+        tableView.reloadData()
+        
+        refreshControl1.endRefreshing()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         arr.removeAll()
         Messages.messages.retriveOnlyAllUserMessages()

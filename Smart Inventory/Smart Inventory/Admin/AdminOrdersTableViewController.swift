@@ -7,6 +7,7 @@ class AdminOrdersTableViewController: UITableViewController {
     let backendless = Backendless.sharedInstance()!
     var orderDataStore:IDataStore!
     var allOrders:[Order] = []
+    let refreshControl1 = UIRefreshControl()
     
     @IBAction func onDone(segue:UIStoryboardSegue){}
     
@@ -16,18 +17,30 @@ class AdminOrdersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        orderDataStore =  backendless.data.of(Order.self)
-        let queryBuilder = DataQueryBuilder ()
-        queryBuilder!.setRelationsDepth(1)
-        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
-        
+//        orderDataStore =  backendless.data.of(Order.self)
+//        let queryBuilder = DataQueryBuilder ()
+//        queryBuilder!.setRelationsDepth(1)
+//        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
+        AllOrders.allOrders.retrieveAllOrders()
+        allOrders = AllOrders.allOrders.orders
+        refreshControl1.addTarget(self, action: #selector(refreshOrders), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl1)
         
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        AllOrders.allOrders.retrieveAllOrders()
+        allOrders = AllOrders.allOrders.orders
         tableView.reloadData()
         
+    }
+    @objc func refreshOrders() {
+        AllOrders.allOrders.retrieveAllOrders()
+        allOrders = AllOrders.allOrders.orders
+        tableView.reloadData()
+        
+        refreshControl1.endRefreshing()
     }
     // MARK: - Table view data source
     
