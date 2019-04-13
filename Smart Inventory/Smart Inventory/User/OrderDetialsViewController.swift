@@ -33,7 +33,7 @@ class OrderDetialsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if (OrderDetialsViewController.order.status == Order.Status.Placed.rawValue ){
-            updateOrderBtn.isHidden = true
+            updateOrderBtn.isHidden = false
             claimedTF.isEnabled = true
             claimedTF.backgroundColor = UIColor.white
             }
@@ -67,10 +67,24 @@ class OrderDetialsViewController: UIViewController {
 
 
     @IBAction func updateOrder(_ sender: Any) {
-        let modifiedOrder = OrderDetialsViewController.order
-        modifiedOrder?.quantity = Int(self.claimedTF.text!)!
-        AllOrders.allOrders.saveOrder(order: modifiedOrder!)
-        displayAlert(msg: "Order has been modified successfully")
+        let modifiedOrder = OrderDetialsViewController.order!
+        let claimQty = Int(self.claimedTF.text!)!
+        let additionalClaims = claimQty - modifiedOrder.quantity
+        let announcement =  Announcements.announce.getAnnouncement(objectID: modifiedOrder.product.parentId)
+        if (additionalClaims > announcement.unclaimed){
+            self.displayError(msg: "Can not claim more than \(announcement.unclaimed) products")
+        }
+        else if(claimQty <= 0){
+            self.displayError(msg: "Enter valid number")
+        }
+        else{
+            modifiedOrder.quantity = claimQty
+            announcement.claimed = announcement.claimed + additionalClaims
+            announcement.unclaimed = announcement.product.quantity - announcement.claimed
+            Announcements.announce.updateAnnouncement(announcement: announcement)
+            AllOrders.allOrders.saveOrder(order: modifiedOrder)
+            displayAlert(msg: "Order has been modified successfully")
+        }
     }
     
     @IBAction func requestSLabel(_ sender: Any) {

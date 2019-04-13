@@ -116,4 +116,8 @@ class Announcements {
         announcementDataStore.remove(byId: objectID)
         
     }
+    
+    func getAnnouncement(objectID:String) -> Announcemnet{
+        return announcementDataStore.find(byId: objectID) as! Announcemnet
+    }
 }
