@@ -18,6 +18,7 @@ class OrderDetialsViewController: UIViewController {
     @IBOutlet weak var updateOrderBtn: UIButton!
     @IBOutlet weak var requestSLabelBtn: UIButton!
     @IBOutlet weak var downloadSLabelBtn: UIButton!
+    @IBOutlet weak var uploadShippingReceiptBtn: UIButton!
     
     static var order:Order!
     
@@ -28,6 +29,7 @@ class OrderDetialsViewController: UIViewController {
         claimedTF.backgroundColor = UIColor.clear
         requestSLabelBtn.isHidden = true
         downloadSLabelBtn.isHidden = true
+        uploadShippingReceiptBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -42,6 +44,7 @@ class OrderDetialsViewController: UIViewController {
         }
         if (OrderDetialsViewController.order.status == Order.Status.ShippingLbl_Sent.rawValue){
             downloadSLabelBtn.isHidden = false
+            uploadShippingReceiptBtn.isHidden = false
         }
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
@@ -98,6 +101,9 @@ class OrderDetialsViewController: UIViewController {
         displayAlert(msg: "Downloaded shipping label successfully")
     }
     
+    @IBAction func uploadSReceipt(_ sender: Any) {
+        displayAlert(msg: "Sent Shipping Receipt")
+    }
     /*
     // MARK: - Navigation
 
