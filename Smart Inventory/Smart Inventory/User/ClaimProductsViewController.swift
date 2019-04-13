@@ -57,17 +57,20 @@ class ClaimProductsViewController: UIViewController {
     */
     
     @IBAction func onClaim(_ sender: Any) {
-            let claimQty = Int(self.claimCount.text!)
-            if (claimQty! > announcement.unclaimed){
+            let claimQty = Int(self.claimCount.text!)!
+            if (claimQty > announcement.unclaimed){
                 self.displayError(msg: "Can not claim more than \(announcement.unclaimed) products")
             }
+            else if (claimQty <= 0){
+                self.displayError(msg: "Enter valid number")
+            }
             else{
-                announcement.claimed = announcement.claimed + claimQty!
+                announcement.claimed = announcement.claimed + claimQty
                 announcement.unclaimed = announcement.product.quantity - announcement.claimed
                 Announcements.announce.updateAnnouncement(announcement: announcement)
-                let order:Order = Order(title:announcement.product.name , product: announcement.product, quantity: claimQty!, status:Order.Status.Placed, userName: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String )
+                let order:Order = Order(title:announcement.product.name , product: announcement.product, quantity: claimQty, status:Order.Status.Placed, userName: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String )
                 AllOrders.allOrders.saveOrder(order: order)
-                self.displayAlert(msg: "You have claimed \(claimQty!) products")
+                self.displayAlert(msg: "You have claimed \(claimQty) products")
         }
         
        
