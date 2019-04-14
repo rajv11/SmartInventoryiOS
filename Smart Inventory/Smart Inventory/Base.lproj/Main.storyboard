@@ -1675,7 +1675,7 @@ The application will manages the shipping labels, product details, orders and tr
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw3-CD-vvh">
-                                <rect key="frame" x="16" y="689" width="343" height="44"/>
+                                <rect key="frame" x="16" y="637" width="343" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
@@ -1687,7 +1687,7 @@ The application will manages the shipping labels, product details, orders and tr
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V8-aK-5Yv">
-                                <rect key="frame" x="16" y="741" width="343" height="44"/>
+                                <rect key="frame" x="16" y="637" width="343" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
@@ -2284,6 +2284,9 @@ The application will manages the shipping labels, product details, orders and tr
                                 <state key="normal" title="Download Receipt">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="downloadReceipt:" destination="hGX-ZG-sz8" eventType="touchUpInside" id="JZ1-d8-qen"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZX-lf-YlT">
                                 <rect key="frame" x="16" y="669" width="343" height="44"/>
@@ -2294,6 +2297,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="confirmOrder:" destination="hGX-ZG-sz8" eventType="touchUpInside" id="DEa-Ia-fgO"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="Wcd-vP-hnP"/>
                                 </connections>
                             </button>

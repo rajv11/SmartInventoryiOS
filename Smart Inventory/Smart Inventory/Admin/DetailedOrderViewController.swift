@@ -106,6 +106,21 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         self.present(alert,  animated:  true,  completion:  nil)
         
     }
+    @IBAction func downloadReceipt(_ sender: Any) {
+        let order = DetailedOrderViewController.order
+        let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingReceipt/"+(order?.objectId)!+".jpeg"
+        let url = URL(string: urlString)!
+        let data = try? Data(contentsOf: url)
+        if let imageData = data {
+            let image = UIImage(data: imageData)
+            UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+        }
+        //        order?.status = Order.Status.Shipped_Order.rawValue
+        //        AllOrders.allOrders.saveOrder(order: order!)
+        let  alert  =  UIAlertController(title:  "Order",  message: "Receipt Downloaded",  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
+        self.present(alert,  animated:  true,  completion:  nil)
+    }
     /*
      // MARK: - Navigation
      
