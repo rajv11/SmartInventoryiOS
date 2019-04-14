@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Photos
 class OrderDetialsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameLbl: UILabel!
@@ -112,19 +112,44 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func downloadSLabel(_ sender: Any) {
-        let order = OrderDetialsViewController.order
-        let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingLable/"+(order?.objectId)!+".jpeg"
+        _ = OrderDetialsViewController.order
+        let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingLable/\(OrderDetialsViewController.order.objectId!)+.jpeg"
         let url = URL(string: urlString)!
         let data = try? Data(contentsOf: url)
         if let imageData = data {
             let image = UIImage(data: imageData)
-            UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+            self.downloadFile(image: image!)
+            
         }
-//        order?.status = Order.Status.Shipped_Order.rawValue
-//        AllOrders.allOrders.saveOrder(order: order!)
-        displayAlert(msg: "Downloaded shipping label successfully")
+        
     }
-    
+    func downloadFile(image:UIImage) {
+        print(image)
+        PHPhotoLibrary.requestAuthorization( { status in
+            print(status)
+            if status == .authorized {
+                PHPhotoLibrary.shared().performChanges({
+                PHAssetChangeRequest.creationRequestForAsset(from: image)
+                }, completionHandler: { success, error in
+                    if success {
+                        self.displayAlert(msg: "Downloaded shipping label successfully")
+                    }
+                    else if let error = error {
+                        self.displayAlert(msg: error.localizedDescription)
+                    }
+                    else {
+                        self.displayAlert(msg: "Failed to download")
+                    }
+                })
+            }
+            else {
+                return
+            }
+            
+        })
+        
+        
+    }
     func uploadFile(data:Data) {
         print(OrderDetialsViewController.order.objectId!)
         let path:String = "/shippingReceipt/\(OrderDetialsViewController.order.objectId!).jpeg"
