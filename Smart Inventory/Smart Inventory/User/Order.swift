@@ -31,6 +31,7 @@ class Order: NSObject, Decodable {
         case ShippingLbl_Sent = "Sent Label"
         case Shipped_Order = "Shipped"
         case Received_Order = "Received"
+        case Receipt_Sent = "Receipt Sent"
         case Payment_Sent = "Paid"
         case Close_Order = "Closed"
         case other = ""

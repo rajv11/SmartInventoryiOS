@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrderDetialsViewController: UIViewController {
+class OrderDetialsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UITextView!
@@ -19,7 +19,8 @@ class OrderDetialsViewController: UIViewController {
     @IBOutlet weak var requestSLabelBtn: UIButton!
     @IBOutlet weak var downloadSLabelBtn: UIButton!
     @IBOutlet weak var uploadShippingReceiptBtn: UIButton!
-    
+    @IBOutlet weak var confirmsAdminConfirmationBtn: UIButton!
+    @IBOutlet weak var itemShippedBtn: UIButton!
     static var order:Order!
     
     override func viewDidLoad() {
@@ -30,6 +31,8 @@ class OrderDetialsViewController: UIViewController {
         requestSLabelBtn.isHidden = true
         downloadSLabelBtn.isHidden = true
         uploadShippingReceiptBtn.isHidden = true
+        itemShippedBtn.isHidden = true
+        confirmsAdminConfirmationBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -42,10 +45,21 @@ class OrderDetialsViewController: UIViewController {
         if (OrderDetialsViewController.order.status == Order.Status.Approved.rawValue ){
             requestSLabelBtn.isHidden = false
         }
+        if (OrderDetialsViewController.order.status == Order.Status.Receipt_Sent.rawValue ){
+            itemShippedBtn.isHidden = false
+            uploadShippingReceiptBtn.isHidden = true
+            downloadSLabelBtn.isHidden = true
+        }
+        if (OrderDetialsViewController.order.status == Order.Status.Received_Order.rawValue ){
+            confirmsAdminConfirmationBtn.isHidden = false
+        }
         if (OrderDetialsViewController.order.status == Order.Status.ShippingLbl_Sent.rawValue){
             downloadSLabelBtn.isHidden = false
             uploadShippingReceiptBtn.isHidden = false
         }
+//        if  OrderDetialsViewController.order.status == Order.Status.Shipped_Order.rawValue {
+//            uploadShippingReceiptBtn.isHidden = false
+//        }
         nameLbl.text = String(OrderDetialsViewController.order.product.name)
         descLbl.text = String(OrderDetialsViewController.order.product.productDescription)
         claimedTF.text = String(OrderDetialsViewController.order.quantity)
@@ -106,10 +120,23 @@ class OrderDetialsViewController: UIViewController {
             let image = UIImage(data: imageData)
             UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
         }
-        order?.status = Order.Status.Shipped_Order.rawValue
-        AllOrders.allOrders.saveOrder(order: order!)
+//        order?.status = Order.Status.Shipped_Order.rawValue
+//        AllOrders.allOrders.saveOrder(order: order!)
         displayAlert(msg: "Downloaded shipping label successfully")
     }
+    
+    func uploadFile(data:Data) {
+        print(OrderDetialsViewController.order.objectId!)
+        let path:String = "/shippingReceipt/\(OrderDetialsViewController.order.objectId!).jpeg"
+        Backendless.sharedInstance().file.uploadFile(path, content: data,
+                                    overwriteIfExist: true)
+        OrderDetialsViewController.order.status = Order.Status.Receipt_Sent.rawValue
+        AllOrders.allOrders.saveOrder(order: OrderDetialsViewController.order)
+        let  alert  =  UIAlertController(title:  "Done",  message: "Shipping Receipt Uploaded",  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
+        self.present(alert,  animated:  true,  completion:  nil)
+    }
+    
 //    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
 //        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
 //    }
@@ -125,9 +152,39 @@ class OrderDetialsViewController: UIViewController {
 //            }
 //        }
 //    }
+    @IBAction func itemShipped(_ sender: Any) {
+        OrderDetialsViewController.order.status = Order.Status.Shipped_Order.rawValue
+        AllOrders.allOrders.saveOrder(order: OrderDetialsViewController.order)
+        displayAlert(msg: "Order Shipped")
+    }
+    @IBAction func confirmAdminsConfirmation(_ sender: Any) {
+        OrderDetialsViewController.order.status = Order.Status.Close_Order.rawValue
+        AllOrders.allOrders.saveOrder(order: OrderDetialsViewController.order)
+        displayAlert(msg: "Admin recived Order")
+    }
     
     @IBAction func uploadSReceipt(_ sender: Any) {
-        displayAlert(msg: "Sent Shipping Receipt")
+        let myPickerController = UIImagePickerController()
+        myPickerController.delegate = self
+        myPickerController.sourceType =  UIImagePickerController.SourceType.photoLibrary
+        self.present(myPickerController, animated: true, completion: nil)
+        
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let imageURL = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
+        
+        picker.dismiss(animated: true, completion: nil)
+        
+        //extract image from the picker and save it
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            
+            let imageData = pickedImage.jpegData(compressionQuality: 0.75)
+            try! imageData?.write(to: imageURL as URL)
+            self.uploadFile(data: imageData!)
+        }
+        
     }
     /*
     // MARK: - Navigation

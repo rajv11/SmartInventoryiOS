@@ -18,12 +18,16 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var uploadShippingLabelBtn: UIButton!
     @IBOutlet weak var confirmOrder: UIButton!
+    
+    @IBOutlet weak var downloadReceiptBtn: UIButton!
+    
     static var order:Order!
     let backendless = Backendless.sharedInstance()!
     override func viewDidLoad() {
         super.viewDidLoad()
          uploadShippingLabelBtn.isHidden = true
          confirmOrder.isHidden = true
+        downloadReceiptBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -32,7 +36,9 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
             uploadShippingLabelBtn.isHidden = false
         }
         if(DetailedOrderViewController.order.status == Order.Status.Shipped_Order.rawValue){
-            confirmOrder.isHidden = false
+            confirmOrder.isHidden = false        }
+        if(DetailedOrderViewController.order.status == Order.Status.Receipt_Sent.rawValue){
+            downloadReceiptBtn.isHidden = false
         }
         nameLbl.text = String(DetailedOrderViewController.order.product.name)
         descLbl.text = String(DetailedOrderViewController.order.product.productDescription)
