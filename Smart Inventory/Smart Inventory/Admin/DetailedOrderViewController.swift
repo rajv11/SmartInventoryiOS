@@ -17,18 +17,22 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var uploadShippingLabelBtn: UIButton!
-    
+    @IBOutlet weak var confirmOrder: UIButton!
     static var order:Order!
     let backendless = Backendless.sharedInstance()!
     override func viewDidLoad() {
         super.viewDidLoad()
          uploadShippingLabelBtn.isHidden = true
+         confirmOrder.isHidden = true
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if(DetailedOrderViewController.order.status == Order.Status.ShippingLbl_Requested.rawValue){
             uploadShippingLabelBtn.isHidden = false
+        }
+        if(DetailedOrderViewController.order.status == Order.Status.Shipped_Order.rawValue){
+            confirmOrder.isHidden = false
         }
         nameLbl.text = String(DetailedOrderViewController.order.product.name)
         descLbl.text = String(DetailedOrderViewController.order.product.productDescription)
@@ -85,6 +89,16 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         let  alert  =  UIAlertController(title:  "Done",  message: "Shipping Lable Uploaded",  preferredStyle:  .alert)
         alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
         self.present(alert,  animated:  true,  completion:  nil)
+    }
+    
+    @IBAction func confirmOrder(_ sender: Any) {
+        let order = DetailedOrderViewController.order!
+        order.status = Order.Status.Received_Order.rawValue
+        AllOrders.allOrders.saveOrder(order: order)
+        let  alert  =  UIAlertController(title:  "Order",  message: "Order Confirmed",  preferredStyle:  .alert)
+        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
+        self.present(alert,  animated:  true,  completion:  nil)
+        
     }
     /*
      // MARK: - Navigation

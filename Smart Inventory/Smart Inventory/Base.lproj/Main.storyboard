@@ -2253,6 +2253,20 @@ The application will manages the shipping labels, product details, orders and tr
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZX-lf-YlT">
+                                <rect key="frame" x="16" y="617" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Confirm Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmOrder:" destination="hGX-ZG-sz8" eventType="touchUpInside" id="Beh-el-ctq"/>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6v-c2-7ux"/>
+                                    <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="Wcd-vP-hnP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35018915340000001" green="0.64662297290000004" blue="1" alpha="0.62466823630000001" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="MQi-ji-IHd"/>
@@ -2260,6 +2274,7 @@ The application will manages the shipping labels, product details, orders and tr
                     <navigationItem key="navigationItem" title="Title" id="t1q-Fs-dOn"/>
                     <connections>
                         <outlet property="claimedLbl" destination="EBA-En-DMa" id="nam-VU-7te"/>
+                        <outlet property="confirmOrder" destination="HZX-lf-YlT" id="Em0-Uf-KwU"/>
                         <outlet property="descLbl" destination="uwf-Vw-x1k" id="AUY-l4-FpM"/>
                         <outlet property="nameLbl" destination="ccA-cu-6OI" id="JJx-wJ-BZi"/>
                         <outlet property="priceLbl" destination="dql-Ej-qbu" id="vIH-Ew-Jll"/>
