@@ -1648,7 +1648,6 @@ The application will manages the shipping labels, product details, orders and tr
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3r-7A-TCs"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="L3u-9R-Wbc"/>
                                     <action selector="requestSLabel:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="suf-01-bDI"/>
-                                    <action selector="updateOrder:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="His-Zi-3lB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAQ-6H-o6s">
@@ -1663,8 +1662,6 @@ The application will manages the shipping labels, product details, orders and tr
                                     <action selector="downloadSLabel:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="yeg-H0-SNS"/>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Zk-6d-mGX"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="crw-jc-gXV"/>
-                                    <action selector="requestSLabel:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="xih-BB-OyI"/>
-                                    <action selector="updateOrder:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="hMw-NW-6Vf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-za-Vfh">
@@ -1676,11 +1673,8 @@ The application will manages the shipping labels, product details, orders and tr
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="downloadSLabel:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="2Qx-Gu-PbX"/>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uof-wL-sei"/>
                                     <action selector="postAnnouncementBtn:" destination="igM-vn-kPI" eventType="touchUpInside" id="BAY-lk-Q14"/>
-                                    <action selector="requestSLabel:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="0aC-ZN-nTe"/>
-                                    <action selector="updateOrder:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="hiK-Fe-7P8"/>
                                     <action selector="uploadSReceipt:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="lL7-5K-fKs"/>
                                 </connections>
                             </button>

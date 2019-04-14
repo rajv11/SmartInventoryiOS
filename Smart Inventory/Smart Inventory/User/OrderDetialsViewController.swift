@@ -98,8 +98,33 @@ class OrderDetialsViewController: UIViewController {
     }
     
     @IBAction func downloadSLabel(_ sender: Any) {
+        let order = OrderDetialsViewController.order
+        let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingLable/"+(order?.objectId)!+".jpeg"
+        let url = URL(string: urlString)!
+        let data = try? Data(contentsOf: url)
+        if let imageData = data {
+            let image = UIImage(data: imageData)
+            UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+        }
+        order?.status = Order.Status.Shipped_Order.rawValue
+        AllOrders.allOrders.saveOrder(order: order!)
         displayAlert(msg: "Downloaded shipping label successfully")
     }
+//    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+//        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+//    }
+//    func downloadImage(from url: URL) {
+//        print("Download Started")
+//        getData(from: url) { data, response, error in
+//             let data = data, error == nil else { return }
+//            print(response?.suggestedFilename ?? url.lastPathComponent)
+//            print("Download Finished")
+//            DispatchQueue.main.async() {
+//                let image = UIImage(data: data)
+//                UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+//            }
+//        }
+//    }
     
     @IBAction func uploadSReceipt(_ sender: Any) {
         displayAlert(msg: "Sent Shipping Receipt")
