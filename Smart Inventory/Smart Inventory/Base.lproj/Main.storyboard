@@ -2285,7 +2285,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="downloadReceipt:" destination="hGX-ZG-sz8" eventType="touchUpInside" id="JZ1-d8-qen"/>
+                                    <action selector="downloadReceipt:" destination="hGX-ZG-sz8" eventType="touchUpInside" id="nP7-Kv-or3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZX-lf-YlT">

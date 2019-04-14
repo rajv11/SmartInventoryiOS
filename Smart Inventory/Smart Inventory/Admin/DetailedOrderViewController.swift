@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Photos
 class DetailedOrderViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameLbl: UILabel!
@@ -48,14 +48,14 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         userNameLbl.text = String(DetailedOrderViewController.order.userName)
     }
     
+    
+    
     func displayAlert(msg: String){
         let  alert  =  UIAlertController(title:  "Order",  message: msg,  preferredStyle:  .alert)
         alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
-            self.performSegue(withIdentifier: "orderDone", sender: nil)
+            self.dismiss(animated: true, completion: nil)
         }))
         self.present(alert,  animated:  true,  completion:  nil)    }
-    
-    
     func displayError(msg: String){
         let alert = UIAlertController(title: "Failed", message: msg, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -92,34 +92,59 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         let path:String = "/shippingLable/\(DetailedOrderViewController.order.objectId!) .jpeg"
         backendless.file.uploadFile(path, content: data,
                                     overwriteIfExist: true)
-        let  alert  =  UIAlertController(title:  "Done",  message: "Shipping Lable Uploaded",  preferredStyle:  .alert)
-        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
-        self.present(alert,  animated:  true,  completion:  nil)
+        self.displayAlert(msg: "Shipping Lable Uploaded")
+        
     }
     
     @IBAction func confirmOrder(_ sender: Any) {
         let order = DetailedOrderViewController.order!
         order.status = Order.Status.Received_Order.rawValue
         AllOrders.allOrders.saveOrder(order: order)
-        let  alert  =  UIAlertController(title:  "Order",  message: "Order Confirmed",  preferredStyle:  .alert)
-        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
-        self.present(alert,  animated:  true,  completion:  nil)
+        self.displayAlert(msg: "Order Confirmed")
         
     }
     @IBAction func downloadReceipt(_ sender: Any) {
-        let order = DetailedOrderViewController.order
-        let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingReceipt/"+(order?.objectId)!+".jpeg"
+        print("in download")
+        let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingReceipt/\(DetailedOrderViewController.order.objectId!).jpeg"
         let url = URL(string: urlString)!
         let data = try? Data(contentsOf: url)
         if let imageData = data {
             let image = UIImage(data: imageData)
-            UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+            self.downloadFile(image: image!)
         }
         //        order?.status = Order.Status.Shipped_Order.rawValue
         //        AllOrders.allOrders.saveOrder(order: order!)
-        let  alert  =  UIAlertController(title:  "Order",  message: "Receipt Downloaded",  preferredStyle:  .alert)
-        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
-        self.present(alert,  animated:  true,  completion:  nil)
+//        let  alert  =  UIAlertController(title:  "Order",  message: "Receipt Downloaded",  preferredStyle:  .alert)
+//        alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  nil))
+//        self.present(alert,  animated:  true,  completion:  nil)
+    }
+    
+    func downloadFile(image:UIImage) {
+        print(image)
+        PHPhotoLibrary.requestAuthorization( { status in
+            print(status)
+            if status == .authorized {
+                PHPhotoLibrary.shared().performChanges({
+                    PHAssetChangeRequest.creationRequestForAsset(from: image)
+                }, completionHandler: { success, error in
+                    if success {
+                        self.displayAlert(msg: "Downloaded shipping receipt successfully")
+                    }
+                    else if let error = error {
+                        self.displayAlert(msg: error.localizedDescription)
+                    }
+                    else {
+                        self.displayAlert(msg: "Failed to download")
+                    }
+                })
+            }
+            else {
+                return
+            }
+            
+        })
+        
+        
     }
     /*
      // MARK: - Navigation
