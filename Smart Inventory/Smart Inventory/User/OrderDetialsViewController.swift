@@ -21,6 +21,7 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var uploadShippingReceiptBtn: UIButton!
     @IBOutlet weak var confirmsAdminConfirmationBtn: UIButton!
     @IBOutlet weak var itemShippedBtn: UIButton!
+    @IBOutlet weak var contactAdmin: UIButton!
     static var order:Order!
     
     override func viewDidLoad() {
@@ -33,6 +34,7 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         uploadShippingReceiptBtn.isHidden = true
         itemShippedBtn.isHidden = true
         confirmsAdminConfirmationBtn.isHidden = true
+        contactAdmin.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -52,6 +54,9 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         }
         if (OrderDetialsViewController.order.status == Order.Status.Received_Order.rawValue ){
             confirmsAdminConfirmationBtn.isHidden = false
+        }
+        if (OrderDetialsViewController.order.status == Order.Status.Order_not_received.rawValue ){
+            contactAdmin.isHidden = false
         }
         if (OrderDetialsViewController.order.status == Order.Status.ShippingLbl_Sent.rawValue){
             downloadSLabelBtn.isHidden = false
@@ -211,6 +216,7 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         }
         
     }
+  
     /*
     // MARK: - Navigation
 

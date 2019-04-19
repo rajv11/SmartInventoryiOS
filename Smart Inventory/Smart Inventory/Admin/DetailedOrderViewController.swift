@@ -17,8 +17,8 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var uploadShippingLabelBtn: UIButton!
-    @IBOutlet weak var confirmOrder: UIButton!
-    
+    @IBOutlet weak var orderReceived: UIButton!
+    @IBOutlet weak var orderNotReceived: UIButton!
     @IBOutlet weak var downloadReceiptBtn: UIButton!
     
     static var order:Order!
@@ -26,7 +26,8 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
          uploadShippingLabelBtn.isHidden = true
-         confirmOrder.isHidden = true
+         orderReceived.isHidden = true
+         orderNotReceived.isHidden = true
         downloadReceiptBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
@@ -36,7 +37,9 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
             uploadShippingLabelBtn.isHidden = false
         }
         if(DetailedOrderViewController.order.status == Order.Status.Shipped_Order.rawValue){
-            confirmOrder.isHidden = false        }
+            orderReceived.isHidden = false
+            orderNotReceived.isHidden = false
+        }
         if(DetailedOrderViewController.order.status == Order.Status.Receipt_Sent.rawValue){
             downloadReceiptBtn.isHidden = false
         }
@@ -96,13 +99,20 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         
     }
     
-    @IBAction func confirmOrder(_ sender: Any) {
+    @IBAction func orderReceived(_ sender: Any) {
         let order = DetailedOrderViewController.order!
         order.status = Order.Status.Received_Order.rawValue
         AllOrders.allOrders.saveOrder(order: order)
         self.displayAlert(msg: "Order Confirmed")
         
     }
+    @IBAction func orderNotReceived(_ sender: Any) {
+        let order = DetailedOrderViewController.order!
+        order.status = Order.Status.Order_not_received.rawValue
+        AllOrders.allOrders.saveOrder(order: order)
+        self.displayAlert(msg: "Order not received")
+    }
+    
     @IBAction func downloadReceipt(_ sender: Any) {
         print("in download")
         let urlString = "https://backendlessappcontent.com/388C88F0-9D31-2F50-FFC1-AFC261CEED00/3E7299E0-45DA-682C-FFB6-31838A69DE00/files/shippingReceipt/\(DetailedOrderViewController.order.objectId!).jpeg"
