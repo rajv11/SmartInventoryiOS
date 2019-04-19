@@ -27,9 +27,9 @@ class ProfileTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    @IBAction func LogoutBTN(_ sender: Any) {
-        Backendless.sharedInstance()!.userService.logout()
-    }
+//    @IBAction func LogoutBTN(_ sender: Any) {
+//        Backendless.sharedInstance()!.userService.logout()
+//    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -55,7 +55,11 @@ class ProfileTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: segueIdentifiers[indexPath.row], sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "logout" {
+            Backendless.sharedInstance()?.userService.logout()
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
