@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Backendless.sharedInstance().hostURL = SERVER_URL
         Backendless.sharedInstance().initApp(APP_ID, apiKey: API_KEY)
+        Backendless.sharedInstance()?.userService.logout()
         return true
     }
     

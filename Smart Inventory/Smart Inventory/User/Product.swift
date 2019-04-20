@@ -42,24 +42,7 @@ class Product: NSObject, Decodable {
 
 @objcMembers
 class AllProducts {
-     static var allProducts:AllProducts = AllProducts()
-//    // represents the product functions
-//    static var allProducts:AllProducts = AllProducts()
-//    var productsList:[Product] = []
-//
-//    //sets the product list
-//    func setProductsList(productsList:[Product]) {
-//        self.productsList = productsList
-//    }
-//    //gets all the product list
-//    func getAllProductsList() -> [Product] {
-//        return productsList
-//    }
-//
-//    subscript(index:Int) -> Product{
-//        return productsList[index]
-//    }
-    
+    static var allProducts:AllProducts = AllProducts()    
     let backendless = Backendless.sharedInstance()
     var productDataStore:IDataStore!
     
