@@ -23,6 +23,7 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var itemShippedBtn: UIButton!
     @IBOutlet weak var contactAdmin: UIButton!
     static var order:Order!
+    @IBOutlet weak var requestPaymentBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         itemShippedBtn.isHidden = true
         confirmsAdminConfirmationBtn.isHidden = true
         contactAdmin.isHidden = true
+        requestPaymentBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -54,6 +56,9 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         }
         if (OrderDetialsViewController.order.status == Order.Status.Received_Order.rawValue ){
             confirmsAdminConfirmationBtn.isHidden = false
+        }
+        if (OrderDetialsViewController.order.status == Order.Status.Order_Confirmed.rawValue ){
+            requestPaymentBtn.isHidden = false
         }
         if (OrderDetialsViewController.order.status == Order.Status.Order_not_received.rawValue ){
             contactAdmin.isHidden = false
@@ -188,9 +193,9 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         displayAlert(msg: "Order Shipped")
     }
     @IBAction func confirmAdminsConfirmation(_ sender: Any) {
-        OrderDetialsViewController.order.status = Order.Status.Close_Order.rawValue
+        OrderDetialsViewController.order.status = Order.Status.Order_Confirmed.rawValue
         AllOrders.allOrders.saveOrder(order: OrderDetialsViewController.order)
-        displayAlert(msg: "Admin recived Order")
+        displayAlert(msg: "Confirmed Order")
     }
     
     @IBAction func uploadSReceipt(_ sender: Any) {
@@ -202,6 +207,11 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         
     }
     
+    @IBAction func requestPayment(_ sender: Any) {
+        OrderDetialsViewController.order.status = Order.Status.Payment_Requested.rawValue
+        AllOrders.allOrders.saveOrder(order: OrderDetialsViewController.order)
+        displayAlert(msg: "Payment Requested")
+    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let imageURL = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
         

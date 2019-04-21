@@ -1662,6 +1662,18 @@ The application will manages the shipping labels, product details, orders and tr
                                     <action selector="downloadSLabel:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="RYi-eS-XwG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzg-u3-WUq">
+                                <rect key="frame" x="16" y="689" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Request Payment">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestPayment:" destination="2nq-MU-8Vx" eventType="touchUpInside" id="w6H-ai-vnu"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-za-Vfh">
                                 <rect key="frame" x="16" y="637" width="343" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1702,7 +1714,7 @@ The application will manages the shipping labels, product details, orders and tr
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPY-xW-z13">
-                                <rect key="frame" x="16" y="689" width="343" height="44"/>
+                                <rect key="frame" x="16" y="734" width="343" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.37473244859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
@@ -1727,6 +1739,7 @@ The application will manages the shipping labels, product details, orders and tr
                         <outlet property="itemShippedBtn" destination="Iw3-CD-vvh" id="oZw-93-ZC1"/>
                         <outlet property="nameLbl" destination="m8m-aO-Umi" id="hvR-1E-04I"/>
                         <outlet property="priceLbl" destination="J6n-El-hm8" id="Aff-gq-nvJ"/>
+                        <outlet property="requestPaymentBtn" destination="Fzg-u3-WUq" id="R0R-rl-bJR"/>
                         <outlet property="requestSLabelBtn" destination="0BV-dQ-7Bv" id="Jj0-cY-RHf"/>
                         <outlet property="statusLbl" destination="JO2-W8-CBA" id="Xwk-EO-4YU"/>
                         <outlet property="updateOrderBtn" destination="jFv-BO-JLe" id="zfT-pP-CS0"/>

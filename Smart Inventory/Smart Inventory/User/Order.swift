@@ -33,6 +33,8 @@ class Order: NSObject, Decodable {
         case Received_Order = "Order Received"
         case Order_not_received = "Order not received"
         case Receipt_Sent = "Receipt Sent"
+        case Order_Confirmed = "Confirmed"
+        case Payment_Requested = "Payment Requested"
         case Payment_Sent = "Paid"
         case Close_Order = "Closed"
         case other = ""
