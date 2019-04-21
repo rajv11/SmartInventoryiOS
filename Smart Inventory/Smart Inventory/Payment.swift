@@ -48,7 +48,7 @@ class Payments {
         paymentDataStore = backendless?.data.of(Payment.self)
     }
     
-    func saveProducts(payment:Payment)
+    func savePayments(payment:Payment)
     {
         var itemToSave = payment
         
