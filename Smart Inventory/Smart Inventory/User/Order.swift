@@ -132,6 +132,12 @@ class AllOrders {
                                     print(exception.debugDescription) })
         self.retrieveAllOrders()
     }
+    
+    func getOrder(_ objectId:String) -> Order {
+        let orderDataStore = backendless!.data.of(Order.self)
+        let order = orderDataStore!.find(byId: objectId)
+        return order as! Order
+    }
         
     
 }

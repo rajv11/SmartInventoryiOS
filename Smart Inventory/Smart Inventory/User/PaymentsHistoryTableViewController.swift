@@ -1,36 +1,54 @@
 //
-//  ProfileTableViewController.swift
+//  PayementsHistoryTableViewController.swift
 //  Smart Inventory
 //
-//  Created by Vamshi Raj on 11/18/18.
-//  Copyright © 2018 Jennaikode,Vamshi Raj. All rights reserved.
+//  Created by Shruthi  Patlolla on 4/21/19.
+//  Copyright © 2019 Jennaikode,Vamshi Raj. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class PaymentsHistoryTableViewController: UITableViewController {
 
-    @IBAction func backToProfile(segue:UIStoryboardSegue){}
+    static var paymentsTVC:PaymentsHistoryTableViewController = PaymentsHistoryTableViewController()
     
-    var items:[String] = ["Account Details", "Payment History", "Help", "Privacy Policy", "Log Out"]
-    var segueIdentifiers = ["profile", "payments", "help", "policy", "logout"]
+    let backendless = Backendless.sharedInstance()!
+    var paymentsDataStore:IDataStore!
+    var allPayments:[Payment] = []
+    let refreshControl1 = UIRefreshControl()
+    @IBAction func onDone(segue:UIStoryboardSegue){}
+    
+    @objc func dataFetched() {
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        Payments.payments.retrieveAllPayments()
+        allPayments = Payments.payments.payments
+        print("payments ")
+        print(allPayments.count)
+        refreshControl1.addTarget(self, action: #selector(refreshPayments), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl1)
+        //        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
+        
+        
+        // Do any additional setup after loading the view.
+    }
+    @objc func refreshPayments() {
+        Payments.payments.retrieveAllPayments()
+        allPayments = Payments.payments.payments
+        tableView.reloadData()
+        refreshControl1.endRefreshing()
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        Payments.payments.retrieveAllPayments()
+        allPayments = Payments.payments.payments
+        tableView.reloadData()
+        
     }
 
-    // MARK: - Table view data source
-//    @IBAction func LogoutBTN(_ sender: Any) {
-//        Backendless.sharedInstance()!.userService.logout()
-//    }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -38,28 +56,29 @@ class ProfileTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return allPayments.count
     }
-
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath)
         
-        cell.textLabel?.text = items[indexPath.row]
-       
-        // Configure the cell...
-
+        let name = tableView.viewWithTag(100) as! UILabel
+        let user = tableView.viewWithTag(200) as! UILabel
+        let quantity = tableView.viewWithTag(300) as! UILabel
+        let total = tableView.viewWithTag(400) as! UILabel
+        
+        let order = AllOrders.allOrders.getOrder(allPayments[indexPath.row].orderId)
+        
+        name.text = order.title
+        user.text = order.userName
+        quantity.text = String(allPayments[indexPath.row].quantity)
+        total.text = String(allPayments[indexPath.row].totalPrice)
+        
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: segueIdentifiers[indexPath.row], sender: self)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "logout" {
-            Backendless.sharedInstance()?.userService.logout()
-        }
-    }
+
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

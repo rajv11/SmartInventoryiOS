@@ -20,6 +20,7 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var orderReceived: UIButton!
     @IBOutlet weak var orderNotReceived: UIButton!
     @IBOutlet weak var downloadReceiptBtn: UIButton!
+    @IBOutlet weak var payBtn: UIButton!
     
     static var order:Order!
     let backendless = Backendless.sharedInstance()!
@@ -29,6 +30,7 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
          orderReceived.isHidden = true
          orderNotReceived.isHidden = true
         downloadReceiptBtn.isHidden = true
+        payBtn.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -42,6 +44,9 @@ class DetailedOrderViewController: UIViewController, UIImagePickerControllerDele
         }
         if(DetailedOrderViewController.order.status == Order.Status.Receipt_Sent.rawValue){
             downloadReceiptBtn.isHidden = false
+        }
+        if(DetailedOrderViewController.order.status == Order.Status.Payment_Requested.rawValue){
+            payBtn.isHidden = false
         }
         nameLbl.text = String(DetailedOrderViewController.order.product.name)
         descLbl.text = String(DetailedOrderViewController.order.product.productDescription)
