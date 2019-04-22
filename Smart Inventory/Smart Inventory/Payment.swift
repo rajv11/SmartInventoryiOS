@@ -74,11 +74,12 @@ func retrieveAllPayments() {
     self.payments = paymentDataStore.find(queryBuilder) as! [Payment]
     }
     
-//    func retrieveUserPayments() {
-//        let queryBuilder = DataQueryBuilder()
-//        queryBuilder!.setWhereClause("email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
-//        queryBuilder!.setRelationsDepth(1)
-//
-//        self.orders = orderDataStore.find(queryBuilder) as! [Order]
-//    }
+    func retrieveUserPayments() {
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setWhereClause("payeeEmail='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
+        queryBuilder!.setRelationsDepth(1)
+
+        self.payments = paymentDataStore.find(queryBuilder) as! [Payment]
+        print(self.payments.count)
+  }
 }

@@ -23,11 +23,14 @@ class PaymentsHistoryTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        
-        Payments.payments.retrieveAllPayments()
+        let user = self.backendless.userService.currentUser
+        if(user?.email == "inventory.adm@yandex.ru"){
+            Payments.payments.retrieveAllPayments()
+        }
+        else{
+            Payments.payments.retrieveUserPayments()
+        }
         allPayments = Payments.payments.payments
-        print("payments ")
-        print(allPayments.count)
         refreshControl1.addTarget(self, action: #selector(refreshPayments), for: UIControl.Event.valueChanged)
         tableView.addSubview(refreshControl1)
         //        allOrders = self.orderDataStore.find(queryBuilder) as! [Order]
@@ -36,7 +39,13 @@ class PaymentsHistoryTableViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
     @objc func refreshPayments() {
-        Payments.payments.retrieveAllPayments()
+        let user = self.backendless.userService.currentUser
+        if(user?.email == "inventory.adm@yandex.ru"){
+            Payments.payments.retrieveAllPayments()
+        }
+        else{
+            Payments.payments.retrieveUserPayments()
+        }
         allPayments = Payments.payments.payments
         tableView.reloadData()
         refreshControl1.endRefreshing()
@@ -44,7 +53,13 @@ class PaymentsHistoryTableViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        Payments.payments.retrieveAllPayments()
+        let user = self.backendless.userService.currentUser
+        if(user?.email == "inventory.adm@yandex.ru"){
+            Payments.payments.retrieveAllPayments()
+        }
+        else{
+            Payments.payments.retrieveUserPayments()
+        }
         allPayments = Payments.payments.payments
         tableView.reloadData()
         
