@@ -71,13 +71,7 @@ func retrieveAllPayments() {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setPageSize(100)
         
-        paymentDataStore.find(queryBuilder, response: {(results) -> Void in
-            self.payments = results as! [Payment]
-            print(self.payments.count)
-        },
-                              error:{(exception) -> Void in
-                                print(exception.debugDescription)
-        })
+    self.payments = paymentDataStore.find(queryBuilder) as! [Payment]
     }
     
 //    func retrieveUserPayments() {

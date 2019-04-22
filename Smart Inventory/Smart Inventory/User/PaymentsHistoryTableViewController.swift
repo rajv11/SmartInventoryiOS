@@ -23,6 +23,7 @@ class PaymentsHistoryTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
+        
         Payments.payments.retrieveAllPayments()
         allPayments = Payments.payments.payments
         print("payments ")
@@ -58,7 +59,9 @@ class PaymentsHistoryTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return allPayments.count
     }
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath)
         
