@@ -15,6 +15,8 @@ class MessageDetailViewController: UIViewController {
     @IBOutlet weak var subjectLBL: UILabel!
     @IBOutlet weak var messageTV: UITextView!
     
+    @IBAction func onCancelNewMessages(segue:UIStoryboardSegue){}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
