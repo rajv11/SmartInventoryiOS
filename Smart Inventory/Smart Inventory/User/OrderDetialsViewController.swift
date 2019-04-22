@@ -25,6 +25,8 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
     static var order:Order!
     @IBOutlet weak var requestPaymentBtn: UIButton!
     
+    @IBAction func onCancelPaymentRequest(segue:UIStoryboardSegue){}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateOrderBtn.isHidden =  true
@@ -207,11 +209,6 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
         
     }
     
-    @IBAction func requestPayment(_ sender: Any) {
-        OrderDetialsViewController.order.status = Order.Status.Payment_Requested.rawValue
-        AllOrders.allOrders.saveOrder(order: OrderDetialsViewController.order)
-        displayAlert(msg: "Payment Requested")
-    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let imageURL = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
         

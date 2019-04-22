@@ -74,16 +74,18 @@ class AdminOrdersTableViewController: UITableViewController {
         let name = tableView.viewWithTag(100) as! UILabel
         let userName = tableView.viewWithTag(300) as! UILabel
         let quantity = tableView.viewWithTag(400) as! UILabel
+        let status = tableView.viewWithTag(500) as! UILabel
         
         name.text = allOrders[indexPath.row].title
         userName.text = allOrders[indexPath.row].userName
         quantity.text = String(allOrders[indexPath.row].quantity)
+        status.text = allOrders[indexPath.row].status
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 115
+        return 135
     }
     
     override func tableView(_ tableView: UITableView,

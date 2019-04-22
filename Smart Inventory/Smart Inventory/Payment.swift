@@ -16,6 +16,9 @@ class Payment: NSObject, Decodable {
     var quantity:Int
     var unitPrice:Double
     var totalPrice:Double
+    var accountNumber:String
+    var routingNumber:String
+    var status:String
     var objectId:String?
     override var  description:  String  {
         //  NSObject  adheres  to  CustomStringConvertible
@@ -23,16 +26,19 @@ class Payment: NSObject, Decodable {
         
     }
     
-    init(orderId: String, payeeEmail:String, quantity:Int, unitPrice:Double, totalPrice:Double) {
+    init(orderId: String, payeeEmail:String, quantity:Int, unitPrice:Double, totalPrice:Double, accountNumber:String,routingNumber:String , status:String) {
         self.orderId = orderId
         self.payeeEmail = payeeEmail
         self.quantity = quantity
         self.unitPrice = unitPrice
         self.totalPrice = totalPrice
+        self.accountNumber = accountNumber
+        self.routingNumber = routingNumber
+        self.status = status
     }
     
     convenience override init(){
-        self.init(orderId:"", payeeEmail:"", quantity:0, unitPrice:0.0, totalPrice:0.0)
+        self.init(orderId:"", payeeEmail:"", quantity:0, unitPrice:0.0, totalPrice:0.0, accountNumber:"", routingNumber:"", status:"")
         
     }
 }
@@ -81,5 +87,15 @@ func retrieveAllPayments() {
 
         self.payments = paymentDataStore.find(queryBuilder) as! [Payment]
         print(self.payments.count)
-  }
+    }
+    
+    func getPayment(_ orderId:String) -> Payment{
+        var payment:[Payment] = []
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setWhereClause("orderId='\( orderId )'")
+        queryBuilder!.setRelationsDepth(1)
+        payment = paymentDataStore.find(queryBuilder) as! [Payment]
+        return payment[0]
+    }
+    
 }

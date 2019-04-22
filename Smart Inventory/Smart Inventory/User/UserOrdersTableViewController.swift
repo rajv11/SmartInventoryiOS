@@ -16,7 +16,9 @@ class UserOrdersTableViewController: UITableViewController {
     var orderDataStore:IDataStore!
     var allOrders:[Order] = []
     let refreshControl1 = UIRefreshControl()
+    
     @IBAction func onDone(segue:UIStoryboardSegue){}
+    @IBAction func onPaymentRequest(segue:UIStoryboardSegue){}
     
     @objc func dataFetched() {
         tableView.reloadData()

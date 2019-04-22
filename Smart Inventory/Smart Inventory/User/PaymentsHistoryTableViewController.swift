@@ -75,7 +75,7 @@ class PaymentsHistoryTableViewController: UITableViewController {
         return allPayments.count
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 160
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath)
@@ -84,6 +84,7 @@ class PaymentsHistoryTableViewController: UITableViewController {
         let user = tableView.viewWithTag(200) as! UILabel
         let quantity = tableView.viewWithTag(300) as! UILabel
         let total = tableView.viewWithTag(400) as! UILabel
+        let status = tableView.viewWithTag(500) as! UILabel
         
         let order = AllOrders.allOrders.getOrder(allPayments[indexPath.row].orderId)
         
@@ -91,6 +92,7 @@ class PaymentsHistoryTableViewController: UITableViewController {
         user.text = order.userName
         quantity.text = String(allPayments[indexPath.row].quantity)
         total.text = String(allPayments[indexPath.row].totalPrice)
+        status.text = String(allPayments[indexPath.row].status)
         
         return cell
     }

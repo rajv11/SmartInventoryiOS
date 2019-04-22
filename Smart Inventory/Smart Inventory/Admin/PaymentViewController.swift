@@ -16,6 +16,8 @@ class PaymentViewController: UIViewController {
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var claimedLbl: UILabel!
     @IBOutlet weak var totalAmountLbl: UILabel!
+    @IBOutlet weak var accountNumberLbl: UILabel!
+    @IBOutlet weak var routingNumberLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +25,14 @@ class PaymentViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         let order = DetailedOrderViewController.order!
+        let payment = Payments.payments.getPayment(order.objectId!)
         payeeLbl.text = String(order.userName)
         productNameLbl.text = String(order.title)
         priceLbl.text = String(order.product.price)
         claimedLbl.text = String(order.quantity)
         totalAmountLbl.text = String(order.product.price * Double(order.quantity))
+        accountNumberLbl.text = payment.accountNumber
+        routingNumberLbl.text = payment.routingNumber
     }
     func displayAlert(msg: String){
         let  alert  =  UIAlertController(title:  "Payment",  message: msg,  preferredStyle:  .alert)
@@ -43,7 +48,8 @@ class PaymentViewController: UIViewController {
     }
     @IBAction func pay(_ sender: Any) {
         let order = DetailedOrderViewController.order!
-        let payment = Payment(orderId: order.objectId!, payeeEmail:order.email, quantity: order.quantity, unitPrice: order.product.price, totalPrice: order.product.price * Double(order.quantity))
+        let payment = Payments.payments.getPayment(order.objectId!)
+        payment.status = "Paid"
         Payments.payments.savePayments(payment: payment)
         order.status = Order.Status.Payment_Sent.rawValue
         AllOrders.allOrders.saveOrder(order: order)

@@ -12,6 +12,7 @@
 		160E92B0222FAC2F001856EB /* UserOrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E92AF222FAC2F001856EB /* UserOrdersTableViewController.swift */; };
 		161D9F38226CEDC8006300AB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161D9F37226CEDC8006300AB /* PaymentViewController.swift */; };
 		161D9F3A226CF512006300AB /* PaymentsHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161D9F39226CF512006300AB /* PaymentsHistoryTableViewController.swift */; };
+		161D9F3C226E07A1006300AB /* RequestPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161D9F3B226E07A1006300AB /* RequestPaymentViewController.swift */; };
 		16200FE8225ADEA4007C045B /* AdminOrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16200FE7225ADEA4007C045B /* AdminOrdersTableViewController.swift */; };
 		16200FEC225B220E007C045B /* DetailedOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16200FEB225B220E007C045B /* DetailedOrderViewController.swift */; };
 		16746CD6223F5675005197C5 /* OrderDetialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16746CD5223F5675005197C5 /* OrderDetialsViewController.swift */; };
@@ -50,6 +51,7 @@
 		160E92AF222FAC2F001856EB /* UserOrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOrdersTableViewController.swift; sourceTree = "<group>"; };
 		161D9F37226CEDC8006300AB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		161D9F39226CF512006300AB /* PaymentsHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsHistoryTableViewController.swift; sourceTree = "<group>"; };
+		161D9F3B226E07A1006300AB /* RequestPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPaymentViewController.swift; sourceTree = "<group>"; };
 		16200FE7225ADEA4007C045B /* AdminOrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersTableViewController.swift; sourceTree = "<group>"; };
 		16200FEB225B220E007C045B /* DetailedOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedOrderViewController.swift; sourceTree = "<group>"; };
 		16746CD5223F5675005197C5 /* OrderDetialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetialsViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				4C840A46225866F400E15E5B /* NewMessageViewController.swift */,
 				4C13BD13225B026400814EBA /* MessageDetailViewController.swift */,
 				161D9F39226CF512006300AB /* PaymentsHistoryTableViewController.swift */,
+				161D9F3B226E07A1006300AB /* RequestPaymentViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				3F9F7B0E2211063C00E13966 /* AnnouncementsTableViewController.swift in Sources */,
 				35FCF4C9226AA55400CFFB7A /* Payment.swift in Sources */,
 				4C13BD12225AF13000814EBA /* AdminMessagesTVC.swift in Sources */,
+				161D9F3C226E07A1006300AB /* RequestPaymentViewController.swift in Sources */,
 				1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */,
 				4C13BD16225B096F00814EBA /* AdminMessageDetailVC.swift in Sources */,
 				1678E31321A268AF00436FD9 /* Product.swift in Sources */,
