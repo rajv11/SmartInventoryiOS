@@ -12,6 +12,7 @@ class Payment: NSObject, Decodable {
     static var payment:Payment  = Payment()
     
     var orderId:String
+    var payeeEmail:String
     var quantity:Int
     var unitPrice:Double
     var totalPrice:Double
@@ -22,15 +23,16 @@ class Payment: NSObject, Decodable {
         
     }
     
-    init(orderId: String, quantity:Int, unitPrice:Double, totalPrice:Double) {
+    init(orderId: String, payeeEmail:String, quantity:Int, unitPrice:Double, totalPrice:Double) {
         self.orderId = orderId
+        self.payeeEmail = payeeEmail
         self.quantity = quantity
         self.unitPrice = unitPrice
         self.totalPrice = totalPrice
     }
     
     convenience override init(){
-        self.init(orderId:"", quantity:0, unitPrice:0.0, totalPrice:0.0)
+        self.init(orderId:"", payeeEmail:"", quantity:0, unitPrice:0.0, totalPrice:0.0)
         
     }
 }
@@ -77,4 +79,12 @@ func retrieveAllPayments() {
                                 print(exception.debugDescription)
         })
     }
+    
+//    func retrieveUserPayments() {
+//        let queryBuilder = DataQueryBuilder()
+//        queryBuilder!.setWhereClause("email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
+//        queryBuilder!.setRelationsDepth(1)
+//
+//        self.orders = orderDataStore.find(queryBuilder) as! [Order]
+//    }
 }

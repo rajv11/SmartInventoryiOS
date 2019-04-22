@@ -43,7 +43,7 @@ class PaymentViewController: UIViewController {
     }
     @IBAction func pay(_ sender: Any) {
         let order = DetailedOrderViewController.order!
-        let payment = Payment(orderId: order.objectId!, quantity: order.quantity, unitPrice: order.product.price, totalPrice: order.product.price * Double(order.quantity))
+        let payment = Payment(orderId: order.objectId!, payeeEmail:order.email, quantity: order.quantity, unitPrice: order.product.price, totalPrice: order.product.price * Double(order.quantity))
         Payments.payments.savePayments(payment: payment)
         order.status = Order.Status.Payment_Sent.rawValue
         AllOrders.allOrders.saveOrder(order: order)
