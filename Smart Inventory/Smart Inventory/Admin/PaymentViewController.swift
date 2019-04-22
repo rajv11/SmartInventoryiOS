@@ -30,7 +30,7 @@ class PaymentViewController: UIViewController {
         totalAmountLbl.text = String(order.product.price * Double(order.quantity))
     }
     func displayAlert(msg: String){
-        let  alert  =  UIAlertController(title:  "Order",  message: msg,  preferredStyle:  .alert)
+        let  alert  =  UIAlertController(title:  "Payment",  message: msg,  preferredStyle:  .alert)
         alert.addAction(UIAlertAction(title:  "OK",  style:  .default,  handler:  { _ in
             self.dismiss(animated: true, completion: nil)
         }))
@@ -45,7 +45,9 @@ class PaymentViewController: UIViewController {
         let order = DetailedOrderViewController.order!
         let payment = Payment(orderId: order.objectId!, quantity: order.quantity, unitPrice: order.product.price, totalPrice: order.product.price * Double(order.quantity))
         Payments.payments.savePayments(payment: payment)
-        self.displayAlert(msg: "Amount Paid")
+        order.status = Order.Status.Payment_Sent.rawValue
+        AllOrders.allOrders.saveOrder(order: order)
+        self.displayAlert(msg: "Payment Successful")
     }
     /*
     // MARK: - Navigation
