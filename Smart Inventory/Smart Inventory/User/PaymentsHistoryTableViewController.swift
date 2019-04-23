@@ -38,6 +38,9 @@ class PaymentsHistoryTableViewController: UITableViewController {
         
         // Do any additional setup after loading the view.
     }
+    @IBAction func doneBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @objc func refreshPayments() {
         let user = self.backendless.userService.currentUser
         if(user?.email == "inventory.adm@yandex.ru"){
