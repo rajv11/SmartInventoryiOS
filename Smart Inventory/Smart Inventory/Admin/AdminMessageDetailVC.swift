@@ -34,7 +34,7 @@ class AdminMessageDetailVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "adminReply" {
             let messageVC = segue.destination as! AdminReplyViewController
-            messageVC.message = self.message.email
+            messageVC.userMessage = self.message
             
         }
     }

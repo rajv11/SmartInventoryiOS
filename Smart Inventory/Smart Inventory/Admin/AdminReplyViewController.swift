@@ -12,13 +12,15 @@ class AdminReplyViewController: UIViewController {
 
     @IBOutlet weak var subjectTF: UITextField!
     @IBOutlet weak var messageTV: UITextView!
-    var message:String!
+    var userMessage:Message!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        subjectTF.text = self.userMessage.subject
+    }
     func displayAlert(msg: String, sent: Bool){
         let  alert  =  UIAlertController(title:  "Message",  message: msg,  preferredStyle:  .alert)
         
@@ -44,7 +46,7 @@ class AdminReplyViewController: UIViewController {
         if let subject = subjectTF.text, let message = messageTV.text, !subject.isEmpty, !message.isEmpty
         {
             let backendless = Backendless.sharedInstance()
-            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: "inventory.adm@yandex.ru", toEmail: message )
+            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: "inventory.adm@yandex.ru", toEmail: self.userMessage.email )
             Messages.messages.saveMessage(message: message)
             
             
