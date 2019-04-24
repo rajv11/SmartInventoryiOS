@@ -99,16 +99,23 @@ class UserOrdersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if allOrders[indexPath.row].status == Order.Status.Approved.rawValue {
-                displayAlert(msg: "The Order has already approved by the admin")
+            if allOrders[indexPath.row].status == Order.Status.Placed.rawValue {
+                AllOrders.allOrders.deleteOrder(allOrders[indexPath.row].objectId!)
+                //AllProducts.allProducts.deleteProduct(allOrders[indexPath.row].objectId!)
+                
+                let announcement =  Announcements.announce.getAnnouncement(objectID: allOrders[indexPath.row].product.parentId)
+                announcement.claimed = announcement.claimed - allOrders[indexPath.row].quantity
+                announcement.unclaimed = announcement.product.quantity - announcement.claimed
+                Announcements.announce.updateAnnouncement(announcement: announcement)
+                
+                self.allOrders.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.reloadData()
+                displayAlert(msg: "Deleted successfully")
+               
             }
             else{
-            AllOrders.allOrders.deleteOrder(allOrders[indexPath.row].objectId!)
-            AllProducts.allProducts.deleteProduct(allOrders[indexPath.row].objectId!)
-            self.allOrders.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            tableView.reloadData()
-            displayAlert(msg: "Deleted successfully")
+                displayAlert(msg: "The Order has already approved")
             }
         }
         

@@ -96,6 +96,7 @@ class Announcements {
         //var error: Fault?
         announcementDataStore.save(announcement)
         AllProducts.allProducts.saveProducts(product: announcement.product)
+        AllProducts.allProducts.retrieveAllProducts()
     }
     
     func setRelationship(parentID:String, childID:String) {
