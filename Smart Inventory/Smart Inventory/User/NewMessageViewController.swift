@@ -27,6 +27,9 @@ class NewMessageViewController: UIViewController {
             subjectTF.text = subject
       
     }
+    @IBAction func cancelBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     func displayAlert(msg: String, sent: Bool){
         let  alert  =  UIAlertController(title:  "Message",  message: msg,  preferredStyle:  .alert)
