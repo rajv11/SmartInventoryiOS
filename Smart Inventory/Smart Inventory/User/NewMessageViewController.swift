@@ -15,6 +15,7 @@ class NewMessageViewController: UIViewController {
     
     static var newMVC:NewMessageViewController = NewMessageViewController()
     var subject:String!
+    var email:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +49,11 @@ class NewMessageViewController: UIViewController {
     @IBAction func sendBtn(_ sender: Any) {
         if let subject = subjectTF.text, let message = messageTF.text, !subject.isEmpty, !message.isEmpty
         {
+            if(Backendless.sharedInstance()!.userService.currentUser.getProperty("email") as! String != "inventory.adm@yandex.ru" ){
+                self.email = "inventory.adm@yandex.ru"
+            }
             let backendless = Backendless.sharedInstance()
-            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String, toEmail: "inventory.adm@yandex.ru" )
+            let message = Message(subject: subject, message: message, name: backendless?.userService.currentUser.getProperty("name") as! String, email: backendless?.userService.currentUser.getProperty("email") as! String, toEmail: self.email)
             Messages.messages.saveMessage(message: message)
             
             

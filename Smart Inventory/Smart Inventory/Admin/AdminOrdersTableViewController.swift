@@ -94,6 +94,17 @@ class AdminOrdersTableViewController: UITableViewController {
       
         let selectedOrder = self.allOrders[indexPath.row] as Order!
         var actions:[UIContextualAction] = []
+        
+        let chat = UIContextualAction(style: .normal, title:  "Chat", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            let announcement =  Announcements.announce.getAnnouncement(objectID: self.allOrders[indexPath.row].product.parentId)
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "newMessageVC") as! NewMessageViewController
+            vc.subject = announcement.product.name
+            vc.email = self.allOrders[indexPath.row].email
+            self.present(vc,animated: true, completion: nil)
+            success(true)
+        })
+        chat.backgroundColor = .blue
+        
         if (selectedOrder!.status == Order.Status.Placed.rawValue) {
             let approveOrder = UIContextualAction(style: .normal, title:  "Approve", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
                 selectedOrder?.status = Order.Status.Approved.rawValue
@@ -120,10 +131,10 @@ class AdminOrdersTableViewController: UITableViewController {
             })
             rejectOrder.backgroundColor = .red
             
-            actions = [approveOrder, rejectOrder]
+            actions = [chat, rejectOrder, approveOrder]
         }
         else {
-            actions = []
+            actions = [chat]
         }
         return UISwipeActionsConfiguration(actions: actions)
     }
