@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160085C42211301C005D4124 /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160085C32211301C005D4124 /* InventoryTableViewController.swift */; };
 		160E92AE222FAB63001856EB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E92AD222FAB63001856EB /* Order.swift */; };
 		160E92B0222FAC2F001856EB /* UserOrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E92AF222FAC2F001856EB /* UserOrdersTableViewController.swift */; };
 		161D9F38226CEDC8006300AB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161D9F37226CEDC8006300AB /* PaymentViewController.swift */; };
@@ -19,7 +18,6 @@
 		1678E31121A2523D00436FD9 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */; };
 		1678E31321A268AF00436FD9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678E31221A268AF00436FD9 /* Product.swift */; };
 		1680C474221A17C600EB6ED5 /* ClaimProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680C473221A17C600EB6ED5 /* ClaimProductsViewController.swift */; };
-		169B96772207B82300510611 /* productDetails.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169B96762207B82300510611 /* productDetails.txt */; };
 		16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC012197E03900E40897 /* UserProfileViewController.swift */; };
 		16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */; };
 		1B02F38A804E8ED0E8B9CF2B /* Pods_Smart_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */; };
@@ -46,7 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		160085C32211301C005D4124 /* InventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
 		160E92AD222FAB63001856EB /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		160E92AF222FAC2F001856EB /* UserOrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOrdersTableViewController.swift; sourceTree = "<group>"; };
 		161D9F37226CEDC8006300AB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		1678E31221A268AF00436FD9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1680C473221A17C600EB6ED5 /* ClaimProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimProductsViewController.swift; sourceTree = "<group>"; };
-		169B96762207B82300510611 /* productDetails.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = productDetails.txt; sourceTree = "<group>"; };
 		16E7DC012197E03900E40897 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		35FCF4C8226AA55400CFFB7A /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Payment.swift; path = "Smart Inventory/Payment.swift"; sourceTree = SOURCE_ROOT; };
@@ -124,7 +120,6 @@
 				1678E31221A268AF00436FD9 /* Product.swift */,
 				160E92AD222FAB63001856EB /* Order.swift */,
 				4C840A482258688900E15E5B /* Message.swift */,
-				169B96762207B82300510611 /* productDetails.txt */,
 				1678E31021A2523D00436FD9 /* DashboardTableViewController.swift */,
 				3F9F7B0D2211063C00E13966 /* AnnouncementsTableViewController.swift */,
 				3F3E41CE21B183A7006BB70D /* MessagesTableViewController.swift */,
@@ -145,7 +140,6 @@
 		3F9F7B1022110FC100E13966 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
-				160085C32211301C005D4124 /* InventoryTableViewController.swift */,
 				3F5536032216159800B6B494 /* AdminAnnouncementTVC.swift */,
 				3F5536052216161900B6B494 /* Announcement.swift */,
 				4C081DA12223639800ED3A72 /* PostAnnouncementVC.swift */,
@@ -265,7 +259,6 @@
 				C79D8096216530F500A0AEFB /* LaunchScreen.storyboard in Resources */,
 				C79D8093216530F500A0AEFB /* Assets.xcassets in Resources */,
 				C79D8091216530F400A0AEFB /* Main.storyboard in Resources */,
-				169B96772207B82300510611 /* productDetails.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +333,6 @@
 				4CF962DC222E840200393139 /* UpdateViewController.swift in Sources */,
 				3F3E41CF21B183A7006BB70D /* MessagesTableViewController.swift in Sources */,
 				3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */,
-				160085C42211301C005D4124 /* InventoryTableViewController.swift in Sources */,
 				160E92B0222FAC2F001856EB /* UserOrdersTableViewController.swift in Sources */,
 				876CF7982167D4240015A6C8 /* RegistrationViewController.swift in Sources */,
 				16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */,
