@@ -1,35 +1,19 @@
 //
-//  ProfileTableViewController.swift
+//  InventoryTableViewController.swift
 //  Smart Inventory
 //
-//  Created by Vamshi Raj on 11/18/18.
-//  Copyright © 2018 Jennaikode,Vamshi Raj. All rights reserved.
+//  Created by raj on 4/24/19.
+//  Copyright © 2019 Jennaikode,Vamshi Raj. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
-
-    @IBAction func backToProfile(segue:UIStoryboardSegue){}
+class InventoryTableViewController: UITableViewController {
     
-    
-    
-    var items:[String]!
-        //= ["Account Details", "Payment History", "Help", "Privacy Policy", "Log Out"]
-    var segueIdentifiers:[String]!
-        //= ["profile", "payments", "help", "policy", "logout"]
-    
+    var types:[String] = ["New Orders", "Approved", "Rejected", "Shipped", "Received", "Paid", "Others"]
+//    var segueIdentifiers = ["profile", "payments", "help", "policy", "logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        if Backendless.sharedInstance()?.userService.currentUser.email == "inventory.adm@yandex.ru" {
-            items = ["Account Details", "Payment History","Inventory", "Help", "Privacy Policy", "Log Out"]
-            segueIdentifiers = ["profile", "payments", "inventory", "help", "policy", "logout"]
-        } else {
-            items = ["Account Details", "Payment History", "Help", "Privacy Policy", "Log Out"]
-            segueIdentifiers = ["profile", "payments", "help", "policy", "logout"]
-        }
-        
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -39,10 +23,7 @@ class ProfileTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-//    @IBAction func LogoutBTN(_ sender: Any) {
-//        Backendless.sharedInstance()!.userService.logout()
-//    }
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -50,28 +31,22 @@ class ProfileTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return types.count
     }
 
-
+    @IBAction func doneBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = items[indexPath.row]
-       
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "type", for: indexPath)
+
+         cell.textLabel?.text = types[indexPath.row]
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: segueIdentifiers[indexPath.row], sender: self)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "logout" {
-            Backendless.sharedInstance()?.userService.logout()
-        }
-    }
+
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -82,7 +57,7 @@ class ProfileTableViewController: UITableViewController {
 
     /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)

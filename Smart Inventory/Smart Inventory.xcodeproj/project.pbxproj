@@ -21,6 +21,7 @@
 		16E7DC022197E03900E40897 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC012197E03900E40897 /* UserProfileViewController.swift */; };
 		16E7DC042199241E00E40897 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */; };
 		1B02F38A804E8ED0E8B9CF2B /* Pods_Smart_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B23A29C992CF26543FA343 /* Pods_Smart_Inventory.framework */; };
+		35E7D9B22270B98100460661 /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E7D9B12270B98100460661 /* InventoryTableViewController.swift */; };
 		35FCF4C9226AA55400CFFB7A /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FCF4C8226AA55400CFFB7A /* Payment.swift */; };
 		3F3E41CF21B183A7006BB70D /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E41CE21B183A7006BB70D /* MessagesTableViewController.swift */; };
 		3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */; };
@@ -57,6 +58,7 @@
 		1680C473221A17C600EB6ED5 /* ClaimProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimProductsViewController.swift; sourceTree = "<group>"; };
 		16E7DC012197E03900E40897 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16E7DC032199241E00E40897 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		35E7D9B12270B98100460661 /* InventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
 		35FCF4C8226AA55400CFFB7A /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Payment.swift; path = "Smart Inventory/Payment.swift"; sourceTree = SOURCE_ROOT; };
 		3F3E41CE21B183A7006BB70D /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		3F4FB0EA21A245E8000E2FBD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				16200FEB225B220E007C045B /* DetailedOrderViewController.swift */,
 				4C5A8BD0225DBF3F0049C1CD /* AdminReplyViewController.swift */,
 				161D9F37226CEDC8006300AB /* PaymentViewController.swift */,
+				35E7D9B12270B98100460661 /* InventoryTableViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				4C840A47225866F400E15E5B /* NewMessageViewController.swift in Sources */,
 				4CF962DC222E840200393139 /* UpdateViewController.swift in Sources */,
 				3F3E41CF21B183A7006BB70D /* MessagesTableViewController.swift in Sources */,
+				35E7D9B22270B98100460661 /* InventoryTableViewController.swift in Sources */,
 				3F4FB0EB21A245E8000E2FBD /* ProfileTableViewController.swift in Sources */,
 				160E92B0222FAC2F001856EB /* UserOrdersTableViewController.swift in Sources */,
 				876CF7982167D4240015A6C8 /* RegistrationViewController.swift in Sources */,
