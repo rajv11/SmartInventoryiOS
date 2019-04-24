@@ -13,7 +13,7 @@ class AdminMessagesTVC: UITableViewController {
     let backendless = Backendless.sharedInstance()!
     var messageDataStore:IDataStore!
     var arr:[[Message]] = []
-    let headerTitles = ["Users", "Me"]
+    let headerTitles = ["Inbox", "Sent"]
     let refreshControl1 = UIRefreshControl()
     @objc func dataFetched() {
         tableView.reloadData()

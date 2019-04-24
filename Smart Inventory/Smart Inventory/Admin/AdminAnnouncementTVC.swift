@@ -19,6 +19,7 @@ class AdminAnnouncementTVC: UITableViewController {
     
     let backendless = Backendless.sharedInstance()!
     var announcementDataStore:IDataStore!
+    let refreshControl1 = UIRefreshControl()
     
     
     @objc func dataFetched() {
@@ -30,6 +31,10 @@ class AdminAnnouncementTVC: UITableViewController {
         announcementDataStore =  backendless.data.of(Announcemnet.self)
         allAnnouncements = self.announcementDataStore.find() as! [Announcemnet]
         
+        
+        refreshControl1.addTarget(self, action: #selector(refreshAnnounce), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl1)
+
         //tableView.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
         
         // Uncomment the following line to preserve selection between presentations
@@ -38,7 +43,12 @@ class AdminAnnouncementTVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+    @objc func refreshAnnounce() {
+        allAnnouncements = self.announcementDataStore.find() as! [Announcemnet]
+        tableView.reloadData()
+        
+        refreshControl1.endRefreshing()
+    }
     override func viewWillAppear(_ animated: Bool) {
         
         tableView.reloadData()
