@@ -115,7 +115,7 @@ class UserOrdersTableViewController: UITableViewController {
                
             }
             else{
-                displayAlert(msg: "The Order has already approved")
+                displayAlert(msg: "Order can not be deleted now")
             }
         }
         

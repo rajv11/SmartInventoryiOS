@@ -108,6 +108,12 @@ class AdminOrdersTableViewController: UITableViewController {
             let rejectOrder = UIContextualAction(style: .normal, title:  "Reject", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
                 selectedOrder?.status = Order.Status.Rejected.rawValue
                 AllOrders.allOrders.saveOrder(order: selectedOrder!)
+                
+                let announcement =  Announcements.announce.getAnnouncement(objectID: self.allOrders[indexPath.row].product.parentId)
+                announcement.claimed = announcement.claimed - self.allOrders[indexPath.row].quantity
+                announcement.unclaimed = announcement.product.quantity - announcement.claimed
+                Announcements.announce.updateAnnouncement(announcement: announcement)
+                
                 self.displayAlert(msg: "Order has been rejected")
                 print("Reject order ...")
                 success(true)
