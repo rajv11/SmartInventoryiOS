@@ -1,37 +1,36 @@
 //
-//  ProfileTableViewController.swift
+//  GroupedInventoryTableViewController.swift
 //  Smart Inventory
 //
-//  Created by Vamshi Raj on 11/18/18.
-//  Copyright © 2018 Jennaikode,Vamshi Raj. All rights reserved.
+//  Created by raj on 4/24/19.
+//  Copyright © 2019 Jennaikode,Vamshi Raj. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class GroupedInventoryTableViewController: UITableViewController {
 
-    @IBAction func backToProfile(segue:UIStoryboardSegue){}
-    
-    
-    
-    var items:[String] = ["Account Details", "Payment History","Inventory", "Help", "Privacy Policy", "Log Out"]
-    var segueIdentifiers:[String] =  ["profile", "payments", "inventory", "help", "policy", "logout"]
+    var status:String!
+    var orders:[Order]!
+    @IBOutlet weak var navBar: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "appbg.jpg")!)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-//    @IBAction func LogoutBTN(_ sender: Any) {
-//        Backendless.sharedInstance()!.userService.logout()
-//    }
+        navBar.topItem?.title = status
+        if Backendless.sharedInstance()?.userService.currentUser.email == "inventory.adm@yandex.ru" {
+                AllOrders.allOrders.retrieveStatusOrders(status)
+                orders = AllOrders.allOrders.orders
+        } else {
+            AllOrders.allOrders.retrieveStatusUserOrders(status)
+            orders = AllOrders.allOrders.orders
+        }
     
+    }
+    @IBAction func doneBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: - Table view data source
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -39,27 +38,25 @@ class ProfileTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return orders.count
     }
 
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = items[indexPath.row]
-       
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "group", for: indexPath)
+
+        let name = tableView.viewWithTag(100) as! UILabel
+        let userName = tableView.viewWithTag(300) as! UILabel
+        let quantity = tableView.viewWithTag(400) as! UILabel
+        name.text = orders[indexPath.row].title
+        userName.text = orders[indexPath.row].userName
+        quantity.text = String(orders[indexPath.row].quantity)
 
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: segueIdentifiers[indexPath.row], sender: self)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "logout" {
-            Backendless.sharedInstance()?.userService.logout()
-        }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 135
     }
     /*
     // Override to support conditional editing of the table view.
@@ -71,7 +68,7 @@ class ProfileTableViewController: UITableViewController {
 
     /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)

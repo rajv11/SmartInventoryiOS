@@ -101,6 +101,68 @@ class AllOrders {
         queryBuilder?.setSortBy(["created DESC"])
         self.orders = orderDataStore.find(queryBuilder) as! [Order]
     }
+    func retrieveStatusOrders(_ status:String)
+    {
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setPageSize(100)
+        queryBuilder!.setRelationsDepth(1)
+        var whereClause:String!
+        switch status {
+        case "New Orders":
+            whereClause = "status='\(Order.Status.Placed.rawValue)'"
+            
+        case "Approved":
+            whereClause = "status='\(Order.Status.Approved.rawValue)'"
+        case "Rejected":
+            whereClause = "status='\(Order.Status.Rejected.rawValue)'"
+        case "Shipped":
+            whereClause = "status='\(Order.Status.Shipped_Order.rawValue)'"
+        case "Received":
+            whereClause = "status='\(Order.Status.Received_Order.rawValue)'"
+        case "Paid":
+            whereClause = "status='\(Order.Status.Payment_Sent.rawValue)'"
+        default:
+            whereClause = ""
+        }
+        
+        queryBuilder!.setWhereClause("email='pshruthi98@gmail.com'")
+        queryBuilder!.setWhereClause(whereClause)
+        
+        queryBuilder?.setSortBy(["created DESC"])
+        self.orders = orderDataStore.find(queryBuilder) as! [Order]
+        
+    }
+    func retrieveStatusUserOrders(_ status:String)
+    {
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setPageSize(100)
+        queryBuilder!.setRelationsDepth(1)
+        var whereClause:String!
+        switch status {
+        case "New Orders":
+            whereClause = "status='\(Order.Status.Placed.rawValue)' and email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+            
+        case "Approved":
+            whereClause = "status='\(Order.Status.Approved.rawValue)' and email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+        case "Rejected":
+            whereClause = "status='\(Order.Status.Rejected.rawValue)' and email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+        case "Shipped":
+            whereClause = "status='\(Order.Status.Shipped_Order.rawValue)' and email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+        case "Received":
+            whereClause = "status='\(Order.Status.Received_Order.rawValue)' and email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+        case "Paid":
+            whereClause = "status='\(Order.Status.Payment_Sent.rawValue)' and email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'"
+        default:
+            whereClause = ""
+        }
+        
+        queryBuilder!.setWhereClause(whereClause)
+        
+        queryBuilder?.setSortBy(["created DESC"])
+        self.orders = orderDataStore.find(queryBuilder) as! [Order]
+        
+    }
+    
     func retrieveUserOrders() {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setWhereClause("email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
