@@ -26,6 +26,9 @@ class OrderDetialsViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var requestPaymentBtn: UIButton!
     
     @IBAction func onCancelPaymentRequest(segue:UIStoryboardSegue){}
+    @IBAction func onPaymentRequest(segue:UIStoryboardSegue){}
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
