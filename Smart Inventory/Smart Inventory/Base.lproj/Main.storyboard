@@ -882,7 +882,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <navigationItem title="Profile" id="2lW-nW-bSV">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="xJo-FN-Rgh">
                                             <connections>
-                                                <segue destination="8ea-0S-PMU" kind="unwind" unwindAction="backToProfileWithSegue:" id="dlW-fr-BCN"/>
+                                                <action selector="backBtn:" destination="0zk-ud-0Bl" id="n5Y-JL-eAY"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -925,7 +925,6 @@ The application will manages the shipping labels, product details, orders and tr
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbx-86-6da" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="8ea-0S-PMU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1976.8" y="830.54187192118229"/>
         </scene>
@@ -1840,7 +1839,6 @@ The application will manages the shipping labels, product details, orders and tr
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="sV3-1r-FmF">
                                             <connections>
                                                 <action selector="backBtn:" destination="zsi-f7-maK" id="vJN-RY-xKf"/>
-                                                <segue destination="wkd-2K-JKd" kind="unwind" unwindAction="onCancelNewMessagesWithSegue:" id="2ad-fq-ila"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1896,7 +1894,6 @@ The application will manages the shipping labels, product details, orders and tr
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ws1-4K-aKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="wkd-2K-JKd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2380" y="-883.00492610837443"/>
         </scene>
