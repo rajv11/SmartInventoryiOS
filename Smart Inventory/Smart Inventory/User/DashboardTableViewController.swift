@@ -88,7 +88,20 @@ class DashboardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 190
     }
-   
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let chatAction = UITableViewRowAction(style: .normal, title:"       ") { (rowAction, indexPath) in
+            print("delete clicked")
+            let currentAnnouncement = self.allAnnouncements[indexPath.row]
+            //NewMessageViewController.newMVC.subject = currentAnnouncement.product.name
+            //self.performSegue(withIdentifier: "newMssage", sender: self)
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "newMessageVC") as! NewMessageViewController
+            vc.subject = currentAnnouncement.product.name
+            self.present(vc,animated: true, completion: nil)
+            
+        }
+        chatAction.backgroundColor = UIColor(patternImage:UIImage(named: "chatPic")!)
+        return [chatAction]
+    }
 
     /*
     // Override to support conditional editing of the table view.

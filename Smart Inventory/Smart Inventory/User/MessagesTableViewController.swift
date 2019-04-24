@@ -16,6 +16,8 @@ class MessagesTableViewController: UITableViewController {
     let headerTitles = ["Sent", "Inbox"]
     let refreshControl1 = UIRefreshControl()
     
+    @IBAction func onCancelNewMessages(segue:UIStoryboardSegue){}
+    
     @objc func dataFetched() {
         tableView.reloadData()
     }

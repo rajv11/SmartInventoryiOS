@@ -13,10 +13,18 @@ class NewMessageViewController: UIViewController {
     @IBOutlet weak var subjectTF: UITextField!
     @IBOutlet weak var messageTF: UITextView!
     
+    static var newMVC:NewMessageViewController = NewMessageViewController()
+    var subject:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        print(self.subject)
+            subjectTF.text = subject
+      
     }
     
     func displayAlert(msg: String, sent: Bool){
@@ -35,10 +43,7 @@ class NewMessageViewController: UIViewController {
         
     }
     
-    @IBAction func backBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+   
     
     @IBAction func sendBtn(_ sender: Any) {
         if let subject = subjectTF.text, let message = messageTF.text, !subject.isEmpty, !message.isEmpty
