@@ -81,6 +81,7 @@ class Announcements {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setPageSize(100)
         
+        queryBuilder?.setSortBy(["created DESC"])
         announcementDataStore.find(queryBuilder, response: {(results) -> Void in
             self.announcements = results as! [Announcemnet]
         },

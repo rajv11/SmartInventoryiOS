@@ -98,6 +98,7 @@ class AllOrders {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setPageSize(100)
         queryBuilder!.setRelationsDepth(1)
+        queryBuilder?.setSortBy(["created DESC"])
         self.orders = orderDataStore.find(queryBuilder) as! [Order]
     }
     func retrieveUserOrders() {
@@ -105,6 +106,7 @@ class AllOrders {
         queryBuilder!.setWhereClause("email='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
         queryBuilder!.setRelationsDepth(1)
         
+        queryBuilder?.setSortBy(["created DESC"])
         self.orders = orderDataStore.find(queryBuilder) as! [Order]
     }
     func setRelationship(parentID:String, childID:String) {

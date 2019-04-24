@@ -63,14 +63,20 @@ class Messages {
     }
     
     func retriveAllMessages() {
+        let queryBuilder = DataQueryBuilder()
+        queryBuilder!.setPageSize(100)
+        
+        queryBuilder?.setSortBy(["created DESC"])
         messageDataStore = backendless?.data.of(Message.self)
-        self.messagesArray = messageDataStore.find() as! [Message]
+        self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
     }
     func retriveAdminMessages() {
         let whereClause = "email='inventory.adm@yandex.ru'"
         
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setWhereClause(whereClause)
+        
+        queryBuilder?.setSortBy(["created DESC"])
         self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
     }
     func retrievByAdminMessages() {
@@ -78,6 +84,8 @@ class Messages {
         
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setWhereClause(whereClause)
+        
+        queryBuilder?.setSortBy(["created DESC"])
         self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
     }
     func retriveOnlyAllUserMessages() {
@@ -85,6 +93,8 @@ class Messages {
         
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setWhereClause(whereClause)
+        
+        queryBuilder?.setSortBy(["created DESC"])
         self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
 
     }
@@ -93,6 +103,8 @@ class Messages {
         
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setWhereClause(whereClause)
+        
+        queryBuilder?.setSortBy(["created DESC"])
         self.messagesArray = messageDataStore.find(queryBuilder) as! [Message]
     }
 }

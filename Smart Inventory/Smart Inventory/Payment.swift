@@ -76,7 +76,7 @@ class Payments {
 func retrieveAllPayments() {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setPageSize(100)
-        
+        queryBuilder?.setSortBy(["created DESC"])
     self.payments = paymentDataStore.find(queryBuilder) as! [Payment]
     }
     
@@ -84,7 +84,7 @@ func retrieveAllPayments() {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setWhereClause("payeeEmail='\( backendless?.userService.currentUser.getProperty("email") ?? "")'")
         queryBuilder!.setRelationsDepth(1)
-
+        queryBuilder?.setSortBy(["created DESC"])
         self.payments = paymentDataStore.find(queryBuilder) as! [Payment]
         print(self.payments.count)
     }

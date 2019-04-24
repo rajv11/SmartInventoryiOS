@@ -73,6 +73,7 @@ class AllProducts {
         let queryBuilder = DataQueryBuilder()
         queryBuilder!.setPageSize(100)
         
+        queryBuilder?.setSortBy(["created DESC"])
         productDataStore.find(queryBuilder, response: {(results) -> Void in
             self.products = results as! [Product]
             print(self.products.count)
