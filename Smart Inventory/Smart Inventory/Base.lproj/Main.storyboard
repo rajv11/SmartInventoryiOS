@@ -1670,7 +1670,7 @@ The application will manages the shipping labels, product details, orders and tr
                                     <navigationItem title="New Messege" id="vMD-JY-phB">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="aej-Zo-lm6">
                                             <connections>
-                                                <segue destination="bin-bM-e2C" kind="unwind" unwindAction="onCancelNewMessagesWithSegue:" id="eNs-ei-ZbJ"/>
+                                                <action selector="cancelBtn:" destination="jdX-PX-eEV" id="Ceq-hi-MPK"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1728,7 +1728,6 @@ The application will manages the shipping labels, product details, orders and tr
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tN-eb-5Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="bin-bM-e2C" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1127.2" y="2027.5862068965519"/>
         </scene>
@@ -2717,7 +2716,6 @@ The application will manages the shipping labels, product details, orders and tr
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5is-R3-IjG"/>
         <segue reference="1GU-KE-uIP"/>
         <segue reference="y4h-4z-If8"/>
         <segue reference="Gtc-Cb-7gz"/>

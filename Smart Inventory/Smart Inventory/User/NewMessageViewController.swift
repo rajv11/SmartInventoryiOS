@@ -29,6 +29,7 @@ class NewMessageViewController: UIViewController {
     }
     @IBAction func cancelBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        
     }
     
     func displayAlert(msg: String, sent: Bool){
